@@ -1,0 +1,40 @@
+body {
+    background-color: #eef0f3;
+    padding-top: 60px;
+}
+
+.navbar-default {
+    background-color: #FFFFFF;
+    border: 0;
+    box-shadow: 0 1px 2px 0px rgba(0,0,0,0.25)
+}
+
+
+
+#left-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    background-color: #202a34;
+}
+
+#main-panel {
+    margin-left: 280px;
+}
+
+
+
+.dashed {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 0;
+    border-top: 1px dashed #E4E4E4;
+}
+
+
+.btn-wide {
+    padding-left: 40px;
+    padding-right: 40px;
+}
