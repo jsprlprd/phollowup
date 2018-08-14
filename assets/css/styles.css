@@ -44,6 +44,18 @@ body {
 
 
 
+.btn-checkbox {
+    padding: 16px;
+    padding-left: 40px;
+    border: 2px solid #ddd;
+    text-align: left;
+    border-radius: 4px;
+    background-color: #FFF;
+}
+
+.btn-checkbox.active {
+    border-color: #007bfe;
+}
 
 
 
@@ -115,4 +127,73 @@ body {
     border: 2px solid #ddd;
     border-radius: 4px;
     display: block;
+}
+#new-appointment .modal-header,
+#new-appointment .modal-body,
+#new-appointment-test .modal-header,
+#new-appointment-test .modal-body {
+    padding: 40px;
+}
+
+#new-appointment .modal-header,
+#new-appointment-test .modal-header {
+    border: 0;
+    background-color: #007bfe;
+    padding-bottom: 0;
+}
+
+#new-appointment .modal-title,
+#new-appointment-test .modal-title {
+    color: #fff;
+}
+
+#new-appointment .nav,
+#new-appointment-test .nav {
+    margin-top: 24px;
+    border: 0;
+    margin-left: -8px;
+}
+
+#new-appointment .nav-tabs li,
+#new-appointment-test .nav-tabs li {
+    margin-bottom: 0;
+}
+
+#new-appointment .nav-tabs li + li,
+#new-appointment-test .nav-tabs li + li {
+    margin-left: 24px;
+}
+
+#new-appointment .nav-tabs li.active a
+#new-appointment-test .nav-tabs li.active a {
+    border-bottom: 4px solid #FF8900;
+    font-weight: 500;
+}
+
+#new-appointment .nav-tabs li a,
+#new-appointment-test .nav-tabs li a {
+    color: #FFF;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 16px;
+    color: #FAFAFA;
+}
+
+
+.media-pills {
+    background-color: #F1f2f3;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    padding: 4px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.media-pills.active {
+    border-color: #007bfe;
+}
+
+.media-pills .media-left,
+.media-pills .media-body {
+    padding-right: 16px;
 }
