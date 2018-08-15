@@ -34,7 +34,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-
     <!-- Base stylesheet -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/phollowup.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
@@ -54,12 +53,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
           <a class="navbar-brand" href="">
-            <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="30">
+            <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
           </a>
         </div>
-
         <nav class="collapse navbar-collapse" id="navbar-collapse-2">
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -72,49 +69,23 @@
               </ul>
             </li>
           </ul>
-        </nav><!-- /.navbar-collapse -->
+        </nav>
       </div>
     </header>
 
     <div id="left-panel">
-      <ul class="nav nav-pills nav-stacked">
-        <li>
-          <a href="">Dashboard</a>
-        </li>
-        <li class="active">
-          <a href="">Calendar</a>
-        </li>
-        <li>
-          <a href="">Online Booking</a>
-        </li>
-        <li>
-          <a href="">Invoicing</a>
-        </li>
-        <li>
-          <a href="">Customer</a>
-        </li>
-        <li>
-          <a href="">Conversation</a>
-        </li>
-        <li>
-          <a href="">Settings</a>
-        </li>
-      </ul>
+      {% include components/nav-pills-stacked.html %}
     </div>
 
     <div id="main-panel">
-
-      <div style=" padding: 20px; background-color: #0076FF; color: #fff; font-size: 20px;">
-        Heading
-      </div>
-      <div class="container-fluid">
+      <main class="container-fluid">
         {{ content }}
-      </div>
+      </main>
     </div>
 
     <div id="right-panel">
-
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
     <script src="/assets/js/bootstrap.js"></script>
