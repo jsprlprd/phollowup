@@ -16,7 +16,7 @@ layout: default
           <li class="active"><a href="#appointment-details-tab" data-toggle="tab">Appointment Details</a></li>
           <li><a href="#customer-details-tab" data-toggle="tab">Customer Details</a></li>
           <li><a href="#invoice-tab" data-toggle="tab">Invoice</a></li>
-          <li><a href="#confirmation-message-tab" data-toggle="tab">Confirmation Message</a></li>
+          <li><a href="#confirmation-message-tab" data-toggle="tab">Messages</a></li>
         </ul>
       </div>
       <div class="modal-body">
@@ -95,7 +95,6 @@ layout: default
               </fieldset>
               <hr class="dashed">
               <a class="btn btn-default btn-lg btn-wide" href="">Add Custom Form</a>
-
             </div>
           </div>
           <div class="tab-pane " id="invoice-tab">
@@ -114,39 +113,39 @@ layout: default
               <tbody>
                 <tr>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">Graphic Design</option>
                     </select>
                   </td>
-                  <td><p class="form-control-static">200</p></td>
+                  <td><p class="">200</p></td>
                   <td>
-                    <input class="form-control" type="number" value="1">
+                    <input class="form-control input-sm" type="number" value="1">
                   </td>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">No Tax</option>
                     </select>
                   </td>
-                  <td><p class="form-control-static">200</p></td>
-                  <td><a class="btn btn-danger" href="">&times;</a></td>
+                  <td><p class="">200</p></td>
+                  <td><a class="btn btn-danger btn-sm" href="">&times;</a></td>
                 </tr>
                 <tr>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">Graphic Design</option>
                     </select>
                   </td>
-                  <td><p class="form-control-static">200</p></td>
+                  <td><p class="">200</p></td>
                   <td>
-                    <input class="form-control" type="number" value="1">
+                    <input class="form-control input-sm" type="number" value="1">
                   </td>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">No Tax</option>
                     </select>
                   </td>
-                  <td><p class="form-control-static">200</p></td>
-                  <td><a class="btn btn-danger" href="">&times;</a></td>
+                  <td><p class="">200</p></td>
+                  <td><a class="btn btn-danger btn-sm" href="">&times;</a></td>
                 </tr>
               </tbody>
             </table>
@@ -190,6 +189,33 @@ layout: default
             </div>
           </div>
           <div id="confirmation-message-tab">
+            <p class="lead">Messages</p>
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-1">
+                      data-toggle="collapse" data-parent="#accordion" href="#collapse-1"
+                    </a>
+                  </h4>
+                </div>
+                <div class="panel-collapse collapse in" id="collapse-1">
+                  <div class="panel-body">#collapse-1.collapse.in</div>
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-2">
+                      data-toggle="collapse" data-parent="#accordion" href="#collapse-2"
+                    </a>
+                  </h4>
+                </div>
+                <div class="panel-collapse collapse" id="collapse-2">
+                  <div class="panel-body">#collapse-2.collapse</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -201,52 +227,38 @@ layout: default
   </div>
 </div>
 
-<a class="btn btn-primary" href="#view-appointment" data-toggle="modal">View Appointment</a>
+<button class="btn btn-primary" id="view-appointment">View Appointment</button>
 
-<div class="modal" id="view-appointment">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="close" type="button">&times;</button>
-        <span class="label label-default">Regular Customer</span>
-        <span class="label label-primary">Online Booking</span>
-        <h3 class="modal-title">Jasper Lepardo</h3>
-        <ul class="list-inline">
-          <li>(0917) 116 1268</li>
-          <li>May 12, 1993</li>
-        </ul>
-        <a class="btn btn-default" href="">Edit Appointment</a>
-      </div>
-      <div class="modal-body">
-        <div class="form-horizontal">
-          <fieldset class="form-group">
-            <label class="control-label col-md-3" for="">Service</label>
-            <div class="col-md-6">
-              <p class="form-control-static">Graphic Design</p>
-            </div>
-          </fieldset>
-          <fieldset class="form-group">
-            <label class="control-label col-md-3" for="">Duration</label>
-            <div class="col-md-6">
-              <p class="form-control-static">60 Minutes</p>
-            </div>
-          </fieldset>
-          <fieldset class="form-group">
-            <label class="control-label col-md-3" for="">Date &amp; Time</label>
-            <div class="col-md-6">
-              <p class="form-control-static">Monday, August 13 <br> <small>09:00am - 10:00am</small></p>
-            </div>
-          </fieldset>
-          <hr class="dashed">
-          <fieldset class="form-group">
-            <div class="col-md-9 col-md-offset-3">
-              <a class="btn btn-default btn-wide" href="">Reschedule</a>
-              <a class="btn btn-success btn-wide" href="">Cancelled</a>
-              <a class="btn btn-danger btn-wide" href="">No Show</a>
-            </div>
-          </fieldset>
-        </div>
-      </div>
-    </div>
+<div class="popover-content hidden" id="view-appointment-popover">
+  <div class="popover-header">
+    <span class="label label-default">Regular Customer</span>
+    <span class="label label-primary">Online Booking</span>
+    <h6 class="popover-header-title h4">Jasper Lepardo</h6>
+    <ul class="list-inline" style="margin-top: 4px;">
+      <li>(0917) 116 1268</li>
+      <li>May 12, 1993</li>
+    </ul>
+    <a class="btn btn-default" href="">Edit Appointment</a>
   </div>
+  <table class="table">
+    <tbody>
+      <tr>
+        <td class="text-muted">Service</td>
+        <td class="text-right">Graphic Design</td>
+      </tr>
+      <tr>
+        <td class="text-muted">Duration</td>
+        <td class="text-right">60 Minutes</td>
+      </tr>
+      <tr>
+        <td class="text-muted">Date &amp; Time</td>
+        <td class="text-right">Monday, August 13 <br> <small>09:00am - 10:00am</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+
+
+
+

@@ -232,3 +232,36 @@ body {
     text-align: center;
     margin-right: 16px;
 }
+
+
+
+
+
+.popover {
+    width: 320px;
+}
+
+.popover-content {
+    padding: 0;
+}
+
+.popover-header {
+    padding: 24px;
+    background-color: #4e6681;
+    color: #FFFFFF;
+}
+
+.popover-header .popover-header-title {
+    color: #FFF;
+    margin: 0;
+}
+
+.popover-footer {
+    padding: 16px 24px;
+    background-color: #F1f2f3;
+}
+
+
+.popover-content .table {
+    margin-bottom: 0;
+}
