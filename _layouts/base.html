@@ -41,8 +41,9 @@
     <!-- Plugins -->
 
     <!-- Bootstrap DateTimePicker -->
-    <link rel="stylesheet" href="/assets/plugins/bootstrap-datetime-picker/css/daterangepicker.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/bootstrap-datetime-picker/css/daterangepicker.css">
 
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/selectize/css/selectize.css">
   </head>
   <body>
     <header class="navbar navbar-default navbar-fixed-top">
@@ -116,6 +117,22 @@
         }
       });
     });
+    </script>
+
+    <script src="{{ site.baseurl }}/assets/plugins/selectize/js/standalone/selectize.js"></script>
+
+
+    <script>
+      $('#select-beast').selectize({
+        create: true,
+        createOneBlur: true,
+        addPrecedence: true,
+        render: {
+          option_create: function (data, escape) {
+            return '<div class="create">Add <strong>' + escape(data.input) + '</strong> as a customer</div>';
+          }
+        },
+      });
     </script>
   </body>
 </html>
