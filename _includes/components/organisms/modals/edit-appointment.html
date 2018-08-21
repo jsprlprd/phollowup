@@ -1,40 +1,37 @@
-<div class="modal" id="new-appointment">
+<div class="modal" id="edit-appointment">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button class="close" type="button">&times;</button>
-        <h6 class="modal-title h3">New Appointment</h6>
+        <h6 class="modal-title h3">Edit Appointment</h6>
         <ul class="nav nav-tabs" style="margin-bottom: -5px;">
-          <li class="active"><a href="#appointment-details-tab" data-toggle="tab">Appointment Details</a></li>
-          <li><a href="#customer-details-tab" data-toggle="tab">Customer Details</a></li>
-          <li><a href="#invoice-tab" data-toggle="tab">Invoice</a></li>
-          <li><a href="#messages-tab" data-toggle="tab">Messages</a></li>
+          <li class="active"><a href="#edit-appointment-details-tab" data-toggle="tab">Appointment Details</a></li>
+          <li><a href="#edit-customer-details-tab" data-toggle="tab">Customer Details</a></li>
+          <li><a href="#edit-invoice-tab" data-toggle="tab">Invoice</a></li>
+          <li><a href="#edit-messages-tab" data-toggle="tab">Messages</a></li>
         </ul>
       </div>
       <div class="modal-body">
         <div class="tab-content">
-          <div class="tab-pane active" id="appointment-details-tab">
+          <div class="tab-pane active" id="edit-appointment-details-tab">
             <div class="form-horizontal">
               <p class="lead">Appointment Details</p>
-
-              {% include components/molecules/select-field-horizontal.html 
-                label="Service"
-                text="service"
-                placeholder="Select Service"
-                list-value-name=site.data.list-value.service
-                label-size="col-md-3"
-                input-size="col-md-6"
-              %}
-
-              {% include components/molecules/select-field-horizontal.html 
-                label="Employee"
-                text="employee"
-                placeholder="Select Employee"
-                list-value-name=site.data.list-value.employee-name
-                label-size="col-md-3"
-                input-size="col-md-6"
-              %}
-
+              <fieldset class="form-group">
+                <label class="control-label col-md-3" for="">Service</label>
+                <div class="col-md-6">
+                  <select class="form-control" name="" id="">
+                    <option value="">Select Service</option>
+                  </select>
+                </div>
+              </fieldset>
+              <fieldset class="form-group">
+                <label class="control-label col-md-3" for="">Employee</label>
+                <div class="col-md-6">
+                  <select class="form-control" name="" id="">
+                    <option value="">Select Employee</option>
+                  </select>
+                </div>
+              </fieldset>
               <fieldset class="form-group">
                 <label class="control-label col-md-3" for="">Date & Time</label>
                 <div class="col-md-6">
@@ -43,13 +40,13 @@
               </fieldset>
             </div>
           </div>
-          <div class="tab-pane" id="customer-details-tab">
+          <div class="tab-pane" id="edit-customer-details-tab">
             <div class="form-horizontal">
               <p class="lead">Personal Details</p>
               <fieldset class="form-group">
                 <label class="control-label col-md-3" for="">Name</label>
                 <div class="col-md-6">
-                  <select id="new-appointment-customer" class="demo-default" placeholder="Search / Select Customer">
+                  <select id="edit-appointment-customer" class="demo-default" placeholder="Search / Select Customer">
                     <option value="">Add / Search Customer Name or Contact Details</option>
                     <option value="4">Thomas Edison</option>
                     <option value="1">Nikola</option>
@@ -85,16 +82,13 @@
                 label-size="col-sm-4 col-lg-3 col-xl-2"
                 input-size="col-sm-6 col-lg-6 col-xl-6"
               %}
-
               <fieldset class="form-group">
                 <label class="control-label col-md-3" for="">Notes</label>
                 <div class="col-md-6">
                   <textarea class="form-control"></textarea>
                 </div>
               </fieldset>
-
               <hr class="dashed">
-
               <div class="collapse" id="custom-form">
                 <p class="lead">Custom Form Title</p>
                 <fieldset class="form-group">
@@ -116,9 +110,10 @@
                     <a class="btn btn-primary" href="#custom-form" data-toggle="collapse">Add</a>
                   </div>
                 </div>
+
             </div>
           </div>
-          <div class="tab-pane" id="invoice-tab">
+          <div class="tab-pane" id="edit-invoice-tab">
             <p class="lead">Invoice</p>
             <table class="table table-stripped">
               <thead>
@@ -134,16 +129,16 @@
               <tbody>
                 <tr>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">Graphic Design</option>
                     </select>
                   </td>
                   <td><p class="">200</p></td>
                   <td>
-                    <input class="form-control" type="number" value="1">
+                    <input class="form-control input-sm" type="number" value="1">
                   </td>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">No Tax</option>
                     </select>
                   </td>
@@ -152,16 +147,16 @@
                 </tr>
                 <tr>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">Graphic Design</option>
                     </select>
                   </td>
                   <td><p class="">200</p></td>
                   <td>
-                    <input class="form-control" type="number" value="1">
+                    <input class="form-control input-sm" type="number" value="1">
                   </td>
                   <td>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control input-sm" name="" id="">
                       <option value="">No Tax</option>
                     </select>
                   </td>
@@ -175,14 +170,16 @@
             <div class="row">
               <div class="col-md-7">
                 <p class="lead">Payment Method</p>
-                {% include components/atoms/select.html 
-                  label=""
-                  text="service"
-                  placeholder="Select Payment Method"
-                  list-value-name=site.data.list-value.payment-method
-                  label-size=""
-                  input-size=""
-                %}
+                <div class="radio btn-radio">
+                  <label>
+                    <input name="optionsRadios" type="radio" value="option1" checked="">Debit / Credit Card
+                  </label>
+                </div>
+                <div class="radio btn-radio">
+                  <label>
+                    <input name="optionsRadios" type="radio" value="option1" checked="">Cash
+                  </label>
+                </div>
                 <hr class="dashed">
                 <a class="btn btn-default" href=""><i class="fas fa-file-download"></i> Download PDF</a>
                 <a class="btn btn-default" href=""><i class="fas fa-print"></i> Print Invoice</a>
@@ -210,7 +207,7 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane" id="messages-tab">
+          <div class="tab-pane" id="edit-messages-tab">
             <p class="lead">Messages</p>
             <div class="panel-group" id="messages">
               <div class="panel panel-default">

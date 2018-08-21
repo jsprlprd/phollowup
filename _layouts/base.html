@@ -105,13 +105,14 @@
       $("#daterangepicker").daterangepicker({
         "singleDatePicker": true,
         "showDropdowns": true,
+        "alwaysShowCalendars": true,
         "timePicker": true,
         "timePickerIncrement": 15,
         "linkedCalendars": false,
         "showCustomRangeLabel": false,
         "parentEl": "datepicker",
         "opens": "left",
-        "drops": "up",
+        "drops": "down",
         "locale": {
           format: 'MMM DD, YYYY - hh:mm A'
         }
@@ -123,15 +124,15 @@
 
 
     <script>
-      $('#select-beast').selectize({
+      $('#new-appointment-customer, #edit-appointment-customer').selectize({
         create: true,
         createOneBlur: true,
         addPrecedence: true,
-        render: {
-          option_create: function (data, escape) {
-            return '<div class="create">Add <strong>' + escape(data.input) + '</strong> as a customer</div>';
-          }
-        },
+        // render: {
+        //   option_create: function (data, escape) {
+        //     return '<div class="create">Add <strong>' + escape(data.input) + '</strong> as a customer</div>';
+        //   }
+        // },
       });
     </script>
   </body>

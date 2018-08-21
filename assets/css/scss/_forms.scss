@@ -117,7 +117,7 @@ output {
   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: $padding-base-vertical $padding-base-vertical;
   font-size: $font-size-base;
-  line-height: $line-height-base;
+  line-height: $line-height-computed;
   color: $input-color;
   background-color: $input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
@@ -161,6 +161,9 @@ output {
 // Reset height for `textarea`s
 textarea.form-control {
   height: auto;
+
+  min-height: 75px;
+  resize: vertical;
 }
 
 
@@ -215,6 +218,77 @@ input[type="search"] {
 .form-group {
   margin-bottom: $form-group-margin-bottom;
 }
+
+.form-month-control {
+  width: 40%;
+}
+
+.form-day-control {
+  width: 25%;
+}
+
+.form-year-control {
+  width: 30%;
+}
+
+.form-month-control,
+.form-day-control,
+.form-year-control {
+  float: left;
+  display: inline-block;
+  margin-right: 2.5%;
+}
+
+
+.form-date-group {
+  // display: inline-block;
+
+  .form-control {
+    display: inline-block;
+    // width: auto; // Prevent labels from stacking above inputs in `.form-group`
+    vertical-align: middle;
+    margin-right: 2.5%;
+    margin-left: -4px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.form-name-group {
+  // display: inline-block;
+
+  .form-control {
+    display: inline-block;
+    // width: auto; // Prevent labels from stacking above inputs in `.form-group`
+    vertical-align: middle;
+    width: 48.75%;
+    margin-right: 2.5%;
+    margin-left: -4px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.form-required {
+  .form-control {
+    border-left: 2px solid #e01d3c;
+    padding-left: 6px;
+  }
+
+  select.form-control {
+    padding-left: 2px;
+  }
+}
+
+
 
 
 // Checkboxes and radios
@@ -452,8 +526,8 @@ input[type="checkbox"] {
 
 .help-block {
   display: block; // account for any element using help-block
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  // margin-bottom: 10px;
   color: lighten($text-color, 25%); // lighten the text some for contrast
 }
 

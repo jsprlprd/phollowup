@@ -80,7 +80,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base) - 1) !defa
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    'Lato', sans-serif !default;
 $headings-font-weight:    500 !default;
-$headings-line-height:    1.1 !default;
+$headings-line-height:    1.125 !default;
 $headings-color:          $gray-900 !default;
 
 
@@ -223,7 +223,7 @@ $input-border-focus:             $brand-primary !default;
 $input-color-placeholder:        $gray-500 !default;
 
 //** Default `.form-control` height
-$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2)) !default;
 //** Large `.form-control` height
 $input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2) !default;
 //** Small `.form-control` height

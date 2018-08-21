@@ -1,0 +1,23 @@
+- text: Married
+  value: married
+
+- text: Single
+  value: single
+
+- text: Divorced
+  value: divorced
+
+- text: De-facto
+  value: de-facto
+
+- text: Separated
+  value: separated
+
+- text: Widowed
+  value: widowed
+
+- text: Other
+  value: other
+
+- text: Unknown
+  value: unknown

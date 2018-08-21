@@ -7,7 +7,7 @@ side-menu:
   url:
 - text: Calendar
   icon: far fa-calendar
-  url: appointment.html
+  url: app/appointment.html
 - text: Online Booking
   icon: fas fa-address-book
   url:
@@ -16,7 +16,7 @@ side-menu:
   url:
 - text: Customers
   icon: fas fa-users
-  url:
+  url: app/customers/
 - text: Conversations
   icon: fas fa-comments
   url:
@@ -25,6 +25,18 @@ side-menu:
   url:
 
 ---
+
+
+<div class="heading">
+  <div class="row">
+    <div class="col-md-8">
+      <h1 class="heading-title h3">{{ page.heading-title }}</h1>
+    </div>
+    <div class="col-md-4 text-right">{{ page.heading-button }}</div>
+  </div>
+  <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
+</div>
+
 
 {{ content }}
 

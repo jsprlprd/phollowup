@@ -1,0 +1,21 @@
+- text: Cash
+  value: cash
+
+- text: Credit
+  value: credit-card
+
+- text: Debit
+  value: debit-card
+
+- text: PayMaya
+  value: paymaya
+
+- text: Gcash
+  value: gcash
+
+- text: Gift Card
+  value: gift-card
+
+- text: Employee Discount
+  value: employee-dDiscount
+
