@@ -1,28 +1,58 @@
 <div class="popover-content hidden" id="view-appointment-popover">
-  <div class="popover-header">
-    <span class="label label-default">Regular Customer</span>
-    <span class="label label-primary">Online Booking</span>
-    <h6 class="popover-header-title h4">Jasper Lepardo</h6>
-    <ul class="list-inline" style="margin-top: 4px;">
-      <li>(0917) 116 1268</li>
-      <li>May 12, 1993</li>
+  <div class="popover-heading">
+    <h6 class="popover-heading-title h4">The Essenses Signature Massage</h6>
+    <hr class="popover-heading-divider">
+    <ul class="list list-icon list-icon-inverse popover-heading-details">
+      <li><i class="list-item-icon far fa-clock"></i>Monday, August 13, 2018 <span>at</span> 09:00am <span>for</span> 60 mins</li>
+      <li><i class="list-item-icon far fa-user"></i>Babbie Copperwaite - <em>Therapist</em></li>
     </ul>
-    <a class="btn btn-default" href="#edit-appointment" data-toggle="modal">Edit Appointment</a>
+
+    <a class="btn btn-default btn-sm btn-wide" href="#edit-appointment" data-toggle="modal">Edit</a>
+    <a class="btn btn-default btn-sm btn-wide" href="#reschedule-appointment" data-toggle="collapse">Reschedule</a>
+    <a class="btn btn-default btn-sm btn-wide" href="#cancel-appointment" data-toggle="collapse">Cancel</a>
+    
+    <div class="collapse" id="reschedule-appointment">
+      <div class="" style="padding: 8px 16px 12px; background-color: rgba(0, 0, 0, .25); margin-top: 16px;">
+        <fieldset class="form-group">
+          <label class="control-label" for="">Set New Time &amp; Date</label>
+          <div class="">
+            <input type="text" id="reschedule-appointment-datetimepicker" class="form-control">
+          </div>
+        </fieldset>
+        <a class="btn btn-success btn-sm" href="">Save Changes</a>
+      </div>
+    </div>
+
+    <div class="collapse" id="cancel-appointment">
+      <div class="" style="padding: 8px 16px 12px; background-color: rgba(0, 0, 0, .25); margin-top: 16px; text-align: center;">
+        <p>Are you sure you want to cancel this appointment?</p>
+        <a class="btn btn-default btn-sm" href="">No</a>
+        <a class="btn btn-danger btn-sm" href="">Yes, Cancel Appointment</a>
+      </div>
+    </div>
   </div>
-  <table class="table">
-    <tbody>
-      <tr>
-        <td class="text-muted">Service</td>
-        <td class="text-right">Graphic Design</td>
-      </tr>
-      <tr>
-        <td class="text-muted">Duration</td>
-        <td class="text-right">60 Minutes</td>
-      </tr>
-      <tr>
-        <td class="text-muted">Date &amp; Time</td>
-        <td class="text-right">Monday, August 13 <br> <small>09:00am - 10:00am</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="popover-body">
+    <div class="heading">
+      <div class="heading-status">
+        <span class="label label-success">Confirmed</span>
+        <!-- <span class="label label-default">Pending</span> -->
+        <!-- <span class="label label-warning">Rescheduled</span> -->
+        <!-- <span class="label label-danger">Cancelled</span> -->
+        <span class="label label-primary">Online Booking</span>
+      </div>
+
+      <h6 class="heading-title h5"><a href="{{ site.baseurl }}/app/customers/jasper-lepardo.html">Jasper John Lepardo</a></h6>
+      <p class="heading-subtitle">67% punctuality (2/3)</p>
+    </div>
+    <ul class="list list-icon list-icon-default">
+      <li><i class="list-item-icon fas fa-phone"></i><a href="">(0917) 116 1268</a></li>
+      <li><i class="list-item-icon fas fa-envelope"></i><a href="">jsprlprd@gmail.com</a></li>
+      <li><i class="list-item-icon fas fa-birthday-cake"></i>May 12, 1993</li>
+      <li><i class="list-item-icon fas fa-sticky-note"></i><em class="text-muted">No Notes</em></li>
+    </ul>
+  </div>
+  <div class="popover-footer">
+    <a class="btn btn-primary" href="" style="width: 260px;">Attended</a>
+    <a class="btn btn-default" href="">No Show</a>
+  </div>
 </div>

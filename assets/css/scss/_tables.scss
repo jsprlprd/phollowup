@@ -81,6 +81,54 @@ th {
 }
 
 
+
+
+
+
+
+
+
+
+// Condensed table w/ half padding
+
+.table-sm {
+  // > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      // > th,
+      > td {
+        padding-top: $table-sm-cell-padding;
+        padding-bottom: $table-sm-cell-padding;
+      }
+    }
+  }
+}
+
+// Condensed table w/ half padding
+
+.table-lg {
+  // > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      // > th,
+      > td {
+        padding-top: $table-lg-cell-padding;
+        padding-bottom: $table-lg-cell-padding;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 // Bordered version
 //
 // Add borders all around the table and between all the columns.

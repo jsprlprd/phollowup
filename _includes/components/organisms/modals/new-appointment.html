@@ -4,7 +4,7 @@
       <div class="modal-header">
         <button class="close" type="button">&times;</button>
         <h6 class="modal-title h3">New Appointment</h6>
-        <ul class="nav nav-tabs" style="margin-bottom: -5px;">
+        <ul class="nav nav-tabs">
           <li class="active"><a href="#appointment-details-tab" data-toggle="tab">Appointment Details</a></li>
           <li><a href="#customer-details-tab" data-toggle="tab">Customer Details</a></li>
           <li><a href="#invoice-tab" data-toggle="tab">Invoice</a></li>
@@ -36,9 +36,9 @@
               %}
 
               <fieldset class="form-group">
-                <label class="control-label col-md-3" for="">Date & Time</label>
+                <label class="control-label col-md-3" for="">Date &amp; Time</label>
                 <div class="col-md-6">
-                  <input type="text" id="daterangepicker" class="form-control" />
+                  <input type="text" id="new-appointment-datetimepicker" class="form-control" />
                 </div>
               </fieldset>
             </div>
@@ -59,7 +59,8 @@
                   <span class="help-block"><a href="">Add new customer</a></span>
                 </div>
               </fieldset>
-             <fieldset class="form-group">
+
+              <fieldset class="form-group">
                 <label class="control-label col-md-3" for="">Mobile Number</label>
                 <div class="col-md-6">
                   <div class="input-group">
@@ -71,6 +72,7 @@
                   <span class="help-block"><a href="">Add another mobile number</a></span>
                 </div>
               </fieldset>
+
               <fieldset class="form-group">
                 <label class="control-label col-md-3" for="">Email Address</label>
                 <div class="col-md-6">
@@ -82,8 +84,8 @@
               {% include components/molecules/birthday-select.html 
                 label="Birthday (Optional)"
                 name="birthday"
-                label-size="col-sm-4 col-lg-3 col-xl-2"
-                input-size="col-sm-6 col-lg-6 col-xl-6"
+                label-size="col-md-3"
+                input-size="col-md-6"
               %}
 
               <fieldset class="form-group">
@@ -138,7 +140,7 @@
                       <option value="">Graphic Design</option>
                     </select>
                   </td>
-                  <td><p class="">200</p></td>
+                  <td><p class="form-control-static">200</p></td>
                   <td>
                     <input class="form-control" type="number" value="1">
                   </td>
@@ -147,7 +149,7 @@
                       <option value="">No Tax</option>
                     </select>
                   </td>
-                  <td><p class="">200</p></td>
+                  <td><p class="form-control-static">200</p></td>
                   <td><a class="btn btn-danger btn-sm" href="">&times;</a></td>
                 </tr>
                 <tr>
@@ -156,7 +158,7 @@
                       <option value="">Graphic Design</option>
                     </select>
                   </td>
-                  <td><p class="">200</p></td>
+                  <td><p class="form-control-static">200</p></td>
                   <td>
                     <input class="form-control" type="number" value="1">
                   </td>
@@ -165,7 +167,7 @@
                       <option value="">No Tax</option>
                     </select>
                   </td>
-                  <td><p class="">200</p></td>
+                  <td><p class="form-control-static">200</p></td>
                   <td><a class="btn btn-danger btn-sm" href="">&times;</a></td>
                 </tr>
               </tbody>
@@ -173,21 +175,7 @@
             <a class="btn btn-default" href="">Add New Item</a>
             <hr class="dashed">
             <div class="row">
-              <div class="col-md-7">
-                <p class="lead">Payment Method</p>
-                {% include components/atoms/select.html 
-                  label=""
-                  text="service"
-                  placeholder="Select Payment Method"
-                  list-value-name=site.data.list-value.payment-method
-                  label-size=""
-                  input-size=""
-                %}
-                <hr class="dashed">
-                <a class="btn btn-default" href=""><i class="fas fa-file-download"></i> Download PDF</a>
-                <a class="btn btn-default" href=""><i class="fas fa-print"></i> Print Invoice</a>
-              </div>
-              <div class="col-md-5">
+              <div class="col-md-5 col-md-push-7">
                 <div class="well">
                   <p class="lead">Summary</p>
                   <table class="table">
@@ -208,6 +196,20 @@
                   </table>
                 </div>
               </div>
+              <div class="col-md-7 col-md-pull-5">
+                <p class="lead">Payment Method</p>
+                {% include components/atoms/select.html 
+                  label=""
+                  text="service"
+                  placeholder="Select Payment Method"
+                  list-value-name=site.data.list-value.payment-method
+                  label-size=""
+                  input-size=""
+                %}
+                <hr class="dashed">
+                <a class="btn btn-default" href=""><i class="fas fa-file-download"></i> Download PDF</a>
+                <a class="btn btn-default" href=""><i class="fas fa-print"></i> Print Invoice</a>
+              </div>
             </div>
           </div>
           <div class="tab-pane" id="messages-tab">
@@ -216,9 +218,9 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <div class="pull-right">
-                    <label class="switch">
+                    <label class="form-control-switch">
                       <input type="checkbox" checked="">
-                      <span class="slider"></span>
+                      <span class="form-control-switch-indicator"></span>
                     </label>
                   </div>
                   <h4 class="panel-title">
@@ -227,22 +229,62 @@
                 </div>
                 <div class="panel-collapse collapse in" id="confirmation-message-panel">
                   <div class="panel-body">
-                    <p>Sent to your customer the moment you create their appointment.</p>
-                    <ul>
-                      <li>Reduces no-shows by leaving a trace on their phone</li>
-                      <li>No more “When is my appointment again?” calls</li>
-                      <li>More effective than a reminder card</li>
-                    </ul>
-                    <fieldset class="form-group">
-                      <textarea class="form-control"></textarea>
-                      <span class="help-block">0/300 Characters</span>
-                    </fieldset>
-                    <div class="dropdown">
-                      <a class="btn btn-default" data-toggle="dropdown" href="#">Add Dynamic Elements</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #2</a></li>
-                      </ul>
+                    <div class="row d-flex">
+                      <div class="col-md-8 d-flex flex-column">
+                        <!-- <div class="alert alert-info">
+                          <p><strong>Sent to your customer the moment you create their appointment.</strong></p>
+                          <ul>
+                            <li>Reduces no-shows by leaving a trace on their phone</li>
+                            <li>No more “When is my appointment again?” calls</li>
+                            <li>More effective than a reminder card</li>
+                          </ul>
+                        </div> -->
+                        <fieldset class="form-group">
+                          <label class="control-label" for="">Message</label>
+                          <textarea class="form-control"></textarea>
+                          <span class="help-block">0/300 Characters</span>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-4 d-flex">
+                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
+                          <p><strong>Dynamic Elements</strong></p>
+                          <ul class="list list-unstyled list-inline list-sm">
+                            <li title="The customer's full name" data-value="#FULLNAME">
+                              <a class="label label-primary">#FULLNAME</a>
+                            </li>
+                            <li title="The customer's first name" data-value="#FIRSTNAME">
+                              <a class="label label-primary">#FIRSTNAME</a>
+                            </li>
+                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                              <a class="label label-primary">#APPTYPE</a>
+                            </li>
+                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                              <a class="label label-primary">#BKLNK</a>
+                            </li>
+                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                              <a class="label label-primary">#BRANCH</a>
+                            </li>
+                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                              <a class="label label-primary">#DATE</a>
+                            </li>
+                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                              <a class="label label-primary">#TIME</a>
+                            </li>
+                            <li title="URL link to customer's invoice" data-value="#INVLNK">
+                              <a class="label label-primary">#INVLNK</a>
+                            </li>
+                            <li title="Employee first name" data-value="#EMPFN">
+                              <a class="label label-primary">#EMPFN</a>
+                            </li>
+                            <li title="Branch phone number" data-value="#BRNCHNO">
+                              <a class="label label-primary">#BRNCHNO</a>
+                            </li>
+                            <li title="Confirmation link" data-value="#CONFLNK">
+                              <a class="label label-primary">#CONFLNK</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -250,9 +292,9 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <div class="pull-right">
-                    <label class="switch">
+                    <label class="form-control-switch">
                       <input type="checkbox" checked="">
-                      <span class="slider"></span>
+                      <span class="form-control-switch-indicator"></span>
                     </label>
                   </div>
                   <h4 class="panel-title">
@@ -261,21 +303,61 @@
                 </div>
                 <div class="panel-collapse collapse" id="reminder-message-panel">
                   <div class="panel-body">
-                    <p>A reminder automatically sent 24h before their appointment.</p>
-                    <ul>
-                      <li>Proven to be the optimal timeframe to reduce no-shows</li>
-                      <li>More effective than a phone call- especially during work hours</li>
-                    </ul>
-                    <fieldset class="form-group">
-                      <textarea class="form-control"></textarea>
-                      <span class="help-block">0/300 Characters</span>
-                    </fieldset>
-                    <div class="dropdown">
-                      <a class="btn btn-default" data-toggle="dropdown" href="#">Add Dynamic Elements</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #2</a></li>
-                      </ul>
+                    <div class="row d-flex">
+                      <div class="col-md-8 d-flex flex-column">
+                        <!-- <div class="alert alert-info">
+                          <p><strong>A reminder automatically sent 24h before their appointment.</strong></p>
+                          <ul>
+                            <li>Proven to be the optimal timeframe to reduce no-shows</li>
+                            <li>More effective than a phone call- especially during work hours</li>
+                          </ul>
+                        </div> -->
+                        <fieldset class="form-group">
+                          <label class="control-label" for="">Message</label>
+                          <textarea class="form-control"></textarea>
+                          <span class="help-block">0/300 Characters</span>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-4 d-flex">
+                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
+                          <p><strong>Dynamic Elements</strong></p>
+                          <ul class="list list-unstyled list-inline list-sm">
+                            <li title="The customer's full name" data-value="#FULLNAME">
+                              <a class="label label-primary">#FULLNAME</a>
+                            </li>
+                            <li title="The customer's first name" data-value="#FIRSTNAME">
+                              <a class="label label-primary">#FIRSTNAME</a>
+                            </li>
+                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                              <a class="label label-primary">#APPTYPE</a>
+                            </li>
+                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                              <a class="label label-primary">#BKLNK</a>
+                            </li>
+                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                              <a class="label label-primary">#BRANCH</a>
+                            </li>
+                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                              <a class="label label-primary">#DATE</a>
+                            </li>
+                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                              <a class="label label-primary">#TIME</a>
+                            </li>
+                            <li title="URL link to customer's invoice" data-value="#INVLNK">
+                              <a class="label label-primary">#INVLNK</a>
+                            </li>
+                            <li title="Employee first name" data-value="#EMPFN">
+                              <a class="label label-primary">#EMPFN</a>
+                            </li>
+                            <li title="Branch phone number" data-value="#BRNCHNO">
+                              <a class="label label-primary">#BRNCHNO</a>
+                            </li>
+                            <li title="Confirmation link" data-value="#CONFLNK">
+                              <a class="label label-primary">#CONFLNK</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -283,9 +365,9 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <div class="pull-right">
-                    <label class="switch">
+                    <label class="form-control-switch">
                       <input type="checkbox" checked="">
-                      <span class="slider"></span>
+                      <span class="form-control-switch-indicator"></span>
                     </label>
                   </div>
                   <h4 class="panel-title">
@@ -294,23 +376,75 @@
                 </div>
                 <div class="panel-collapse collapse" id="after-appointment-message-panel">
                   <div class="panel-body">
-                    <p>Sent to your customer after their appointment has ended.</p>
-                    <p>Send [] fter the appointment has ended.</p>
-                    <ul>
-                      <li>Show them your appreciation for their visit earlier</li>
-                      <li>Offer a promotion if they come back and/or refer friends</li>
-                      <li>Establish your recommended visit frequency for them to come back</li>
-                    </ul>
-                    <fieldset class="form-group">
-                      <textarea class="form-control"></textarea>
-                      <span class="help-block">0/300 Characters</span>
-                    </fieldset>
-                    <div class="dropdown">
-                      <a class="btn btn-default" data-toggle="dropdown" href="#">Add Dynamic Elements</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #2</a></li>
-                      </ul>
+                    <div class="row d-flex">
+                      <div class="col-md-8 d-flex flex-column">                        <!-- <div class="alert alert-info">
+                          <p><strong>Sent to your customer after their appointment has ended.</strong></p>
+                          <ul>
+                            <li>Show them your appreciation for their visit earlier</li>
+                            <li>Offer a promotion if they come back and/or refer friends</li>
+                            <li>Establish your recommended visit frequency for them to come back</li>
+                          </ul>
+                        </div> -->
+                        <fieldset class="form-group">
+                          <label class="control-label" for="">In how long should we sent the reminder?</label>
+                          <div class="input-group">
+                            <input class="form-control" type="number">
+                            <span class="input-group-btn dropdown">
+                              <a class="btn btn-default" data-toggle="dropdown" href="#">Minutes</a>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="">Minutes</a></li>
+                                <li><a href="">Hours</a></li>
+                                <li><a href="">Days</a></li>
+                              </ul>
+                            </span>
+                          </div>
+                        </fieldset>
+                        <fieldset class="form-group">
+                          <label class="control-label" for="">Message</label>
+                          <textarea class="form-control"></textarea>
+                          <span class="help-block">0/300 Characters</span>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-4 d-flex">
+                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
+                          <p><strong>Dynamic Elements</strong></p>
+                          <ul class="list list-unstyled list-inline list-sm">
+                            <li title="The customer's full name" data-value="#FULLNAME">
+                              <a class="label label-primary">#FULLNAME</a>
+                            </li>
+                            <li title="The customer's first name" data-value="#FIRSTNAME">
+                              <a class="label label-primary">#FIRSTNAME</a>
+                            </li>
+                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                              <a class="label label-primary">#APPTYPE</a>
+                            </li>
+                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                              <a class="label label-primary">#BKLNK</a>
+                            </li>
+                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                              <a class="label label-primary">#BRANCH</a>
+                            </li>
+                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                              <a class="label label-primary">#DATE</a>
+                            </li>
+                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                              <a class="label label-primary">#TIME</a>
+                            </li>
+                            <li title="URL link to customer's invoice" data-value="#INVLNK">
+                              <a class="label label-primary">#INVLNK</a>
+                            </li>
+                            <li title="Employee first name" data-value="#EMPFN">
+                              <a class="label label-primary">#EMPFN</a>
+                            </li>
+                            <li title="Branch phone number" data-value="#BRNCHNO">
+                              <a class="label label-primary">#BRNCHNO</a>
+                            </li>
+                            <li title="Confirmation link" data-value="#CONFLNK">
+                              <a class="label label-primary">#CONFLNK</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -318,9 +452,9 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <div class="pull-right">
-                    <label class="switch">
+                    <label class="form-control-switch">
                       <input type="checkbox" checked="">
-                      <span class="slider"></span>
+                      <span class="form-control-switch-indicator"></span>
                     </label>
                   </div>
                   <h4 class="panel-title">
@@ -328,22 +462,76 @@
                   </h4>
                 </div><div class="panel-collapse collapse" id="long-term-followup-message-panel">
                   <div class="panel-body">
-                    <p>Our most popular feature. Sent to customers who haven’t visited you after a certain duration. </p>
-                    <p>Send [] After the latest appointment.</p>
-                    <ul>
-                      <li>Make your existing customers come more frequently</li>
-                      <li>Offer a promotion to make lost customers come back</li>
-                    </ul>
-                    <fieldset class="form-group">
-                      <textarea class="form-control"></textarea>
-                      <span class="help-block">0/300 Characters</span>
-                    </fieldset>
-                    <div class="dropdown">
-                      <a class="btn btn-default" data-toggle="dropdown" href="#">Add Dynamic Elements</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Link #1</a></li>
-                        <li><a href="#">Link #2</a></li>
-                      </ul>
+                    <div class="row d-flex">
+                      <div class="col-md-8 d-flex flex-column">
+                        <!-- <div class="alert alert-info">
+                          <p>Our most popular feature. Sent to customers who haven’t visited you after a certain duration. </p>
+                          <p>Send [] After the latest appointment.</p>
+                          <ul>
+                            <li>Make your existing customers come more frequently</li>
+                            <li>Offer a promotion to make lost customers come back</li>
+                          </ul>
+                        </div> -->
+                        <fieldset class="form-group">
+                          <label class="control-label" for="">In how long should we sent the reminder?</label>
+                          <div class="input-group">
+                            <input class="form-control" type="number">
+                            <span class="input-group-btn dropdown">
+                              <a class="btn btn-default" data-toggle="dropdown" href="#">Minutes</a>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="">Minutes</a></li>
+                                <li><a href="">Hours</a></li>
+                                <li><a href="">Days</a></li>
+                              </ul>
+                            </span>
+                          </div>
+                        </fieldset>
+                        <fieldset class="form-group">
+                          <label class="control-label" for="">Message</label>
+                          <textarea class="form-control"></textarea>
+                          <span class="help-block">0/300 Characters</span>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-4 d-flex">
+                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
+                          <p><strong>Dynamic Elements</strong></p>
+                          <ul class="list list-unstyled list-inline list-sm">
+                            <li title="The customer's full name" data-value="#FULLNAME">
+                              <a class="label label-primary">#FULLNAME</a>
+                            </li>
+                            <li title="The customer's first name" data-value="#FIRSTNAME">
+                              <a class="label label-primary">#FIRSTNAME</a>
+                            </li>
+                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                              <a class="label label-primary">#APPTYPE</a>
+                            </li>
+                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                              <a class="label label-primary">#BKLNK</a>
+                            </li>
+                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                              <a class="label label-primary">#BRANCH</a>
+                            </li>
+                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                              <a class="label label-primary">#DATE</a>
+                            </li>
+                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                              <a class="label label-primary">#TIME</a>
+                            </li>
+                            <li title="URL link to customer's invoice" data-value="#INVLNK">
+                              <a class="label label-primary">#INVLNK</a>
+                            </li>
+                            <li title="Employee first name" data-value="#EMPFN">
+                              <a class="label label-primary">#EMPFN</a>
+                            </li>
+                            <li title="Branch phone number" data-value="#BRNCHNO">
+                              <a class="label label-primary">#BRNCHNO</a>
+                            </li>
+                            <li title="Confirmation link" data-value="#CONFLNK">
+                              <a class="label label-primary">#CONFLNK</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

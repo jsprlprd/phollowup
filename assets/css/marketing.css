@@ -1,0 +1,141 @@
+
+
+
+
+
+#pricing-banner {
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 313px;
+  background-image: url(../img/pricing-and-faq-banner.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+#pricing-banner .heading {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+
+#pricing-banner .heading-title {
+  font-size: 44px;
+  color: #FAFAFA;
+}
+
+#pricing-banner .heading-subtitle {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #F1F2F3;
+}
+
+#pricing-plan {
+  margin-top: -313px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.panel-body-heading {
+  margin-bottom: 32px;
+}
+
+.panel-body-heading-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.panel-body-heading-subtitle {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+
+
+#basic-pricing-plan,
+#pro-pricing-plan {
+  text-align: center;
+}
+
+
+#basic-pricing-plan .panel-body,
+#pro-pricing-plan .panel-body {
+  padding: 40px;
+}
+
+
+#basic-pricing-plan .cta,
+#pro-pricing-plan .cta {
+  margin-top: 24px;
+  min-width: 240px;
+}
+
+
+#basic-pricing-plan .price,
+#pro-pricing-plan .price {
+  color: #007bfe;
+  font-size: 54px;
+  margin-bottom: 0;
+  line-height: 1.125;
+}
+
+
+#basic-pricing-plan .price small,
+#pro-pricing-plan .price small {
+  color: #727272;
+  font-size: 24px;
+}
+
+
+#basic-pricing-plan .panel-footer,
+#pro-pricing-plan .panel-footer {
+  padding: 40px;
+  text-align: left;
+  min-height: 410px;
+}
+
+#basic-pricing-plan .panel-footer .list-unstyled,
+#pro-pricing-plan .panel-footer .list-unstyled {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+#basic-pricing-plan .panel-footer .list-unstyled li,
+#pro-pricing-plan .panel-footer .list-unstyled li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 56px;
+  position: relative;
+}
+
+
+
+
+
+#basic-pricing-plan .list-unstyled li::before,
+#pro-pricing-plan .list-unstyled li:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 24px;
+  position: absolute;
+  /* left: -20px; */
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  left: 0;
+  /* left: -15px; */
+  content: '\f058';
+  color: #007bfe;
+}
+
+
+

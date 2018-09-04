@@ -5,11 +5,13 @@
 
 .close {
   float: right;
-  font-size: ($font-size-base * 1.5);
-  font-weight: $close-font-weight;
-  line-height: 1;
+  font-size: ($font-size-base * 1.7148);
+  // font-weight: $close-font-weight;
+  // line-height: 1;
+  line-height: 40px;
+  width: 40px;
   color: $close-color;
-  text-shadow: $close-text-shadow;
+  // text-shadow: $close-text-shadow;
   @include opacity(.2);
 
   &:hover,

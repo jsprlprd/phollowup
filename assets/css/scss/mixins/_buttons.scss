@@ -62,4 +62,19 @@
   font-size: $font-size;
   line-height: $line-height;
   border-radius: $border-radius;
+
+  &.btn-wide {
+    padding-left: ($padding-horizontal * 1.5);
+    padding-right: ($padding-horizontal * 1.5);
+  }
+
+  &.btn-wider {
+    padding-left: ($padding-horizontal * 2.5);
+    padding-right: ($padding-horizontal * 2.5);
+  }
+
+  &.btn-widest {
+    padding-left: ($padding-horizontal * 3.5);
+    padding-right: ($padding-horizontal * 3.5);
+  }
 }

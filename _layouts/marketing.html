@@ -1,0 +1,65 @@
+---
+layout: base
+
+side-menu:
+- text: Dashboard
+  icon: fas fa-tachometer-alt
+  url:
+- text: Calendar
+  icon: far fa-calendar
+  url: app/appointment.html
+- text: Online Booking
+  icon: fas fa-address-book
+  url:
+- text: Invoicing
+  icon: fas fa-shopping-cart
+  url:
+- text: Customers
+  icon: fas fa-users
+  url: app/customers/
+- text: Conversations
+  icon: fas fa-comments
+  url:
+- text: Settings
+  icon: fas fa-cogs
+  url:
+
+layout-styles: marketing
+
+---
+
+<header class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2" type="button">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
+      </a>
+    </div>
+    <nav class="collapse navbar-collapse" id="navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li><a href="{{ site.baseurl }}/">Features</a></li>
+        <li><a href="{{ site.baseurl }}/pricing-and-faq.html">Pricing &amp; FAQ</a></li>
+      </ul>
+      <div class="navbar-right">
+        <a class="btn btn-link btn-wide navbar-btn" href="">Create Free Account</a>
+        <a class="btn btn-primary btn-wide navbar-btn" href="{{ site.baseurl }}/login.html">Login</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+{{ content }}
+
+<footer style="background-color: #003B50; color: #fff; padding: 40px 0;">
+  <div class="container">
+    <p>© PhollowUp Pte Ltd 2017</p>
+  </div>
+</footer>
+
+
+
