@@ -29,7 +29,6 @@ $(document).on('click', function (e) {
 
 
 
-
 var tabs = $('.tabs');
 var items = $('.tabs').find('a').length;
 var selector = $(".tabs").find(".selector");
