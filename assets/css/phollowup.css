@@ -6833,7 +6833,7 @@ button.close {
 }
 
 .modal-header {
-  padding: 16px;
+  padding: 24px;
   border-bottom: 1px solid #e5e5e5;
 }
 .modal-header:before, .modal-header:after {
@@ -6854,11 +6854,11 @@ button.close {
 
 .modal-body {
   position: relative;
-  padding: 16px;
+  padding: 24px;
 }
 
 .modal-footer {
-  padding: 16px;
+  padding: 24px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
 }
@@ -6888,7 +6888,7 @@ button.close {
   overflow: scroll;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .modal-dialog {
     width: 800px;
     margin: 80px auto 120px;
@@ -6903,7 +6903,7 @@ button.close {
     width: 400px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1366px) {
   .modal-lg {
     width: 1200px;
   }

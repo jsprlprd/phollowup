@@ -50,12 +50,6 @@
 
 
 
-
-
-
-
-
-
 .navbar-default {
     background-color: #FFFFFF;
     border: 0;
@@ -169,32 +163,25 @@
 
 
 
-.wrapper{
-    /* text-align:center; */
-    /* margin:50px auto; */
-    margin-top: 16px;
+.wrapper {
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: -24px;
     overflow: hidden;
     overflow-x: auto;
   }
   
   .tabs{
-    /* margin-top:50px; */
-    /* font-size:15px; */
-    /* padding:0px; */
-    /* list-style:none; */
-    /* background:#fff; */
-    /* box-shadow:0px 5px 20px rgba(0,0,0,0.1); */
     display: flex;
-    /* border-radius:50px; */
     position:relative;
+
   }
   
   .tabs a{
     text-decoration:none;
     color: #eee;
-    /* text-transform:uppercase; */
-    padding: 12px 24px 16px;
-    display:inline-block;
+    padding: 16px 24px 12px;
+    display: inline-flex;
     position:relative;
     z-index:1;
     transition-duration:0.6s;
@@ -217,14 +204,9 @@
     left:0px;
     bottom: 0px;
     z-index:1;
-    border-radius:50px;
     transition-duration:0.6s;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background: #05abe0;
-    background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
-    background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
     background: orange;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
   }
 
 
@@ -240,14 +222,14 @@
 #new-appointment .modal-body,
 #edit-appointment .modal-header,
 #edit-appointment .modal-body {
-    padding: 40px;
+    padding: 24px;
 }
 
 #new-appointment .modal-header,
 #edit-appointment .modal-header {
     border: 0;
     background-color: #007bfe;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 #new-appointment .modal-title,
@@ -255,6 +237,7 @@
 #edit-appointment .modal-title,
 #edit-appointment-test .modal-title {
     color: #fff;
+    line-height: 40px;
 }
 
 #new-appointment .nav,
