@@ -4,7 +4,7 @@ layout: base
 side-menu:
 - text: Dashboard
   icon: fas fa-tachometer-alt
-  url:
+  url: app/dashboard.html
 - text: Calendar
   icon: far fa-calendar
   url: app/appointment.html
@@ -22,67 +22,83 @@ side-menu:
   url:
 - text: Settings
   icon: fas fa-cogs
-  url:
+  url: app/settings/services-and-products.html
 
 layout-styles: app
 ---
 
-
-
-<header class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2" type="button">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="">
-        <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
-      </a>
-    </div>
-    <nav class="collapse navbar-collapse" id="navbar-collapse-2">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a class="media" data-toggle="dropdown" href="">
-            <div class="media-left">
-              <img class="media-object img-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
-            </div>
-            <div class="media-body media-middle" style="width: unset;">
-              Jasper Lepardo
-            </div>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Link #1</a></li>
-            <li><a href="#">Link #2</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
 <div id="left-panel">
-  {% include components/nav-pills-stacked.html %}
+  <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2" type="button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="brand" href="">
+    <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
+  </a>
+  
+  {% include components/nav-pills-menu-stacked.html %}
 </div>
 
 <div id="main-panel">
-  <main class="container-fluid">
-
-
-
-<div class="heading">
-  <div class="row">
-    <div class="col-md-8">
-      <h1 class="heading-title h3">{{ page.heading-title }}</h1>
+  <header class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <p class="navbar-brand" href="#">{{ page.heading-title }}</p>
+      </div>
+      <nav class="collapse navbar-collapse" id="navbar-collapse-2">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="" style="line-height: 24px; padding-top: 20px; padding-bottom: 20px; color: #f78002;">Upgrade Now</a>
+          </li>
+          <li><a href="" style="font-size: 18px; line-height: 24px; padding-top: 20px; padding-bottom: 20px;"><i class="far fa-bell"></i></a></li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" href="" aria-expanded="false">
+              <img class="media-object img-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="media" href="">
+                  <div class="media-left">
+                    <img class="media-object img-circle" src="/assets/img/avatar.png" width="48" height="48" alt="">
+                  </div>
+                  <div class="media-body media-middle">
+                    Jasper Lepardo
+                  </div>
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li><a href="#">Link #1</a></li>
+              <li><a href="#">Link #2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="col-md-4 text-right">{{ page.heading-button }}</div>
-  </div>
-  <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
-</div>
+  </header>
 
+  {% if page.subnavbar %}
 
-{{ content }}
+    <div class="subnavbar">
+      <div class="container-fluid">
+          {% include components/nav-menu.html %}
+      </div>
+    </div>
+
+  {% endif %}
+
+  <main class="container-fluid" id="main-content">
+    <!-- <div class="heading">
+      <div class="row">
+        <div class="col-md-8">
+          <h1 class="heading-title h3">{{ page.heading-title }}</h1>
+        </div>
+        <div class="col-md-4 text-right">{{ page.heading-button }}</div>
+      </div>
+      <p class="heading-subtitle">{{ page.heading-subtitle }}</p>
+    </div> -->
+
+    {{ content }}
 
   </main>
 </div>

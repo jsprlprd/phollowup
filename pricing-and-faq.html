@@ -1,5 +1,18 @@
 ---
 layout: marketing
+
+nav-tabs:
+- text: Getting Started
+  url: getting-started
+- text: Features
+  url: features
+- text: Plans
+  url: plans
+- text: Pricing &amp; Payment
+  url: pricing-and-payment
+- text: Privacy &amp; Legal
+  url: privacy-and-legal
+
 ---
 
 <div class="jumbotron" id="pricing-banner">
@@ -64,23 +77,85 @@ layout: marketing
       </div>
     </div>
   </div>
-
-  <div class="heading text-center">
+</div>
+<div class="container" id="faq">
+  <div class="heading">
     <h2 class="heading-title h3">Frequently Asked Question</h2>
+    {% include components/nav-tabs.html %}
   </div>
 
   <div class="row">
-    <div class="col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-      <p class="lead">Frequently Asked Question 1</p>
-      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-      <p class="lead">Frequently Asked Question 1</p>
-      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-    </div>
-    <div class="col-md-5 col-lg-4">
-      <p class="lead">Frequently Asked Question 1</p>
-      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-      <p class="lead">Frequently Asked Question 1</p>
-      <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+      <div class="tab-content">
+        <div class="tab-pane active" id="getting-started-tab">
+          <p class="lead">How do I get started?</p>
+          <p>Creating an account is both quick and free— just click on “Create my Free Account” above. You will have full access to our Online Booking plan for your first 100 appointments. No Credit Card needed. To experiment with our SMS reminders, download the PhollowUp app on your Android phone, and sign in using the same email and password.</p>
+          <p class="lead">Our company doesn’t have a cell phone line. Can we still use SMS reminders?</p>
+          <p>While most of our users prefer sending reminders using their own business cell phone number, it is possible to use PhollowUp’s SMS reminders without providing a cell phone line. You will need to purchase SMS credits from inside the “Subscription” panel. Price varies per country. Alternatively, you could send the reminders by Email instead, at no additional cost.</p>
+          <p class="lead">Can I send automated SMS reminders using an iPhone as my business phone?</p>
+          <p>No, because Apple doesn’t support third-party message sending at the moment (iPhone apps can’t send SMS in the background). If your business currently uses an iPhone, we can provide you a basic Android phone for free when you avail any of our yearly subscriptions.</p>
+          <p class="lead">I can’t seem to find what I’m looking for here in the FAQs. How can I contact you directly?</p>
+          <p>Sorry about that— use the “Assistance” chatbox on the bottom-right or write to us at <a href="">support@phollowup.com</a>. We have offices in Singapore, Kuala Lumpur (Malaysia), Montreal (Canada), Taipei (Taiwan), and Manila (Philippines). If your business is based in one of these cities, we can schedule a meeting for you with one of our representatives.</p>
+        </div>
+        <div class="tab-pane" id="features-tab">
+          <p class="lead">What are automated messages? How do they work?</p>
+          <p>What sets PhollowUp aside from any other calendar system is the level of automation it can bring to your business. We accomplish that by automatically sending multiple SMS (or Emails) to your customers at different steps in their journey. They don’t require any work on your end— simply log your appointments and walk-ins inside your calendar and we take care of all the rest!</p>
+          <p class="lead">What if I don’t have my customers’ phone number?</p>
+          <p>Although PhollowUp works best when you have your customers’ phone number, having their Email address is enough to get you started.</p>
+          <p class="lead">What are the messaging methods you use?</p>
+          <p>Depending on your country, PhollowUp is capable of sending automated reminders to your lients in various ways, including via SMS, Email and very soon through WhatsApp and Viber.</p>
+          <p class="lead">What is the “Confirmation message”?</p>
+          <p>A reminder sent to your customer instantly after they schedule their appointment. Reduces no-shows, miscomprehension and accidental scheduling mishaps on their end.</p>
+          <p class="lead">What is the “Reminder message”?</p>
+          <p>A reminder sent to your customer 24 hours before their appointment. Reduces no-shows and forgotten appointments. You can choose to include a link inside to let them reschedule their own appointment in real-time if they can’t make it.</p>
+          <p class="lead">What is the “After-Appointment message”?</p>
+          <p>A message sent to your customer shortly after their appointment. Inside, you can include your satisfaction survey to get feedback from them, offer any post-treatment advice, and/or recommend them when they should be coming back again. You can include a link for them to book their next appointment in real-time.</p>
+          <p class="lead">What is the “Long-Term Follow-Up message”? (TOP-TIER)</p>
+          <p>A recall sent to your customer if they haven’t visited you after a certain duration. By far our most popular feature, since it helps businesses to increase customer fidelity and make sure that their customers come back again more frequently in the future. You can include a link for them to book their next appointment in real-time. Included inside our top-tier “Online Booking + Retention” plan only.</p>
+          <p class="lead">What is the “Birthday message”? (TOP-TIER)</p>
+          <p>A greeting sent to your customer on the date of their birthday, or a few days before. Helpful if you offer a birthday promotion, and/or if you want to bring your customer care to the next level. You can include a link for them to book their next appointment in real-time. Included inside our top-tier “Online Booking + Retention” plan only.</p>
+          <p class="lead">What is the “Send Message to All” feature? (TOP-TIER)</p>
+          <p>A message sent to all your customers at once to introduce any new product, promotion or offering inside your business. You can include a link for them to book their next appointment in real-time. A great way to help support your business during slow months. Included inside our top-tier “Online Booking + Retention” plan only.</p>
+        </div>
+        <div class="tab-pane" id="plans-tab">
+          <p class="lead">What is the difference between the “Online Booking” and “Online Booking + Retention” plans?</p>
+          <p>Our “Online Booking” plan includes everything, except three of our most popular features: “Long-Term Follow-Up message”, “Birthday message” and “Send Message to All”. You can learn more about them in the “Features” section above.</p>
+          <p class="lead">What is included inside the Free plan?</p>
+          <p>Our Free plan includes every feature from the “Online Booking” plan, albeit with a limit of 100 appointments per month and the signature “Sent via PhollowUp” added at the end of every message sent. Once you are satisfied with your Free account and desire to upgrade, you can do so from inside the “Subscriptions” menu.</p>
+          <p class="lead">Do you offer a Free Trial of the Paid plans?</p>
+          <p>Simply put, you don’t need one. Our Free plan (see answer above) should be complete enough to give you a full picture.</p>
+          <p class="lead">Can I switch plans at any time?</p>
+          <p>Yes, you can. PhollowUp is a pay-as-you-go service and you can upgrade, downgrade or cancel anytime.</p>
+          <p class="lead">Am I locked into a contract?</p>
+          <p>There’s no contract—just pay as you go, monthly or yearly. You can cancel at any time without penalty. Our main aspiration is that you will like our system and keep using it long-term by your own will, and for that reason we don’t feel that coercive contracts are an appropriate business strategy.</p>
+        </div>
+        <div class="tab-pane" id="pricing-and-payment-tab">
+          <p class="lead">What methods of payment do you accept?</p>
+          <p>We accept all major Credit or Debit Cards including Visa, MasterCard, and American Express. We can accommodate certain offline payment methods (cash, TT, etc) for yearly-paying users only. Please contact your account manager, or write to support@phollowup.com to inquire.</p>
+          <p class="lead">Do I need to enter my credit card details to sign up?</p>
+          <p>No. You can sign up and use PhollowUp without entering your Credit or Debit Card. Once you decide to upgrade to one of our Paid plans, you will need to choose a plan and enter your payment information.</p>
+          <p class="lead">Are there any setup fees?</p>
+          <p>There are no setup fees or hidden charges with any of our plans.</p>
+          <p class="lead">Do you offer any refunds?</p>
+          <p>Your subscription will terminate on it’s date of expiration and won’t be renewed if you choose to terminate it, but no refunds will be emitted under any circumstances.</p>
+          <p class="lead">Can I pay yearly instead of monthly?</p>
+          <p>Absolutely! And we will give you a great discount if you choose to be billed yearly (between 15 and 20% depending on your plan and country).</p>
+          <p class="lead">I’m using my own cell phone line. Are there extra charges for every message sent?</p>
+          <p>If you choose to use your own Android phone and cell phone line, you will need to cover any cost of sending the SMS, as charged by your telecommunications provider. Make sure SMS sending is included inside your cell phone plan, and that you don’t exceed your fair-usage cap, if any!</p>
+          <p class="lead">Can I cancel my account at any time?</p>
+          <p>Yes. If ever you decide that PhollowUp isn’t the best solution for your business, simply cancel your account from your “Subscription” panel. If you are an existing user considering to cancel your account at the moment, we would politely ask for one favor: we are still a young company and would like to know how to avoid repeating the mistakes which lost your trust. Please share the reason for your cancellation to support@phollowup.com, it will help us greatly. We wish you the best.</p>
+        </div>
+        <div class="tab-pane" id="privacy-and-legal-tab">
+          <p class="lead">Will my data be private and safe?</p>
+          <p>We take data security and privacy seriously at PhollowUp. We will never sell or share your data. Our servers are hosted in a world-class data center that is protected by 24-hour surveillance and we ensure that our application is always up to date with the latest security patches.</p>
+          <p class="lead">Our company is based in Canada. Is it legal to send automated reminders to our customers according to the Anti-Spam Law (C.A.S.L.)?</p>
+          <p>Yes— as long as all of the customers whose phone number you enter into our system have been paying customers of your business at least once. Make sure to include in your message templates instructions on how they can reach out of you if they want to disable future messaging.</p>
+          <p class="lead">Our company is based in the United States and we need to store Medical Records. Are you H.I.P.A.A. compliant?</p>
+          <p>We can’t guarantee it, since PhollowUp does not have any office, server, or legal counsel in the United States at this time. We are a Singapore-based company. If H.I.P.A.A. compliance is a must for your company, please reach out to us at support@phollowup.com and we will try to expedite that process to accommodate you.</p>
+          <p class="lead">Our company is based in the European Union. Are you G.P.D.R. compliant?</p>
+          <p>We can’t guarantee it, since PhollowUp does not have any office, server, or legal counsel in the European Union at this time. We are a Singapore-based company. If G.P.D.R. compliance is a must for your company, please reach out to us at support@phollowup.com and we will try to expedite that process to accommodate you.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

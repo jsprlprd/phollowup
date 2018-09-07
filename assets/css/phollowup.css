@@ -4896,6 +4896,7 @@ tbody.collapse.in {
   position: relative;
   display: block;
   padding: 8px 16px;
+  font-weight: 500;
 }
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
@@ -4931,11 +4932,13 @@ tbody.collapse.in {
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
-  margin-right: 2px;
+  color: #727272;
   line-height: 20px;
+  border-bottom: 4px solid transparent;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #0076FF;
+  border-bottom-color: #FF8900;
   cursor: default;
 }
 .nav-pills > li {

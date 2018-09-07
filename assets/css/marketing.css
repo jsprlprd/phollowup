@@ -1,8 +1,6 @@
 
 
 
-
-
 #pricing-banner {
   padding: 0;
   margin-bottom: 0;
@@ -32,12 +30,6 @@
 #pricing-plan {
   margin-top: -313px;
 }
-
-
-
-
-
-
 
 
 
@@ -137,5 +129,38 @@
   color: #007bfe;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+#faq {
+  font-size: 16px;
+}
+
+#faq .heading {
+  text-align: center;
+}
+
+#faq .nav-tabs {
+  text-align: center;
+  margin-top: 8px;
+}
+
+#faq .nav-tabs li {
+  float: none;
+  display: inline-block;
+}
+
+#faq .nav-tabs li  a {
+  font-size: 16px;
+  padding: 16px 24px 12px;
+}
 
 

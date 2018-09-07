@@ -1,5 +1,10 @@
 body {
-  background-color: #eef0f3;
-  padding-top: 64px;
+  background-color: #e4e4e4;
+  /* padding-top: 64px; */
 }
 
+@media (min-width: 992px) {
+  .modal {
+    margin-left: 256px;
+  }
+}

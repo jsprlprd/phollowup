@@ -51,24 +51,84 @@
 
 
 .navbar-default {
-    background-color: #FFFFFF;
+    background-color: #fafafa;
     border: 0;
-    box-shadow: 0 1px 2px 0px rgba(0,0,0,0.25)
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 0;
 }
 
+.navbar-brand {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.subnavbar {
+    background-color: #f8f9fa;
+    /* margin-bottom: 24px; */
+}
+
+.subnavbar .nav-tabs {
+    border-bottom: 0;
+    margin-left: -16px;
+}
+
+.subnavbar .nav li a {
+    padding: 16px;
+    padding-bottom: 12px;
+}
+
+
 #left-panel {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 8px;
-    padding-top: 68px;
-    width: 240px;
-    background-color: #202a34;
+    /* padding: 8px; */
+    /* padding-top: 68px; */
+    width: 256px;
+    background-color: #00234d;
 }
 
+
+#left-panel .brand {
+    padding: 16px;
+    display: inline-block;
+}
+
+
+#left-panel .nav li a {
+    border-radius: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #e5f2ff;
+}
+
+#left-panel .nav li a .fas,
+#left-panel .nav li a .far {
+    line-height: 24px;
+    width: 24px;
+    text-align: center;
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #main-panel {
-    margin-left: 240px;
+    margin-left: 256px;
 }
 
 
@@ -76,6 +136,11 @@
     padding-left: 24px;
     padding-right: 24px;
 }
+
+#main-content {
+    padding: 24px;
+}
+
 
 .dashed {
     margin-top: 24px;
@@ -319,16 +384,6 @@
     padding-right: 16px;
 }
 
-
-
-
-#left-panel .nav li a .fas,
-#left-panel .nav li a .far {
-    line-height: 24px;
-    width: 24px;
-    text-align: center;
-    margin-right: 16px;
-}
 
 
 

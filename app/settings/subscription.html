@@ -1,0 +1,75 @@
+---
+layout: app
+
+subnavbar: true
+
+nav-menu:
+- text: Services and products
+  url: app/settings/services-and-products.html
+- text: Automated messages
+  url: 
+- text: Employees and branches
+  url: 
+- text: Taxes and payment methods
+  url: 
+- text: Working Hours
+  url: app/settings/working-hours.html
+- text: Advanced Settings
+  url: 
+- text: Subscription
+  url: app/settings/subscription.html
+- text: Send Message to All
+  url: 
+
+nav-pills:
+- text: My Subscription
+  url: my-subscription
+- text: Order History
+  url: order-history
+
+heading-title: Subscription
+---
+
+<div class="row">
+  <div class="col-md-2">
+    {% include components/nav-pills-stacked.html %}
+  </div>
+  <div class="col-md-6">
+    <div class="tab-content">
+      <div class="tab-pane active" id="my-subscription-tab">
+        <p class="lead">Plan Information</p>
+        <div class="well well-lg">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="lead">Free Plan</p>
+            </div>
+            <div class="col-md-4 text-right">
+              <a class="btn btn-primary" href="">Change Plan</a>
+            </div>
+          </div>
+        </div>
+        <p class="lead">Add Ons</p>
+        <div class="well well-lg">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="lead">Automated Message Credits</p>
+              <p class="text-muted">Remaining Balance ( 94/100 )</p>
+            </div>
+            <div class="col-md-4 text-right">
+              <a class="btn btn-primary" href="">Reload Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="order-history-tab">
+        <p class="lead">Payment</p>
+        <div class="well well-lg">
+          <p>Your subscription type: Trial Free</p>
+        </div>
+        <p class="lead">Receipt</p>
+        <div class="well well-lg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
