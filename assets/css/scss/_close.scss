@@ -5,11 +5,11 @@
 
 .close {
   float: right;
-  font-size: ($font-size-base * 1.7148);
+  font-size: 24px;
   // font-weight: $close-font-weight;
   // line-height: 1;
-  line-height: 40px;
-  width: 40px;
+  line-height: 28px;
+  width: 28px;
   color: $close-color;
   // text-shadow: $close-text-shadow;
   @include opacity(.2);

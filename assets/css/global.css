@@ -169,17 +169,16 @@
     margin-bottom: -24px;
     overflow: hidden;
     overflow-x: auto;
-  }
-  
-  .tabs{
+}
+
+.tabs{
     display: flex;
     position:relative;
+}
 
-  }
-  
-  .tabs a{
+.tabs a{
     text-decoration:none;
-    color: #eee;
+    color: #E4E4E4;
     padding: 16px 24px 12px;
     display: inline-flex;
     position:relative;
@@ -187,17 +186,14 @@
     transition-duration:0.6s;
     white-space: nowrap;
     line-height: 20px;
-  }
+    font-weight: 500;
+}
   
-  .tabs a.active{
-    color: #fafafa;
-  }
+.tabs a.active{
+    color: #FAFAFA;
+}
   
-  .tabs a i{
-    margin-right:5px;
-  }
-  
-  .tabs .selector{
+.tabs .selector{
     height: 4px;
     display:inline-block;
     position:absolute;
@@ -206,8 +202,8 @@
     z-index:1;
     transition-duration:0.6s;
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background: orange;
-  }
+    background: #FF8900;
+}
 
 
 .btn-radio label {
@@ -218,59 +214,83 @@
     display: block;
 }
 
-#new-appointment .modal-header,
-#new-appointment .modal-body,
-#edit-appointment .modal-header,
-#edit-appointment .modal-body {
-    padding: 24px;
-}
 
-#new-appointment .modal-header,
-#edit-appointment .modal-header {
+
+
+
+
+
+
+
+
+
+
+#new-appointment .modal-heading {
     border: 0;
     background-color: #007bfe;
-    /* padding-bottom: 0; */
 }
 
-#new-appointment .modal-title,
-#new-appointment-test .modal-title,
-#edit-appointment .modal-title,
-#edit-appointment-test .modal-title {
-    color: #fff;
-    line-height: 40px;
-}
-
-#new-appointment .nav,
-#edit-appointment .nav {
-    margin-top: 16px;
-    border: 0;
-    margin-left: -8px;
-}
-
-#new-appointment .nav-tabs li,
-#edit-appointment .nav-tabs li {
-    margin-bottom: 0;
-}
-
-#new-appointment .nav-tabs li + li,
-#edit-appointment .nav-tabs li + li {
-    margin-left: 24px;
-}
-
-#new-appointment .nav-tabs li.active a,
-#edit-appointment .nav-tabs li.active a {
-    border-bottom: 4px solid #FF8900;
-    font-weight: 500;
-}
-
-#new-appointment .nav-tabs li a,
-#edit-appointment .nav-tabs li a {
-    color: #FFF;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 16px;
+#new-appointment .modal-heading-title {
     color: #FAFAFA;
 }
+
+
+#new-appointment .modal-body {
+    padding-top: 124px;
+    padding-bottom: 85px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .d-flex {

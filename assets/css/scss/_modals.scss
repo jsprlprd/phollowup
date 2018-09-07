@@ -35,6 +35,7 @@
   }
   &.in .modal-dialog { @include translate(0, 0) }
 }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -58,6 +59,9 @@
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: 0;
+
+  min-height: 100vh;
+
 }
 
 // Modal background
@@ -76,18 +80,46 @@
 
 // Modal header
 // Top section of the modal w/ title and dismiss
-.modal-header {
+.modal-heading {
   padding: $modal-title-padding;
   border-bottom: 1px solid $modal-header-border-color;
   @include clearfix;
 }
 // Close icon
-.modal-header .close {
-  margin-top: -2px;
+.modal-heading .close {
+  // margin-top: -2px;
 }
 
+
+
+
+
+
+// Fix the top/bottom navbars when screen real estate supports it
+.modal-heading-fixed,
+.modal-footer-fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
+}
+.modal-heading-fixed {
+  top: 0;
+}
+.modal-footer-fixed {
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
 // Title text within header
-.modal-title {
+.modal-heading-title {
   margin: 0;
   // line-height: $modal-title-line-height;
 }
@@ -101,7 +133,7 @@
 
 // Footer (for actions)
 .modal-footer {
-  padding: $modal-inner-padding;
+  padding: $modal-footer-padding;
   text-align: right; // right align buttons
   border-top: 1px solid $modal-footer-border-color;
   @include clearfix; // clear it in case folks use .pull-* classes on buttons
@@ -139,6 +171,7 @@
   }
   .modal-content {
     @include box-shadow(0 5px 15px rgba(0,0,0,.5));
+    min-height: unset;
   }
 
   // Modal sizes

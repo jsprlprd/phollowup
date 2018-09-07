@@ -1,9 +1,9 @@
 <div class="modal" id="new-appointment">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-heading modal-heading-fixed">
         <button class="close" type="button">&times;</button>
-        <h6 class="modal-title h4">New Appointment</h6>
+        <h6 class="modal-heading-title h4">New Appointment</h6>
 
         <div class="wrapper">
           <nav class="tabs">
@@ -234,61 +234,51 @@
                 </div>
                 <div class="panel-collapse collapse in" id="confirmation-message-panel">
                   <div class="panel-body">
-                    <div class="row d-flex">
-                      <div class="col-md-8 d-flex flex-column">
-                        <!-- <div class="alert alert-info">
-                          <p><strong>Sent to your customer the moment you create their appointment.</strong></p>
-                          <ul>
-                            <li>Reduces no-shows by leaving a trace on their phone</li>
-                            <li>No more “When is my appointment again?” calls</li>
-                            <li>More effective than a reminder card</li>
-                          </ul>
-                        </div> -->
+                    <div class="row">
+                      <div class="col-md-8">
                         <fieldset class="form-group">
                           <label class="control-label" for="">Message</label>
                           <textarea class="form-control"></textarea>
                           <span class="help-block">0/300 Characters</span>
                         </fieldset>
                       </div>
-                      <div class="col-md-4 d-flex">
-                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
-                          <p><strong>Dynamic Elements</strong></p>
-                          <ul class="list list-unstyled list-inline list-sm">
-                            <li title="The customer's full name" data-value="#FULLNAME">
-                              <a class="label label-primary">#FULLNAME</a>
-                            </li>
-                            <li title="The customer's first name" data-value="#FIRSTNAME">
-                              <a class="label label-primary">#FIRSTNAME</a>
-                            </li>
-                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
-                              <a class="label label-primary">#APPTYPE</a>
-                            </li>
-                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
-                              <a class="label label-primary">#BKLNK</a>
-                            </li>
-                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
-                              <a class="label label-primary">#BRANCH</a>
-                            </li>
-                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
-                              <a class="label label-primary">#DATE</a>
-                            </li>
-                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
-                              <a class="label label-primary">#TIME</a>
-                            </li>
-                            <li title="URL link to customer's invoice" data-value="#INVLNK">
-                              <a class="label label-primary">#INVLNK</a>
-                            </li>
-                            <li title="Employee first name" data-value="#EMPFN">
-                              <a class="label label-primary">#EMPFN</a>
-                            </li>
-                            <li title="Branch phone number" data-value="#BRNCHNO">
-                              <a class="label label-primary">#BRNCHNO</a>
-                            </li>
-                            <li title="Confirmation link" data-value="#CONFLNK">
-                              <a class="label label-primary">#CONFLNK</a>
-                            </li>
-                          </ul>
-                        </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li title="The customer's full name" data-value="#FULLNAME">
+                            <a class="label label-primary">#FULLNAME</a>
+                          </li>
+                          <li title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="label label-primary">#FIRSTNAME</a>
+                          </li>
+                          <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="label label-primary">#APPTYPE</a>
+                          </li>
+                          <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="label label-primary">#BKLNK</a>
+                          </li>
+                          <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="label label-primary">#BRANCH</a>
+                          </li>
+                          <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="label label-primary">#DATE</a>
+                          </li>
+                          <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="label label-primary">#TIME</a>
+                          </li>
+                          <li title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="label label-primary">#INVLNK</a>
+                          </li>
+                          <li title="Employee first name" data-value="#EMPFN">
+                            <a class="label label-primary">#EMPFN</a>
+                          </li>
+                          <li title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="label label-primary">#BRNCHNO</a>
+                          </li>
+                          <li title="Confirmation link" data-value="#CONFLNK">
+                            <a class="label label-primary">#CONFLNK</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -308,60 +298,51 @@
                 </div>
                 <div class="panel-collapse collapse" id="reminder-message-panel">
                   <div class="panel-body">
-                    <div class="row d-flex">
-                      <div class="col-md-8 d-flex flex-column">
-                        <!-- <div class="alert alert-info">
-                          <p><strong>A reminder automatically sent 24h before their appointment.</strong></p>
-                          <ul>
-                            <li>Proven to be the optimal timeframe to reduce no-shows</li>
-                            <li>More effective than a phone call- especially during work hours</li>
-                          </ul>
-                        </div> -->
+                    <div class="row">
+                      <div class="col-md-8">
                         <fieldset class="form-group">
                           <label class="control-label" for="">Message</label>
                           <textarea class="form-control"></textarea>
                           <span class="help-block">0/300 Characters</span>
                         </fieldset>
                       </div>
-                      <div class="col-md-4 d-flex">
-                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
-                          <p><strong>Dynamic Elements</strong></p>
-                          <ul class="list list-unstyled list-inline list-sm">
-                            <li title="The customer's full name" data-value="#FULLNAME">
-                              <a class="label label-primary">#FULLNAME</a>
-                            </li>
-                            <li title="The customer's first name" data-value="#FIRSTNAME">
-                              <a class="label label-primary">#FIRSTNAME</a>
-                            </li>
-                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
-                              <a class="label label-primary">#APPTYPE</a>
-                            </li>
-                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
-                              <a class="label label-primary">#BKLNK</a>
-                            </li>
-                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
-                              <a class="label label-primary">#BRANCH</a>
-                            </li>
-                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
-                              <a class="label label-primary">#DATE</a>
-                            </li>
-                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
-                              <a class="label label-primary">#TIME</a>
-                            </li>
-                            <li title="URL link to customer's invoice" data-value="#INVLNK">
-                              <a class="label label-primary">#INVLNK</a>
-                            </li>
-                            <li title="Employee first name" data-value="#EMPFN">
-                              <a class="label label-primary">#EMPFN</a>
-                            </li>
-                            <li title="Branch phone number" data-value="#BRNCHNO">
-                              <a class="label label-primary">#BRNCHNO</a>
-                            </li>
-                            <li title="Confirmation link" data-value="#CONFLNK">
-                              <a class="label label-primary">#CONFLNK</a>
-                            </li>
-                          </ul>
-                        </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li title="The customer's full name" data-value="#FULLNAME">
+                            <a class="label label-primary">#FULLNAME</a>
+                          </li>
+                          <li title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="label label-primary">#FIRSTNAME</a>
+                          </li>
+                          <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="label label-primary">#APPTYPE</a>
+                          </li>
+                          <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="label label-primary">#BKLNK</a>
+                          </li>
+                          <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="label label-primary">#BRANCH</a>
+                          </li>
+                          <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="label label-primary">#DATE</a>
+                          </li>
+                          <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="label label-primary">#TIME</a>
+                          </li>
+                          <li title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="label label-primary">#INVLNK</a>
+                          </li>
+                          <li title="Employee first name" data-value="#EMPFN">
+                            <a class="label label-primary">#EMPFN</a>
+                          </li>
+                          <li title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="label label-primary">#BRNCHNO</a>
+                          </li>
+                          <li title="Confirmation link" data-value="#CONFLNK">
+                            <a class="label label-primary">#CONFLNK</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -381,15 +362,8 @@
                 </div>
                 <div class="panel-collapse collapse" id="after-appointment-message-panel">
                   <div class="panel-body">
-                    <div class="row d-flex">
-                      <div class="col-md-8 d-flex flex-column">                        <!-- <div class="alert alert-info">
-                          <p><strong>Sent to your customer after their appointment has ended.</strong></p>
-                          <ul>
-                            <li>Show them your appreciation for their visit earlier</li>
-                            <li>Offer a promotion if they come back and/or refer friends</li>
-                            <li>Establish your recommended visit frequency for them to come back</li>
-                          </ul>
-                        </div> -->
+                    <div class="row">
+                      <div class="col-md-8">
                         <fieldset class="form-group">
                           <label class="control-label" for="">In how long should we sent the reminder?</label>
                           <div class="input-group">
@@ -410,45 +384,43 @@
                           <span class="help-block">0/300 Characters</span>
                         </fieldset>
                       </div>
-                      <div class="col-md-4 d-flex">
-                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
-                          <p><strong>Dynamic Elements</strong></p>
-                          <ul class="list list-unstyled list-inline list-sm">
-                            <li title="The customer's full name" data-value="#FULLNAME">
-                              <a class="label label-primary">#FULLNAME</a>
-                            </li>
-                            <li title="The customer's first name" data-value="#FIRSTNAME">
-                              <a class="label label-primary">#FIRSTNAME</a>
-                            </li>
-                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
-                              <a class="label label-primary">#APPTYPE</a>
-                            </li>
-                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
-                              <a class="label label-primary">#BKLNK</a>
-                            </li>
-                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
-                              <a class="label label-primary">#BRANCH</a>
-                            </li>
-                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
-                              <a class="label label-primary">#DATE</a>
-                            </li>
-                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
-                              <a class="label label-primary">#TIME</a>
-                            </li>
-                            <li title="URL link to customer's invoice" data-value="#INVLNK">
-                              <a class="label label-primary">#INVLNK</a>
-                            </li>
-                            <li title="Employee first name" data-value="#EMPFN">
-                              <a class="label label-primary">#EMPFN</a>
-                            </li>
-                            <li title="Branch phone number" data-value="#BRNCHNO">
-                              <a class="label label-primary">#BRNCHNO</a>
-                            </li>
-                            <li title="Confirmation link" data-value="#CONFLNK">
-                              <a class="label label-primary">#CONFLNK</a>
-                            </li>
-                          </ul>
-                        </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li title="The customer's full name" data-value="#FULLNAME">
+                            <a class="label label-primary">#FULLNAME</a>
+                          </li>
+                          <li title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="label label-primary">#FIRSTNAME</a>
+                          </li>
+                          <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="label label-primary">#APPTYPE</a>
+                          </li>
+                          <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="label label-primary">#BKLNK</a>
+                          </li>
+                          <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="label label-primary">#BRANCH</a>
+                          </li>
+                          <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="label label-primary">#DATE</a>
+                          </li>
+                          <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="label label-primary">#TIME</a>
+                          </li>
+                          <li title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="label label-primary">#INVLNK</a>
+                          </li>
+                          <li title="Employee first name" data-value="#EMPFN">
+                            <a class="label label-primary">#EMPFN</a>
+                          </li>
+                          <li title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="label label-primary">#BRNCHNO</a>
+                          </li>
+                          <li title="Confirmation link" data-value="#CONFLNK">
+                            <a class="label label-primary">#CONFLNK</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -467,16 +439,8 @@
                   </h4>
                 </div><div class="panel-collapse collapse" id="long-term-followup-message-panel">
                   <div class="panel-body">
-                    <div class="row d-flex">
-                      <div class="col-md-8 d-flex flex-column">
-                        <!-- <div class="alert alert-info">
-                          <p>Our most popular feature. Sent to customers who haven’t visited you after a certain duration. </p>
-                          <p>Send [] After the latest appointment.</p>
-                          <ul>
-                            <li>Make your existing customers come more frequently</li>
-                            <li>Offer a promotion to make lost customers come back</li>
-                          </ul>
-                        </div> -->
+                    <div class="row">
+                      <div class="col-md-8">
                         <fieldset class="form-group">
                           <label class="control-label" for="">In how long should we sent the reminder?</label>
                           <div class="input-group">
@@ -497,45 +461,43 @@
                           <span class="help-block">0/300 Characters</span>
                         </fieldset>
                       </div>
-                      <div class="col-md-4 d-flex">
-                        <div style="padding-left: 24px; border-left: 1px solid #d8d8d8;">
-                          <p><strong>Dynamic Elements</strong></p>
-                          <ul class="list list-unstyled list-inline list-sm">
-                            <li title="The customer's full name" data-value="#FULLNAME">
-                              <a class="label label-primary">#FULLNAME</a>
-                            </li>
-                            <li title="The customer's first name" data-value="#FIRSTNAME">
-                              <a class="label label-primary">#FIRSTNAME</a>
-                            </li>
-                            <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
-                              <a class="label label-primary">#APPTYPE</a>
-                            </li>
-                            <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
-                              <a class="label label-primary">#BKLNK</a>
-                            </li>
-                            <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
-                              <a class="label label-primary">#BRANCH</a>
-                            </li>
-                            <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
-                              <a class="label label-primary">#DATE</a>
-                            </li>
-                            <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
-                              <a class="label label-primary">#TIME</a>
-                            </li>
-                            <li title="URL link to customer's invoice" data-value="#INVLNK">
-                              <a class="label label-primary">#INVLNK</a>
-                            </li>
-                            <li title="Employee first name" data-value="#EMPFN">
-                              <a class="label label-primary">#EMPFN</a>
-                            </li>
-                            <li title="Branch phone number" data-value="#BRNCHNO">
-                              <a class="label label-primary">#BRNCHNO</a>
-                            </li>
-                            <li title="Confirmation link" data-value="#CONFLNK">
-                              <a class="label label-primary">#CONFLNK</a>
-                            </li>
-                          </ul>
-                        </div>
+                      <div class="col-md-4">
+                        <p><strong>Dynamic Elements</strong></p>
+                        <ul class="list list-unstyled list-inline list-sm">
+                          <li title="The customer's full name" data-value="#FULLNAME">
+                            <a class="label label-primary">#FULLNAME</a>
+                          </li>
+                          <li title="The customer's first name" data-value="#FIRSTNAME">
+                            <a class="label label-primary">#FIRSTNAME</a>
+                          </li>
+                          <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                            <a class="label label-primary">#APPTYPE</a>
+                          </li>
+                          <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                            <a class="label label-primary">#BKLNK</a>
+                          </li>
+                          <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                            <a class="label label-primary">#BRANCH</a>
+                          </li>
+                          <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                            <a class="label label-primary">#DATE</a>
+                          </li>
+                          <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                            <a class="label label-primary">#TIME</a>
+                          </li>
+                          <li title="URL link to customer's invoice" data-value="#INVLNK">
+                            <a class="label label-primary">#INVLNK</a>
+                          </li>
+                          <li title="Employee first name" data-value="#EMPFN">
+                            <a class="label label-primary">#EMPFN</a>
+                          </li>
+                          <li title="Branch phone number" data-value="#BRNCHNO">
+                            <a class="label label-primary">#BRNCHNO</a>
+                          </li>
+                          <li title="Confirmation link" data-value="#CONFLNK">
+                            <a class="label label-primary">#CONFLNK</a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -545,7 +507,7 @@
           </div>
         </div>
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer modal-footer-fixed">
         <button class="btn btn-default btn-wide" data-dismiss="modal" type="button">Cancel</button>
         <button class="btn btn-primary btn-wide" type="button">Book Appointment</button>
       </div>
