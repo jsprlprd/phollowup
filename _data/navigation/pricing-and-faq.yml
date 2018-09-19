@@ -1,0 +1,19 @@
+- text: Getting Started
+  url: getting-started
+  status: active
+
+- text: Features
+  url: features
+  status:
+
+- text: Plans
+  url: plans
+  status:
+
+- text: Pricing &amp; Payment
+  url: pricing-and-payment
+  status:
+
+- text: Privacy &amp; Legal
+  url: privacy-and-legal
+  status:

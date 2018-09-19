@@ -1,25 +1,12 @@
 ---
 layout: marketing
-
-nav-tabs:
-- text: Getting Started
-  url: getting-started
-- text: Features
-  url: features
-- text: Plans
-  url: plans
-- text: Pricing &amp; Payment
-  url: pricing-and-payment
-- text: Privacy &amp; Legal
-  url: privacy-and-legal
-
 ---
 
-<div class="jumbotron" id="pricing-banner">
+<div class="jumbotron jumbotron-fluid" id="pricing-banner">
   <div class="container">
     <div class="heading">
       <h1 class="heading-title">Simple and flexible pricing built for anyone</h1>
-      <p class="heading-subtitle">Start with 14-day free trial. No credit card needed. Cancel at anytime.</p>
+      <p class="heading-subtitle">15-second registration. No credit card asked. No contract either.</p>
       <div class="wrapper">
         <div style="border: 1px solid #d8d8d8; display: inline-block; padding: 8px; border-radius: 4px;">
           <nav class="tabs">
@@ -34,9 +21,9 @@ nav-tabs:
 </div>
 <div class="container" id="pricing-plan">
   <div class="row">
-    <div class="col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-      <div class="panel panel-default" id="basic-pricing-plan">
-        <div class="panel-body">
+    <div class="col-md-5 offset-md-1">
+      <div class="card" id="basic-pricing-plan">
+        <div class="card-body">
           <div class="panel-body-heading">
             <h2 class="panel-body-heading-title h3">Basic Plan</h2>
             <p class="panel-body-heading-subtitle">(Online Booking)</p>
@@ -44,7 +31,7 @@ nav-tabs:
           <p class="price"><small>Php</small> 2495</p>
           <a class="btn btn-warning btn-lg btn-wide cta" href="">Choose Basic Plan</a>
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
           <ul class="list-unstyled">
             <li>Let your customers book their own appointments online 24/7</li>
             <li>Instantly confirm their appointments by SMS or Email</li>
@@ -55,9 +42,9 @@ nav-tabs:
         </div>
       </div>
     </div>
-    <div class="col-md-5 col-lg-4">
-      <div class="panel panel-default" id="pro-pricing-plan">
-        <div class="panel-body">
+    <div class="col-md-5">
+      <div class="card" id="pro-pricing-plan">
+        <div class="card-body">
           <div class="panel-body-heading">
             <h2 class="panel-body-heading-title h3">Pro Plan</h2>
             <p class="panel-body-heading-subtitle">(Online Booking + Retention)</p>
@@ -65,7 +52,7 @@ nav-tabs:
           <p class="price"><small>Php</small> 3495</p>
           <a class="btn btn-warning btn-lg btn-wide cta" href="">Choose Pro Plan</a>
         </div>
-        <div class="panel-footer">
+        <div class="card-footer">
           <p style="font-size: 18px;"><strong>Everything included in our Online Booking plan, plus:</strong></p>
           <ul class="list-unstyled">
             <li>Automatically recall past customers who haven't visited you in some time</li>
@@ -76,16 +63,27 @@ nav-tabs:
         </div>
       </div>
     </div>
+    <div class="col-md-8 offset-md-2">
+      <p class="text-muted text-center">Want to try it first? Our <span class="text-primary">Free Plan</span> includes everything from the “Online Booking” plan, with a limit of 100 appointments per month and “Sent via PhollowUp” added at the end of every message sent.</p>
+    </div>
   </div>
 </div>
+
 <div class="container" id="faq">
   <div class="heading">
-    <h2 class="heading-title h3">Frequently Asked Question</h2>
-    {% include components/nav-tabs.html %}
+    <h2 class="heading-title h3">Frequently Asked Questions</h2>
+    {% include components/molecules/nav-tabs.html
+      nav-type="nav-tabs"
+      isLarge="nav-lg"
+      isStacked="justify-content-center"
+      isJustified=""
+      list-value-name=site.data.navigation.pricing-and-faq
+      hasIcon=""
+    %}
   </div>
 
   <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+    <div class="col-md-10 offset-md-1">
       <div class="tab-content">
         <div class="tab-pane active" id="getting-started-tab">
           <p class="lead">How do I get started?</p>

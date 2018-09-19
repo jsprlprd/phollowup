@@ -1,73 +1,115 @@
 ---
 layout: app
-
 subnavbar: true
-
-nav-menu:
-- text: Services and products
-  url: app/settings/services-and-products.html
-- text: Automated messages
-  url: 
-- text: Employees and branches
-  url: 
-- text: Taxes and payment methods
-  url: 
-- text: Working Hours
-  url: app/settings/working-hours.html
-- text: Advanced Settings
-  url: 
-- text: Subscription
-  url: app/settings/subscription.html
-- text: Send Message to All
-  url: 
-
-nav-pills:
-- text: My Subscription
-  url: my-subscription
-- text: Order History
-  url: order-history
-
-heading-title: Subscription
+container-type: container
+heading-title: Settings
 ---
 
 <div class="row">
-  <div class="col-md-2">
-    {% include components/nav-pills-stacked.html %}
+  <div class="col-lg-2">
+    {% include components/molecules/nav-tabs.html
+      nav-type="nav-pills"
+      isLarge=""
+      isStacked="flex-column"
+      isJustified=""
+      list-value-name=site.data.navigation.subscription
+      hasIcon=""
+    %}
   </div>
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <div class="tab-content">
       <div class="tab-pane active" id="my-subscription-tab">
         <p class="lead">Plan Information</p>
-        <div class="well well-lg">
-          <div class="row">
-            <div class="col-md-8">
-              <p class="lead">Free Plan</p>
-            </div>
-            <div class="col-md-4 text-right">
-              <a class="btn btn-primary" href="">Change Plan</a>
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-8">
+                <p class="lead" style="margin-bottom: 0;">Your Current Plan: <b>Free Plan</b></p>
+              </div>
+              <div class="col-lg-4 text-right">
+                <!-- <a class="btn btn-primary" href="">Change Plan</a> -->
+              </div>
             </div>
           </div>
         </div>
-        <p class="lead">Add Ons</p>
-        <div class="well well-lg">
-          <div class="row">
-            <div class="col-md-8">
-              <p class="lead">Automated Message Credits</p>
-              <p class="text-muted">Remaining Balance ( 94/100 )</p>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-8">
+                <p class="lead">Basic Plan (Online Booking)</p>
+                <ul>
+                  <li>Let your customers book their own appointments online 24/7</li>
+                  <li>Instantly confirm their appointments by SMS or Email</li>
+                  <li>Automatically remind them 24h before their appointment</li>
+                  <li>Include a link for them to reschedule on their own if necessary</li>
+                  <li>Store all of your customers' data safely on the cloud</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-right">
+                2495 per month
+              </div>
             </div>
-            <div class="col-md-4 text-right">
-              <a class="btn btn-primary" href="">Reload Now</a>
+            <hr class="dashed">
+            <a class="btn btn-primary" href="">Upgrade to Basic Plan Now</a>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-8">
+                <p class="lead">Pro Plan (Online Booking + Retention)</p>
+                <p><b>Everything included in our Online Booking plan, plus:</b></p>
+                <ul>
+                  <li>Automatically recall past customers who haven't visited you in some time</li>
+                  <li>Automatically send your birthday wishes (or a promotion) to your customers</li>
+                  <li>Send promotional messages to all your customers at once</li>
+                  <li>Personnalize your online booking page by uploading your logo</li>
+                </ul>
+              </div>
+              <div class="col-lg-4 text-right">
+                2495 per month
+              </div>
+            </div>
+            <hr class="dashed">
+            <a class="btn btn-primary" href="">Upgrade to Pro Plan Now</a>
+          </div>
+        </div>
+
+
+
+
+
+
+        <p class="lead">Add Ons</p>
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-8">
+                <p class="lead">Automated Message Credits</p>
+                <p>Your business doesn't have an Android phone that you can use to send your Automated Messages? No worries! You can purchase pay-per-use SMS credits here.</p>
+                <a class="btn btn-primary" href="">Reload Now</a>
+              </div>
+              <div class="col-lg-4 text-right">
+                100
+                Credits Left
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="tab-pane" id="order-history-tab">
         <p class="lead">Payment</p>
-        <div class="well well-lg">
-          <p>Your subscription type: Trial Free</p>
+        <div class="card mb-4">
+          <div class="card-body">
+            <p class="card-text">Your subscription type: Trial Free</p>
+          </div>
         </div>
         <p class="lead">Receipt</p>
-        <div class="well well-lg">
+        <div class="card mb-4">
+          <div class="card-body">
+          </div>
         </div>
       </div>
     </div>

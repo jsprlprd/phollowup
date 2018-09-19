@@ -1,0 +1,27 @@
+- text: Dashboard
+  icon: fas fa-tachometer-alt
+  url: app/dashboard.html
+
+- text: Calendar
+  icon: far fa-calendar
+  url: app/appointment.html
+
+- text: Online Booking
+  icon: fas fa-address-book
+  url:
+
+- text: Invoicing
+  icon: fas fa-shopping-cart
+  url:
+
+- text: Customers
+  icon: fas fa-users
+  url: app/customers/
+
+- text: Conversations
+  icon: fas fa-comments
+  url:
+
+- text: Settings
+  icon: fas fa-cogs
+  url: app/settings/services-and-products.html

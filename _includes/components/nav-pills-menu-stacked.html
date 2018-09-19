@@ -1,7 +1,0 @@
-<ul class="nav nav-pills nav-stacked">
-  {% for menu in layout.side-menu %}
-    <li class="{% if page.url contains menu.url %} active {% endif %}">
-      <a href="{{ site.baseurl }}/{{ menu.url }}"><i class="{{ menu.icon }}"></i>{{ menu.text }}</a>
-    </li>
-  {% endfor %}
-</ul>

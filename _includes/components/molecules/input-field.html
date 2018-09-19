@@ -1,7 +1,7 @@
-<fieldset class="form-group {{include.isLarge }} {{ include.isRequired }}">
+<div class="form-group {{include.isLarge }} {{ include.isRequired }}">
   {% if include.hasLabel == "no-label" %}
   {% else %}
     {% include components/atoms/label.html %}
   {% endif %}
   {% include components/atoms/input.html %}
-</fieldset>
+</div>

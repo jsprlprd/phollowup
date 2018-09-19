@@ -1,0 +1,16 @@
+- text: Appointment Details
+  url: appointment-details
+  status: active
+
+- text: Customer Details
+  url: customer-details
+  status:
+
+- text: Invoice
+  url: invoice
+  status:
+
+- text: Messages
+  url: messages
+  status:
+

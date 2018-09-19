@@ -1,3 +1,10 @@
+body {
+    background-color: #F1f2f3;
+}
+
+
+
+
 .heading {
     margin-top: 40px;
     margin-bottom: 24px;
@@ -39,29 +46,21 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.navbar-default {
-    background-color: #fafafa;
-    border: 0;
+#main-panel header {
+    background-color: #FAFAFA;
     border-bottom: 1px solid #d8d8d8;
-    margin-bottom: 0;
 }
 
-.navbar-brand {
-    font-size: 20px;
-    line-height: 32px;
-    margin: 0;
-}
+
+
+
+
+
+
+
+
+
+
 
 .subnavbar {
     background-color: #f8f9fa;
@@ -70,7 +69,7 @@
 
 .subnavbar .nav-tabs {
     border-bottom: 0;
-    margin-left: -16px;
+    /* margin-left: -16px; */
 }
 
 .subnavbar .nav li a {
@@ -146,14 +145,9 @@
     margin-top: 24px;
     margin-bottom: 24px;
     border: 0;
-    border-top: 1px dashed #E4E4E4;
+    border-top: 1px dashed #D8D8D8;
 }
 
-
-.btn-wide {
-    padding-left: 40px;
-    padding-right: 40px;
-}
 
 .btn-checkbox {
     padding: 16px;
@@ -177,98 +171,10 @@
 
 
 
-/* 
-.wrapper{
-    text-align:center;
-    margin-top: 40px;
-  }
-
-.tabs{
-    font-size:16px;
-    padding:0px;
-    list-style:none;
-    display:inline-block;
-    border-radius:4px;
-    position:relative;
-}
-
-.tabs a{
-    text-decoration:none;
-    color: #e4e4e4;
-    padding:12px 40px;
-    display:inline-block;
-    position:relative;
-    z-index:1;
-    transition-duration:0.45s;
-}
-
-.tabs a.active{
-    color:#fff;
-}
-
-.tabs a i{
-    margin-right:5px;
-}
-
-.tabs .selector{
-    height:100%;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    top:0px;
-    z-index:1;
-    border-radius:4px;
-    transition-duration:0.45s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background: #007bfe;
-} */
 
 
 
 
-
-
-.wrapper {
-    margin-left: -24px;
-    margin-right: -24px;
-    margin-bottom: -24px;
-    overflow: hidden;
-    overflow-x: auto;
-}
-
-.tabs{
-    display: flex;
-    position:relative;
-}
-
-.tabs a{
-    text-decoration:none;
-    color: #E4E4E4;
-    padding: 16px 24px 12px;
-    display: inline-flex;
-    position:relative;
-    z-index:1;
-    transition-duration:0.6s;
-    white-space: nowrap;
-    line-height: 20px;
-    font-weight: 500;
-}
-  
-.tabs a.active{
-    color: #FAFAFA;
-}
-  
-.tabs .selector{
-    height: 4px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    bottom: 0px;
-    z-index:1;
-    transition-duration:0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background: #FF8900;
-}
 
 
 .btn-radio label {
@@ -286,25 +192,37 @@
 
 
 
+.btn {
+    line-height: 20px;
+}
+
+.navbar {
+    padding-top: .875rem;
+    padding-bottom: .875rem;
+}
+
+.navbar-brand {
+    padding: 0;
+    display: inline-flex;
+}
 
 
-
-
-#new-appointment .modal-heading {
+#new-appointment .modal-header {
     border: 0;
     background-color: #007bfe;
 }
 
-#new-appointment .modal-heading-title {
+#new-appointment .modal-title {
     color: #FAFAFA;
 }
 
-
+/* 
 #new-appointment .modal-body {
     padding-top: 124px;
     padding-bottom: 85px;
 }
 
+ */
 
 
 
@@ -312,59 +230,60 @@
 
 
 
+#new-appointment .wrapper {
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: -24px;
+    overflow: hidden;
+    overflow-x: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.d-flex {
+#new-appointment .tabs{
     display: flex;
+    position:relative;
 }
 
-.flex-column {
-    flex-direction: column;
+#new-appointment .tabs a{
+    text-decoration:none;
+    color: #E4E4E4;
+    padding: 16px 24px 12px;
+    display: inline-flex;
+    position:relative;
+    z-index:1;
+    transition-duration:0.6s;
+    white-space: nowrap;
+    line-height: 20px;
+    font-weight: 500;
 }
+  
+#new-appointment .tabs a.active{
+    color: #FAFAFA;
+}
+  
+#new-appointment .tabs .selector{
+    height: 4px;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    bottom: 0px;
+    z-index:1;
+    transition-duration:0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: #FF8900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .media-pills {
     background-color: #F1f2f3;

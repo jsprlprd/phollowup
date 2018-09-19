@@ -10,16 +10,18 @@ html {
 
 body {
   margin-bottom: 209px;
+  background-color: #FFFFFF;
 }
 
 @media (min-width: 992px) {
   body {	
     margin-bottom: 130px;
-    background-color: #2E4052;
-    background: -webkit-linear-gradient(45deg, rgb(0,86,178) 0%,rgb(76, 162, 255) 100%);
-    background:    -moz-linear-gradient(45deg, rgb(0,86,178) 0%, rgb(76, 162, 255) 100%);
-    background:         linear-gradient(45deg, rgb(0,86,178) 0%,rgb(76, 162, 255) 100%);
-  }
+    background: #0056b3;
+    background: -moz-linear-gradient(45deg, #0056b3 0%, #1a89ff 100%);
+    background: -webkit-linear-gradient(45deg, #0056b3 0%,#1a89ff 100%);
+    background: linear-gradient(45deg, #0056b3 0%,#1a89ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0056b3', endColorstr='#1a89ff',GradientType=1 );
+    }
 }
 
 

@@ -1,0 +1,66 @@
+---
+layout: app
+subnavbar: true
+container-type: container
+heading-title: Settings
+---
+
+<div class="row">
+  <div class="col-lg-8 offset-lg-2">
+    <a href=""><i class="fas fa-arrow-left"></i> Go Back to Messages</a>
+    <div class="heading">
+      <h1 class="heading-title h3">Confirmation Message</h1>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-8">
+            <fieldset class="form-group">
+              <label class="control-label" for="">Message</label>
+              <textarea class="form-control"></textarea>
+              <span class="help-block">0/300 Characters</span>
+            </fieldset>
+          </div>
+          <div class="col-lg-4">
+            <p><strong>Dynamic Elements</strong></p>
+            <ul class="list list-unstyled list-inline list-sm">
+              <li title="The customer's full name" data-value="#FULLNAME">
+                <a class="label label-primary">#FULLNAME</a>
+              </li>
+              <li title="The customer's first name" data-value="#FIRSTNAME">
+                <a class="label label-primary">#FIRSTNAME</a>
+              </li>
+              <li title="Appointment type (Massage, Teeth Cleaning, Consultation, etc." data-value="#APPTYPE">
+                <a class="label label-primary">#APPTYPE</a>
+              </li>
+              <li title="Your online booking link, that customers can use to book their next appointment online" data-value="#BKLNK">
+                <a class="label label-primary">#BKLNK</a>
+              </li>
+              <li title="The branch’s name (only if you operate multiple branches on PhollowUp" data-value="#BRANCH">
+                <a class="label label-primary">#BRANCH</a>
+              </li>
+              <li title="The appointment’s date, in the DD/MM/YY format" data-value="#DATE">
+                <a class="label label-primary">#DATE</a>
+              </li>
+              <li title="The appointment’s time, in the HH:MM format" data-value="#TIME">
+                <a class="label label-primary">#TIME</a>
+              </li>
+              <li title="URL link to customer's invoice" data-value="#INVLNK">
+                <a class="label label-primary">#INVLNK</a>
+              </li>
+              <li title="Employee first name" data-value="#EMPFN">
+                <a class="label label-primary">#EMPFN</a>
+              </li>
+              <li title="Branch phone number" data-value="#BRNCHNO">
+                <a class="label label-primary">#BRNCHNO</a>
+              </li>
+              <li title="Confirmation link" data-value="#CONFLNK">
+                <a class="label label-primary">#CONFLNK</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

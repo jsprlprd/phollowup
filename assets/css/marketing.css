@@ -1,13 +1,81 @@
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#landing-page {
+  background: #0056b3;
+  background: -moz-linear-gradient(45deg, #0056b3 0%, #1a89ff 100%);
+  background: -webkit-linear-gradient(45deg, #0056b3 0%,#1a89ff 100%);
+  background: linear-gradient(0deg, #0056b3 0%,#1a89ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0056b3', endColorstr='#1a89ff',GradientType=1 );
+  padding: 0;
+  margin-bottom: 0;
+  padding-top: 144px;
+  padding-bottom: 120px;
+  color: #fff;
+  position: relative;
+}
+
+
+#landing-page::after {
+  border-top: 80px solid #0056b3;
+  border-left: 25vw solid transparent;
+  border-right: 75vw  solid transparent;
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: -80px;
+}
+
+
+
+
+#landing-page::before {
+  border-top: 120px solid rgba(0, 86, 179, .1);
+  border-left: 25vw solid transparent;
+  border-right: 75vw  solid transparent;
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: -120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 #pricing-banner {
   padding: 0;
   margin-bottom: 0;
+  padding-top: 64px;
   padding-bottom: 313px;
-  background-image: url(../img/pricing-and-faq-banner.jpg);
-  background-position: center center;
-  background-size: cover;
+  background: #0056b3;
+  background: -moz-linear-gradient(12.5deg, #0056b3 0%, #1a89ff 100%);
+  background: -webkit-linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%);
+  background: linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0056b3', endColorstr='#1a89ff',GradientType=1 );
+
 }
 #pricing-banner .heading {
   margin-top: 120px;
@@ -26,6 +94,78 @@
   margin-bottom: 0;
   color: #F1F2F3;
 }
+
+
+
+
+
+
+
+
+
+
+#pricing-banner .wrapper{
+  text-align:center;
+  margin-top: 40px;
+}
+
+#pricing-banner .tabs{
+  font-size:16px;
+  padding:0px;
+  list-style:none;
+  display:inline-block;
+  border-radius:4px;
+  position:relative;
+}
+
+#pricing-banner .tabs a{
+  text-decoration:none;
+  color: #e4e4e4;
+  padding:12px 40px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.45s;
+}
+
+#pricing-banner .tabs a.active{
+  color:#fff;
+}
+
+#pricing-banner .tabs a i{
+  margin-right:5px;
+}
+
+#pricing-banner .tabs .selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:4px;
+  transition-duration:0.45s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background: #007bfe;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #pricing-plan {
   margin-top: -313px;
@@ -60,8 +200,8 @@
 }
 
 
-#basic-pricing-plan .panel-body,
-#pro-pricing-plan .panel-body {
+#basic-pricing-plan .card-body,
+#pro-pricing-plan .card-body {
   padding: 40px;
 }
 
@@ -89,21 +229,21 @@
 }
 
 
-#basic-pricing-plan .panel-footer,
-#pro-pricing-plan .panel-footer {
+#basic-pricing-plan .card-footer,
+#pro-pricing-plan .card-footer {
   padding: 40px;
   text-align: left;
   min-height: 410px;
 }
 
-#basic-pricing-plan .panel-footer .list-unstyled,
-#pro-pricing-plan .panel-footer .list-unstyled {
+#basic-pricing-plan .card-footer .list-unstyled,
+#pro-pricing-plan .card-footer .list-unstyled {
   margin-bottom: 0;
   font-size: 16px;
 }
 
-#basic-pricing-plan .panel-footer .list-unstyled li,
-#pro-pricing-plan .panel-footer .list-unstyled li {
+#basic-pricing-plan .card-footer .list-unstyled li,
+#pro-pricing-plan .card-footer .list-unstyled li {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 56px;

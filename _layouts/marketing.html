@@ -28,30 +28,51 @@ layout-styles: marketing
 
 ---
 
-<header class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2" type="button">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
-      </a>
-    </div>
-    <nav class="collapse navbar-collapse" id="navbar-collapse-2">
-      <ul class="nav navbar-nav">
-        <li><a href="{{ site.baseurl }}/">Features</a></li>
-        <li><a href="{{ site.baseurl }}/pricing-and-faq.html">Pricing &amp; FAQ</a></li>
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/pricing-and-faq.html">Pricing &amp; FAQ</a>
+        </li>
       </ul>
-      <div class="navbar-right">
-        <a class="btn btn-link btn-wide navbar-btn" href="">Create Free Account</a>
-        <a class="btn btn-primary btn-wide navbar-btn" href="{{ site.baseurl }}/login.html">Login</a>
-      </div>
-    </nav>
+      <a class="btn btn-link btn-wide navbar-btn" href="">Create Free Account</a>
+      <a class="btn btn-primary btn-wide navbar-btn" href="{{ site.baseurl }}/login.html">Login</a>
+    </div>
   </div>
-</header>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {{ content }}
 
