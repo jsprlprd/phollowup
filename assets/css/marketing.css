@@ -3,6 +3,11 @@ body {
   overflow-y: auto;
 }
 
+.navbar {
+  padding-top: .875rem;
+  padding-bottom: .875rem;
+}
+
 #landing-page {
   background: #0056b3;
   background: -moz-linear-gradient(45deg, #0056b3 0%, #1a89ff 100%);
