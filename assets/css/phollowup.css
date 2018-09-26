@@ -2011,10 +2011,9 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(2.5rem + 2px);
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
+  padding: 7px 8px;
+  font-size: 0.875rem;
+  line-height: 20px;
   color: #595959;
   background-color: #fff;
   background-clip: padding-box;
@@ -4325,8 +4324,8 @@ input[type=button].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 .card > hr {
   margin-right: 0;
