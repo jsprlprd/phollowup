@@ -1,23 +1,21 @@
-- text: Services &amp; Products
-  url: app/settings/services-and-products.html
+- text: Advanced Settings
+  url: app/settings/advanced-settings.html
+
+- text: Company
+  url: app/settings/company/
+
+- text: Employees
+  url: app/settings/employees/
 
 - text: Messages
   url: app/settings/messages/
 
-- text: Employees &amp; Branches
-  url: app/settings/employees-and-branches.html
-
-- text: Taxes &amp; Payment Methods
-  url: app/settings/taxes-and-payment-methonds.html
-
 - text: Satisfaction
   url: app/settings/satisfaction.html
+
+- text: Subscription
+  url: app/settings/subscription.html
 
 - text: Working Hours
   url: app/settings/working-hours.html
 
-- text: Advanced Settings
-  url: app/settings/advanced-settings.html
-
-- text: Subscription
-  url: app/settings/subscription.html

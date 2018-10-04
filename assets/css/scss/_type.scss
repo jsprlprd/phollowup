@@ -25,6 +25,16 @@ h6, .h6 { font-size: $h6-font-size; }
   font-weight: $lead-font-weight;
 }
 
+
+.text-lg {
+  font-size: $font-size-base;
+}
+
+.text-sm {
+  font-size: $font-size-xs;
+}
+
+
 // Type display classes
 .display-1 {
   font-size: $display1-size;
@@ -90,10 +100,11 @@ mark,
   @include list-unstyled;
 }
 .list-inline-item {
-  display: inline-block;
+  // display: inline-block;
+  display: inline;
 
   &:not(:last-child) {
-    margin-right: $list-inline-padding;
+    // margin-right: $list-inline-padding;
   }
 }
 

@@ -1,0 +1,11 @@
+- text: Appointments
+  url: appointments
+  status: active
+
+- text: Services &amp; Branches
+  url: services-and-branches
+  status:
+
+- text: Working Hours
+  url: working-hours
+  status:

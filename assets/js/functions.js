@@ -9,8 +9,11 @@ $('[data-toggle="popover"]').popover()
 $("#view-appointment").popover({
   html : true,
   placement: "right",
+  title: function() {
+    return $("#view-appointment-popover-header").html();
+  },
   content: function() {
-    return $("#view-appointment-popover").html();
+    return $("#view-appointment-popover-content").html();
   },
   trigger: "click"
 });

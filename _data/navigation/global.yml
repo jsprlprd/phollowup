@@ -24,4 +24,4 @@
 
 - text: Settings
   icon: fas fa-cogs
-  url: app/settings/services-and-products.html
+  url: app/settings/advanced-settings.html

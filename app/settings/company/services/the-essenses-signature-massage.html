@@ -1,0 +1,81 @@
+---
+layout: app
+subnavbar: true
+container-type: container
+heading-title: Settings
+subheader: true
+subheader-title: The Essenses Signature Massage
+---
+
+<div class="row">
+  <div class="col-lg-8 offset-2">
+    <div class="card">
+      <div class="card-body">
+        <form action="">
+          <p class="lead">Basic Details</p>
+          {% include components/molecules/input-field-horizontal.html 
+            label="Service Name"
+            name="service-name"
+            type="text"
+            placeholder="Enter Service Name"
+            label-size="col-lg-3"
+            input-size="col-lg-6"
+            help-block=""
+          %}
+          {% include components/molecules/textarea-field-horizontal.html 
+            label="Description"
+            name="description"
+            type="text"
+            placeholder="Enter Description"
+            label-size="col-lg-3"
+            input-size="col-lg-6"
+            help-block=""
+          %}
+          {% include components/molecules/checkbox-horizontal.html 
+            label="Show this Service in Online Booking?"
+            name="show-this-service-in-online-booking"
+            label-spacer-size="offset-lg-3"
+            input-size="col-lg-6"
+          %}
+          {% include components/molecules/checkbox-horizontal.html 
+            label="Show this Service Price in Online Booking?"
+            name="show-this-service-price-in-online-booking"
+            label-spacer-size="offset-lg-3"
+            input-size="col-lg-6"
+          %}
+          <hr class="dashed">
+          <p class="lead">Variants</p>
+          <div class="row">
+            <div class="col-6">
+              {% include components/molecules/input-field.html 
+                label="Duration"
+                name="duration"
+                type="text"
+                placeholder="Enter Duration"
+                label-size=""
+                input-size=""
+                help-block=""
+              %}
+            </div>
+            <div class="col-6">
+              {% include components/molecules/input-field.html 
+                label="Price"
+                name="price"
+                type="text"
+                placeholder="Enter Price"
+                label-size=""
+                input-size=""
+                help-block=""
+              %}
+            </div>
+          </div>
+          <a class="btn btn-light" href="">Add Variant</a>
+        </form>
+      </div>
+      <div class="card-footer d-flex align-items-start align-items-center justify-content-between">
+        <a class="btn btn-link" href="">Delete this Service</a>
+        <a class="btn btn-primary" href="">Save Changes</a>
+      </div>
+    </div>
+  </div>
+</div>

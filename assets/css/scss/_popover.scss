@@ -13,8 +13,8 @@
   word-wrap: break-word;
   background-color: $popover-bg;
   background-clip: padding-box;
-  border: $popover-border-width solid $popover-border-color;
-  @include border-radius($popover-border-radius);
+  // border: $popover-border-width solid $popover-border-color;
+  // @include border-radius($popover-border-radius);
   @include box-shadow($popover-box-shadow);
 
   .arrow {
@@ -24,7 +24,7 @@
     height: $popover-arrow-height;
     margin: 0 $border-radius-lg;
 
-    &::before,
+    // &::before,
     &::after {
       position: absolute;
       display: block;
@@ -168,9 +168,9 @@
   font-size: $font-size-base;
   color: $popover-header-color;
   background-color: $popover-header-bg;
-  border-bottom: $popover-border-width solid darken($popover-header-bg, 5%);
-  $offset-border-width: calc(#{$border-radius-lg} - #{$popover-border-width});
-  @include border-top-radius($offset-border-width);
+  // border-bottom: $popover-border-width solid darken($popover-header-bg, 5%);
+  // $offset-border-width: calc(#{$border-radius-lg} - #{$popover-border-width});
+  // @include border-top-radius($offset-border-width);
 
   &:empty {
     display: none;
