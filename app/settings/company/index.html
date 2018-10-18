@@ -75,7 +75,7 @@ heading-title: Settings
 <div class="row">
   <div class="col-lg-4">
     <h1 class="h3">Services</h1>
-    <p>This is the list of Services your business offers, your appointment types. Feel free to duplicate them if they have different variations (examples: “Massage (60 min.)” and “Massage (90 min.)”. The “Price” field will be used when creating the default Invoice for your customer- you can always change it. All services entered here can be booked online by your customers through your Online Booking page.</p>
+    <p class="text-lg">This is the list of Services your business offers, your appointment types. Feel free to duplicate them if they have different variations (examples: “Massage (60 min.)” and “Massage (90 min.)”. The “Price” field will be used when creating the default Invoice for your customer- you can always change it. All services entered here can be booked online by your customers through your Online Booking page.</p>
   </div>
   <div class="col-lg-8">
     <div class="card">
@@ -202,13 +202,19 @@ heading-title: Settings
 <div class="row">
   <div class="col-lg-4">
     <h1 class="h3">Products</h1>
-    <p>This is your list of Products for sale, to use inside customer Invoices. These items will not show inside your Online Booking page. You don’t need to re-create your list of Services here. Example of products: “Shampoo bottle”, “At-home whitening kit”, etc.</p>
+    <p class="text-lg">This is your list of Products for sale, to use inside customer Invoices. These items will not show inside your Online Booking page. You don’t need to re-create your list of Services here. Example of products: “Shampoo bottle”, “At-home whitening kit”, etc.</p>
   </div>
   <div class="col-lg-8">
     <div class="card">
 
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
-        <h6 class="card-header-title h5">Products</h6>
+        <div class="form-inline">
+          {% include components/atoms/input.html 
+            name="previous-name"
+            type="text"
+            placeholder="Search Products"
+          %}
+        </div>
         <a class="btn btn-primary" href="">Add New Product</a>
       </div>
 
@@ -240,7 +246,7 @@ heading-title: Settings
 <div class="row">
   <div class="col-lg-4">
     <h1 class="h3">Taxes</h1>
-    <p>What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
+    <p class="text-lg">What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
   </div>
   <div class="col-lg-8">
     <div class="card">
@@ -250,135 +256,51 @@ heading-title: Settings
         <a class="btn btn-primary" href="">Add New Tax</a>
       </div>
 
-      <table class="table table-lg table-hover">
-        <thead>
-          <tr>
-            <th class="col-xs-4">Name</th>
-            <th class="col-xs-3">Employees</th>
-            <th class="col-xs-3">Duration</th>
-            <th class="col-xs-2"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="">The Essenses Signature Massage</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Pevonia Body Polish</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Body Polish with Seasalt &amp; Honey</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Mt. Mayon Hot Stone Therapy Massage</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Foot Spa with Scrub</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <!-- <tr>
-            <td>Back Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Foot Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Head Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Hand Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Manicure</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Pedicure</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Hand Cleaning</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Foot Cleaning</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr> -->
-        </tbody>
-      </table>
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+          <div class="media">
+            <div class="media-body">
+              <div class="row">
+                <div class="col-6 align-self-center">
+                  <p class="text-lg mb-0"><b>Value Added Tax (VAT)</b></p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <p class="mb-0">12%</p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <p class="mb-0">
+                    <span class="badge badge-warning">Default</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="d-inline-flex align-self-center ml-3">
+              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
+            </div>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+          <div class="media">
+            <div class="media-body">
+              <div class="row">
+                <div class="col-6 align-self-center">
+                  <p class="text-lg mb-0"><b>No Tax</b></p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <p class="mb-0"></p>
+                </div>
+                <div class="col-3 align-self-center">
+                  <p class="mb-0"></p>
+                </div>
+              </div>
+            </div>
+            <div class="d-inline-flex align-self-center ml-3">
+              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
   </div>
 </div>
@@ -388,145 +310,38 @@ heading-title: Settings
 <div class="row">
   <div class="col-lg-4">
     <h1 class="h3">Payment Methods</h1>
-    <p>Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
+    <p class="text-lg">Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
   </div>
   <div class="col-lg-8">
     <div class="card">
-      <div class="card-header">
-        <div class="float-right">
-          <a class="btn btn-primary" href="">Add New Service</a>
-        </div>
-        Test
+      <div class="card-header d-flex align-items-start align-items-center justify-content-between">
+        <h6 class="card-header-title h5">Payment Method</h6>
+        <a class="btn btn-primary" href="">Add New Payment Method</a>
       </div>
-      <table class="table table-lg table-hover">
-        <thead>
-          <tr>
-            <th class="col-xs-4">Name</th>
-            <th class="col-xs-3">Employees</th>
-            <th class="col-xs-3">Duration</th>
-            <th class="col-xs-2"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="">The Essenses Signature Massage</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Pevonia Body Polish</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Body Polish with Seasalt &amp; Honey</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Mt. Mayon Hot Stone Therapy Massage</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="">Foot Spa with Scrub</a></td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <!-- <tr>
-            <td>Back Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Foot Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Head Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Hand Massage</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Manicure</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Pedicure</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Hand Cleaning</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Foot Cleaning</td>
-            <td></td>
-            <td></td>
-            <td>
-              <a class="btn btn-success btn-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-              <a class="btn btn-danger btn-sm" href=""><i class="fas fa-trash-alt"></i></a>
-            </td>
-          </tr> -->
-        </tbody>
-      </table>
+      
+      <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+          <div class="media">
+            <div class="media-body">
+              <p class="text-lg mb-0"><b>Debit/Credit Card</b></p>
+            </div>
+            <div class="d-inline-flex align-self-center ml-3">
+              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
+            </div>
+          </div>
+        </a>
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+          <div class="media">
+            <div class="media-body">
+              <p class="text-lg mb-0"><b>Cash</b></p>
+            </div>
+            <div class="d-inline-flex align-self-center ml-3">
+              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
     </div>
   </div>
 </div>

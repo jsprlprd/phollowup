@@ -1,5 +1,5 @@
-<ul class="nav {{ include.nav-type }} {{ include.isLarge }} {{ include.isStacked }} {{ include.isJustified }} {{ include.isResponsive }}">
-  {% for tabs in include.list-value-name %}
+<ul class="nav {{ include.nav-type }} {{ include.isLarge }} {{ include.isStacked }} {{ include.isJustified }}  {{ include.isResponsive }} {{ include.isCardHeaderTabs }}">
+    {% for tabs in include.list-value-name %}
     <li class="nav-item">
       {% if include.hasIcon %}
         <a class="nav-link {{ tabs.status }}" href="#{{ tabs.url }}-tab" data-toggle="tab"><i class="{{ tabs.icon }}"></i>{{tabs.text}}</a>

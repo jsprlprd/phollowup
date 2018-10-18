@@ -7,68 +7,441 @@ heading-title: Customers
 heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
 ---
 
-<a class="btn btn-outline-dark" href="">Import</a>
-<a class="btn btn-outline-dark" href="">Export</a>
-<a class="btn btn-primary" href="">Add New Customers</a>
-
 <div class="card">
-  <div class="card-header">
-    {% include components/molecules/nav-menu.html
-      nav-type="nav-tabs"
-      isLarge=""
-      isStacked=""
-      isJustified=" card-header-tabs"
-      isResponsive="nav-tabs-responsive"
-      list-value-name=site.data.navigation.customer-filer
-      hasIcon=""
-    %}
+    <div class="row no-gutters">
+      <div class="col-lg-4 no-gutters">
+        <div class="card-header d-flex align-items-start align-items-center justify-content-between">
+          <h6 class="card-header-title h5">Customer</h6>
+          <a class="btn btn-primary" href="">Add New Customer</a>
+        </div>
+        <div class="p-3">
+  
+  
+  
+          {% include components/atoms/input.html 
+            name="previous-name"
+            type="text"
+            placeholder="Search Customer"
+          %}
+  
+        </div>
+        <div class="list-group list-group-flush" style="max-height: calc(100vh - 293px); overflow: hidden; overflow-y: auto;">
+          <a href="#" class="list-group-item list-group-item-action active">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" width="42" height="42">
+              </div>
+              <div class="media-body align-self-center">
+                <span class="text-lg">Jasper Lepardo</span>
+                <br>
+                <small>Admin</small>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+        </div>
+      </div>
+      <div class="col-lg-8 no-gutters" style="border-left: 1px solid #dddddd">
+        <div class="card-header" style="padding: 40px; padding-bottom: 0; border-bottom: 0;">
+          <div class="media">
+            <div class="d-inline-flex mr-3">
+              <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" width="96" height="96">
+            </div>
+            <div class="media-body align-self-center">
+              <h6 class="h5">Jasper Lepardo</h6>
+              <p>Admin</p>
+              <ul class="list list-icon list-icon-default">
+                <li><i class="list-item-icon fas fa-phone"></i><a href="">(0917) 116 1268</a></li>
+                <li><i class="list-item-icon fas fa-envelope"></i><a href="">jsprlprd@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="d-inline-flex ml-3">
+              <a class="btn btn-light" href=""><i class="fas fa-pen"></i></a>
+              <a class="btn btn-light" href=""><i class="fas fa-trash-alt"></i></a>
+            </div>
+          </div>
+          {% include components/molecules/nav-tabs.html
+            nav-type="nav-tabs"
+            isLarge=""
+            isStacked=""
+            isJustified=""
+            isResponsive="nav-tabs-responsive"
+            list-value-name=site.data.navigation.employee-settings
+            hasIcon=""
+          %}
+        </div>
+        <div class="card-body">
+          <div class="tab-content">
+            <div class="tab-pane show active" id="appointments-tab">
+              <ul class="list-group list-group-flush" id="appointment-list">
+                <li class="list-group-item">
+                  <div class="media">
+                    <div class="d-inline-flex mr-3">
+                      02:00 PM
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6 class="h5">
+                        <a href="">Jasper Lepardo</a>
+                      </h6>
+                      <ul class="list list-icon list-inline text-muted">
+                        <li class="list-inline-item"><i class="list-item-icon fas fa-concierge-bell"></i>Graphic design</li>
+                        <li class="list-inline-item"><i class="list-item-icon fas fa-clock"></i>60 Mins</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-pane" id="services-and-branches-tab">
+              test
+            </div>
+            <div class="tab-pane" id="working-hours-tab">
+                <h1 class="card-title h4">Working Hours</h1>
+              <div class="form-group row">
+                <label class="col-2 col-form-label" for="">Availability Days</label>
+                <div class="col-sm-10">
+                  <div data-toggle="buttons">
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option1" autocomplete="off" checked> Mon
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option2" autocomplete="off" checked> Tue
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Wed
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Thu
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Fri
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off"> Sat
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off"> Sun
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Lunch Break</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <hr class="dashed">
+  
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Monday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Tuesday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Wednesday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Thursday</label>
+                 <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Friday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Saturday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 col-form-label">Sunday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+   
+              <hr class="dashed">
+  
+              <a class="btn btn-primary" href="">Update Working Hours</a>
+  
+  
+  
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
   </div>
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th class="col-xs-2">Name</th>
-        <th class="col-xs-1">Contact</th>
-        <th class="col-xs-1">Birhday</th>
-        <th class="col-xs-1">First appt.</th>
-        <th class="col-xs-1">Last appt.</th>
-        <th class="col-xs-1">Service</th>
-        <th class="col-xs-1">A/Year</th>
-        <th class="col-xs-1">$/Year</th>
-        <th class="col-xs-1">Msg</th>
-        <th class="col-xs-1">Note</th>
-        <th class="col-xs-1"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="/app/customers/jasper-lepardo.html">Jasper Lepardo</a></td>
-        <td>jsprlprd@gmail.com</td>
-        <td>May 12, 1993</td>
-        <td>Aug 09, 2018</td>
-        <td>Aug 09, 2018</td>
-        <td>Graphic Design</td>
-        <td>1</td>
-        <td>P 600.0</td>
-        <td></td>
-        <td></td>
-        <td><a class="btn btn-danger btn-sm" href="">&times;</a></td>
-      </tr>
-      <tr>
-        <td><a href="">Jasper Lepardo</a></td>
-        <td>jsprlprd@gmail.com</td>
-        <td>May 12, 1993</td>
-        <td>Aug 09, 2018</td>
-        <td>Aug 09, 2018</td>
-        <td>Graphic Design</td>
-        <td>1</td>
-        <td>P 600.0</td>
-        <td></td>
-        <td></td>
-        <td><a class="btn btn-danger btn-sm" href="">&times;</a></td>
-      </tr>
-    </tbody>
-  </table>
-
-
-</div>
-
+  

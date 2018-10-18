@@ -12,7 +12,7 @@ layout: marketing
       <div class="col-lg-5 align-self-center">
         <h1 class="display-3" style="line-height: 1; margin-bottom: 16px; color: #ffffff">Maximized Commitment</h1>
         <p class="lead mb-5" style="font-size: 24px;">Worried that no familiar face has come through the door because you failed to meet their satisfaction the first time?</p>
-        <a class="btn btn-warning btn-lg btn-wide" style="border-radius: 9999px;" href="">Watch Video</a>
+        <a class="btn btn-warning btn-pills btn-lg btn-wide" data-remote="{{ site.baseurl }}overview-video.html" data-toggle="modal" data-target="#overview-video" href="#overview-video">Watch Video</a>
       </div>
     </div>
   </div>
@@ -22,25 +22,25 @@ layout: marketing
   <div class="card-deck">
     <div class="card text-center border-0">
       <div class="card-body p-5">
-        <img src="{{ site.baseurl }}/assets/img/icon.png" alt="" width="96" height="96">
+        <img class="mb-3" src="{{ site.baseurl }}/assets/img/marketing/feature-icon-01.png" alt="" width="96" height="96">
         <p class="card-text">Checking your clients’ overall experience is key to making them feel your genuine desire to serve better.</p>
       </div>
     </div>
     <div class="card text-center border-0">
       <div class="card-body p-5">
-        <img src="{{ site.baseurl }}/assets/img/icon.png" alt="" width="96" height="96">
+        <img class="mb-3" src="{{ site.baseurl }}/assets/img/marketing/feature-icon-02.png" alt="" width="96" height="96">
         <p class="card-text">Reminding them of their next visit makes sure they keep track of their busy schedule (and you of yours).</p>
       </div>
     </div>
     <div class="card text-center border-0">
       <div class="card-body p-5">
-        <img src="{{ site.baseurl }}/assets/img/icon.png" alt="" width="96" height="96">
+        <img class="mb-3" src="{{ site.baseurl }}/assets/img/marketing/feature-icon-03.png" alt="" width="96" height="96">
         <p class="card-text">Surprising your patrons with small gifts and promos of appreciation guarantees you’re on top of their minds and their loved ones’.</p>
       </div>
     </div>
     <div class="card text-center border-0">
       <div class="card-body p-5">
-        <img src="{{ site.baseurl }}/assets/img/icon.png" alt="" width="96" height="96">
+        <img class="mb-3" src="{{ site.baseurl }}/assets/img/marketing/feature-icon-04.png" alt="" width="96" height="96">
         <p class="card-text">Good news: gaining client trust is up to you and with PhollowUp, securing their loyalty becomes less of a challenge!</p>
       </div>
     </div>
@@ -54,7 +54,7 @@ layout: marketing
   </div>
   <div class="row pt-5 pb-5">
     <div class="col-md-6 offset-lg-1 order-md-2">
-      <img class="img-fluid" src="https://dummyimage.com/610x4:3/e4e4e4/BEBEBE" alt="">
+      <img class="img-fluid" src="/assets/img/marketing/featured-photo-01.png" alt="">
     </div>
     <div class="col-md-6 col-lg-4 offset-lg-1 align-self-center">
       <h3>Converting one-time visitors to happy regulars</h3>
@@ -66,7 +66,7 @@ layout: marketing
 <div class="container">
   <div class="row pt-5 pb-5">
     <div class="col-md-6">
-      <img class="img-fluid" src="https://dummyimage.com/610x4:3/e4e4e4/BEBEBE" alt="">
+      <img class="img-fluid" src="/assets/img/marketing/featured-photo-02.png" alt="">
     </div>
     <div class="col-md-6 col-lg-4 offset-lg-1 align-self-center">
       <h3>Having less empty slots in a business day</h3>
@@ -78,7 +78,7 @@ layout: marketing
 <div class="container">
   <div class="row pt-5 pb-5">
     <div class="col-md-6 offset-lg-1 order-md-2">
-      <img class="img-fluid" src="https://dummyimage.com/610x4:3/e4e4e4/BEBEBE" alt="">
+      <img class="img-fluid" src="/assets/img/marketing/featured-photo-03.png" alt="">
     </div>
     <div class="col-md-6 col-lg-4 offset-lg-1 align-self-center">
       <h3>Coming to work fully prepared</h3>
@@ -90,7 +90,7 @@ layout: marketing
 <div class="container">
   <div class="row pt-5 pb-5">
     <div class="col-md-6">
-      <img class="img-fluid" src="https://dummyimage.com/610x4:3/e4e4e4/BEBEBE" alt="">
+      <img class="img-fluid" src="/assets/img/marketing/featured-photo-04.png" alt="">
     </div>
     <div class="col-md-6 col-lg-4 offset-lg-1 align-self-center">
       <h3>Looking more professional</h3>
@@ -102,7 +102,7 @@ layout: marketing
 <div class="container">
   <div class="row pt-5 pb-5">
     <div class="col-md-6 offset-lg-1 order-md-2">
-      <img class="img-fluid" src="https://dummyimage.com/610x4:3/e4e4e4/BEBEBE" alt="">
+      <img class="img-fluid" src="/assets/img/marketing/featured-photo-05.png" alt="">
     </div>
     <div class="col-md-6 col-lg-4 offset-lg-1 align-self-center">
       <h3>Having less time wasted on the phone</h3>
@@ -114,7 +114,7 @@ layout: marketing
 <div class="container">
   <div class="row pt-5 pb-5">
     <div class="col-md-6">
-      <img class="img-fluid" src="https://dummyimage.com/610x4:3/e4e4e4/BEBEBE" alt="">
+      <img class="img-fluid" src="/assets/img/marketing/featured-photo-06.png" alt="">
     </div>
     <div class="col-md-6 col-lg-4 offset-lg-1 align-self-center">
       <h3>Ease of clients in booking and rebooking appointments online</h3>
@@ -127,4 +127,13 @@ layout: marketing
 <div class="container">
   <p>Solve all those client concerns on autopilot NOW. [WATCH VIDEO DEMO]</p>
   <p>Request for an online presentation with one of our agents NOW.</p>
+</div>
+
+
+
+<div class="modal fade" id="overview-video">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    </div>
+  </div>
 </div>
