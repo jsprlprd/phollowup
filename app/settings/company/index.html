@@ -82,10 +82,13 @@ heading-title: Settings
 
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
         <div class="form-inline">
-          {% include components/atoms/input.html 
-            name="previous-name"
-            type="text"
-            placeholder="Search Services"
+          {% include components/atoms/form/input.html 
+            isInputLarge=""
+            isInputRequired=""
+            input-name="search-services"
+            input-type="search"
+            input-value=""
+            input-placeholder="Search Services"
           %}
         </div>
         <a class="btn btn-primary" href="">Add New Service</a>
@@ -209,10 +212,13 @@ heading-title: Settings
 
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
         <div class="form-inline">
-          {% include components/atoms/input.html 
-            name="previous-name"
-            type="text"
-            placeholder="Search Products"
+          {% include components/atoms/form/input.html 
+            isInputLarge=""
+            isInputRequired=""
+            input-name="search-products"
+            input-type="search"
+            input-value=""
+            input-placeholder="Search Products"
           %}
         </div>
         <a class="btn btn-primary" href="">Add New Product</a>

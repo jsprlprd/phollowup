@@ -1,0 +1,138 @@
+---
+layout: base
+layout-styles: app
+---
+
+<div id="left-panel">
+  <a class="brand" href="">
+    <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
+  </a>
+  <div>
+    {% include components/molecules/nav-menu.html
+      nav-type="nav-pills"
+      isLarge=""
+      isStacked="flex-column"
+      isJustified=""
+      list-value-name=site.data.navigation.design-system
+      hasIcon=""
+    %}
+
+  </div>
+</div>
+
+<div id="main-panel">
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">{{ page.heading-title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/app/settings/subscription.html" style="color: #f78002; line-height: 24px; padding-top: 12px; padding-bottom: 12px;">Upgrade Now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="" style="font-size: 18px; line-height: 24px; padding-top: 12px; padding-bottom: 12px;"><i class="far fa-bell"></i></a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
+          <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item media" href="">
+            <div class="media-left">
+              <img class="rounded-circle" src="/assets/img/avatar.png" width="48" height="48" alt="">
+            </div>
+            <div class="media-body media-middle">
+              Jasper Lepardo
+            </div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Link #1</a>
+          <a class="dropdown-item" href="#">Link #1</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+    <nav class="subnavbar">
+      {% include components/molecules/nav-tabs.html
+        nav-type="nav-tabs"
+        isLarge=""
+        isStacked=""
+        isJustified=""
+        isResponsive="nav-tabs-responsive"
+        list-value-name=site.data.navigation.subnavbar.design-system
+        hasIcon=""
+      %}
+    </nav>
+
+
+  {% if page.subheader %}
+
+    <div class="subheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 text-right"><button class="go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button></div>
+          <div class="col-md-8">{{ page.subheader-title }}</div>
+        </div>
+      </div>
+    </div>
+
+  {% endif %}
+
+
+
+  <main class="{{ page.container-type }}" id="main-content">
+
+    {{ content }}
+
+  </main>
+
+</div>
+
+<div id="right-panel">
+
+</div>
+
+
+
+
+
+
+<div class="modal" id="dialog-html-inspector">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">&times;</button>
+        <h4 class="modal-title">Source Code</h4>
+      </div>
+      <div class="modal-body">
+        <pre><code></code></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

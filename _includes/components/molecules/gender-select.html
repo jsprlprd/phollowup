@@ -1,5 +1,8 @@
 <div class="form-group">
-  {% include components/atoms/label.html %}
+  {% if include.hasFormLabel == "no-form-label" %}
+  {% else %}
+    {% include components/atoms/form/label.html %}
+  {% endif %}
   <div class="{{ include.input-size}}">
     <div class="btn-group" data-toggle="buttons" style="width: 100%;">
       <label class="btn btn-light active" style="width: 50%;">
@@ -9,5 +12,9 @@
         <input type="radio" name="gender" value="Female">Female
       </label>
     </div>
-  </div>
+    {% if include.hasFormHelper == "no-form-helper" %}
+    {% else %}
+      {% include components/atoms/form/helper.html %}
+    {% endif %}
+    </div>
 </div>

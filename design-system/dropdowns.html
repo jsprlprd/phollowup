@@ -1,0 +1,79 @@
+---
+layout: design-system
+container-type: container
+heading-title: Dropdowns
+---
+
+<div class="clearfix js-html-inspector" data-remove-target="p:first">
+  <p><strong>.dropdown ul.dropdown-menu</strong></p>
+  <div class="dropdown">
+    <!-- Only use inline style for static display -->
+    <ul class="dropdown-menu" style="display: block; position: static;">
+        {% include components/atoms/dropdown.html 
+          list-value-name=site.data.dropdown-menu
+        %}
+  
+      </ul>
+  </div>
+</div>
+
+
+
+<div class="d-flex">
+  <div class="dropdown mr-1">
+    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,0">
+      Offset
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+
+
+
+
+
+
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-secondary">Reference</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<p>Via data attributes: <code>data-toggle="dropdown"</code></p>
+
+<div class="js-html-inspector">
+  <div class="dropdown">
+    <a class="btn btn-primary" data-toggle="dropdown" href="#">
+      Dropdown trigger
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Link #1</a></li>
+      <li><a href="#">Link #2</a></li>
+    </ul>
+  </div>
+</div>
+
+<p><br>Via Javascript: <code>$('.dropdown-toggle').dropdown()</code>(<code>data-toggle="dropdown"</code> still required)</p>
+<p>Methods: <code>.dropdown('toggle')</code></p>
+<p>Events: <code>show.bs.dropdown</code> <code>shown.bs.dropdown</code> <code>hide.bs.dropdown</code> <code>hidden.bs.dropdown</code></p>

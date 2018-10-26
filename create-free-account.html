@@ -1,0 +1,129 @@
+---
+layout: login
+---
+
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <div class="d-block d-lg-none">
+        <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-Colored.png" alt="" width="" height="32">
+      </div>
+      <div class="d-none d-md-block">
+        <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-White.png" alt="" width="" height="32">
+      </div>
+    </a>
+    <span>
+      <span class="d-none d-md-inline-block mr-3">Already have an account?</span>
+      <a class="btn btn-light btn-wide btn-pills" href="{{ site.baseurl }}/login.html">Sign In</a> 
+    </span>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="container-fluid">
+  <div class="row">
+    <div class="login-features">
+    </div>
+    <div class="col d-flex align-self-center">
+      <form class="login-form">
+        <!-- <img class="login-brand" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" height="32"> -->
+        <div class="heading">
+          <h1 class="heading-title h3">Get started absolutely free.</h1>
+          <p class="heading-subtitle">Free forever. No credit card needed.</p>
+        </div>
+        {% include components/organisms/forms/full-name.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-size=""
+          form-label-text="Full Name"
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-size=""
+          form-label-text="Business Name"
+          input-size=""
+          input-type="text"
+          input-name="business-name"
+          input-value=""
+          input-placeholder="Business Name Inc."
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-size=""
+          form-label-text="Email Address"
+          input-size=""
+          input-type="email"
+          input-name="email-address"
+          input-value=""
+          input-placeholder="your-name@company.com"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-size=""
+          form-label-text="Choose a Password"
+          input-size=""
+          input-type="password"
+          input-name="password"
+          input-value=""
+          input-placeholder="Choose a Password"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        <div class="button-group text-center">
+          <a class="btn btn-warning btn-lg btn-wide btn-pills" href="{{ site.baseurl }}/app/dashboard.html">Continue</a>
+          <div class="text-sm text-muted mt-3">By clicking "Continue" I agree to Phollowup's <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+
+
+

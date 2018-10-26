@@ -7,7 +7,7 @@
 .form-control {
   display: block;
   width: 100%;
-  height: $input-height;
+  // height: $input-height;
   padding: $input-padding-y $input-padding-x;
   font-size: $input-font-size;
   line-height: $input-line-height;
@@ -83,11 +83,11 @@ select.form-control {
 
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
-.col-form-label {
+.form-label {
   padding-top: calc(#{$input-padding-y} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y} + #{$input-border-width});
   margin-bottom: 0; // Override the `<label>/<legend>` default
-  font-size: inherit; // Override the `<legend>` default
+  font-size: 14px; // Override the `<legend>` default
   line-height: $input-line-height;
 
   @include media-breakpoint-up(md) {
@@ -95,20 +95,20 @@ select.form-control {
   }
 }
 
-.col-form-label-lg {
+.form-label-lg {
   padding-top: calc(#{$input-padding-y-lg} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-lg} + #{$input-border-width});
-  font-size: $font-size-lg;
+  // font-size: 14px;
   line-height: $input-line-height-lg;
   @include media-breakpoint-up(md) {
     text-align: right;
   }
 }
 
-.col-form-label-sm {
+.form-label-sm {
   padding-top: calc(#{$input-padding-y-sm} + #{$input-border-width});
   padding-bottom: calc(#{$input-padding-y-sm} + #{$input-border-width});
-  font-size: $font-size-sm;
+  // font-size: 14px;
   line-height: $input-line-height-sm;
   @include media-breakpoint-up(md) {
     text-align: right;
@@ -149,19 +149,23 @@ select.form-control {
 // Repeated in `_input_group.scss` to avoid Sass extend issues.
 
 .form-control-sm {
-  height: $input-height-sm;
-  padding: $input-padding-y-sm $input-padding-x-sm;
-  font-size: $font-size-sm;
-  line-height: $input-line-height-sm;
-  @include border-radius($input-border-radius-sm);
+  // height: $input-height-sm;
+  // padding: $input-padding-y-sm $input-padding-x-sm;
+  padding-top: $input-padding-y-sm;
+  padding-bottom: $input-padding-y-sm;
+  // font-size: $font-size-sm;
+  // line-height: $input-line-height-sm;
+  // @include border-radius($input-border-radius-sm);
 }
 
 .form-control-lg {
-  height: $input-height-lg;
-  padding: $input-padding-y-lg $input-padding-x-lg;
-  font-size: $font-size-lg;
-  line-height: $input-line-height-lg;
-  @include border-radius($input-border-radius-lg);
+  // height: $input-height-lg;
+  // padding: $input-padding-y-lg $input-padding-x-lg;
+  padding-top: $input-padding-y-lg;
+  padding-bottom: $input-padding-y-lg;
+  // font-size: $font-size-lg;
+  // line-height: $input-line-height-lg;
+  // @include border-radius($input-border-radius-lg);
 }
 
 // stylelint-disable no-duplicate-selectors
@@ -186,9 +190,9 @@ textarea.form-control {
   margin-bottom: $form-group-margin-bottom;
 }
 
-.form-text {
+.form-helper {
   display: block;
-  margin-top: $form-text-margin-top;
+  margin-top: $form-helper-margin-top;
 }
 
 
@@ -199,13 +203,13 @@ textarea.form-control {
 .form-row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -5px;
-  margin-left: -5px;
+  margin-right: -4px;
+  margin-left: -4px;
 
   > .col,
   > [class*="col-"] {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 4px;
+    padding-left: 4px;
   }
 }
 
@@ -257,71 +261,6 @@ textarea.form-control {
 
 
 
-
-
-
-.form-month-control {
-  width: 40%;
-}
-
-.form-day-control {
-  width: 25%;
-}
-
-.form-year-control {
-  width: 30%;
-}
-
-.form-month-control,
-.form-day-control,
-.form-year-control {
-  float: left;
-  // display: inline-block;
-  margin-right: 2.5%;
-}
-
-.form-month-control + .form-day-control + .form-year-control,
-.form-day-control + .form-month-control + .form-year-control {
-  margin-right: 0;
-}
-
-
-.form-date-group {
-  // display: inline-block;
-
-  .form-control {
-    display: inline-block;
-    // width: auto; // Prevent labels from stacking above inputs in `.form-group`
-    vertical-align: middle;
-    // margin-right: 2.5%;
-    // margin-left: -4px;
-    // &:first-child {
-    //   margin-left: 0;
-    // }
-    // &:last-child {
-    //   margin-right: 0;
-    // }
-  }
-}
-
-.form-name-group {
-  // display: inline-block;
-
-  .form-control {
-    display: inline-block;
-    // width: auto; // Prevent labels from stacking above inputs in `.form-group`
-    vertical-align: middle;
-    // width: 48.75%;
-    // margin-right: 2.5%;
-    // margin-left: -4px;
-    // &:first-child {
-    //   margin-left: 0;
-    // }
-    // &:last-child {
-    //   margin-right: 0;
-    // }
-  }
-}
 
 .form-required {
   .form-control {

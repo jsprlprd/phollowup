@@ -2,32 +2,112 @@
 layout: login
 ---
 
-<main class="login-wrapper">
-  <form class="login-form">
-    <img class="login-brand" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" height="32">
-    <div class="heading">
-      <h1 class="heading-title h3">Sign In</h1>
-      <p class="heading-subtitle">with your PhollowUp account</p>
+
+
+
+
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <div class="d-block d-lg-none">
+        <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-Colored.png" alt="" width="" height="32">
+      </div>
+      <div class="d-none d-md-block">
+        <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-White.png" alt="" width="" height="32">
+      </div>
+    </a>
+    <span>
+      <span class="d-none d-md-inline-block mr-3">Don't have an account?</span>
+      <a class="btn btn-light btn-wide btn-pills" href="{{ site.baseurl }}/create-free-account.html">Get Started</a> 
+    </span>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main class="container-fluid">
+  <div class="row">
+    <div class="login-features">
+
     </div>
-    <p class="text-muted">Enter your <b>Email or Username</b> and <b>Password</b></p>
-    <fieldset class="form-group form-group-lg has-icon-left">
-      <input class="form-control" type="text" name="" id="" placeholder="Email or Username">
-      <span class="form-control-icon">
-        <i class="ec-icon icon-user-2"></i>
-      </span>
-    </fieldset>
-    <fieldset class="form-group form-group-lg has-icon-left">
-      <input class="form-control" type="password" name="" id="" placeholder="Password">
-      <span class="form-control-icon">
-        <i class="ec-icon icon-key-1"></i>
-      </span>
-    </fieldset>
-    <fieldset class="checkbox">
-      <label><input type="checkbox">Rembember me</label>
-    </fieldset>
-    <div class="button-group">
-      <a class="btn btn-success btn-lg btn-block" href="{{ site.baseurl }}/app/dashboard.html">Login</a>
-      <a class="btn btn-link btn-lg btn-block"  href="">Forgot Password?</a>  
+    <div class="col d-flex align-self-center">
+      <form class="login-form">
+        <div class="heading">
+          <h1 class="heading-title h3">Sign In</h1>
+          <p class="heading-subtitle">with your PhollowUp account</p>
+        </div>
+        <p class="text-muted">Enter your <b>Email or Username</b> and <b>Password</b></p>
+
+        {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge="form-control-lg"
+          isInputRequired=""
+          hasFormLabel="none"
+          form-label-size=""
+          form-label-text=""
+          input-size=""
+          input-type="email"
+          input-name="email-or-username"
+          input-value=""
+          input-placeholder="Email or Username"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper=""
+          form-helper-text=""
+        %}
+
+        {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge="form-control-lg"
+          isInputRequired=""
+          hasFormLabel="none"
+          form-label-size=""
+          form-label-text=""
+          input-size=""
+          input-type="password"
+          input-name="password"
+          input-value=""
+          input-placeholder="Password"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper=""
+          form-helper-text=""
+        %}
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="rembember-me">
+          <label class="form-check-label" for="rembember-me">Rembember me</label>
+        </div>
+        <div class="button-group">
+          <a class="btn btn-warning btn-lg btn-block btn-pills" href="{{ site.baseurl }}/app/dashboard.html">Login</a>
+          <a class="btn btn-link btn-lg btn-block"  href="">Forgot Password?</a>  
+        </div>
+      </form>
     </div>
-  </form>
+  </div>
 </main>
+
+
+
+

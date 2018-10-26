@@ -1,0 +1,14 @@
+- type: link
+  label: Test Link 1
+  url: /text.html
+
+- type: header
+  label: Test Header
+
+- type: divider
+
+- type: link
+  label: Test Link 2
+  url: /text.html
+
+

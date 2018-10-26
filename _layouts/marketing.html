@@ -28,7 +28,7 @@ layout-styles: marketing
 
 ---
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #FFF;">
   <div class="container">
     <a class="navbar-brand" href="{{ site.baseurl }}/">
       <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
@@ -45,7 +45,7 @@ layout-styles: marketing
           <a class="nav-link" href="{{ site.baseurl }}/pricing-and-faq.html">Pricing &amp; FAQ</a>
         </li>
       </ul>
-      <a class="btn btn-link btn-wide navbar-btn" href="">Create Free Account</a>
+      <a class="btn btn-link btn-wide navbar-btn" href="{{ site.baseurl }}/create-free-account.html">Create Free Account</a>
       <a class="btn btn-primary btn-wide navbar-btn" href="{{ site.baseurl }}/login.html">Login</a>
     </div>
   </div>
@@ -55,26 +55,31 @@ layout-styles: marketing
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {{ content }}
+
+
+<div class="text-white" style="background-color: #01536b; padding-top: 40px; padding-bottom: 40px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <p class="lead">Solve all those client concerns on autopilot NOW.<br>Request for an online presentation with one of our agents NOW.</p>
+        <a class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#watch-overview-video" href="#watch-overview-video">Watch Our Video</a>
+      </div>
+      <div class="col-5 text-center align-self-center">
+
+
+        <div class="input-group">
+          <input type="email" class="form-control form-control-lg" placeholder="Enter your Email Address">
+          <div class="input-group-append">
+            <a class="btn btn-warning btn-lg" href="">Book a Demo</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer style="background-color: #003B50; color: #fff; padding: 40px 0;">
   <div class="container">

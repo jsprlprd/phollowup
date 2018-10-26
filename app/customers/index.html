@@ -15,13 +15,14 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
           <a class="btn btn-primary" href="">Add New Customer</a>
         </div>
         <div class="p-3">
-  
-  
-  
-          {% include components/atoms/input.html 
-            name="previous-name"
-            type="text"
-            placeholder="Search Customer"
+
+          {% include components/atoms/form/input.html 
+            isInputLarge=""
+            isInputRequired=""
+            input-name="search-customer"
+            input-type="search"
+            input-value=""
+            input-placeholder="Search Customer"
           %}
   
         </div>

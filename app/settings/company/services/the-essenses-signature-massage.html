@@ -13,24 +13,47 @@ subheader-title: The Essenses Signature Massage
       <div class="card-body">
         <form action="">
           <p class="lead">Basic Details</p>
-          {% include components/molecules/input-field-horizontal.html 
-            label="Service Name"
-            name="service-name"
-            type="text"
-            placeholder="Enter Service Name"
-            label-size="col-lg-3"
+
+
+
+          {% include components/molecules/form-group/input.html 
+            form-layout=""
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-size=""
+            form-label-text="Service Name"
             input-size="col-lg-6"
-            help-block=""
+            input-type="text"
+            input-name="service-name"
+            input-value=""
+            input-placeholder="Enter Service Name"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
           %}
-          {% include components/molecules/textarea-field-horizontal.html 
-            label="Description"
-            name="description"
-            type="text"
-            placeholder="Enter Description"
-            label-size="col-lg-3"
-            input-size="col-lg-6"
-            help-block=""
+
+          {% include components/molecules/form-group/textarea.html 
+            form-layout=""
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-size=""
+            form-label-text="Description"
+            input-size=""
+            input-type=""
+            input-name="description"
+            input-value=""
+            input-placeholder="Enter Description"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
           %}
+
           {% include components/molecules/checkbox-horizontal.html 
             label="Show this Service in Online Booking?"
             name="show-this-service-in-online-booking"
@@ -46,24 +69,24 @@ subheader-title: The Essenses Signature Massage
           <hr class="dashed">
           <p class="lead">Variants</p>
           <div class="row">
-            <div class="col-6">
-              {% include components/molecules/input-field.html 
+            <div class="col">
+              {% include components/molecules/form-group/input.html 
                 label="Duration"
                 name="duration"
                 type="text"
                 placeholder="Enter Duration"
-                label-size=""
+                form-label-size=""
                 input-size=""
                 help-block=""
               %}
             </div>
-            <div class="col-6">
-              {% include components/molecules/input-field.html 
+            <div class="col">
+              {% include components/molecules/form-group/input.html 
                 label="Price"
                 name="price"
                 type="text"
                 placeholder="Enter Price"
-                label-size=""
+                form-label-size=""
                 input-size=""
                 help-block=""
               %}

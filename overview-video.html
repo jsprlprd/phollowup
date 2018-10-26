@@ -2,24 +2,20 @@
 layout: marketing
 ---
 
+
+
+
+
+<div class="modal-header">
+  <button class="close" type="button" data-dismiss="modal">&times;</button>
+  <h6 class="modal-title">{{ page.heading-title }}</h6>
+</div>
+
 <div class="modal-body">
 
-  <main class="container" id="">
+  <main class="container" id="{{ page.pageID }}">
 
-    <div class="heading hidden-xs hidden-sm  " style="margin-top:40px;">
-      <p class="heading-subtitle " style="display: none;">
-        <a href="" style="display: none;"></a>
-      </p>
-      <h1 class="heading-title display-2 ">
-        <img src="/trend-micro/assets/images/" alt="Business Product Support" title="Business Product Support" style="display: none;">Business Product Support
-      </h1>
-      <p class="heading-subtitle " style="display: none;">
-        <a href="" style="display: none;"></a>
-      </p>
-    </div>
-
-
-        <style>
+    <style>
       .modal-header {
         display: none;
       }
@@ -27,7 +23,7 @@ layout: marketing
         max-height: inherit;
       }
     </style>
-
+    
     <ul class="list list-links list-columns two-columns">
       <li><a href="">Cloud App Security for Office 365</a></li>
       <li><a href="">Control Manager</a></li>
@@ -63,14 +59,18 @@ layout: marketing
       <li><a href="">Worry-Free Business Security</a></li>
       <li><a href="">Worry-Free Business Security Services</a></li>
     </ul>
-
+    
     <div class="notification notifcation-info">
       <div class="notification-content">
         <p>If your product is not listed above, please try our <a href="">search</a>.</p>
       </div>
     </div>
-
-
+    
   </main>
 
 </div>
+
+
+
+
+

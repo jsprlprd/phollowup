@@ -19,112 +19,169 @@
       <div class="modal-body">
         <div class="tab-content">
           <div class="tab-pane fade show active" id="appointment-details-tab">
-            <form class="form-horizontal">
-              <p class="lead">Appointment Details</p>
+            <p class="lead">Appointment Details</p>
 
-              {% include components/molecules/select-field-horizontal.html 
-                label="Service"
-                text="service"
-                placeholder="Select Service"
-                list-value-name=site.data.list-value.service
-                label-size="col-md-3"
-                input-size="col-md-6"
-              %}
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-size="col-lg-3"
+              form-label-text="Service"
+              input-size="col-lg-6"
+              input-name="service"
+              input-value=""
+              input-placeholder="Select Service"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.data.list-value.service
+            %}
 
-              {% include components/molecules/select-field-horizontal.html 
-                label="Employee"
-                text="employee"
-                placeholder="Select Employee"
-                list-value-name=site.data.list-value.employee-name
-                label-size="col-md-3"
-                input-size="col-md-6"
-              %}
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-size="col-lg-3"
+              form-label-text="Employee"
+              input-size="col-lg-6"
+              input-name="employee"
+              input-value=""
+              input-placeholder="Select Employee"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.data.list-value.employee-name
+            %}
 
-              <div class="form-group row">
-                <label class="col-form-label col-md-3" for="">Date &amp; Time</label>
-                <div class="col-md-6">
-                  <input type="text" id="new-appointment-datetimepicker" class="form-control" />
-                </div>
+            <div class="form-group row">
+              <label class="form-label col-lg-3" for="">Date &amp; Time</label>
+              <div class="col-lg-6">
+                <input type="text" id="new-appointment-datetimepicker" class="form-control" />
               </div>
-            </form>
-          </div>
-          <div class="tab-pane fade" id="customer-details-tab">
-            <div class="form-horizontal">
-              <p class="lead">Personal Details</p>
-              <div class="form-group row">
-                <label class="col-form-label col-md-3" for="">Name</label>
-                <div class="col-md-6">
-                  <select id="new-appointment-customer" class="demo-default" placeholder="Search / Select Customer">
-                    <option value="">Add / Search Customer Name or Contact Details</option>
-                    <option value="4">Thomas Edison</option>
-                    <option value="1">Nikola</option>
-                    <option value="3">Nikola Tesla</option>
-                    <option value="5">Arnold Schwarzenegger</option>
-                  </select>
-                  <span class="form-text"><a href="">Add new customer</a></span>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-form-label col-md-3" for="">Mobile Number</label>
-                <div class="col-md-6">
-                  <div class="input-group">
-                    <span class="input-group-btn">
-                      <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
-                    </span>
-                    <input class="form-control" type="text" placeholder="0912 345 6789">
-                  </div>
-                  <span class="form-text"><a href="">Add another mobile number</a></span>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <label class="col-form-label col-md-3" for="">Email Address</label>
-                <div class="col-md-6">
-                  <input class="form-control" type="text" placeholder="yourname@email.com">
-                </div>
-              </div>
-
-
-              {% include components/molecules/birthday-select.html 
-                label="Birthday (Optional)"
-                name="birthday"
-                label-size="col-md-3"
-                input-size="col-md-6"
-              %}
-
-              <div class="form-group row">
-                <label class="col-form-label col-md-3" for="">Notes</label>
-                <div class="col-md-6">
-                  <textarea class="form-control"></textarea>
-                </div>
-              </div>
-
-              <hr class="dashed">
-
-              <div class="collapse" id="custom-form">
-                <p class="lead">Custom Form Title</p>
-                <div class="form-group row">
-                  <label class="col-form-label col-md-3" for="">Sample Input Field</label>
-                  <div class="col-md-6">
-                    <input class="form-control" type="text" placeholder="Sample Input Field">
-                  </div>
-                </div>
-                <hr class="dashed">
-              </div>
-
-              </div>
-              <div class="row">
-                <div class="col-md-6 col-md-push-3">
-                  <div class="form-inline">
-                    <select class="form-control">
-                      <option value="">Select a Custom Form</option>
-                    </select>
-                    <a class="btn btn-primary" href="#custom-form" data-toggle="collapse">Add</a>
-                  </div>
-                </div>
             </div>
+
           </div>
+
+          <div class="tab-pane fade" id="customer-details-tab">
+
+            <p class="lead">Personal Details</p>
+
+            <div class="form-group row">
+              <label class="form-label col-lg-3" for="">Name</label>
+              <div class="col-lg-6">
+                <select id="new-appointment-customer" class="demo-default" placeholder="Search / Select Customer">
+                  <option value="">Add / Search Customer Name or Contact Details</option>
+                  <option value="4">Thomas Edison</option>
+                  <option value="1">Nikola</option>
+                  <option value="3">Nikola Tesla</option>
+                  <option value="5">Arnold Schwarzenegger</option>
+                </select>
+                <span class="form-text"><a href="">Add new customer</a></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="form-label col-lg-3" for="">Mobile Number</label>
+              <div class="col-lg-6">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
+                  </span>
+                  <input class="form-control" type="text" placeholder="0912 345 6789">
+                </div>
+                <span class="form-text"><a href="">Add another mobile number</a></span>
+              </div>
+            </div>
+
+            {% include components/molecules/form-group/input.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-size="col-lg-3"
+              form-label-text="Email Address"
+              input-size="col-lg-6"
+              input-type="email"
+              input-name="email-address"
+              input-value=""
+              input-placeholder="Enter Email Address"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
+            {% include components/organisms/forms/birthday-select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-size="col-md-3"
+              form-label-text="Birthday (Optional)"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="birthday"
+              input-value=""
+              input-placeholder="Enter Email Address"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
+            {% include components/molecules/form-group/textarea.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-size="col-lg-3"
+              form-label-text="Notes"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="notes"
+              input-value=""
+              input-placeholder="Enter Notes"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
+            <hr class="dashed">
+
+            <div class="collapse" id="custom-form">
+              <p class="lead">Custom Form Title</p>
+              <div class="form-group row">
+                <label class="form-label col-lg-3" for="">Sample Input Field</label>
+                <div class="col-lg-6">
+                  <input class="form-control" type="text" placeholder="Sample Input Field">
+                </div>
+              </div>
+              <hr class="dashed">
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-push-3">
+                <div class="form-inline">
+                  <select class="form-control">
+                    <option value="">Select a Custom Form</option>
+                  </select>
+                  <a class="btn btn-primary" href="#custom-form" data-toggle="collapse">Add</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
           <div class="tab-pane fade" id="invoice-tab">
             <p class="lead">Invoice</p>
             <table class="table table-stripped">
@@ -180,7 +237,7 @@
             <a class="btn btn-light" href="">Add New Item</a>
             <hr class="dashed">
             <div class="row">
-              <div class="col-md-5 col-md-push-7">
+              <div class="col-md-5 order-md-2">
                 <div class="well">
                   <p class="lead">Summary</p>
                   <table class="table">
@@ -201,14 +258,14 @@
                   </table>
                 </div>
               </div>
-              <div class="col-md-7 col-md-pull-5">
+              <div class="col-md-7 order-md-1">
                 <p class="lead">Payment Method</p>
-                {% include components/atoms/select.html 
+                {% include components/atoms/form/select.html 
                   label=""
                   text="service"
                   placeholder="Select Payment Method"
                   list-value-name=site.data.list-value.payment-method
-                  label-size=""
+                  form-label-size=""
                   input-size=""
                 %}
                 <hr class="dashed">
@@ -247,11 +304,26 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-8">
-                        <fieldset class="form-group">
-                          <label class="form-label" for="">Message</label>
-                          <textarea class="form-control"></textarea>
-                          <span class="form-text">0/300 Characters</span>
-                        </fieldset>
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+            
                       </div>
                       <div class="col-md-4">
                         <p><strong>Dynamic Elements</strong></p>
@@ -320,11 +392,26 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-md-8">
-                        <fieldset class="form-group">
-                          <label class="form-label" for="">Message</label>
-                          <textarea class="form-control"></textarea>
-                          <span class="form-text">0/300 Characters</span>
-                        </fieldset>
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+
                       </div>
                       <div class="col-md-4">
                         <p><strong>Dynamic Elements</strong></p>
@@ -407,11 +494,26 @@
                             </span>
                           </div>
                         </fieldset>
-                        <fieldset class="form-group">
-                          <label class="form-label" for="">Message</label>
-                          <textarea class="form-control"></textarea>
-                          <span class="form-text">0/300 Characters</span>
-                        </fieldset>
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+
                       </div>
                       <div class="col-md-4">
                         <p><strong>Dynamic Elements</strong></p>
@@ -494,11 +596,26 @@
                             </span>
                           </div>
                         </fieldset>
-                        <fieldset class="form-group">
-                          <label class="form-label" for="">Message</label>
-                          <textarea class="form-control"></textarea>
-                          <span class="form-text">0/300 Characters</span>
-                        </fieldset>
+
+                        {% include components/molecules/form-group/textarea.html 
+                          form-layout=""
+                          isInputLarge=""
+                          isInputRequired=""
+                          hasFormLabel=""
+                          form-label-size=""
+                          form-label-text="Message"
+                          input-size=""
+                          input-type=""
+                          input-name="message"
+                          input-value=""
+                          input-placeholder="Enter Message"
+                          hasFormIcon="none"
+                          form-icon-name=""
+                          form-icon-placement=""
+                          hasFormHelper=""
+                          form-helper-text="0/300 Characters"
+                        %}
+
                       </div>
                       <div class="col-md-4">
                         <p><strong>Dynamic Elements</strong></p>
