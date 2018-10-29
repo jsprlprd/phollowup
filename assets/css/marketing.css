@@ -1,14 +1,62 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   overflow: hidden;
   overflow-y: auto;
+  margin-bottom: 320px;
 }
 
 .navbar {
   padding-top: .875rem;
   padding-bottom: .875rem;
+  background-color: #FFFFFF;
 }
 
-#landing-page {
+
+#footer-banner {
+  background-color: #01536b;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 120px;
+}
+
+footer {
+  background-color: #003B50;
+  color: #fff;
+  padding: 40px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#feature-banner {
   background: #0056b3;
   background: -moz-linear-gradient(45deg, #0056b3 0%, #1a89ff 100%);
   background: -webkit-linear-gradient(45deg, #0056b3 0%,#1a89ff 100%);
@@ -22,8 +70,7 @@ body {
   position: relative;
 }
 
-
-#landing-page::after {
+#feature-banner::after {
   border-top: 80px solid #0056b3;
   border-left: 25vw solid transparent;
   border-right: 75vw  solid transparent;
@@ -34,10 +81,7 @@ body {
   bottom: -80px;
 }
 
-
-
-
-#landing-page::before {
+#feature-banner::before {
   border-top: 120px solid rgba(0, 86, 179, .1);
   border-left: 25vw solid transparent;
   border-right: 75vw  solid transparent;
@@ -48,11 +92,17 @@ body {
   bottom: -120px;
 }
 
+#feature-cards {
+  margin-top: -80px;
+}
 
+#feature-cards .card {
+  text-align: center;
+}
 
-
-
-
+#feature-cards .card-body {
+  padding: 3rem;
+}
 
 
 
@@ -75,11 +125,15 @@ body {
   margin-bottom: 0;
   padding-top: 64px;
   padding-bottom: 313px;
-  background: #0056b3;
-  background: -moz-linear-gradient(12.5deg, #0056b3 0%, #1a89ff 100%);
-  background: -webkit-linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%);
-  background: linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0056b3', endColorstr='#1a89ff',GradientType=1 );
+  /* background: #0056b3; */
+  /* background: -moz-linear-gradient(12.5deg, #0056b3 0%, #1a89ff 100%); */
+  /* background: -webkit-linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%); */
+  /* background: linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%); */
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0056b3', endColorstr='#1a89ff',GradientType=1 ); */
+
+
+  background: url(/assets/img/pricing-and-faq-banner.jpg) center no-repeat;
+  background-size: cover;
 
 }
 #pricing-banner .heading {
@@ -103,7 +157,14 @@ body {
 
 
 
-
+#free-plan-banner {
+  border: 1px dashed #d8d8d8;
+  border-radius: 24px;
+  padding: 24px;
+  margin-top: 40px;
+  text-align: center;
+  color: #727272;
+}
 
 
 

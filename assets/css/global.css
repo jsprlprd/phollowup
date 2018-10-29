@@ -3,8 +3,6 @@ body {
 }
 
 
-
-
 .heading {
     margin-top: 40px;
     margin-bottom: 24px;
@@ -46,88 +44,6 @@ body {
 
 
 
-#main-panel header {
-    background-color: #FAFAFA;
-    border-bottom: 1px solid #d8d8d8;
-}
-
-
-
-
-
-.go-back {
-    border: 0;
-    background-color: transparent;
-    color: inherit;
-    padding: 0;
-}
-.list-group-item {
-    padding: 1.5rem;
-}
-
-
-.input-group-append .btn-light {
-    border-color: #BEBEBE;
-}
-
-
-
-.subnavbar {
-    background-color: #f8f9fa;
-    /* margin-bottom: 24px; */
-}
-
-.subnavbar .nav-tabs {
-    border-bottom: 0;
-    /* margin-left: -16px; */
-}
-
-.subnavbar .nav li a {
-    padding: 24px;
-    padding-top: 16px;
-    padding-bottom: 12px;
-    text-transform: uppercase;
-}
-
-
-#left-panel {
-    position: fixed;
-    top: 0;
-    left: -256px;
-    bottom: 0;
-    /* padding: 8px; */
-    /* padding-top: 68px; */
-    width: 256px;
-    background-color: #00254d;
-}
-
-@media (min-width: 992px) {
-    #left-panel {
-        left: 0;
-    }
-}
-
-
-#left-panel .brand {
-    padding: 16px;
-    display: inline-block;
-}
-
-
-#left-panel .nav li a {
-    border-radius: 0;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: #e5f2ff;
-}
-
-#left-panel .nav li a .fas,
-#left-panel .nav li a .far {
-    line-height: 24px;
-    width: 24px;
-    text-align: center;
-    margin-right: 16px;
-}
 
 
 
@@ -138,6 +54,7 @@ body {
 	padding-top: 25px;
 	height: 0;
 }
+
 .videoWrapper iframe {
 	position: absolute;
 	top: 0;
@@ -150,44 +67,12 @@ body {
     font-size: 12px;
 }
 
-.btn-pills {
-    border-radius: 9999px;
-}
-
 
 .form-text {
     font-size: 12px;
 }
 
 
-
-#main-panel {
-    margin-left: 0;
-}
-
-@media (min-width: 992px) {
-
-    #main-panel {
-        margin-left: 256px;
-    }
-
-}
-
-#main-panel .container-fluid {
-    padding: 24px;
-}
-
-#main-content.container {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.dashed {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    border: 0;
-    border-top: 1px dashed #D8D8D8;
-}
 
 
 .btn-checkbox {
@@ -201,18 +86,6 @@ body {
 
 .btn-checkbox.active {
     border-color: #007bfe;
-}
-
-
-.form-group .no-gutters {
-    margin-left: -3px;
-    margin-right: -3px;
-}
-
-.form-group .no-gutters > .col,
-.form-group .no-gutters > [class*="col-"] {
-    padding-left: 3px;
-    padding-right: 3px;
 }
 
 
@@ -256,52 +129,6 @@ body {
     font-weight: 500;
 }
 
-.form-control {
-    line-height: 20px;
-}
-
-
-
-.navbar-brand {
-    padding: 0;
-    display: inline-flex;
-    color: #00254d;
-}
-
-
-#new-appointment .modal-header {
-    border: 0;
-    background-color: #003e80;
-}
-
-#new-appointment .modal-title {
-    color: #FAFAFA;
-}
-
-
-#new-appointment .modal-nav {
-    background-color: #003e80;
-}
-
-#new-appointment .modal-nav .nav-tabs{
-    border-bottom: 0;
-}
-
-#new-appointment .modal-nav .nav-link {
-    color: #b3d8ff;
-}
-
-#new-appointment .modal-nav .nav-link.active {
-    color: #e5f2ff;
-}
-
-/* 
-#new-appointment .modal-body {
-    padding-top: 124px;
-    padding-bottom: 85px;
-}
-
- */
 
 
 
@@ -309,47 +136,11 @@ body {
 
 
 
-#new-appointment .wrapper {
-    margin-left: -24px;
-    margin-right: -24px;
-    margin-bottom: -24px;
-    overflow: hidden;
-    overflow-x: auto;
-}
 
-#new-appointment .tabs{
-    display: flex;
-    position:relative;
-}
 
-#new-appointment .tabs a{
-    text-decoration:none;
-    color: #E4E4E4;
-    padding: 16px 24px 12px;
-    display: inline-flex;
-    position:relative;
-    z-index:1;
-    transition-duration:0.6s;
-    white-space: nowrap;
-    line-height: 20px;
-    font-weight: 500;
-}
-  
-#new-appointment .tabs a.active{
-    color: #FAFAFA;
-}
-  
-#new-appointment .tabs .selector{
-    height: 4px;
-    display:inline-block;
-    position:absolute;
-    left:0px;
-    bottom: 0px;
-    z-index:1;
-    transition-duration:0.6s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    background: #FF8900;
-}
+
+
+
 
 
 
@@ -460,13 +251,6 @@ a.list-group-item:hover {
 
 
 
-/* .list li a {
-    color: inherit;
-} */
-
-
-
-
 .selectize-control {
     display: flex;
 }
@@ -528,15 +312,3 @@ a.list-group-item:hover {
 
 
 
-
-#footer > .container {
-    /* Align with the navbar container */
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  .footer-content {
-    margin: 15px 0;
-    color: #999;
-  }
-  

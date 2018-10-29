@@ -7,7 +7,7 @@
 .form-control {
   display: block;
   width: 100%;
-  // height: $input-height;
+  height: $input-height;
   padding: $input-padding-y $input-padding-x;
   font-size: $input-font-size;
   line-height: $input-line-height;
@@ -149,7 +149,7 @@ select.form-control {
 // Repeated in `_input_group.scss` to avoid Sass extend issues.
 
 .form-control-sm {
-  // height: $input-height-sm;
+  height: $input-height-sm;
   // padding: $input-padding-y-sm $input-padding-x-sm;
   padding-top: $input-padding-y-sm;
   padding-bottom: $input-padding-y-sm;
@@ -159,7 +159,7 @@ select.form-control {
 }
 
 .form-control-lg {
-  // height: $input-height-lg;
+  height: $input-height-lg;
   // padding: $input-padding-y-lg $input-padding-x-lg;
   padding-top: $input-padding-y-lg;
   padding-bottom: $input-padding-y-lg;

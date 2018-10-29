@@ -67,6 +67,10 @@ hr {
   margin-bottom: $hr-margin-y;
   border: 0;
   border-top: $hr-border-width solid $hr-border-color;
+
+  &.dashed {
+    border-top-style: dashed;
+  }
 }
 
 

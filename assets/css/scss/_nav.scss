@@ -18,7 +18,7 @@
   line-height: 20px;
   
   font-weight: $nav-link-font-weight;
-  font-size: $font-size-sm;
+  // font-size: $font-size-sm;
   @include hover-focus {
     text-decoration: none;
   }
