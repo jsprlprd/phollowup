@@ -6,8 +6,15 @@ html {
 body {
   overflow: hidden;
   overflow-y: auto;
-  margin-bottom: 320px;
+  margin-bottom: 490px;
 }
+@media (min-width: 992px) {
+  body {
+    margin-bottom: 345px;
+  }
+}
+
+
 
 .navbar {
   padding-top: .875rem;
@@ -26,13 +33,33 @@ body {
   bottom: 120px;
 }
 
-footer {
-  background-color: #003B50;
-  color: #fff;
-  padding: 40px 0;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+#footer-banner-autopilot {
+  text-align: center;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 24px;
+}
+
+#footer-banner-online-presentation {
+  text-align: center;
+  border-top: 1px solid #d8d8d8;
+  padding-top: 24px;
+}
+
+@media (min-width: 992px) {
+
+  #footer-banner-autopilot {
+    border-right: 1px solid #d8d8d8;
+  }
+
+  #footer-banner-online-presentation {
+    text-align: center;
+    border-top: 0;
+    padding-top: 0;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 24px;
+  }
+    
+
 }
 
 
@@ -42,6 +69,64 @@ footer {
 
 
 
+
+
+footer {
+  background-color: #003B50;
+  color: #fff;
+  padding: 40px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.accordion {
+  /* min-height: 495px; */
+  margin-bottom: 80px;
+}
+.accordion .card {
+  border-bottom: 1px solid #d8d8d8 !important;
+  /* margin-bottom: 4px; */
+}
+
+.accordion .card-header {
+  background-color: transparent;
+  border-bottom: 0;
+  font-size: 20px;
+  padding-left: 60px;
+}
+
+
+.accordion .card-header a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 16px;
+  position: absolute;
+  left: -40px;
+  width: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #007bfe;
+}
+
+.accordion .card-header a[aria-expanded="true"]::before {
+  content: '\f146';
+}
+
+.accordion .card-header a[aria-expanded="false"]::before {
+  content: '\f0fe';
+}
+
+
+.accordion .card-header a {
+  color: inherit;
+  /* padding-left: 40px; */
+  position: relative;
+  line-height: 26px;
+}
+
+.accordion .card-body {
+  padding-left: 60px;
+}
 
 
 
@@ -354,9 +439,13 @@ footer {
   text-align: center;
 }
 
-#faq .nav-tabs {
-  text-align: center;
-  margin-top: 8px;
+@media (min-width: 992px) {
+
+  #faq .nav-tabs {
+    text-align: center;
+    margin-top: 8px;
+  }
+
 }
 
 #faq .nav-tabs li {

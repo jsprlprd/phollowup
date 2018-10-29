@@ -21,7 +21,7 @@ layout: marketing
 </div>
 <div class="container" id="pricing-plan">
   <div class="row">
-    <div class="col-md-5 offset-md-1">
+    <div class="col-md-6 col-lg-5 offset-lg-1">
       <div class="card" id="basic-pricing-plan">
         <div class="card-body">
           <div class="panel-body-heading">
@@ -42,7 +42,7 @@ layout: marketing
         </div>
       </div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-6 col-lg-5">
       <div class="card" id="pro-pricing-plan">
         <div class="card-body">
           <div class="panel-body-heading">
@@ -63,8 +63,10 @@ layout: marketing
         </div>
       </div>
     </div>
-    <div class="col-md-8 offset-md-2" id="free-plan-banner">
-      Want to try it first? Our <span class="text-primary">Free Plan</span> includes everything from the “Online Booking” plan, with a limit of 100 appointments per month and “Sent via PhollowUp” added at the end of every message sent.
+    <div class="col-md-8 offset-md-2">
+      <div id="free-plan-banner">
+        Want to try it first? Our <span class="text-primary">Free Plan</span> includes everything from the “Online Booking” plan, with a limit of 100 appointments per month and “Sent via PhollowUp” added at the end of every message sent.
+      </div>
     </div>
   </div>
 </div>
@@ -75,7 +77,7 @@ layout: marketing
     {% include components/molecules/nav-tabs.html
       nav-type="nav-tabs"
       isLarge="nav-lg"
-      isStacked="justify-content-center"
+      isStacked="justify-lg-content-center"
       isJustified=""
       isResponsive="nav-tabs-responsive"
       list-value-name=site.data.navigation.pricing-and-faq
@@ -90,9 +92,7 @@ layout: marketing
           <div class="accordion" id="getting-started-accordion">
             <div class="card">
               <div class="card-header" id="getting-started-header-01">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#getting-started-body-01" aria-expanded="true" aria-controls="getting-started-body-01" href="#getting-started-body-01">How do I get started?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#getting-started-body-01" aria-expanded="false" aria-controls="getting-started-body-01" href="#getting-started-body-01">How do I get started?</a>
               </div>
               <div id="getting-started-body-01" class="collapse" aria-labelledby="getting-started-header-01" data-parent="#getting-started-accordion">
                 <div class="card-body">
@@ -102,9 +102,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="getting-started-header-02">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#getting-started-body-02" aria-expanded="true" aria-controls="getting-started-body-02" href="#getting-started-body-02">Our company doesn’t have a cell phone line. Can we still use SMS reminders?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#getting-started-body-02" aria-expanded="false" aria-controls="getting-started-body-02" href="#getting-started-body-02">Our company doesn’t have a cell phone line. Can we still use SMS reminders?</a>
               </div>
               <div id="getting-started-body-02" class="collapse" aria-labelledby="getting-started-header-01" data-parent="#getting-started-accordion">
                 <div class="card-body">
@@ -114,9 +112,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="getting-started-header-03">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#getting-started-body-03" aria-expanded="true" aria-controls="getting-started-body-03" href="#getting-started-body-03">Can I send automated SMS reminders using an iPhone as my business phone?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#getting-started-body-03" aria-expanded="false" aria-controls="getting-started-body-03" href="#getting-started-body-03">Can I send automated SMS reminders using an iPhone as my business phone?</a>
               </div>
               <div id="getting-started-body-03" class="collapse" aria-labelledby="getting-started-header-03" data-parent="#getting-started-accordion">
                 <div class="card-body">
@@ -126,9 +122,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="getting-started-header-04">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#getting-started-body-04" aria-expanded="true" aria-controls="getting-started-body-04" href="#getting-started-body-04">I can’t seem to find what I’m looking for here in the FAQs. How can I contact you directly?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#getting-started-body-04" aria-expanded="false" aria-controls="getting-started-body-04" href="#getting-started-body-04">I can’t seem to find what I’m looking for here in the FAQs. How can I contact you directly?</a>
               </div>
               <div id="getting-started-body-04" class="collapse" aria-labelledby="getting-started-header-04" data-parent="#getting-started-accordion">
                 <div class="card-body">
@@ -142,9 +136,7 @@ layout: marketing
           <div class="accordion" id="features-accordion">
             <div class="card">
               <div class="card-header" id="features-header-01">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-01" aria-expanded="true" aria-controls="features-body-01" href="#features-body-01">What are automated messages? How do they work?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-01" aria-expanded="false" aria-controls="features-body-01" href="#features-body-01">What are automated messages? How do they work?</a>
               </div>
               <div id="features-body-01" class="collapse" aria-labelledby="features-header-01" data-parent="#features-accordion">
                 <div class="card-body">
@@ -154,9 +146,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-02">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-02" aria-expanded="true" aria-controls="features-body-02" href="#features-body-02">What if I don’t have my customers’ phone number?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-02" aria-expanded="false" aria-controls="features-body-02" href="#features-body-02">What if I don’t have my customers’ phone number?</a>
               </div>
               <div id="features-body-02" class="collapse" aria-labelledby="features-header-02" data-parent="#features-accordion">
                 <div class="card-body">
@@ -166,9 +156,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-03">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-03" aria-expanded="true" aria-controls="features-body-03" href="#features-body-03">What are the messaging methods you use?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-03" aria-expanded="false" aria-controls="features-body-03" href="#features-body-03">What are the messaging methods you use?</a>
               </div>
               <div id="features-body-03" class="collapse" aria-labelledby="features-header-03" data-parent="#features-accordion">
                 <div class="card-body">
@@ -178,9 +166,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-04">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-04" aria-expanded="true" aria-controls="features-body-04" href="#features-body-04">What is the “Confirmation message”?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-04" aria-expanded="false" aria-controls="features-body-04" href="#features-body-04">What is the “Confirmation message”?</a>
               </div>
               <div id="features-body-04" class="collapse" aria-labelledby="features-header-04" data-parent="#features-accordion">
                 <div class="card-body">
@@ -190,9 +176,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-05">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-05" aria-expanded="true" aria-controls="features-body-05" href="#features-body-05">What is the “Reminder message”?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-05" aria-expanded="false" aria-controls="features-body-05" href="#features-body-05">What is the “Reminder message”?</a>
               </div>
               <div id="features-body-05" class="collapse" aria-labelledby="features-header-05" data-parent="#features-accordion">
                 <div class="card-body">
@@ -202,9 +186,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-06">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-06" aria-expanded="true" aria-controls="features-body-06" href="#features-body-06">What is the “After-Appointment message”?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-06" aria-expanded="false" aria-controls="features-body-06" href="#features-body-06">What is the “After-Appointment message”?</a>
               </div>
               <div id="features-body-06" class="collapse" aria-labelledby="features-header-06" data-parent="#features-accordion">
                 <div class="card-body">
@@ -214,9 +196,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-07">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-07" aria-expanded="true" aria-controls="features-body-07" href="#features-body-07">What is the “Long-Term Follow-Up message”? (TOP-TIER)</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-07" aria-expanded="false" aria-controls="features-body-07" href="#features-body-07">What is the “Long-Term Follow-Up message”? (TOP-TIER)</a>
               </div>
               <div id="features-body-07" class="collapse" aria-labelledby="features-header-07" data-parent="#features-accordion">
                 <div class="card-body">
@@ -226,9 +206,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-08">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-08" aria-expanded="true" aria-controls="features-body-08" href="#features-body-08">What is the “Birthday message”? (TOP-TIER)</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-08" aria-expanded="false" aria-controls="features-body-08" href="#features-body-08">What is the “Birthday message”? (TOP-TIER)</a>
               </div>
               <div id="features-body-08" class="collapse" aria-labelledby="features-header-08" data-parent="#features-accordion">
                 <div class="card-body">
@@ -238,9 +216,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="features-header-09">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#features-body-09" aria-expanded="true" aria-controls="features-body-09" href="#features-body-09">What is the “Send Message to All” feature? (TOP-TIER)</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#features-body-09" aria-expanded="false" aria-controls="features-body-09" href="#features-body-09">What is the “Send Message to All” feature? (TOP-TIER)</a>
               </div>
               <div id="features-body-09" class="collapse" aria-labelledby="features-header-09" data-parent="#features-accordion">
                 <div class="card-body">
@@ -259,9 +235,7 @@ layout: marketing
           <div class="accordion" id="plan-accordion">
             <div class="card">
               <div class="card-header" id="plan-header-01">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#plan-body-01" aria-expanded="true" aria-controls="plan-body-01" href="#plan-body-01">What is the difference between the “Online Booking” and “Online Booking + Retention” plans?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#plan-body-01" aria-expanded="false" aria-controls="plan-body-01" href="#plan-body-01">What is the difference between the “Online Booking” and “Online Booking + Retention” plans?</a>
               </div>
               <div id="plan-body-01" class="collapse" aria-labelledby="plan-header-01" data-parent="#plan-accordion">
                 <div class="card-body">
@@ -271,9 +245,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="plan-header-02">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#plan-body-02" aria-expanded="true" aria-controls="plan-body-02" href="#plan-body-02">What is included inside the Free plan?</a>
-                </h6>
+                <a data-toggle="collapse" data-target="#plan-body-02" aria-expanded="false" aria-controls="plan-body-02" href="#plan-body-02">What is included inside the Free plan?</a>
               </div>
               <div id="plan-body-02" class="collapse" aria-labelledby="plan-header-02" data-parent="#plan-accordion">
                 <div class="card-body">
@@ -283,9 +255,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="plan-header-03">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#plan-body-03" aria-expanded="true" aria-controls="plan-body-03" href="#plan-body-03">Do you offer a Free Trial of the Paid plans?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#plan-body-03" aria-expanded="false" aria-controls="plan-body-03" href="#plan-body-03">Do you offer a Free Trial of the Paid plans?</a>
               </div>
               <div id="plan-body-03" class="collapse" aria-labelledby="plan-header-03" data-parent="#plan-accordion">
                 <div class="card-body">
@@ -295,9 +265,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="plan-header-04">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#plan-body-04" aria-expanded="true" aria-controls="plan-body-04" href="#plan-body-04">Can I switch plans at any time?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#plan-body-04" aria-expanded="false" aria-controls="plan-body-04" href="#plan-body-04">Can I switch plans at any time?</a>
               </div>
               <div id="plan-body-04" class="collapse" aria-labelledby="plan-header-04" data-parent="#plan-accordion">
                 <div class="card-body">
@@ -307,9 +275,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="plan-header-05">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#plan-body-05" aria-expanded="true" aria-controls="plan-body-05" href="#plan-body-05">Am I locked into a contract?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#plan-body-05" aria-expanded="false" aria-controls="plan-body-05" href="#plan-body-05">Am I locked into a contract?</a>
               </div>
               <div id="plan-body-05" class="collapse" aria-labelledby="plan-header-05" data-parent="#plan-accordion">
                 <div class="card-body">
@@ -328,9 +294,7 @@ layout: marketing
           <div class="accordion" id="pricing-and-payment-accordion">
             <div class="card">
               <div class="card-header" id="pricing-and-payment-header-01">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-01" aria-expanded="true" aria-controls="pricing-and-payment-body-01" href="#pricing-and-payment-body-01">What methods of payment do you accept?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-01" aria-expanded="false" aria-controls="pricing-and-payment-body-01" href="#pricing-and-payment-body-01">What methods of payment do you accept?</a>
               </div>
               <div id="pricing-and-payment-body-01" class="collapse" aria-labelledby="pricing-and-payment-header-01" data-parent="#pricing-and-payment-accordion">
                 <div class="card-body">
@@ -340,9 +304,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="pricing-and-payment-header-02">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-02" aria-expanded="true" aria-controls="pricing-and-payment-body-02" href="#pricing-and-payment-body-02">Do I need to enter my credit card details to sign up?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-02" aria-expanded="false" aria-controls="pricing-and-payment-body-02" href="#pricing-and-payment-body-02">Do I need to enter my credit card details to sign up?</a>
               </div>
               <div id="pricing-and-payment-body-02" class="collapse" aria-labelledby="pricing-and-payment-header-02" data-parent="#pricing-and-payment-accordion">
                 <div class="card-body">
@@ -352,9 +314,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="pricing-and-payment-header-03">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-03" aria-expanded="true" aria-controls="pricing-and-payment-body-03" href="#pricing-and-payment-body-03">Are there any setup fees?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-03" aria-expanded="false" aria-controls="pricing-and-payment-body-03" href="#pricing-and-payment-body-03">Are there any setup fees?</a>
               </div>
               <div id="pricing-and-payment-body-03" class="collapse" aria-labelledby="pricing-and-payment-header-03" data-parent="#pricing-and-payment-accordion">
                 <div class="card-body">
@@ -364,9 +324,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="pricing-and-payment-header-04">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-04" aria-expanded="true" aria-controls="pricing-and-payment-body-04" href="#pricing-and-payment-body-04">Do you offer any refunds?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-04" aria-expanded="false" aria-controls="pricing-and-payment-body-04" href="#pricing-and-payment-body-04">Do you offer any refunds?</a>
               </div>
               <div id="pricing-and-payment-body-04" class="collapse" aria-labelledby="pricing-and-payment-header-04" data-parent="#pricing-and-payment-accordion">
                 <div class="card-body">
@@ -376,9 +334,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="pricing-and-payment-header-05">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-05" aria-expanded="true" aria-controls="pricing-and-payment-body-05" href="#pricing-and-payment-body-05">Can I pay yearly instead of monthly?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-05" aria-expanded="false" aria-controls="pricing-and-payment-body-05" href="#pricing-and-payment-body-05">Can I pay yearly instead of monthly?</a>
               </div>
               <div id="pricing-and-payment-body-05" class="collapse" aria-labelledby="pricing-and-payment-header-05" data-parent="#pricing-and-payment-accordion">
                 <div class="card-body">
@@ -388,9 +344,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="pricing-and-payment-header-06">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-06" aria-expanded="true" aria-controls="pricing-and-payment-body-06" href="#pricing-and-payment-body-06">I’m using my own cell phone line. Are there extra charges for every message sent?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-06" aria-expanded="false" aria-controls="pricing-and-payment-body-06" href="#pricing-and-payment-body-06">I’m using my own cell phone line. Are there extra charges for every message sent?</a>
               </div>
               <div id="pricing-and-payment-body-06" class="collapse" aria-labelledby="pricing-and-payment-header-06" data-parent="#pricing-and-payment-accordion">
                 <div class="card-body">
@@ -400,9 +354,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="pricing-and-payment-header-07">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-07" aria-expanded="true" aria-controls="pricing-and-payment-body-07" href="#pricing-and-payment-body-07">Can I cancel my account at any time?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#pricing-and-payment-body-07" aria-expanded="false" aria-controls="pricing-and-payment-body-07" href="#pricing-and-payment-body-07">Can I cancel my account at any time?</a>
               </div>
               <div id="pricing-and-payment-body-07" class="collapse" aria-labelledby="pricing-and-payment-header-07" data-parent="#pricing-and-payment-accordion">
                 <div class="card-body">
@@ -429,9 +381,7 @@ layout: marketing
           <div class="accordion" id="privacy-and-legal-accordion">
             <div class="card">
               <div class="card-header" id="privacy-and-legal-header-01">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-01" aria-expanded="true" aria-controls="privacy-and-legal-body-01" href="#privacy-and-legal-body-01">Will my data be private and safe?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-01" aria-expanded="false" aria-controls="privacy-and-legal-body-01" href="#privacy-and-legal-body-01">Will my data be private and safe?</a>
               </div>
               <div id="privacy-and-legal-body-01" class="collapse" aria-labelledby="privacy-and-legal-header-01" data-parent="#privacy-and-legal-accordion">
                 <div class="card-body">
@@ -441,9 +391,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="privacy-and-legal-header-02">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-02" aria-expanded="true" aria-controls="privacy-and-legal-body-02" href="#privacy-and-legal-body-02">Our company is based in Canada. Is it legal to send automated reminders to our customers according to the Anti-Spam Law (C.A.S.L.)?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-02" aria-expanded="false" aria-controls="privacy-and-legal-body-02" href="#privacy-and-legal-body-02">Our company is based in Canada. Is it legal to send automated reminders to our customers according to the Anti-Spam Law (C.A.S.L.)?</a>
               </div>
               <div id="privacy-and-legal-body-02" class="collapse" aria-labelledby="privacy-and-legal-header-02" data-parent="#privacy-and-legal-accordion">
                 <div class="card-body">
@@ -453,9 +401,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="privacy-and-legal-header-03">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-03" aria-expanded="true" aria-controls="privacy-and-legal-body-03" href="#privacy-and-legal-body-03">Our company is based in the United States and we need to store Medical Records. Are you H.I.P.A.A. compliant?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-03" aria-expanded="false" aria-controls="privacy-and-legal-body-03" href="#privacy-and-legal-body-03">Our company is based in the United States and we need to store Medical Records. Are you H.I.P.A.A. compliant?</a>
               </div>
               <div id="privacy-and-legal-body-03" class="collapse" aria-labelledby="privacy-and-legal-header-03" data-parent="#privacy-and-legal-accordion">
                 <div class="card-body">
@@ -465,9 +411,7 @@ layout: marketing
             </div>
             <div class="card">
               <div class="card-header" id="privacy-and-legal-header-04">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-04" aria-expanded="true" aria-controls="privacy-and-legal-body-04" href="#privacy-and-legal-body-04">Our company is based in the European Union. Are you G.P.D.R. compliant?</a>
-                </h6>
+                  <a data-toggle="collapse" data-target="#privacy-and-legal-body-04" aria-expanded="false" aria-controls="privacy-and-legal-body-04" href="#privacy-and-legal-body-04">Our company is based in the European Union. Are you G.P.D.R. compliant?</a>
               </div>
               <div id="privacy-and-legal-body-04" class="collapse" aria-labelledby="privacy-and-legal-header-04" data-parent="#privacy-and-legal-accordion">
                 <div class="card-body">
