@@ -63,6 +63,22 @@ body {
 	height: 100%;
 }
 
+#video-toggler {
+    flex-direction: column;
+}
+
+@media (min-width: 992px) {
+    #video-toggler {
+        flex-direction: row;
+    }
+
+    #video-toggler li {
+        flex-basis: 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+}
+
 .form-helper {
     font-size: 12px;
 }
@@ -91,23 +107,32 @@ body {
 
 
 
+.modal-responsive .modal-dialog {
+    margin: 0;
+}
 
-
-
-.modal-content {
+.modal-responsive .modal-content {
     height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
 }
 
-.modal-body {
+.modal-responsive .modal-body {
     overflow: hidden;
     overflow-y: auto;
 }
 
-.modal-header,
-.modal-footer {
+.modal-responsive .modal-header,
+.modal-responsive .modal-footer {
     flex: 0 0 auto;
 }
+
+
+@media (min-width: 992px) {
+    .modal-responsive .modal-content {
+        height: unset;
+    }
+}
+
 
 .btn-radio label {
     padding: 16px;

@@ -1,139 +1,146 @@
 <div class="modal" id="watch-overview-video">
-    <div class="modal-dialog modal-lg" style="max-width: 1280px;">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GRPb0uempt4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-              <ul class="nav nav-pills nav-justified mb-0 mt-4">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">
-                    <div class="media text-left">
-                      <span class="mr-3 align-self-center">
-                        <i class="far fa-play-circle" style="font-size: 24px;"></i>
-                      </span>
-                      <div class="media-body">
-                        <p class="mb-0">
-                          <b>General Overview</b><br>
-                          <small class="text-sm">2:30 Min</small>
-                        </p>
-                        
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <div class="media text-left">
-                      <span class="mr-3 align-self-center">
-                        <i class="far fa-play-circle" style="font-size: 24px;"></i>
-                      </span>
-                      <div class="media-body">
-                        <p class="mb-0">
-                          <b>Reduce No-Shows</b><br>
-                          <small class="text-sm">2:30 Min</small>
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <div class="media text-left">
-                      <span class="mr-3 align-self-center">
-                        <i class="far fa-play-circle" style="font-size: 24px;"></i>
-                      </span>
-                      <div class="media-body">
-                        <p class="mb-0">
-                          <b>More Regular Customers</b><br>
-                          <small class="text-sm">2:30 Min</small>
-                        </p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header d-block d-sm-none">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+            <div class="videoWrapper">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GRPb0uempt4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <div class="col-md-4">
-              <form>
-                <div class="heading">
-                  <h1 class="heading-title h3">Get started absolutely free.</h1>
-                  <p class="heading-subtitle">Free forever. No credit card needed.</p>
-                </div>
-                {% include components/organisms/forms/full-name.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel=""
-                  form-label-size=""
-                  form-label-text="Full Name"
-                  hasFormHelper="none"
-                  form-helper-text=""
-                %}
-                {% include components/molecules/form-group/input.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel=""
-                  form-label-size=""
-                  form-label-text="Business Name"
-                  input-size=""
-                  input-type="text"
-                  input-name="business-name"
-                  input-value=""
-                  input-placeholder="Business Name Inc."
-                  hasFormIcon="none"
-                  form-icon-name=""
-                  form-icon-placement=""
-                  hasFormHelper="none"
-                  form-helper-text=""
-                %}
-                {% include components/molecules/form-group/input.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel=""
-                  form-label-size=""
-                  form-label-text="Email Address"
-                  input-size=""
-                  input-type="email"
-                  input-name="email-address"
-                  input-value=""
-                  input-placeholder="your-name@company.com"
-                  hasFormIcon="none"
-                  form-icon-name=""
-                  form-icon-placement=""
-                  hasFormHelper="none"
-                  form-helper-text=""
-                %}
-                {% include components/molecules/form-group/input.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel=""
-                  form-label-size=""
-                  form-label-text="Choose a Password"
-                  input-size=""
-                  input-type="password"
-                  input-name="password"
-                  input-value=""
-                  input-placeholder="Choose a Password"
-                  hasFormIcon="none"
-                  form-icon-name=""
-                  form-icon-placement=""
-                  hasFormHelper="none"
-                  form-helper-text=""
-                %}
-                <div class="button-group text-center">
-                  <a class="btn btn-warning btn-lg btn-wide btn-pills" href="{{ site.baseurl }}/app/dashboard.html">Continue</a>
-                  <div class="text-sm text-muted mt-3">By clicking "Continue" I agree to Phollowup's <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.</span>
-                </div>
-              </form>
-            </div>
+            <ul class="nav nav-pills mb-0 mt-4" id="video-toggler">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <div class="media text-left">
+                    <span class="mr-3 align-self-center">
+                      <i class="far fa-play-circle" style="font-size: 24px;"></i>
+                    </span>
+                    <div class="media-body">
+                      <p class="mb-0">
+                        <b>General Overview</b><br>
+                        <small class="text-sm">2:30 Min</small>
+                      </p>
+                      
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="media text-left">
+                    <span class="mr-3 align-self-center">
+                      <i class="far fa-play-circle" style="font-size: 24px;"></i>
+                    </span>
+                    <div class="media-body">
+                      <p class="mb-0">
+                        <b>Reduce No-Shows</b><br>
+                        <small class="text-sm">2:30 Min</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="media text-left">
+                    <span class="mr-3 align-self-center">
+                      <i class="far fa-play-circle" style="font-size: 24px;"></i>
+                    </span>
+                    <div class="media-body">
+                      <p class="mb-0">
+                        <b>More Regular Customers</b><br>
+                        <small class="text-sm">2:30 Min</small>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+<!-- 
+
+        <div class="row">
+          <div class="col-lg-8">
           </div>
-        </div>
+          <div class="col-lg-4">
+            <form>
+              <div class="heading">
+                <h1 class="heading-title h3">Get started absolutely free.</h1>
+                <p class="heading-subtitle">Free forever. No credit card needed.</p>
+              </div>
+              {% include components/organisms/forms/full-name.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-size=""
+                form-label-text="Full Name"
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-size=""
+                form-label-text="Business Name"
+                input-size=""
+                input-type="text"
+                input-name="business-name"
+                input-value=""
+                input-placeholder="Business Name Inc."
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-size=""
+                form-label-text="Email Address"
+                input-size=""
+                input-type="email"
+                input-name="email-address"
+                input-value=""
+                input-placeholder="your-name@company.com"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-size=""
+                form-label-text="Choose a Password"
+                input-size=""
+                input-type="password"
+                input-name="password"
+                input-value=""
+                input-placeholder="Choose a Password"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+              <div class="button-group text-center">
+                <a class="btn btn-warning btn-lg btn-wide btn-pills" href="{{ site.baseurl }}/app/dashboard.html">Continue</a>
+                <div class="text-sm text-muted mt-3">By clicking "Continue" I agree to Phollowup's <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.</div>
+              </div>
+            </form>
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
