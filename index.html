@@ -16,28 +16,15 @@ layout: marketing
         <!-- <a class="btn btn-outline-light btn-lg" data-toggle="modal" data-target="#watch-overview-video" href="#watch-overview-video">Watch Our Video</a> -->
 
         <div class="form-group">
-
-          <div style="
-        position: relative;
-    ">
-            <input type="email" class="form-control form-control-lg" placeholder="Write your email" style="
-        height: 60px;
-        border-radius: 9999px;
-        padding-left: 32px;
-        padding-right: 168px;
-        /* position: relative; */
-        /* border: 0; */
-        "><a
-              class="btn btn-warning btn-lg" href="{{ site.baseurl }}/create-free-account.html" style="
-        position: absolute;
-        right: 8px;
-        top: 8px;
-        width: 120px;
-        border-radius: 9999px;
-    ">Try
-              it Now</a></div>
-
+          <div style="position: relative;">
+            <input type="email" class="form-control form-control-lg" placeholder="Write your email" style="height: 60px; border-radius: 9999px; padding-left: 32px; padding-right: 168px; /* position: relative; */ /* border: 0; */">
+            <a class="btn btn-warning btn-lg" data-toggle="modal" data-target="#create-free-account" data-remote="{{ site.baseurl }}/create-free-account.html" href="{{ site.baseurl }}/create-free-account.html" style="position: absolute; right: 8px; top: 8px; width: 120px; border-radius: 9999px;">Try it Now</a>
+          </div>
         </div>
+
+
+
+
 
         <a data-toggle="modal" data-target="#watch-overview-video" href="#watch-overview-video" style="
             font-size: 20px;
@@ -168,3 +155,24 @@ layout: marketing
     </div>
   </div>
 </main>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal" id="create-free-account">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>

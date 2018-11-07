@@ -62,3 +62,31 @@ $(".tabs").on("click","a",function(){
 let vh = window.innerHeight * 0.01;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+
+
+
+
+
+
+// $('body').on('click', '[data-toggle="modal"]', function(){
+//   $($(this).data("target")+' .modal-body').load($(this).data("remote"));
+// });  
+
+// $('#create-free-account').on('show.bs.modal', function (e) {
+//   $(this).find('.modal-content').load(e.relatedTarget.href);
+// });
+
+
+$('#create-free-account').on('show.bs.modal', function (e) {
+
+  var button = $(e.relatedTarget);
+  var modal = $(this);
+
+  // load content from HTML string
+  //modal.find('.modal-body').html("Nice modal body baby...");
+
+  // or, load content from value of data-remote url
+  modal.find('.modal-body').load(button.data("remote"));
+
+});
