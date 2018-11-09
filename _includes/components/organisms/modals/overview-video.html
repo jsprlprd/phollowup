@@ -7,9 +7,8 @@
         </button>
       </div>
       <div class="videoWrapper">
-
-          <iframe width="800" height="450" src="https://www.youtube.com/embed/GRPb0uempt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/GRPb0uempt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <ul class="nav nav-tabs" id="video-toggler">
         <li class="nav-item">
           <a class="nav-link active" href="#">
@@ -22,7 +21,6 @@
                   <b>General Overview</b><br>
                   <small class="text-sm">2:30 Min</small>
                 </p>
-
               </div>
             </div>
           </a>
@@ -58,125 +56,21 @@
           </a>
         </li>
       </ul>
-
-      <div class="modal-body" style="padding: 40px;">
-
-<!--         
-
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <form>
-              <div class="heading">
-                <h1 class="heading-title h3">Get started absolutely free.</h1>
-                <p class="heading-subtitle">Free forever. No credit card needed.</p>
-              </div>
-              {% include components/organisms/forms/full-name.html 
-                form-layout=""
-                isInputLarge=""
-                isInputRequired=""
-                hasFormLabel=""
-                form-label-size=""
-                form-label-text="Full Name"
-                hasFormHelper="none"
-                form-helper-text=""
-              %}
-              {% include components/molecules/form-group/input.html 
-                form-layout=""
-                isInputLarge=""
-                isInputRequired=""
-                hasFormLabel=""
-                form-label-size=""
-                form-label-text="Business Name"
-                input-size=""
-                input-type="text"
-                input-name="business-name"
-                input-value=""
-                input-placeholder="Business Name Inc."
-                hasFormIcon="none"
-                form-icon-name=""
-                form-icon-placement=""
-                hasFormHelper="none"
-                form-helper-text=""
-              %}
-              {% include components/molecules/form-group/input.html 
-                form-layout=""
-                isInputLarge=""
-                isInputRequired=""
-                hasFormLabel=""
-                form-label-size=""
-                form-label-text="Email Address"
-                input-size=""
-                input-type="email"
-                input-name="email-address"
-                input-value=""
-                input-placeholder="name@company.com"
-                hasFormIcon="none"
-                form-icon-name=""
-                form-icon-placement=""
-                hasFormHelper="none"
-                form-helper-text=""
-              %}
-              {% include components/molecules/form-group/input.html 
-                form-layout=""
-                isInputLarge=""
-                isInputRequired=""
-                hasFormLabel=""
-                form-label-size=""
-                form-label-text="Choose a Password"
-                input-size=""
-                input-type="password"
-                input-name="password"
-                input-value=""
-                input-placeholder="Choose a Password"
-                hasFormIcon="none"
-                form-icon-name=""
-                form-icon-placement=""
-                hasFormHelper="none"
-                form-helper-text=""
-              %}
-              <div class="button-group text-center">
-                <a class="btn btn-warning btn-lg btn-wide btn-pills" href="{{ site.baseurl }}/app/dashboard.html">Continue</a>
-                <div class="text-sm text-muted mt-3">You'll be inside Phollowup in just 15 seconds!</div>
-              </div>
-            </form>
-          </div>
-        </div> -->
-
-
+      <div class="modal-body p-5">
         <div class="heading text-center mt-0">
-            <h1 class="heading-title h4">Solve all those client concerns on autopilot NOW.</h1>
-            <p class="heading-subtitle">You'll be inside Phollowup in less than 15seconds!</p>
-          </div>
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
+          <h1 class="heading-title h4">Solve all those client concerns on autopilot NOW.</h1>
+          <p class="heading-subtitle">You'll be inside Phollowup in less than 15seconds!</p>
+        </div>
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
             <div class="form-group">
-    
-              <div style="
-                position: relative;
-            ">
-                <input type="email" class="form-control form-control-lg" placeholder="Write your email" style="
-                height: 60px;
-                border-radius: 9999px;
-                padding-left: 32px;
-                padding-right: 168px;
-                /* position: relative; */
-                /* border: 0; */
-                "><a
-                  class="btn btn-warning btn-lg" href="{{ site.baseurl }}/create-free-account.html" style="
-                position: absolute;
-                right: 8px;
-                top: 8px;
-                width: 120px;
-                border-radius: 9999px;
-            ">Try
-                  it Now</a></div>
-
+              <div style="position: relative;">
+                <input type="email" class="form-control form-control-lg" placeholder="Write your email" style="height: 60px; border-radius: 9999px; padding-left: 32px; padding-right: 168px; /* position: relative; */ /* border: 0; */">
+                <a class="btn btn-warning btn-lg" data-toggle="modal" data-target="#create-free-account" data-remote="{{ site.baseurl }}/create-free-account.html" href="{{ site.baseurl }}/create-free-account.html" style="position: absolute; right: 8px; top: 8px; width: 120px; border-radius: 9999px;">Try it Now</a>
+              </div>
             </div>
-
-            <p class="text-center"></p>
           </div>
         </div>
-
       </div>
     </div>
   </div>

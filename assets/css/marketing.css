@@ -14,14 +14,11 @@ body {
   }
 }
 
-
-
 .navbar {
   padding-top: .875rem;
   padding-bottom: .875rem;
   background-color: #FFFFFF;
 }
-
 
 #footer-banner {
   background-color: #01536b;
@@ -46,11 +43,9 @@ body {
 }
 
 @media (min-width: 992px) {
-
   #footer-banner-autopilot {
     border-right: 1px solid #d8d8d8;
   }
-
   #footer-banner-online-presentation {
     text-align: center;
     border-top: 0;
@@ -58,18 +53,7 @@ body {
     border-bottom: 1px solid #d8d8d8;
     padding-bottom: 24px;
   }
-    
-
 }
-
-
-
-
-
-
-
-
-
 
 footer {
   background-color: #003B50;
@@ -79,67 +63,6 @@ footer {
   width: 100%;
   bottom: 0;
 }
-
-.accordion {
-  /* min-height: 495px; */
-  margin-bottom: 80px;
-}
-.accordion .card {
-  border-bottom: 1px solid #d8d8d8 !important;
-  /* margin-bottom: 4px; */
-}
-
-.accordion .card-header {
-  background-color: transparent;
-  border-bottom: 0;
-  font-size: 20px;
-  padding-left: 60px;
-}
-
-
-.accordion .card-header a::before {
-  font-family: 'Font Awesome 5 Free';
-  font-size: 16px;
-  position: absolute;
-  left: -40px;
-  width: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #007bfe;
-}
-
-.accordion .card-header a[aria-expanded="true"]::before {
-  content: '\f146';
-}
-
-.accordion .card-header a[aria-expanded="false"]::before {
-  content: '\f0fe';
-}
-
-
-.accordion .card-header a {
-  color: inherit;
-  /* padding-left: 40px; */
-  position: relative;
-  line-height: 26px;
-}
-
-.accordion .card-body {
-  padding-left: 60px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #feature-banner {
   background: #0056b3;
@@ -189,44 +112,20 @@ footer {
   padding: 3rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pricing-banner {
   padding: 0;
   margin-bottom: 0;
   padding-top: 64px;
   padding-bottom: 313px;
-  /* background: #0056b3; */
-  /* background: -moz-linear-gradient(12.5deg, #0056b3 0%, #1a89ff 100%); */
-  /* background: -webkit-linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%); */
-  /* background: linear-gradient(12.5deg, #0056b3 0%,#1a89ff 100%); */
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0056b3', endColorstr='#1a89ff',GradientType=1 ); */
-
-
   background: url(/assets/img/pricing-and-faq-banner.jpg) center no-repeat;
   background-size: cover;
-
 }
+
 #pricing-banner .heading {
   margin-top: 120px;
   margin-bottom: 80px;
   text-align: center;
 }
-
 
 #pricing-banner .heading-title {
   font-size: 44px;
@@ -238,22 +137,6 @@ footer {
   margin-bottom: 0;
   color: #F1F2F3;
 }
-
-
-
-
-#free-plan-banner {
-  border: 1px dashed #d8d8d8;
-  border-radius: 24px;
-  padding: 24px;
-  /* margin-top: 40px; */
-  text-align: center;
-  color: #727272;
-}
-
-
-
-
 
 #pricing-banner .wrapper{
   text-align:center;
@@ -300,50 +183,24 @@ footer {
   background: #007bfe;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #pricing-plan {
   margin-top: -313px;
 }
 
-
-
-
-
-
-
-.panel-body-heading {
+.card-body-heading {
   margin-bottom: 32px;
 }
 
-.panel-body-heading-title {
+.card-body-heading-title {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.panel-body-heading-subtitle {
+.card-body-heading-subtitle {
   margin-top: 4px;
   margin-bottom: 0;
   font-size: 20px;
 }
-
-
 
 #basic-pricing-plan,
 #pro-pricing-plan {
@@ -351,19 +208,16 @@ footer {
   margin-bottom: 40px;
 }
 
-
 #basic-pricing-plan .card-body,
 #pro-pricing-plan .card-body {
   padding: 40px;
 }
-
 
 #basic-pricing-plan .cta,
 #pro-pricing-plan .cta {
   margin-top: 24px;
   min-width: 240px;
 }
-
 
 #basic-pricing-plan .price,
 #pro-pricing-plan .price {
@@ -373,13 +227,11 @@ footer {
   line-height: 1.125;
 }
 
-
 #basic-pricing-plan .price small,
 #pro-pricing-plan .price small {
   color: #727272;
   font-size: 24px;
 }
-
 
 #basic-pricing-plan .card-footer,
 #pro-pricing-plan .card-footer {
@@ -402,35 +254,26 @@ footer {
   position: relative;
 }
 
-
-
-
-
 #basic-pricing-plan .list-unstyled li::before,
 #pro-pricing-plan .list-unstyled li:before {
   font-family: 'Font Awesome 5 Free';
   font-size: 24px;
   position: absolute;
-  /* left: -20px; */
   width: 40px;
   line-height: 40px;
   text-align: center;
   left: 0;
-  /* left: -15px; */
   content: '\f058';
   color: #007bfe;
 }
 
-
-
-
-
-
-
-
-
-
-
+#free-plan-banner {
+  border: 1px dashed #d8d8d8;
+  border-radius: 24px;
+  padding: 24px;
+  text-align: center;
+  color: #727272;
+}
 
 #faq {
   font-size: 16px;
@@ -441,12 +284,10 @@ footer {
 }
 
 @media (min-width: 992px) {
-
   #faq .nav-tabs {
     text-align: center;
     margin-top: 8px;
   }
-
 }
 
 #faq .nav-tabs li {
@@ -459,4 +300,45 @@ footer {
   padding: 16px 24px 12px;
 }
 
+.accordion {
+  margin-bottom: 80px;
+}
+.accordion .card {
+  border-bottom: 1px solid #d8d8d8 !important;
+}
 
+.accordion .card-header {
+  background-color: transparent;
+  border-bottom: 0;
+  font-size: 20px;
+  padding-left: 60px;
+}
+
+.accordion .card-header a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 16px;
+  position: absolute;
+  left: -40px;
+  width: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #007bfe;
+}
+
+.accordion .card-header a[aria-expanded="true"]::before {
+  content: '\f146';
+}
+
+.accordion .card-header a[aria-expanded="false"]::before {
+  content: '\f0fe';
+}
+
+.accordion .card-header a {
+  color: inherit;
+  position: relative;
+  line-height: 26px;
+}
+
+.accordion .card-body {
+  padding-left: 60px;
+}
