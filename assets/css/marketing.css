@@ -141,6 +141,10 @@ footer {
 #pricing-banner .wrapper{
   text-align:center;
   margin-top: 40px;
+  border: 1px solid #d8d8d8;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 #pricing-banner .tabs{
@@ -341,4 +345,50 @@ footer {
 
 .accordion .card-body {
   padding-left: 60px;
+}
+
+
+
+
+
+
+
+.form-group-custom {
+  position: relative;
+}
+
+.form-group-custom .form-control {
+  height: 60px;
+  border-radius: 9999px;
+  padding-left: 32px;
+  padding-right: 168px;
+}
+
+.form-group-custom .form-control-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 120px;
+  border-radius: 9999px;
+}
+
+.watch-overview-video-btn,
+.watch-overview-video-btn:hover,
+.watch-overview-video-btn:focus {
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.watch-overview-video-btn-icon {
+  width: 24px;
+  line-height: 24px;
+}
+
+.watch-overview-video-text {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 8px;
 }

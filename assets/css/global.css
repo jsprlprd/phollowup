@@ -63,10 +63,15 @@ body {
 #video-toggler .nav-link {
     border-bottom: 0;
     border-left: 4px solid transparent;
+    padding: 1rem;
 }
 
 #video-toggler .nav-link.active {
     border-color: #fe8300;
+}
+
+#video-toggler .far {
+    font-size: 24px;
 }
 
 @media (min-width: 992px) {
@@ -83,6 +88,7 @@ body {
     #video-toggler .nav-link {
         border-bottom: 4px solid transparent;
         border-left: 0;
+        padding-bottom: calc(1rem - 4px);
     }
 
 }
