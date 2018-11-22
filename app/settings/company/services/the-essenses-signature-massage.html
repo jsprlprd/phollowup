@@ -1,6 +1,5 @@
 ---
 layout: app
-subnavbar: true
 container-type: container
 heading-title: Settings
 subheader: true
@@ -21,6 +20,7 @@ subheader-title: The Essenses Signature Massage
             isInputLarge=""
             isInputRequired=""
             hasFormLabel=""
+            form-label-class=""
             form-label-size=""
             form-label-text="Service Name"
             input-size="col-lg-6"
@@ -40,6 +40,7 @@ subheader-title: The Essenses Signature Massage
             isInputLarge=""
             isInputRequired=""
             hasFormLabel=""
+            form-label-class=""
             form-label-size=""
             form-label-text="Description"
             input-size=""
@@ -60,38 +61,72 @@ subheader-title: The Essenses Signature Massage
             label-spacer-size="offset-lg-3"
             input-size="col-lg-6"
           %}
+
           {% include components/molecules/checkbox-horizontal.html 
             label="Show this Service Price in Online Booking?"
             name="show-this-service-price-in-online-booking"
             label-spacer-size="offset-lg-3"
             input-size="col-lg-6"
           %}
+
           <hr class="dashed">
           <p class="lead">Variants</p>
-          <div class="row">
-            <div class="col">
-              {% include components/molecules/form-group/input.html 
-                label="Duration"
-                name="duration"
-                type="text"
-                placeholder="Enter Duration"
-                form-label-size=""
-                input-size=""
-                help-block=""
-              %}
-            </div>
-            <div class="col">
-              {% include components/molecules/form-group/input.html 
-                label="Price"
-                name="price"
-                type="text"
-                placeholder="Enter Price"
-                form-label-size=""
-                input-size=""
-                help-block=""
-              %}
+
+
+
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                {% include components/atoms/form/input.html 
+                  form-layout=""
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel="true"
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text="Duration"
+                  input-size="col-lg-6"
+                  input-type="text"
+                  input-name="duration"
+                  input-value=""
+                  input-placeholder="Enter Duration"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                %}
+              </div>
+              <div class="col">
+                {% include components/atoms/form/input.html 
+                  form-layout=""
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel="true"
+                  form-label-class=""
+                  form-label-size=""
+                  form-label-text="Price"
+                  input-size="col-lg-6"
+                  input-type="text"
+                  input-name="price"
+                  input-value=""
+                  input-placeholder="Enter Price"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                %}
+              </div>
             </div>
           </div>
+
+
+
+
+
+
+
           <a class="btn btn-light" href="">Add Variant</a>
         </form>
       </div>

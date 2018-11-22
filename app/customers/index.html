@@ -1,7 +1,7 @@
 ---
 layout: app
 
-container-type: container-fluid
+container-type:
 
 heading-title: Customers
 heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
@@ -9,79 +9,199 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
 
 <div class="card">
     <div class="row no-gutters">
-      <div class="col-lg-4 no-gutters">
-        <div class="card-header d-flex align-items-start align-items-center justify-content-between">
-          <h6 class="card-header-title h5">Customer</h6>
-          <a class="btn btn-primary" href="">Add New Customer</a>
-        </div>
-        <div class="p-3">
+      <div class="col-lg-3 no-gutters">
+        <div class="p-3" style="background-color: #f8f9fa; border-bottom: 1px solid #d8d8d8;">
+          <div class="form-icon">
+            {% include components/atoms/form/input.html 
+              isInputLarge=""
+              isInputRequired=""
+              input-name="search-customer"
+              input-type="search"
+              input-value=""
+              input-placeholder="Search Customer"
+            %}
 
-          {% include components/atoms/form/input.html 
-            isInputLarge=""
-            isInputRequired=""
-            input-name="search-customer"
-            input-type="search"
-            input-value=""
-            input-placeholder="Search Customer"
-          %}
+            <!-- <a class="btn btn-primary" href=""><i class="fas fa-plus"></i></a> -->
+  
+          </div>
   
         </div>
         <div class="list-group list-group-flush" style="max-height: calc(100vh - 293px); overflow: hidden; overflow-y: auto;">
           <a href="#" class="list-group-item list-group-item-action active">
             <div class="media">
               <div class="d-inline-flex mr-3">
-                <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" width="42" height="42">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
               </div>
               <div class="media-body align-self-center">
-                <span class="text-lg">Jasper Lepardo</span>
-                <br>
-                <small>Admin</small>
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
               </div>
             </div>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="48" height="48">
+              </div>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>John Doe</b></p>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </div>
+            </div>
+          </a>
+
         </div>
+        <a class="btn btn-warning" style="z-index: 1030; position: absolute;
+        bottom: 24px;
+        right: 24px;
+        display: block;
+        width: 56px;
+        height: 56px;
+        border-radius: 9999px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+" href=""><i class="fas fa-plus"></i></a>
       </div>
-      <div class="col-lg-8 no-gutters" style="border-left: 1px solid #dddddd">
+      <div class="col-lg-9 no-gutters" style="border-left: 1px solid #dddddd">
         <div class="card-header" style="padding: 40px; padding-bottom: 0; border-bottom: 0;">
           <div class="media">
             <div class="d-inline-flex mr-3">
-              <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" width="96" height="96">
+              <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="96" height="96">
             </div>
             <div class="media-body align-self-center">
-              <h6 class="h5">Jasper Lepardo</h6>
-              <p>Admin</p>
+              <h6 class="h4">John Doe</h6>
+              <p>67% punctuality (2/3)</p>
               <ul class="list list-icon list-icon-default">
                 <li><i class="list-item-icon fas fa-phone"></i><a href="">(0917) 116 1268</a></li>
                 <li><i class="list-item-icon fas fa-envelope"></i><a href="">jsprlprd@gmail.com</a></li>
@@ -98,31 +218,239 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
             isStacked=""
             isJustified=""
             isResponsive="nav-tabs-responsive"
-            list-value-name=site.data.navigation.employee-settings
+            list-value-name=site.data.navigation.customer-settings
             hasIcon=""
           %}
         </div>
-        <div class="card-body">
+        <div class="card-body" style="padding: 40px;">
           <div class="tab-content">
             <div class="tab-pane show active" id="appointments-tab">
-              <ul class="list-group list-group-flush" id="appointment-list">
-                <li class="list-group-item">
-                  <div class="media">
-                    <div class="d-inline-flex mr-3">
-                      02:00 PM
+                <p class="lead">Upcoming</p>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
                     </div>
-                    <div class="media-body align-self-center">
-                      <h6 class="h5">
-                        <a href="">Jasper Lepardo</a>
-                      </h6>
-                      <ul class="list list-icon list-inline text-muted">
-                        <li class="list-inline-item"><i class="list-item-icon fas fa-concierge-bell"></i>Graphic design</li>
-                        <li class="list-inline-item"><i class="list-item-icon fas fa-clock"></i>60 Mins</li>
-                      </ul>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+
+                <p class="lead">History</p>
+
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                    <div class="row">
+                      <div class="col order-1 order-sm-2">
+                        <p class="text-lg mb-0"><a href=""><b>Monday, August 13, 2018 <span>at</span> 09:00 AM</b></a></p>
+                        <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                        <span class="badge badge-success">Confirmed</span>
+                      </div>
+                      <div class="col-sm-2 text-center order-3 align-self-center">
+                        <a class="btn btn-link" href="">View Invoice</a>
+                      </div>
+                      <div class="col-sm-auto order-4 align-self-center">
+                        <button class="btn btn-light">No Show</button>
+                        <button class="btn btn-primary">Attended</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+<!-- 
+                <div class="table-responsive">
+                    <table class="table table-hover table-lg">
+                        <tbody>
+                          <tr>
+                            <td class="col-xs-3">
+                              <p class="text-lg mb-0"><b>January 1</b></p>
+                              <p class="mb-0">02:00 PM</p>
+                            </td>
+                            <td class="col-xs-5">
+                              <p class="text-lg mb-0"><a href=""><b>The Essenses Signature Massage</b></a></p>
+                              <ul class="list list-inline text-muted">
+                                <li class="list-inline-item">Jasper Lepardo</li>
+                                <li class="list-inline-item list-inline-divider"></li>
+                                <li class="list-inline-item">60 Mins</li>
+                                <li class="list-inline-item list-inline-divider"></li>
+                                <li class="list-inline-item">P 250</li>                          
+                              </ul>
+                              <span class="badge badge-success">Confirmed</span>
+                            </td>
+                            <td class="col-xs-2">
+                              <a class="btn btn-link" href="">View Invoice</a>
+                            </td>
+                            <td class="col-xs-2">
+                              <button class="btn btn-light">No Show</button>
+                              <button class="btn btn-primary">Attended</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="col-xs-3">
+                              <p class="text-lg mb-0"><b>January 1</b></p>
+                              <p class="mb-0">02:00 PM</p>
+                            </td>
+                            <td class="col-xs-5">
+                              <p class="text-lg mb-0"><a href=""><b>The Essenses Signature Massage</b></a></p>
+                              <ul class="list list-inline text-muted">
+                                <li class="list-inline-item">Jasper Lepardo</li>
+                                <li class="list-inline-item list-inline-divider"></li>
+                                <li class="list-inline-item">60 Mins</li>
+                                <li class="list-inline-item list-inline-divider"></li>
+                                <li class="list-inline-item">P 250</li>                          
+                              </ul>
+                              <span class="badge badge-success">Confirmed</span>
+                            </td>
+                            <td class="col-xs-2">
+                              <a class="btn btn-link" href="">View Invoice</a>
+                            </td>
+                            <td class="col-xs-2">
+                              <button class="btn btn-light">No Show</button>
+                              <button class="btn btn-primary">Attended</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+      
+                </div> -->
             </div>
             <div class="tab-pane" id="services-and-branches-tab">
               test
@@ -130,7 +458,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
             <div class="tab-pane" id="working-hours-tab">
                 <h1 class="card-title h4">Working Hours</h1>
               <div class="form-group row">
-                <label class="col-2 col-form-label" for="">Availability Days</label>
+                <label class="col-2 form-label" for="">Availability Days</label>
                 <div class="col-sm-10">
                   <div data-toggle="buttons">
                     <label class="btn btn-light active">
@@ -158,7 +486,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Lunch Break</label>
+                <label for="inputEmail3" class="col-2 form-label">Lunch Break</label>
                 <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">
@@ -194,7 +522,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
               <hr class="dashed">
   
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Monday</label>
+                <label for="inputEmail3" class="col-2 form-label">Monday</label>
                 <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">
@@ -228,7 +556,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
               </div>
   
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Tuesday</label>
+                <label for="inputEmail3" class="col-2 form-label">Tuesday</label>
                 <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">
@@ -262,7 +590,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
               </div>
   
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Wednesday</label>
+                <label for="inputEmail3" class="col-2 form-label">Wednesday</label>
                 <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">
@@ -296,7 +624,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
               </div>
   
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Thursday</label>
+                <label for="inputEmail3" class="col-2 form-label">Thursday</label>
                  <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">
@@ -330,7 +658,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
               </div>
   
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Friday</label>
+                <label for="inputEmail3" class="col-2 form-label">Friday</label>
                 <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">
@@ -364,7 +692,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
               </div>
   
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Saturday</label>
+                <label for="inputEmail3" class="col-2 form-label">Saturday</label>
                 <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">
@@ -398,7 +726,7 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
               </div>
   
               <div class="form-group row">
-                <label for="inputEmail3" class="col-2 col-form-label">Sunday</label>
+                <label for="inputEmail3" class="col-2 form-label">Sunday</label>
                 <div class="col-md-5">
                   <div class="row no-gutters">
                     <div class="col">

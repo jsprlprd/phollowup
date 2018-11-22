@@ -1,0 +1,7 @@
+- text: Invoice Details
+  url: invoice-details
+  status: active
+
+- text: Customer Details
+  url: customer-details
+  status:

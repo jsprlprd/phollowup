@@ -2,17 +2,17 @@
   icon: fas fa-tachometer-alt
   url: app/dashboard.html
 
-- text: Appointment
+- text: Calendar
   icon: far fa-calendar
-  url: app/appointment.html
+  url: app/calendar.html
 
-- text: Online Booking
+- text: Bookings
   icon: fas fa-address-book
-  url: app/online-booking.html
+  url: app/bookings.html
 
-- text: Invoicing
+- text: Invoices
   icon: fas fa-shopping-cart
-  url: app/invoicing.html
+  url: app/invoices/
 
 - text: Customers
   icon: fas fa-users

@@ -104,7 +104,7 @@ ul ol {
   margin-bottom: 0; }
 
 dt {
-  font-weight: 400; }
+  font-weight: 500; }
 
 dd {
   margin-bottom: .5rem;
@@ -466,7 +466,7 @@ kbd {
   kbd kbd {
     padding: 0;
     font-size: 100%;
-    font-weight: 400; }
+    font-weight: 500; }
 
 pre {
   display: block;
@@ -3090,7 +3090,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1rem;
   line-height: 20px;
-  font-weight: 400; }
+  font-weight: 500; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -3450,8 +3450,7 @@ input[type="button"].btn-block {
 .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.125); }
+  background-color: rgba(0, 0, 0, 0.03); }
   .card-header:first-child {
     border-radius: calc(0.125rem - 0.0625rem) calc(0.125rem - 0.0625rem) 0 0; }
   .card-header + .list-group .list-group-item:first-child {
@@ -3685,7 +3684,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -3792,7 +3791,7 @@ input[type="button"].btn-block {
   color: inherit; }
 
 .alert-link {
-  font-weight: 400; }
+  font-weight: 500; }
 
 .alert-dismissible {
   padding-right: 4rem; }
@@ -4059,7 +4058,7 @@ input[type="button"].btn-block {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -7305,7 +7304,7 @@ button.bg-dark:focus {
   font-weight: 300 !important; }
 
 .font-weight-bold {
-  font-weight: 400 !important; }
+  font-weight: 500 !important; }
 
 .font-italic {
   font-style: italic !important; }

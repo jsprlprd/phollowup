@@ -1,0 +1,19 @@
+- text: All
+  url: all-bookings
+  status: active
+
+- text: Pending
+  url: pending-bookings
+  status:
+
+- text: Approved
+  url: approved-bookings
+  status:
+
+- text: Rejected
+  url: rejected-bookings
+  status:
+
+- text: Cancelled
+  url: cancelled-bookings
+  status:
