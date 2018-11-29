@@ -4,7 +4,7 @@
 
 - text: Calendar
   icon: far fa-calendar
-  url: app/calendar.html
+  url: app/calendar/
 
 - text: Bookings
   icon: fas fa-address-book

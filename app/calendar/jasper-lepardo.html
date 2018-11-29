@@ -1,0 +1,238 @@
+---
+layout: app
+heading-title: Calendar
+---
+
+<div class="row no-gutters">
+  <div class="col" style="width: calc(100vw - 616px)">
+    <div class="subheader">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-auto text-right">
+            <button class="go-back" type="button" onclick="history.back(-1)">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+          </div>
+          <div class="col text-center">Jasper Lepardo</div>
+          <div class="col-md-auto text-right">
+            <button class="go-back" type="button" onclick="history.back(-1)">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="background-color: #f8f9fa; border-bottom: 1px solid #d9d9d9; padding: 8px 24px"
+    >
+      <div
+        class="d-flex align-items-start align-items-center justify-content-between"
+      >
+        <div
+          style="padding: 6px; background-color: #fafafa; border-radius: 2px;"
+        >
+          {% include components/molecules/nav-tabs.html nav-type="nav-pills"
+          isLarge="" isStacked="" isJustified="" isResponsive=""
+          list-value-name=site.data.navigation.calendar-settings hasIcon="" %}
+        </div>
+
+        <!--
+          <div class="d-flex align-items-end">
+            <p class="lead mb-0"><span class="text-sm">TODAY</span><br><b>28 September 2018</b></p>
+            <a class="btn btn-light" href=""><i class="fa fa-angle-left"></i></a>
+            <a class="btn btn-light" href=""><i class="fa fa-angle-right"></i></a>
+          </div>
+        -->
+        <div
+          class="d-flex align-items-center"
+          style="padding: 6px; background-color: #fafafa; border-radius: 2px;"
+        >
+          <a class="btn btn-link" href=""><i class="fa fa-angle-left"></i></a>
+          <p class="mb-0"><b>September 23 - 29, 2018</b></p>
+          <a class="btn btn-link" href=""><i class="fa fa-angle-right"></i></a>
+        </div>
+        <a
+          class="btn btn-warning"
+          data-toggle="modal"
+          data-target="#new-appointment"
+          href="#new-appointment"
+          >New Appointment</a
+        >
+      </div>
+    </div>
+    <!--
+      <button class="btn btn-primary" id="view-appointment">View Appointment</button>
+    -->
+    <div class="card">
+      <div class="table-wrapper">
+        <div class="table-scroller">
+          <table class="table table-strip mb-0 fixed_header-2">
+            <thead>
+              <tr>
+                <th class="border-right" style="min-height: 45px;"></th>
+                <th class="border-left">23 Sun</th>
+                <th class="border-left">24 Mon</th>
+                <th class="border-left">25 Tue</th>
+                <th class="border-left">26 Wed</th>
+                <th class="border-left">27 Thu</th>
+                <th class="border-left">28 Fri</th>
+                <th class="border-left">29 Sat</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for time in site.data.list-value.time %}
+              <tr>
+                <td class="border-right" colspan="4" class="border-right">
+                  {{ time.text }} AM
+                </td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+              </tr>
+              {% endfor %} {% for time in site.data.list-value.time %}
+              <tr>
+                <td class="border-right" colspan="4" class="border-right">
+                  {{ time.text }} PM
+                </td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+                <td class="border-left">&nbsp;</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="border-left: 1px solid #d9d9d9; background-color: #f8f9fa;">
+    <div
+      class=" d-flex align-items-start align-items-center justify-content-between"
+      style="padding: 0.75rem;"
+    >
+      <p class="text-lg mb-0"><b>September</b> <small>2018</small></p>
+      <div>
+        <a class="btn btn-light btn-sm" href=""
+          ><i class="fa fa-angle-left"></i
+        ></a>
+        <a class="btn btn-light btn-sm" href=""
+          ><i class="fa fa-angle-right"></i
+        ></a>
+      </div>
+    </div>
+    <table class="table table-borderless text-center">
+      <thead>
+        <tr>
+          <th>Sun</th>
+          <th>Mon</th>
+          <th>Tue</th>
+          <th>Wed</th>
+          <th>Thu</th>
+          <th>Fri</th>
+          <th>Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-muted">26</td>
+          <td class="text-muted">27</td>
+          <td class="text-muted">28</td>
+          <td class="text-muted">29</td>
+          <td class="text-muted">30</td>
+          <td class="text-muted">31</td>
+          <td><a href="">01</a></td>
+        </tr>
+        <tr>
+          <td><a href="">02</a></td>
+          <td><a href="">03</a></td>
+          <td><a href="">04</a></td>
+          <td><a href="">05</a></td>
+          <td><a href="">06</a></td>
+          <td><a href="">07</a></td>
+          <td><a href="">08</a></td>
+        </tr>
+        <tr>
+          <td><a href="">09</a></td>
+          <td><a href="">10</a></td>
+          <td><a href="">11</a></td>
+          <td><a href="">12</a></td>
+          <td><a href="">13</a></td>
+          <td><a href="">14</a></td>
+          <td><a href="">15</a></td>
+        </tr>
+        <tr>
+          <td><a href="">16</a></td>
+          <td><a href="">17</a></td>
+          <td><a href="">18</a></td>
+          <td><a href="">19</a></td>
+          <td><a href="">20</a></td>
+          <td><a href="">21</a></td>
+          <td><a href="">22</a></td>
+        </tr>
+        <tr>
+          <td><a href="">23</a></td>
+          <td><a href="">24</a></td>
+          <td><a href="">25</a></td>
+          <td><a href="">26</a></td>
+          <td><a href="">27</a></td>
+          <td><a href="">28</a></td>
+          <td><a href="">29</a></td>
+        </tr>
+        <tr>
+          <td><a href="">30</a></td>
+          <td class="text-muted">01</td>
+          <td class="text-muted">02</td>
+          <td class="text-muted">03</td>
+          <td class="text-muted">04</td>
+          <td class="text-muted">05</td>
+          <td class="text-muted">06</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="dashed" />
+
+    <div
+      class=" d-flex align-items-start align-items-center justify-content-between"
+      style="padding: 0.75rem;"
+    >
+      <p class="text-lg"><b>Search for Availability</b></p>
+    </div>
+    <div class="container">
+      <form action="">
+        {% include components/molecules/form-group/input.html form-layout=""
+        isInputLarge="" isInputRequired="" hasFormLabel="" form-label-class=""
+        form-label-size="" form-label-text="Date" input-size=""
+        input-type="date" input-name="date" input-value="" input-placeholder=""
+        hasFormIcon="none" form-icon-name="" form-icon-placement=""
+        hasFormHelper="none" form-helper-text="" %} {% include
+        components/molecules/form-group/input.html form-layout=""
+        isInputLarge="" isInputRequired="" hasFormLabel="" form-label-class=""
+        form-label-size="" form-label-text="Services" input-size=""
+        input-type="text" input-name="date" input-value="" input-placeholder=""
+        hasFormIcon="none" form-icon-name="" form-icon-placement=""
+        hasFormHelper="none" form-helper-text="" %} {% include
+        components/molecules/form-group/input.html form-layout=""
+        isInputLarge="" isInputRequired="" hasFormLabel="" form-label-class=""
+        form-label-size="" form-label-text="Employee" input-size=""
+        input-type="text" input-name="date" input-value="" input-placeholder=""
+        hasFormIcon="none" form-icon-name="" form-icon-placement=""
+        hasFormHelper="none" form-helper-text="" %}
+
+        <a class="btn btn-primary" href="">Search</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% include components/organisms/popover/appointment-details.html %} {% include
+components/organisms/modals/new-appointment.html %}

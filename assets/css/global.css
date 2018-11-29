@@ -424,15 +424,15 @@ a.list-group-item:hover {
 
 .fixed_header{
     /* width: 400px; */
-    table-layout: fixed;
-    border-collapse: collapse;
+    /* table-layout: fixed; */
+    /* border-collapse: collapse; */
 }
 
 .fixed_header tbody{
   display:block;
   width: 100%;
   overflow: auto;
-  height: 788px;
+  /* height: 788px; */
 }
 
 .fixed_header thead tr {
@@ -447,5 +447,50 @@ a.list-group-item:hover {
 .fixed_header th, .fixed_header td {
   /* padding: 5px; */
   /* text-align: left; */
-  width: 200px;
+  min-width: 320px;
 }
+
+.fixed_header-2 th, .fixed_header-2 td {
+    min-width: 1px;
+}
+
+.fixed_header th:first-child, .fixed_header td:first-child,
+.fixed_header-2 th:first-child, .fixed_header-2 td:first-child {
+    min-width: 121px;
+    text-align: right;
+    position: absolute;
+    top: auto;
+    left: 0;
+
+}
+
+.table-wrapper {
+    position: relative;
+    max-height: calc(100vh - 130px);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.table-scroller {
+    margin-left: 120px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    /* padding-bottom: 5px; */
+    /* width: 300px; */
+    max-width: calc(100vw - 616px);
+    /* max-height: 894px; */
+}
+
+
+.table-strip tbody tr td:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+
+
+
+
