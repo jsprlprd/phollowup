@@ -1,142 +1,188 @@
 ---
 layout: app
-subnavbar: true
-container-type:
+container-type: container
 heading-title: Settings
+subheader: true
+subheader-title: Add New Branch
 ---
 
-<div class="card">
-  <div class="row no-gutters">
-    <div class="col-lg-3 no-gutters">
-      <div class="p-3" style="background-color: #f8f9fa; border-bottom: 1px solid #d8d8d8;">
-        <div class="form-icon">
-          {% include components/atoms/form/input.html 
-            isInputLarge=""
-            isInputRequired=""
-            input-name="search-employee"
-            input-type="search"
-            input-value=""
-            input-placeholder="Search Employee"
-          %}
-          <span class="form-control-icon"><i class="fas fa-search"></i></span>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="list-group list-group-flush" style="max-height: calc(100vh - 134px); overflow: hidden; overflow-y: auto;">
-
-        {% for employee in site.data.list-value.employee-name %}
-          <a href="#" class="list-group-item list-group-item-action">
-            <div class="media">
-              <div class="d-inline-flex mr-3">
-                <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.fname }}+{{ employee.lname }}&?background={{ employee.background-color }}&color=fff" alt="" width="48" height="48">
-              </div>
-              <div class="media-body align-self-center">
-                <p class="text-lg mb-0"><b>{{ employee.full-name }}</b></p>
-                <p class="mb-0">{{ employee.postion }}</p>
-              </div>
-            </div>
-          </a>
-        {% endfor %}
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    <div class="col-lg-9 no-gutters" style="border-left: 1px solid #dddddd">
-      <div class="card-header" style="padding: 40px; padding-bottom: 0; border-bottom: 0;">
-        <div class="media">
-          <div class="d-inline-flex mr-3">
-            <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" alt="" width="96" height="96">
-          </div>
-          <div class="media-body align-self-center">
-            <h6 class="h5">Jasper Lepardo</h6>
-            <p>Admin</p>
-            <ul class="list list-icon list-icon-default">
-              <li><i class="list-item-icon fas fa-phone"></i><a href="">(0917) 116 1268</a></li>
-              <li><i class="list-item-icon fas fa-envelope"></i><a href="">jsprlprd@gmail.com</a></li>
-            </ul>
-          </div>
-          <div class="d-inline-flex ml-3">
-            <a class="btn btn-light" href=""><i class="fas fa-pen"></i></a>
-            <a class="btn btn-light" href=""><i class="fas fa-trash-alt"></i></a>
-          </div>
-        </div>
+<div class="row">
+  <div class="col-lg-8 offset-2">
+    <div class="card">
+      <div class="card-header pb-0 border-0">
         {% include components/molecules/nav-tabs.html
           nav-type="nav-tabs"
           isLarge=""
           isStacked=""
           isJustified=""
           isResponsive="nav-tabs-responsive"
-          list-value-name=site.data.navigation.employee-settings
+          list-value-name=site.data.navigation.branch-settings
           hasIcon=""
         %}
       </div>
       <div class="card-body">
         <div class="tab-content">
-          <div class="tab-pane show active" id="appointments-tab">
-            <ul class="list-group list-group-flush" id="appointment-list">
-              <li class="list-group-item">
-                <div class="media">
-                  <div class="d-inline-flex mr-3">
-                    02:00 PM
-                  </div>
-                  <div class="media-body align-self-center">
-                    <h6 class="h5">
-                      <a href="">Jasper Lepardo</a>
-                    </h6>
-                    <ul class="list list-icon list-inline text-muted">
-                      <li class="list-inline-item"><i class="list-item-icon fas fa-concierge-bell"></i>Graphic design</li>
-                      <li class="list-inline-item"><i class="list-item-icon fas fa-clock"></i>60 Mins</li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-pane" id="services-and-branches-tab">
-            <p class="lead">Services</p>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>The Essenses Signature Massage</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Pevonia Body Polish</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Body Polish with Seasalt & Honey</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Mt. Mayon Hot Stone Therapy Massage</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Foot Spa with Scrub</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <div class="tab-pane active show" id="branch-settings-tab">
+            <form action="">
+              <p class="lead">Basic Details</p>
+              {% include components/molecules/form-group/input.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                form-label-text="Legal Business Name"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="legal-business-name"
+                input-value=""
+                input-placeholder="Enter Legal Business Name"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper=""
+                form-helper-text="This will appear on Customer Invoices"
+              %}
+    
+              {% include components/molecules/form-group/input.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                form-label-text="Branch Name"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="branch-name"
+                input-value=""
+                input-placeholder="Enter Branch Name"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper=""
+                form-helper-text="This will appear on Online Booking and Automated Messages"
+              %}
+    
+              {% include components/molecules/form-group/input.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                form-label-text="Login URL"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="login-url"
+                input-value=""
+                input-placeholder="company-name.phollowup.com"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+    
+              <hr class="dashed">
+    
+              <p class="lead">Contact Details</p>
+    
+              {% include components/molecules/form-group/input.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                form-label-text="Phone Number"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="phone-number"
+                input-value=""
+                input-placeholder="Enter Phone Number"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+    
+              {% include components/molecules/form-group/input.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                form-label-text="Email Address"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="email-address"
+                input-value=""
+                input-placeholder="Enter Email Address"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+    
+              {% include components/organisms/forms/address.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                input-size="col-lg-6"
+              %}
 
-          <div class="tab-pane" id="working-hours-tab">
-            <h1 class="card-title h4">Working Hours</h1>
+              {% include components/molecules/form-group/input.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                form-label-text="Time Zone"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="time-zone"
+                input-value=""
+                input-placeholder="Select Time Zone"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+
+              {% include components/molecules/form-group/input.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class="form-label"
+                form-label-size="col-lg-3"
+                form-label-text="Currency"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="time-zone"
+                input-value=""
+                input-placeholder="Select Currency"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+              
+            </form>
+        
+          </div>
+          <div class="tab-pane" id="business-hours-tab">
+            <h1 class="card-title h4">Business Hours</h1>
             <div class="form-group row">
               <label class="col-2 form-label" for="">Availability Days</label>
               <div class="col-sm-10">
@@ -438,17 +484,13 @@ heading-title: Settings
                 </div>
               </div>
             </div>
- 
-            <hr class="dashed">
-
-            <a class="btn btn-primary" href="">Update Working Hours</a>
-
-
-
-
           </div>
+          <div class="tab-pane" id="services-and-products-tab"></div>
         </div>
-
+      </div>
+      <div class="card-footer d-flex align-items-start align-items-center justify-content-between">
+        <a class="btn btn-link" href="">Delete this Branch</a>
+        <a class="btn btn-primary" href="">Save Changes</a>
       </div>
     </div>
   </div>

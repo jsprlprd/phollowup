@@ -4,99 +4,113 @@ heading-title: Calendar
 ---
 
 <div class="row no-gutters">
-  <div class="col" style="width: calc(100vw - 616px)">
-    <div  style="background-color: #f8f9fa; border-bottom: 1px solid #d9d9d9; padding: 8px 24px">
-      <div class="d-flex align-items-start align-items-center justify-content-between">
-        <!-- <div class="dropdown">
-          <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Working Staff
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div> -->
-
+  <div class="col">
+    <div style="background-color: #ffffff;  padding: 16px 24px">
+      <div class="d-flex align-items-start align-items-end justify-content-between">
         <div class="d-flex align-items-end">
-          <p class="lead mb-0"><span class="text-sm">TODAY</span><br><b>28 September 2018</b></p>
-          <a class="btn btn-light" href=""><i class="fa fa-angle-left"></i></a>
-          <a class="btn btn-light" href=""><i class="fa fa-angle-right"></i></a>
-        </div>
-        <!-- <div class="d-flex align-items-center" style="padding: 6px; background-color: #fafafa; border-radius: 2px;">
+          <p class="lead mb-0">
+            <span class="text-sm">TODAY</span><br /><b>28 September 2018</b>
+          </p>
           <a class="btn btn-link" href=""><i class="fa fa-angle-left"></i></a>
-          <p class="mb-0"><b>Today</b> <span>|</span> <b>Monday 01 Jan, 2018</b></p>
           <a class="btn btn-link" href=""><i class="fa fa-angle-right"></i></a>
-        </div> -->
-        <a class="btn btn-warning" data-toggle="modal" data-target="#new-appointment" href="#new-appointment">New Appointment</a>
-        <!-- <div style="padding: 6px; background-color: #fafafa; border-radius: 2px;">
-          {% include components/molecules/nav-tabs.html
-            nav-type="nav-pills"
-            isLarge=""
-            isStacked=""
-            isJustified=""
-            isResponsive=""
-            list-value-name=site.data.navigation.calendar-settings
-            hasIcon=""
-          %}
-        </div> -->
+        </div>
+        <div>
+          <a class="btn btn-warning" data-toggle="modal" data-target="#new-appointment" href="#new-appointment">New Appointment</a>
+          <a class="btn btn-light" data-toggle="modal" href=""><i class="fas fa-sliders-h"></i></a>
+        </div>
       </div>
     </div>
-    <!-- <button class="btn btn-primary" id="view-appointment">View Appointment</button> -->
-    <div class="card">
-      <div class="table-wrapper">
-        <div class="table-scroller">
-          <table class="table table-strip mb-0 fixed_header">
-            <thead>
-              <tr>
-                <th class="border-right" style="min-height: 59px;"></th>
-                {% for tabs in site.data.list-value.employee-name %}
-                  <th class="border-left" >
-                    <a class="media" href="{{ site.baseurl }}/app/calendar/jasper-lepardo.html" style="width: 280px;">
-                      <img class="mr-3 rounded-circle" src="https://ui-avatars.com/api/?name={{ tabs.fname }}+{{ tabs.lname }}" alt="" width="32" height="32">
-                      <div class="media-body align-self-center">
-                        {{tabs.text}}
-                      </div>
-                      <div class="ml-3 align-self-center">
-                        <span class="badge badge-primary">00</span>
-                      </div>
-                    </a>
-                  </th>
-                {% endfor %}
-              </tr>
-            </thead>
-            <tbody>
-              {% for time in site.data.list-value.time %}
-                <tr>
-                  <td class="border-right" colspan="4" class="border-right">{{ time.text }} AM</td>
-                  {% for tabs in site.data.list-value.employee-name %}
-                    <td class="border-left">&nbsp;</td>
-                  {% endfor %}
-                </tr>
+    <div class="table-scroller">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><i class="far fa-user" style="font-size: 16px; padding: 8px;"></i></th>
+            {% for employee in site.data.list-value.employee-name %}
+              <th>
+                <a class="media" href="{{ site.baseurl }}/app/calendar/jasper-lepardo.html">
+                  <img class="mr-3 rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.fname }}+{{ employee.lname }}" alt="" width="32" height="32" />
+                  <div class="media-body align-self-center">
+                    {{ employee.fname }}
+                  </div>
+                  <div class="ml-3 align-self-center">
+                    <span class="badge badge-primary">00</span>
+                  </div>
+                </a>
+              </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for time in site.data.list-value.time %}
+            <tr>
+              <td>
+                {{ time.text }} AM
+              </td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
               {% endfor %}
-              {% for time in site.data.list-value.time %}
-                <tr>
-                  <td class="border-right" colspan="4" class="border-right">{{ time.text }} PM</td>
-                  {% for tabs in site.data.list-value.employee-name %}
-                    <td class="border-left">&nbsp;</td>
-                  {% endfor %}
-                </tr>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
               {% endfor %}
-            </tbody>
-          </table>
-        </div>
-      </div>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+          
+          {% for time in site.data.list-value.time %}
+            <tr>
+              <td>
+                {{ time.text }} PM
+              </td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
+              {% endfor %}
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              {% for tabs in site.data.list-value.employee-name %}
+                <td>&nbsp;</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
-  <div  style="border-left: 1px solid #d9d9d9; background-color: #f8f9fa;" >
-    <div class=" d-flex align-items-start align-items-center justify-content-between" style="padding: 0.75rem;">
+  <div style="border-left: 1px solid #d9d9d9; background-color: #f8f9fa;">
+    <div class=" d-flex align-items-start align-items-center justify-content-between" style="padding: 0.75rem;" >
       <p class="text-lg mb-0"><b>September</b> <small>2018</small></p>
       <div>
-        <a class="btn btn-light btn-sm" href=""><i class="fa fa-angle-left"></i></a>
-        <a class="btn btn-light btn-sm" href=""><i class="fa fa-angle-right"></i></a>
+        <a class="btn btn-link btn-sm" href=""><i class="fa fa-angle-left"></i></a>
+        <a class="btn btn-link btn-sm" href=""><i class="fa fa-angle-right"></i></a>
       </div>
     </div>
-    <table class="table table-borderless text-center">
+    <table class="table table-borderless table-sm text-center" id="small-calendar">
       <thead>
         <tr>
           <th>Sun</th>
@@ -116,46 +130,46 @@ heading-title: Calendar
           <td class="text-muted">29</td>
           <td class="text-muted">30</td>
           <td class="text-muted">31</td>
-          <td><a href="">01</a></td>
+          <td>01</td>
         </tr>
         <tr>
-          <td><a href="">02</a></td>
-          <td><a href="">03</a></td>
-          <td><a href="">04</a></td>
-          <td><a href="">05</a></td>
-          <td><a href="">06</a></td>
-          <td><a href="">07</a></td>
-          <td><a href="">08</a></td>
+          <td>02</td>
+          <td>03</td>
+          <td>04</td>
+          <td>05</td>
+          <td>06</td>
+          <td>07</td>
+          <td>08</td>
         </tr>
         <tr>
-          <td><a href="">09</a></td>
-          <td><a href="">10</a></td>
-          <td><a href="">11</a></td>
-          <td><a href="">12</a></td>
-          <td><a href="">13</a></td>
-          <td><a href="">14</a></td>
-          <td><a href="">15</a></td>
+          <td>09</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
         </tr>
         <tr>
-          <td><a href="">16</a></td>
-          <td><a href="">17</a></td>
-          <td><a href="">18</a></td>
-          <td><a href="">19</a></td>
-          <td><a href="">20</a></td>
-          <td><a href="">21</a></td>
-          <td><a href="">22</a></td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
         </tr>
         <tr>
-          <td><a href="">23</a></td>
-          <td><a href="">24</a></td>
-          <td><a href="">25</a></td>
-          <td><a href="">26</a></td>
-          <td><a href="">27</a></td>
-          <td><a href="">28</a></td>
-          <td><a href="">29</a></td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td class="active">28</td>
+          <td>29</td>
         </tr>
         <tr>
-          <td><a href="">30</a></td>
+          <td>30</td>
           <td class="text-muted">01</td>
           <td class="text-muted">02</td>
           <td class="text-muted">03</td>
@@ -166,81 +180,40 @@ heading-title: Calendar
       </tbody>
     </table>
 
-    <hr class="dashed">
+    <hr class="dashed" />
 
-    <div class=" d-flex align-items-start align-items-center justify-content-between" style="padding: 0.75rem;">
+    <div
+      class=" d-flex align-items-start align-items-center justify-content-between"
+      style="padding: 0.75rem;"
+    >
       <p class="text-lg"><b>Search for Availability</b></p>
     </div>
     <div class="container">
       <form action="">
-        {% include components/molecules/form-group/input.html 
-          form-layout=""
-          isInputLarge=""
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class=""
-          form-label-size=""
-          form-label-text="Date"
-          input-size=""
-          input-type="date"
-          input-name="date"
-          input-value=""
-          input-placeholder=""
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-        %}
-
-        {% include components/molecules/form-group/input.html 
-          form-layout=""
-          isInputLarge=""
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class=""
-          form-label-size=""
-          form-label-text="Services"
-          input-size=""
-          input-type="text"
-          input-name="date"
-          input-value=""
-          input-placeholder=""
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-        %}
-
-        {% include components/molecules/form-group/input.html 
-          form-layout=""
-          isInputLarge=""
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class=""
-          form-label-size=""
-          form-label-text="Employee"
-          input-size=""
-          input-type="text"
-          input-name="date"
-          input-value=""
-          input-placeholder=""
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-        %}
+        {% include components/molecules/form-group/input.html form-layout=""
+        isInputLarge="" isInputRequired="" hasFormLabel="" form-label-class=""
+        form-label-size="" form-label-text="Date" input-size=""
+        input-type="date" input-name="date" input-value="" input-placeholder=""
+        hasFormIcon="none" form-icon-name="" form-icon-placement=""
+        hasFormHelper="none" form-helper-text="" %} {% include
+        components/molecules/form-group/input.html form-layout=""
+        isInputLarge="" isInputRequired="" hasFormLabel="" form-label-class=""
+        form-label-size="" form-label-text="Services" input-size=""
+        input-type="text" input-name="date" input-value="" input-placeholder=""
+        hasFormIcon="none" form-icon-name="" form-icon-placement=""
+        hasFormHelper="none" form-helper-text="" %} {% include
+        components/molecules/form-group/input.html form-layout=""
+        isInputLarge="" isInputRequired="" hasFormLabel="" form-label-class=""
+        form-label-size="" form-label-text="Employee" input-size=""
+        input-type="text" input-name="date" input-value="" input-placeholder=""
+        hasFormIcon="none" form-icon-name="" form-icon-placement=""
+        hasFormHelper="none" form-helper-text="" %}
 
         <a class="btn btn-primary" href="">Search</a>
-
       </form>
-
     </div>
-
   </div>
 </div>
 
-{% include components/organisms/popover/appointment-details.html %}
-{% include components/organisms/modals/new-appointment.html %}
+{% include components/organisms/popover/appointment-details.html %} {% include
+components/organisms/modals/new-appointment.html %}

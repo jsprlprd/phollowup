@@ -15,7 +15,7 @@ heading-title: Settings
 
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
         <h6 class="card-header-title h5">Branches</h6>
-        <a class="btn btn-primary" href="">Add New Branches</a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}/app/settings/company/branches/add-new-branch.html">Add New Branches</a>
       </div>
 
       <div class="list-group list-group-flush">
@@ -82,16 +82,20 @@ heading-title: Settings
 
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
         <div class="form-inline">
-          {% include components/atoms/form/input.html 
-            isInputLarge=""
-            isInputRequired=""
-            input-name="search-services"
-            input-type="search"
-            input-value=""
-            input-placeholder="Search Services"
-          %}
+          <div class="form-icon">
+            {% include components/atoms/form/input.html 
+              isInputLarge=""
+              isInputRequired=""
+              input-name="search-services"
+              input-type="search"
+              input-value=""
+              input-placeholder="Search Services"
+            %}
+            <span class="form-control-icon"><i class="fas fa-search"></i></span>
+          </div>
+
         </div>
-        <a class="btn btn-primary" href="">Add New Service</a>
+        <a class="btn btn-primary" href="{{ site.baseurl }}/app/settings/company/services/add-new-services.html">Add New Service</a>
       </div>
       <div class="list-group list-group-flush">
         <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
@@ -195,6 +199,27 @@ heading-title: Settings
           </div>
         </a>
       </div>
+      <div class="card-footer">
+          <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+      </div>
     </div>
   </div>
 </div>
@@ -212,14 +237,17 @@ heading-title: Settings
 
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
         <div class="form-inline">
-          {% include components/atoms/form/input.html 
-            isInputLarge=""
-            isInputRequired=""
-            input-name="search-products"
-            input-type="search"
-            input-value=""
-            input-placeholder="Search Products"
-          %}
+          <div class="form-icon">
+            {% include components/atoms/form/input.html 
+              isInputLarge=""
+              isInputRequired=""
+              input-name="search-products"
+              input-type="search"
+              input-value=""
+              input-placeholder="Search Products"
+            %}
+            <span class="form-control-icon"><i class="fas fa-search"></i></span>
+          </div>
         </div>
         <a class="btn btn-primary" href="">Add New Product</a>
       </div>

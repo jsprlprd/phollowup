@@ -5,6 +5,17 @@ container-type: container-fluid
 ---
 
 <div class="card">
+  <div class="card-header">
+    {% include components/molecules/nav-tabs.html
+      nav-type="nav-pills"
+      isLarge=""
+      isStacked=""
+      isJustified=""
+      isResponsive="nav-tabs-responsive"
+      list-value-name=site.data.navigation.booking-settings
+      hasIcon=""
+    %}
+  </div>
   <table class="table table-hover table-lg mb-0">
     <thead>
       <tr class="row m-0">
