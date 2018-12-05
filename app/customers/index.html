@@ -7,9 +7,8 @@ heading-title: Customers
 heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
 ---
 
-<div class="card">
   <div class="row no-gutters">
-    <div class="col-lg-3 no-gutters">
+    <div class="col-lg-3">
       <div class="p-3" style="background-color: #f8f9fa; border-bottom: 1px solid #d8d8d8;">
         <div class="form-icon">
           {% include components/atoms/form/input.html 
@@ -24,7 +23,6 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
         </div>
       </div>
       <div class="list-group list-group-flush" style="max-height: calc(100vh - 134px); overflow: hidden; overflow-y: auto;">
-
         {% for customer in site.data.list-value.customer-name %}
           <a href="#" class="list-group-item list-group-item-action">
             <div class="media">
@@ -41,405 +39,193 @@ heading-button: <a class="btn btn-warning" href="">Add New Customers</a>
       </div>
       <a class="btn btn-warning" style="z-index: 1030; position: absolute; bottom: 24px; right: 24px; display: block; width: 56px; height: 56px; border-radius: 9999px; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); " href=""><i class="fas fa-plus"></i></a>
     </div>
-    <div class="col-lg-9 no-gutters" style="border-left: 1px solid #dddddd">
-      <div class="card-header" style="padding: 40px; padding-bottom: 0; border-bottom: 0;">
+    <div class="col-lg-9 border-left">
+      
+
+
+
+
+
+
+      <div class="shadow-sm" style="background-color: #fff; padding: 24px; padding-bottom: 0">
         <div class="media">
           <div class="d-inline-flex mr-3">
-            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=John+Doe" alt="" width="96" height="96">
+            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Keefe+Ealles" alt="" width="96" height="96">
           </div>
           <div class="media-body align-self-center">
-            <h6 class="h4">John Doe</h6>
-            <p>67% punctuality (2/3)</p>
-            <ul class="list list-icon list-icon-default">
-              <li><i class="list-item-icon fas fa-phone"></i><a href="">(0917) 116 1268</a></li>
-              <li><i class="list-item-icon fas fa-envelope"></i><a href="">jsprlprd@gmail.com</a></li>
-            </ul>
-          </div>
-          <div class="d-inline-flex ml-3">
-            <a class="btn btn-light" href=""><i class="fas fa-pen"></i></a>
-            <a class="btn btn-light" href=""><i class="fas fa-trash-alt"></i></a>
+            <div class="row">
+              <div class="col align-self-center">
+                <h6 class="h4 mt-4"><b>Keefe Ealles</b></h6>
+                <p>67% punctuality (2/3)</p>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list list-icon list-icon-default mb-0">
+                  <li><i class="list-item-icon fas fa-phone"></i><a href="">(0917) 116 1268</a></li>
+                  <li><i class="list-item-icon fas fa-envelope"></i><a href="">jsprlprd@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+            <a class="btn btn-light" href=""><i class="fas fa-pen"></i> Edit</a>
+            <!-- <a class="btn btn-light" href=""><i class="fas fa-trash-alt"></i></a> -->
           </div>
         </div>
-        {% include components/molecules/nav-tabs.html
-          nav-type="nav-tabs"
-          isLarge=""
-          isStacked=""
-          isJustified=""
-          isResponsive="nav-tabs-responsive"
-          list-value-name=site.data.navigation.customer-settings
-          hasIcon=""
-        %}
+        <div class="cardnavbar mt-4">
+          {% include components/molecules/nav-tabs.html
+            nav-type="nav-tabs"
+            isLarge=""
+            isStacked=""
+            isJustified=""
+            isResponsive="nav-tabs-responsive"
+            list-value-name=site.data.navigation.customer-settings
+            hasIcon=""
+          %}  
+        </div>
       </div>
-      <div class="card-body" style="padding: 40px;">
+
+      <div class="container-fluid">
         <div class="tab-content">
           <div class="tab-pane show active" id="appointments-tab">
-            <p class="lead">Upcoming</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item list-group-item-action">
-                <div class="row">
-                  <div class="col order-1 order-sm-2">
-                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
-                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
-                    <span class="badge badge-success">Confirmed</span>
-                  </div>
-                  <div class="col-sm-2 text-center order-3 align-self-center">
-                    <a class="btn btn-link" href="">View Invoice</a>
-                  </div>
-                  <div class="col-sm-auto order-4 align-self-center">
-                    <button class="btn btn-light">No Show</button>
-                    <button class="btn btn-primary">Attended</button>
-                  </div>
-                </div>
-              </li>
-              <li class="list-group-item list-group-item-action">
-                <div class="row">
-                  <div class="col order-1 order-sm-2">
-                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
-                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
-                    <span class="badge badge-success">Confirmed</span>
-                  </div>
-                  <div class="col-sm-2 text-center order-3 align-self-center">
-                    <a class="btn btn-link" href="">View Invoice</a>
-                  </div>
-                  <div class="col-sm-auto order-4 align-self-center">
-                    <button class="btn btn-light">No Show</button>
-                    <button class="btn btn-primary">Attended</button>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <p class="lead">History</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item list-group-item-action">
-                <div class="row">
-                  <div class="col order-1 order-sm-2">
-                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
-                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
-                    <span class="badge badge-success">Confirmed</span>
-                  </div>
-                  <div class="col-sm-2 text-center order-3 align-self-center">
-                    <a class="btn btn-link" href="">View Invoice</a>
-                  </div>
-                  <div class="col-sm-auto order-4 align-self-center">
-                    <button class="btn btn-light">No Show</button>
-                    <button class="btn btn-primary">Attended</button>
-                  </div>
-                </div>
-              </li>
-              <li class="list-group-item list-group-item-action">
-                <div class="row">
-                  <div class="col order-1 order-sm-2">
-                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
-                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
-                    <span class="badge badge-success">Confirmed</span>
-                  </div>
-                  <div class="col-sm-2 text-center order-3 align-self-center">
-                    <a class="btn btn-link" href="">View Invoice</a>
-                  </div>
-                  <div class="col-sm-auto order-4 align-self-center">
-                    <button class="btn btn-light">No Show</button>
-                    <button class="btn btn-primary">Attended</button>
-                  </div>
-                </div>
-              </li>
 
+            <div class="mb-4">
+                {% include components/molecules/nav-tabs.html
+                  nav-type="nav-pills"
+                  isLarge=""
+                  isStacked=""
+                  isJustified=""
+                  isResponsive="nav-tabs-responsive"
+                  list-value-name=site.data.navigation.booking-settings
+                  hasIcon=""
+                %}
+    
+            </div>
+
+            <ul class="list-group list-group-flush list-group-custom">
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col order-1 order-sm-2">
+                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                    <span class="badge badge-success">Confirmed</span>
+                  </div>
+                  <div class="col-sm-2 text-center order-3 align-self-center">
+                    <a class="btn btn-link" href="">View Invoice</a>
+                  </div>
+                  <div class="col-sm-auto order-4 align-self-center">
+                    <button class="btn btn-light">No Show</button>
+                    <button class="btn btn-primary">Attended</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col order-1 order-sm-2">
+                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                    <span class="badge badge-success">Confirmed</span>
+                  </div>
+                  <div class="col-sm-2 text-center order-3 align-self-center">
+                    <a class="btn btn-link" href="">View Invoice</a>
+                  </div>
+                  <div class="col-sm-auto order-4 align-self-center">
+                    <button class="btn btn-light">No Show</button>
+                    <button class="btn btn-primary">Attended</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col order-1 order-sm-2">
+                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                    <span class="badge badge-success">Confirmed</span>
+                  </div>
+                  <div class="col-sm-2 text-center order-3 align-self-center">
+                    <a class="btn btn-link" href="">View Invoice</a>
+                  </div>
+                  <div class="col-sm-auto order-4 align-self-center">
+                    <button class="btn btn-light">No Show</button>
+                    <button class="btn btn-primary">Attended</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col order-1 order-sm-2">
+                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                    <span class="badge badge-success">Confirmed</span>
+                  </div>
+                  <div class="col-sm-2 text-center order-3 align-self-center">
+                    <a class="btn btn-link" href="">View Invoice</a>
+                  </div>
+                  <div class="col-sm-auto order-4 align-self-center">
+                    <button class="btn btn-light">No Show</button>
+                    <button class="btn btn-primary">Attended</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col order-1 order-sm-2">
+                    <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                    <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                    <span class="badge badge-success">Confirmed</span>
+                  </div>
+                  <div class="col-sm-2 text-center order-3 align-self-center">
+                    <a class="btn btn-link" href="">View Invoice</a>
+                  </div>
+                  <div class="col-sm-auto order-4 align-self-center">
+                    <button class="btn btn-light">No Show</button>
+                    <button class="btn btn-primary">Attended</button>
+                  </div>
+                </div>
+              </li>
             </ul>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="tab-pane" id="services-and-branches-tab">
-            test
+          <div class="tab-pane" id="custom-forms-tab">
+            Custom Form
           </div>
-          <div class="tab-pane" id="working-hours-tab">
-              <h1 class="card-title h4">Working Hours</h1>
-            <div class="form-group row">
-              <label class="col-2 form-label" for="">Availability Days</label>
-              <div class="col-sm-10">
-                <div data-toggle="buttons">
-                  <label class="btn btn-light active">
-                    <input type="checkbox" name="options" id="option1" autocomplete="off" checked> Mon
-                  </label>
-                  <label class="btn btn-light active">
-                    <input type="checkbox" name="options" id="option2" autocomplete="off" checked> Tue
-                  </label>
-                  <label class="btn btn-light active">
-                    <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Wed
-                  </label>
-                  <label class="btn btn-light active">
-                    <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Thu
-                  </label>
-                  <label class="btn btn-light active">
-                    <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Fri
-                  </label>
-                  <label class="btn btn-light">
-                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Sat
-                  </label>
-                  <label class="btn btn-light">
-                    <input type="checkbox" name="options" id="option3" autocomplete="off"> Sun
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Lunch Break</label>
-              <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="dashed">
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Monday</label>
-              <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Tuesday</label>
-              <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Wednesday</label>
-              <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Thursday</label>
-                <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Friday</label>
-              <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Saturday</label>
-              <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Sunday</label>
-              <div class="col-md-5">
-                <div class="row no-gutters">
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-auto align-self-center pl-3 pr-3">-</div>
-                  <div class="col">
-                    <div class="input-group">
-                      <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
-                      <div class="input-group-append">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">AM</a>
-                          <a class="dropdown-item" href="#">PM</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="dashed">
-            <a class="btn btn-primary" href="">Update Working Hours</a>
+          <div class="tab-pane" id="messages-tab">
+
+          </div>
+          <div class="tab-pane" id="satisfaction-tab">
+            Satisfaction
           </div>
         </div>
+  
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     </div>
   </div>
-</div>

@@ -4,9 +4,6 @@
 - text: Company
   url: app/settings/company/
 
-- text: Employees
-  url: app/settings/employees/
-
 - text: Messages
   url: app/settings/messages/
 
@@ -15,7 +12,4 @@
 
 - text: Subscription
   url: app/settings/subscription.html
-
-- text: Working Hours
-  url: app/settings/working-hours.html
 

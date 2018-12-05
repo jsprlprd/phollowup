@@ -10,14 +10,18 @@
   icon: fas fa-address-book
   url: app/bookings.html
 
-- text: Invoices
-  icon: fas fa-shopping-cart
-  url: app/invoices/
-
 - text: Customers
   icon: fas fa-users
   url: app/customers/
 
+- text: Invoices
+  icon: fas fa-shopping-cart
+  url: app/invoices/
+
+- text: Employees
+  icon: fas fa-user-friends
+  url: app/employees/
+
 - text: Settings
-  icon: fas fa-cogs
+  icon: fas fa-cog
   url: app/settings/advanced-settings.html

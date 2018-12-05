@@ -85,6 +85,33 @@ body {
 
 
 
+
+.cardnavbar {
+  /* background-color: #f8f9fa; */
+  /* margin-bottom: 24px; */
+  margin-left: -24px;
+}
+
+.cardnavbar .nav-tabs {
+  border-bottom: 0;
+  /* margin-left: -16px; */
+}
+
+.cardnavbar .nav li a {
+  padding: 24px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
 .go-back {
   border: 0;
   background-color: transparent;

@@ -121,7 +121,7 @@ body {
 
 .form-group label {
     text-align: right;
-    padding-right: 0;
+    /* padding-right: 0; */
 }
 
 .table thead th {
@@ -304,8 +304,12 @@ a.list-group-item:hover {
     line-height: 24px;
 }
 
-#appointments-section .list-group-item:first-child {
+.list-group-item:first-child {
     border-top: 0;
+}
+
+.list-group-item:last-child {
+    border-bottom: 0;
 }
 
 #appointments-section .card-body {
@@ -450,4 +454,20 @@ a.list-group-item:hover {
 
 #small-calendar td.active a {
     color: #fff;
+}
+
+
+.list-group-custom .list-group-item {
+    border: 0;
+    border-radius: 2px;
+}
+
+.list-group-custom .list-group-item:hover {
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15) !important;
+    transition: all .250s;
+    z-index: 1;
+}
+
+.list-group-custom .list-group-item + .list-group-item {
+    margin-top: 4px;
 }

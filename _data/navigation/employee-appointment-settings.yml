@@ -1,0 +1,19 @@
+# - text: All
+#   url: all-appointments
+#   status: active
+
+- text: Today
+  url: today-appointments
+  status: active
+
+- text: Tommorow
+  url: tommorow-appointments
+  status:
+
+- text: This Week
+  url: this-week-appointments
+  status:
+
+- text: Custom Date
+  url: custom-date-appointments
+  status:
