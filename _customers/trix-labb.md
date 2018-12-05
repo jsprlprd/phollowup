@@ -1,0 +1,9 @@
+---
+layout: customers
+full-name: "Trix Labb"
+fname: "Trix"
+lname: "Labb"
+email-address: "tlabbi@xing.com"
+phone: "116-187-9828"
+rating: 1
+--- 
