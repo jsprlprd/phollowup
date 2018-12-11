@@ -1,0 +1,35 @@
+<div class="modal" id="add-new-employee">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title h4">Add New Employee</h6>
+        <button class="close" type="button">&times;</button>
+      </div>
+      <div class="modal-body">
+        {% include components/molecules/form-group/input.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Email Address"
+          input-size="col-lg-6"
+          input-type="email"
+          input-name="email-address"
+          input-value=""
+          input-placeholder="Enter Email Address"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light btn-wide" data-dismiss="modal" type="button">Cancel</button>
+        <button class="btn btn-primary btn-wide" type="button">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+</div>

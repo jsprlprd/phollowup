@@ -46,3 +46,6 @@ collections:
   customers:
     output: true
     permalink: /app/customers/:path/
+  employees:
+    output: true
+    permalink: /app/employees/:path/

@@ -41,39 +41,10 @@ heading-title: Calendar
           </tr>
         </thead>
         <tbody>
-          {% for time in site.data.list-value.time %}
+          {% for time in site.data.list-value.business-hours %}
             <tr>
               <td>
-                {{ time.text }} AM
-              </td>
-              {% for tabs in site.data.list-value.employee-name %}
-                <td>&nbsp;</td>
-              {% endfor %}
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-              {% for tabs in site.data.list-value.employee-name %}
-                <td>&nbsp;</td>
-              {% endfor %}
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-              {% for tabs in site.data.list-value.employee-name %}
-                <td>&nbsp;</td>
-              {% endfor %}
-            </tr>
-            <tr>
-              <td>&nbsp;</td>
-              {% for tabs in site.data.list-value.employee-name %}
-                <td>&nbsp;</td>
-              {% endfor %}
-            </tr>
-          {% endfor %}
-          
-          {% for time in site.data.list-value.time %}
-            <tr>
-              <td>
-                {{ time.text }} PM
+                {{ time.text }}
               </td>
               {% for tabs in site.data.list-value.employee-name %}
                 <td>&nbsp;</td>

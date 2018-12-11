@@ -9,12 +9,20 @@ subheader-title: The Essenses Signature Massage
 <div class="row">
   <div class="col-lg-8 offset-2">
     <div class="card">
+      <div class="cardnavbar m-0">
+        {% include components/molecules/nav-tabs.html
+          nav-type="nav-tabs"
+          isLarge=""
+          isStacked=""
+          isJustified=""
+          isResponsive="nav-tabs-responsive"
+          list-value-name=site.data.navigation.service-settings
+          hasIcon=""
+        %}
+      </div>
       <div class="card-body">
         <form action="">
           <p class="lead">Basic Details</p>
-
-
-
           {% include components/molecules/form-group/input.html 
             form-layout=""
             isInputLarge=""
@@ -69,6 +77,25 @@ subheader-title: The Essenses Signature Massage
             input-size="col-lg-6"
           %}
 
+          {% include components/molecules/form-group/input.html 
+            form-layout=""
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class=""
+            form-label-size=""
+            form-label-text="Service Group"
+            input-size="col-lg-6"
+            input-type="text"
+            input-name="service-name"
+            input-value=""
+            input-placeholder="Select Service Group"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
           <hr class="dashed">
           <p class="lead">Variants</p>
 

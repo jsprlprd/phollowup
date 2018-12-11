@@ -411,7 +411,9 @@ a.list-group-item:hover {
     text-align: center
 }
 
-
+.form-icon-lg .form-control-icon {
+    line-height: 44px;
+}
 
 
 
