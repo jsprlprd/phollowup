@@ -3,51 +3,41 @@ layout: base
 layout-styles: app
 ---
 
-<div id="left-panel">
-  <a class="brand" href="">
+<div class="navbar navbar-expand-lg navbar-dark fixed-top" id="left-panel">
+  <a class="navbar-brand p-3" href="">
     <img class="" src="{{ site.baseurl }}/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
   </a>
-
-  <div class="p-3">
-        <a class="btn btn-warning" href="">New Appointment</a>
-  </div>
-
-  {% include components/molecules/nav-menu.html
-    nav-type="nav-pills"
-    isLarge=""
-    isStacked="flex-column"
-    isJustified=""
-    list-value-name=site.data.navigation.global
-    hasIcon="true"
-  %}
-</div>
-
-<div id="main-panel">
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <a class="navbar-brand" href="#">{{ layout.heading-title }}{{ page.heading-title }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" id="mobile-slider" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
+  <div class="collapse navbar-collapse" id="global-slider">    
+    <div class="p-3">
+      <a class="btn btn-warning" href="">New Appointment</a>
+    </div>
+    {% include components/molecules/nav-menu.html
+      nav-type="navbar-nav"
+      isLarge=""
+      isStacked="flex-column"
+      isJustified=""
+      list-value-name=site.data.navigation.global
+      hasIcon="true"
+    %}
+    <ul class="navbar-nav flex-column mt-auto">
       <li class="nav-item">
         <a class="nav-link" href="{{ site.baseurl }}/app/settings/subscription.html" style="color: #f78002; line-height: 24px; padding-top: 12px; padding-bottom: 12px;">Upgrade Now</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="" style="font-size: 18px; line-height: 24px; padding-top: 12px; padding-bottom: 12px;"><i class="far fa-bell"></i></a></li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropup">
         <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
-          <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+          <div class="media">
+            <div class="mr-3">
+              <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+            </div>
+            <div class="media-body align-self-center">
+              Jasper Lepardo
+            </div>
+          </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right">
           <a class="dropdown-item media" href="">
@@ -65,11 +55,16 @@ layout-styles: app
       </li>
     </ul>
   </div>
-</nav>
+  <div class="slider-overlay"></div>
+</div>
 
-
+<div id="main-panel">
+  {% if page.heading %}
+    <div class="heading">
+      <h1 class="heading-title h3">{{ layout.heading-title }}{{ page.heading-title }}</h1>
+    </div>
+  {% endif %}
   {% if page.subnavbar %}
-
     <nav class="subnavbar">
       {% include components/molecules/nav-menu.html
         nav-type="nav-tabs"
@@ -81,52 +76,21 @@ layout-styles: app
         hasIcon=""
       %}
     </nav>
-
   {% endif %}
-
-
   {% if page.subheader %}
-
     <div class="subheader">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 text-right"><button class="go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button></div>
-          <div class="col-md-8">{{ page.subheader-title }}</div>
+          <div class="col-2 text-right"><button class="go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button></div>
+          <div class="col-8">{{ page.subheader-title }}</div>
         </div>
       </div>
     </div>
-
   {% endif %}
-
-
-
   <main class="{{ page.container-type }}" id="main-content">
-
     {{ content }}
-
   </main>
-
 </div>
 
 <div id="right-panel">
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

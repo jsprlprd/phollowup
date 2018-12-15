@@ -1,15 +1,16 @@
 ---
 layout: app
 container-type:
+heading: 
 heading-title: Customers
 ---
 
 <div class="row no-gutters">
-  <div class="col-lg-4 col-hd-3 d-none d-lg-block list-wrapper">
+  <div class="col-lg-4 col-hd-3 border-right d-none d-lg-block list-wrapper">
     <div class="list-search">
-      <div class="form-icon form-icon-lg">
+      <div class="form-icon">
         {% include components/atoms/form/input.html 
-          isInputLarge="form-control-lg"
+          isInputLarge=""
           isInputRequired=""
           input-name="search-customer"
           input-type="search"
@@ -37,8 +38,16 @@ heading-title: Customers
     <a class="btn btn-warning btn-fab" href=""><i class="fas fa-plus"></i></a>
   </div>
 
-  <div class="col-lg-8 col-hd-9 border-left">
-    <div class="shadow-sm" style="background-color: #fff; padding: 24px; padding-bottom: 0">
+  <div class="col-lg-8 col-hd-9">
+    <div class="subheader d-block d-lg-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 text-right"><button class="go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button></div>
+          <div class="col-8">{{ page.full-name }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block" style="background-color: #f8f9fa; padding: 24px;">
       <div class="media">
         <div class="d-inline-flex mr-3">
           <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ page.fname }}+{{ page.lname }}&?background={{ employee.background-color }}&color=fff" alt="" width="96" height="96">
@@ -60,17 +69,17 @@ heading-title: Customers
           <a class="btn btn-light" href=""><i class="fas fa-pen"></i> Edit</a>
         </div>
       </div>
-      <div class="cardnavbar mt-4">
-        {% include components/molecules/nav-tabs.html
-          nav-type="nav-tabs"
-          isLarge=""
-          isStacked=""
-          isJustified=""
-          isResponsive="nav-tabs-responsive"
-          list-value-name=site.data.navigation.customer-settings
-          hasIcon=""
-        %}  
-      </div>
+    </div>
+    <div class="cardnavbar">
+      {% include components/molecules/nav-tabs.html
+        nav-type="nav-tabs"
+        isLarge=""
+        isStacked=""
+        isJustified=""
+        isResponsive="nav-tabs-responsive"
+        list-value-name=site.data.navigation.customer-settings
+        hasIcon=""
+      %}  
     </div>
     <div class="container-fluid">
       <div class="tab-content">

@@ -1,19 +1,20 @@
 ---
 layout: app
-container-type: 
+container-type:
+heading: true
 heading-title: Customers
 ---
 
 <div class="list-wrapper">
   <div class="list-search">
-    <div class="form-icon form-icon-lg">
+    <div class="form-icon">
       {% include components/atoms/form/input.html 
-        isInputLarge="form-control-lg"
+        isInputLarge=""
         isInputRequired=""
-        input-name="search-employee"
+        input-name="search-customers"
         input-type="search"
         input-value=""
-        input-placeholder="Search Employee"
+        input-placeholder="Search Customers"
       %}
       <span class="form-control-icon"><i class="fas fa-search"></i></span>
     </div>

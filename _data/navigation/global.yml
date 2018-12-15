@@ -6,12 +6,8 @@
   icon: far fa-calendar
   url: app/calendar/
 
-- text: Bookings
-  icon: fas fa-address-book
-  url: app/bookings.html
-
 - text: Customers
-  icon: fas fa-users
+  icon: fas fa-address-book
   url: app/customers/
 
 - text: Invoices
@@ -19,7 +15,7 @@
   url: app/invoices/
 
 - text: Employees
-  icon: fas fa-user-friends
+  icon: fas fa-users
   url: app/employees/
 
 - text: Settings

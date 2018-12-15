@@ -1,0 +1,11 @@
+{
+  "name": "Phollowup",
+  "short_name": "Phollowup",
+  "theme_color": "#263238",
+  "background_color": "#263238",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "https://phollowup.netlify.com/app/dashboard.html",
+  "splash_pages": null
+}
