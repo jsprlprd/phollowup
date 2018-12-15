@@ -93,16 +93,17 @@ $(document).ready(function() {
   var slider_width = $("#global-slider").width(); //get width automaticly
   $("#mobile-slider").click(function() {
       $("#global-slider").animate({ "margin-left": slider_width });
-      $(".slider-overlay").fadeIn(350);
-      $("#global-slider").show();
+      $(".slider-overlay").fadeIn(250);
+      $("#global-slider").css('display', 'flex');
       // $('body').attr('style','overflow: hidden; position: fixed; width: 100%;');
   });
   $("#close-slider, .slider-overlay").click(function() {
       $("#global-slider").animate({ "margin-left": "0" });
       $("#global-slider").animate({ "left": "-" + slider_width });
-      $(".slider-overlay").fadeOut(350);
+      $(".slider-overlay").fadeOut(250);
       // $('body').removeAttr('style','overflow: hidden; position: fixed; width: 100%;');
   });
 });
 
 
+// $('#details-tab').tab('show')

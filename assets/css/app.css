@@ -6,8 +6,12 @@ body {
 
 .heading {
   background-color: #f8f9fa;
-  padding-left: 24px;
-  padding-right: 24px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.heading .container-fluid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .heading-title {
@@ -15,12 +19,63 @@ body {
   color: unset;
 }
 
+.heading-search {
+  margin-top: 12px;
+}
+
+.heading-search .form-control {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border: 0;
+}
+
+.heading .btn-link {
+  color: inherit;
+}
 
 
 
 
+.heading-navbar {
+  background-color: #f8f9fa;
+  margin-top: 12px;
+  margin-bottom: -24px;
+}
+
+.heading-navbar .nav-tabs {
+  border-bottom: 0;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+@media (min-width: 992px) {
+  .heading-navbar .nav-tabs {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}  
+
+.heading-navbar .nav li a {
+  padding: 12px;
+  padding-top: 16px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .heading-navbar .nav li a {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}  
 
 
+.sub-heading {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #006fe6;
+  color: #FAFAFA;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 
 
@@ -47,25 +102,6 @@ body {
   font-size: 32px;
   font-weight: 500;
   color: #4C4C4C !important;
-}
-
-.subheader {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #006fe6;
-  color: #FAFAFA;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.subheading {
-  background-color: #f8f9fa;
-  /* color: #fff; */
-  /* text-align: center; */
-  font-size: 32px;
-  font-weight: 500;
-  /* text-transform: uppercase; */
-  padding: 0.75rem 1.5rem;
 }
 
 
@@ -121,26 +157,6 @@ body {
 .input-group-append .btn-light {
   border-color: #BEBEBE;
 }
-
-
-
-.subnavbar {
-  background-color: #f8f9fa;
-  /* margin-bottom: 24px; */
-}
-
-.subnavbar .nav-tabs {
-  border-bottom: 0;
-  /* margin-left: -16px; */
-}
-
-.subnavbar .nav li a {
-  padding: 24px;
-  padding-top: 16px;
-  padding-bottom: 12px;
-  text-transform: uppercase;
-}
-
 
 
 
@@ -260,6 +276,8 @@ body {
   background-color: #00254d;
   z-index: 1040;
 
+
+  flex-direction: column;
 
 
 }

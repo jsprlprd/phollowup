@@ -1,5 +1,5 @@
-- text: Appointments
-  url: appointments
+- text: Schedules
+  url: schedules
   status: active
 
 - text: Services &amp; Branches

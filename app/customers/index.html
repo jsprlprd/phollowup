@@ -3,25 +3,15 @@ layout: app
 container-type:
 heading: true
 heading-title: Customers
+heading-search: true
+heading-search-name: search-customers
+heading-search-placeholder: Search Customers
 ---
 
 <div class="list-wrapper">
-  <div class="list-search">
-    <div class="form-icon">
-      {% include components/atoms/form/input.html 
-        isInputLarge=""
-        isInputRequired=""
-        input-name="search-customers"
-        input-type="search"
-        input-value=""
-        input-placeholder="Search Customers"
-      %}
-      <span class="form-control-icon"><i class="fas fa-search"></i></span>
-    </div>
-  </div>
   <div class="list-group list-group-flush">
     {% for customer in site.customers %}
-      <a href="{{ site.baseurl }}/app/customers/{{ customer.slug }}" class="list-group-item list-group-item-action {{ customer.status }}">
+      <a href="{{ site.baseurl }}/app/customers/{{ customer.slug }}" class="list-group-item list-group-item-action {% if page.url contains customer.slug %} active {% endif %}">
         <div class="media">
           <div class="d-inline-flex mr-3">
             <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ customer.fname }}+{{ customer.lname }}&?background={{ customer.background-color }}&color=fff" alt="" width="48" height="48">

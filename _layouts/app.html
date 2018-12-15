@@ -61,28 +61,49 @@ layout-styles: app
 <div id="main-panel">
   {% if page.heading %}
     <div class="heading">
-      <h1 class="heading-title h3">{{ layout.heading-title }}{{ page.heading-title }}</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1 class="heading-title h3">{{ layout.heading-title }}{{ page.heading-title }}</h1>
+          </div>
+        </div>
+        {% if page.heading-search %}
+          <div class="heading-search">
+            <div class="form-icon form-icon-lg">
+              {% include components/atoms/form/input.html 
+                isInputLarge="form-control-lg"
+                isInputRequired=""
+                input-name="heading-search-name"
+                input-type="search"
+                input-value=""
+                input-placeholder=page.heading-search-placeholder
+              %}
+              <span class="form-control-icon"><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+        {% endif %}
+        {% if page.heading-navbar %}
+          <nav class="heading-navbar">
+            {% include components/molecules/nav-menu.html
+              nav-type="nav-tabs"
+              isLarge=""
+              isStacked=""
+              isJustified=""
+              isResponsive="nav-tabs-responsive"
+              list-value-name=site.data.navigation.settings
+              hasIcon=""
+            %}
+          </nav>
+        {% endif %}
+      </div>
     </div>
   {% endif %}
-  {% if page.subnavbar %}
-    <nav class="subnavbar">
-      {% include components/molecules/nav-menu.html
-        nav-type="nav-tabs"
-        isLarge=""
-        isStacked=""
-        isJustified=""
-        isResponsive="nav-tabs-responsive"
-        list-value-name=site.data.navigation.settings
-        hasIcon=""
-      %}
-    </nav>
-  {% endif %}
-  {% if page.subheader %}
-    <div class="subheader">
+  {% if page.sub-heading %}
+    <div class="sub-heading">
       <div class="container">
         <div class="row">
           <div class="col-2 text-right"><button class="go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button></div>
-          <div class="col-8">{{ page.subheader-title }}</div>
+          <div class="col-8">{{ page.sub-heading-title }}</div>
         </div>
       </div>
     </div>
