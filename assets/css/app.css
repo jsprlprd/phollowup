@@ -1,13 +1,29 @@
 body {
   font-size: 14px;
   background-color: #EEEEF4;
+  padding-top: 64px;
 }
 
+@media (min-width: 992px) {
+  body {
+    padding-top: 0px;
+  }
+}  
 
 .heading {
   background-color: #f8f9fa;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  top: 64px;
+  z-index: 1020;
+  transition: all .25s ease-out;
 }
+
+@media (min-width: 992px) {
+  .heading {
+    top: 0px;
+    left: 256px;
+  }
+}  
 
 .heading .container-fluid {
   padding-top: 0 !important;
@@ -68,6 +84,8 @@ body {
 }  
 
 
+
+
 .sub-heading {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -75,7 +93,14 @@ body {
   color: #FAFAFA;
   font-size: 18px;
   font-weight: 500;
+
+  margin-top: 24px;
+  margin-bottom: -24px;
 }
+
+
+
+
 
 
 
@@ -121,7 +146,8 @@ body {
 
 #main-panel {
   margin-left: 0;
-  padding-top: 64px;
+  /* padding-top: 64px; */
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -407,4 +433,40 @@ body {
   /* max-height: calc(100vh - 134px);
   overflow: hidden;
   overflow-y: auto; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-up {
+  padding: 0;
+}
+
+.nav-up .heading-title {
+  display: none;
+}
+
+.nav-up .heading-search {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 0;
+}
+
+.nav-up .heading-navbar,
+.nav-up .sub-heading {
+  margin-top: 0;
+  margin-bottom: 0;
 }

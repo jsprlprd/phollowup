@@ -60,7 +60,7 @@ layout-styles: app
 
 <div id="main-panel">
   {% if page.heading %}
-    <div class="heading">
+    <div class="heading fixed-top">
       <div class="container-fluid">
         <div class="row">
           <div class="col">
@@ -96,16 +96,16 @@ layout-styles: app
           </nav>
         {% endif %}
       </div>
-    </div>
-  {% endif %}
-  {% if page.sub-heading %}
-    <div class="sub-heading">
-      <div class="container">
-        <div class="row">
-          <div class="col-2 text-right"><button class="go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button></div>
-          <div class="col-8">{{ page.sub-heading-title }}</div>
+      {% if page.sub-heading %}
+        <div class="sub-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-2 text-right"><button class="go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button></div>
+              <div class="col-8">{{ page.sub-heading-title }}</div>
+            </div>
+          </div>
         </div>
-      </div>
+      {% endif %}
     </div>
   {% endif %}
   <main class="{{ page.container-type }}" id="main-content">
