@@ -1,0 +1,137 @@
+---
+layout: app
+container-type: container
+heading: true
+heading-title: Customers
+heading-button: <a class="btn btn-warning" href="{{ site.baseurl }}/app/customers/add-new-customers.html">Add New Customers</a>
+heading-search: 
+heading-search-name: search-customers
+heading-search-placeholder: Search Customers
+sub-heading: true
+sub-heading-title: Add New Customer
+---
+
+      <div class="row">
+        <div class="col-8 offset-2">
+          <div class="card">
+            <div class="card-body">
+                <p class="lead">Customer Details</p>
+
+                {% include components/organisms/forms/full-name.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class="form-label"
+                  form-label-size="col-lg-3"
+                  form-label-text="Full Name"
+                  input-size="col-lg-6"
+                  hasFormHelper="none"
+                  form-helper-text=""
+                %}
+
+                <div class="form-group row">
+                  <label class="form-label col-lg-3" for="">Mobile Number</label>
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
+                      </span>
+                      <input class="form-control" type="text" placeholder="0912 345 6789">
+                    </div>
+                  </div>
+                </div>
+    
+                {% include components/molecules/form-group/input.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class="form-label"
+                  form-label-size="col-lg-3"
+                  form-label-text="Email Address"
+                  input-size="col-lg-6"
+                  input-type="email"
+                  input-name="email-address"
+                  input-value=""
+                  input-placeholder="Enter Email Address"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                %}
+    
+                {% include components/organisms/forms/birthday-select.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class="form-label"
+                  form-label-size="col-md-3"
+                  form-label-text="Birthday (Optional)"
+                  input-size="col-lg-6"
+                  input-type=""
+                  input-name="birthday"
+                  input-value=""
+                  input-placeholder="Enter Email Address"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                %}
+    
+                {% include components/molecules/form-group/textarea.html 
+                  form-layout="horizontal"
+                  isInputLarge=""
+                  isInputRequired=""
+                  hasFormLabel=""
+                  form-label-class="form-label"
+                  form-label-size="col-lg-3"
+                  form-label-text="Notes"
+                  input-size="col-lg-6"
+                  input-type=""
+                  input-name="notes"
+                  input-value=""
+                  input-placeholder="Enter Notes"
+                  hasFormIcon="none"
+                  form-icon-name=""
+                  form-icon-placement=""
+                  hasFormHelper="none"
+                  form-helper-text=""
+                %}
+    
+                <hr class="dashed">
+                <p class="lead">Custom Form</p>
+
+                <div class="collapse" id="custom-form">
+                  <p class="lead">Custom Form Title</p>
+                  <div class="form-group row">
+                    <label class="form-label col-lg-3" for="">Sample Input Field</label>
+                    <div class="col-lg-6">
+                      <input class="form-control" type="text" placeholder="Sample Input Field">
+                    </div>
+                  </div>
+                  <hr class="dashed">
+                </div>
+    
+                <div class="row">
+                  <div class="col-lg-6 col-md-push-3">
+                    <div class="form-inline">
+                      <select class="form-control">
+                        <option value="">Select a Custom Form</option>
+                      </select>
+                      <a class="btn btn-primary" href="#custom-form" data-toggle="collapse">Add</a>
+                    </div>
+                  </div>
+                </div>         
+               </div>
+               <div class="card-footer d-flex align-items-start align-items-center justify-content-between">
+                  <a class="btn btn-link" href="">Cancel</a>
+                  <a class="btn btn-primary" href="">Save Customer Profile</a>
+                </div>
+          
+          </div>
+        </div>
+      </div>
