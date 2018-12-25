@@ -1,8 +1,8 @@
 ---
 layout: employees
 full-name: "Nanice Luther"
-fname: "Nanice"
-lname: "Luther"
+first-name: "Nanice"
+last-name: "Luther"
 position: "Marketing Assistant"
 email: "nlutherm@businesswire.com"
 phone: "(585) 9446658"

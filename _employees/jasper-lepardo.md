@@ -1,8 +1,8 @@
 ---
 layout: employees
 full-name: "Japser Lepardo"
-fname: "Jasper"
-lname: "Lepardo"
+first-name: "Jasper"
+last-name: "Lepardo"
 position: "Owner"
 email: "jsprlprd@gmail.com"
 phone: "(0917) 116"

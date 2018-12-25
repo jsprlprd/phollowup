@@ -28,12 +28,23 @@ heading-title: Calendar
         <thead>
           <tr>
             <th><i class="far fa-user" style="font-size: 16px; padding: 8px;"></i></th>
-            {% for employee in site.data.list-value.employee-name %}
+            <th>
+              <a class="media" href="{{ site.baseurl }}/app/calendar/jasper-lepardo.html">
+                <img class="mr-3 rounded-circle" src="https://ui-avatars.com/api/?name=Jasper+Lepardo" alt="" width="32" height="32" />
+                <div class="media-body align-self-center">
+                  Jasper
+                </div>
+                <div class="ml-3 align-self-center">
+                  <span class="badge badge-primary">00</span>
+                </div>
+              </a>
+            </th>
+            {% for employee in site.employees %}
               <th>
-                <a class="media" href="{{ site.baseurl }}/app/calendar/jasper-lepardo.html">
-                  <img class="mr-3 rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.fname }}+{{ employee.lname }}" alt="" width="32" height="32" />
+                <a class="media" href="">
+                  <img class="mr-3 rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}" alt="" width="32" height="32" />
                   <div class="media-body align-self-center">
-                    {{ employee.fname }}
+                    {{ employee.first-name }}
                   </div>
                   <div class="ml-3 align-self-center">
                     <span class="badge badge-primary">00</span>
@@ -49,25 +60,29 @@ heading-title: Calendar
               <td>
                 {{ time.text }}
               </td>
-              {% for tabs in site.data.list-value.employee-name %}
+              <td>&nbsp;</td>
+              {% for employee in site.employees %}
                 <td>&nbsp;</td>
               {% endfor %}
             </tr>
             <tr>
               <td>&nbsp;</td>
-              {% for tabs in site.data.list-value.employee-name %}
+              <td>&nbsp;</td>
+              {% for employee in site.employees %}
                 <td>&nbsp;</td>
               {% endfor %}
             </tr>
             <tr>
               <td>&nbsp;</td>
-              {% for tabs in site.data.list-value.employee-name %}
+              <td>&nbsp;</td>
+              {% for employee in site.employees %}
                 <td>&nbsp;</td>
               {% endfor %}
             </tr>
             <tr>
               <td>&nbsp;</td>
-              {% for tabs in site.data.list-value.employee-name %}
+              <td>&nbsp;</td>
+              {% for employee in site.employees %}
                 <td>&nbsp;</td>
               {% endfor %}
             </tr>

@@ -3,8 +3,9 @@ layout: app
 container-type: container
 heading: true
 heading-title: Invoices
+heading-navbar:
 sub-heading: true
-sub-heading-title: 3858
+sub-heading-title: Create Invoice
 ---
 
 <div class="row">
@@ -12,26 +13,8 @@ sub-heading-title: 3858
     <h6 class="h4 mb-3">Customer Details</h6>
     <div class="card mb-4">
       <div class="card-body">
-        <div class="media">
-          <div class="d-inline-flex mr-3">
-            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Adelind+Hatherleigh" alt="" width="96" height="96">
-          </div>
-          <div class="media-body align-self-center">
-            <div class="row">
-              <div class="col align-self-center">
-                <h6 class="h4 mt-4"><b>Adelind Hatherleigh</b></h6>
-                <p>67% punctuality (2/3)</p>
-              </div>
-              <div class="col align-self-center">
-                <ul class="list list-icon list-icon-default mb-0">
-                  <li><i class="list-item-icon fas fa-phone"></i><a href="">822-502-1423</a></li>
-                  <li><i class="list-item-icon fas fa-envelope"></i><a href="">ahatherleigh6@dot.gov</a></li>
-                  <li><i class="list-item-icon fas fa-birthday-cake"></i><a href="">July 30, 1968</a></li>
-                </ul>
-              </div>
-            </div>
-            <a class="btn btn-light" href=""><i class="fas fa-pen"></i> Edit</a>
-          </div>
+        <div class="d-flex">
+          <a class="btn btn-outline-dark mx-auto" href="#custom-form" data-toggle="collapse">Add Customer</a>
         </div>
       </div>
     </div>
@@ -72,7 +55,7 @@ sub-heading-title: 3858
                   list-value-name=site.data.list-value.service
                 %}
               </td>
-              <td><p class="form-control-plaintext">₱ 200.00</p></td>
+              <td><p class="form-control-plaintext">-</p></td>
               <td>
                 <div class="form-inline">
                   <button class="btn btn-link" type="button" onclick="increment(-1, 'counter')">
@@ -105,7 +88,7 @@ sub-heading-title: 3858
                   list-value-name=site.data.list-value.tax-type
                 %}
               </td>
-              <td><p class="form-control-plaintext">₱ 200.00</p></td>
+              <td><p class="form-control-plaintext">-</p></td>
               <td><a class="btn btn-danger" href="">&times;</a></td>
             </tr>
           </tbody>
@@ -125,7 +108,7 @@ sub-heading-title: 3858
                 <tbody>
                   <tr>
                     <td>Subtotal</td>
-                    <td class="text-right">₱ 400.00</td>
+                    <td class="text-right">₱ 0.00</td>
                   </tr>
                   <tr>
                     <td>Tax</td>
@@ -133,7 +116,7 @@ sub-heading-title: 3858
                   </tr>
                   <tr>
                     <td>Total</td>
-                    <td class="text-right">₱ 400.00</td>
+                    <td class="text-right">₱ 0.00</td>
                   </tr>
                 </tbody>
               </table>
@@ -170,7 +153,7 @@ sub-heading-title: 3858
     </div>
     <div class="d-flex align-items-start align-items-center justify-content-between">
       <a class="btn btn-link btn-lg" href="">Cancel</a>
-      <a class="btn btn-primary btn-lg" href="">Save Changes</a>
+      <a class="btn btn-primary btn-lg" href="">Create Invoice</a>
     </div>
   </div>
 </div>

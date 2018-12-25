@@ -212,8 +212,17 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $('table tr').click(function(){
+  $('.table-clickable tbody tr').click(function(){
       window.location = $(this).attr('href');
       return false;
   });
 });
+
+
+
+
+function increment(incrementor, target){
+  var value = parseInt(document.getElementById(target).value);
+  value+=incrementor;
+  document.getElementById(target).value = value;
+}

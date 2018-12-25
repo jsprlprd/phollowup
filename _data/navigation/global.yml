@@ -11,8 +11,12 @@
   url: app/customers/
 
 - text: Invoices
-  icon: fas fa-shopping-cart
+  icon: fas fa-file-invoice
   url: app/invoices/
+
+- text: Reports
+  icon: fas fa-chart-bar
+  url: app/reports/
 
 - text: Employees
   icon: fas fa-users

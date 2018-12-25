@@ -93,11 +93,12 @@ body {
   color: #FAFAFA;
   font-size: 18px;
   font-weight: 500;
+}
 
+.heading .sub-heading {
   margin-top: 24px;
   margin-bottom: -24px;
 }
-
 
 
 
@@ -509,11 +510,11 @@ body {
 
 
 .list-wrapper {
-  flex-basis: 320px;
+  /* flex-basis: 320px; */
 }
 
 .list-wrapper .heading {
-  width: 320px;
+  width: 100%;
 }
 
 .list-details .heading {
@@ -527,13 +528,22 @@ body {
 }
 
 #customer th:first-child,
-#customer td:first-child {
+#customer td:first-child,
+#invoice th:first-child,
+#invoice td:first-child {
   padding-left: 24px;
   /* padding-right: 24px; */
 }
 
+#counter {
+  width: 80px;
+  text-align: center;
+}
+
 #customer th:last-child,
-#customer td:last-child {
+#customer td:last-child,
+#invoice th:last-child,
+#invoice td:last-child {
   /* padding-left: 24px; */
   padding-right: 24px;
 }

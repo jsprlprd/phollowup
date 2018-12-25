@@ -10,7 +10,7 @@ heading-search-placeholder: Search Customers
 ---
 
   <div class="table-responsive">
-    <table class="table table-hover" id="customer">
+    <table class="table table-clickable table-hover" id="customer">
       <thead>
         <tr>
           <th><a href="">Name</a></th>
@@ -32,7 +32,7 @@ heading-search-placeholder: Search Customers
             <td>
               <div class="media">
                 <div class="d-inline-flex mr-3">
-                  <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ customer.fname }}+{{ customer.lname }}&?background={{ customer.background-color }}&color=fff" alt="" width="48" height="48">
+                  <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ customer.first-name }}+{{ customer.last-name }}&?background={{ customer.background-color }}&color=fff" alt="" width="48" height="48">
                 </div>
                 <div class="media-body align-self-center">
                   <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
@@ -46,7 +46,7 @@ heading-search-placeholder: Search Customers
               (+63) {{ customer.phone }}
             </td>
             <td>
-              {{ customer.email-address }}
+              {{ customer.email }}
             </td>
             <td>
               {{ customer.birthday }}
@@ -77,4 +77,4 @@ heading-search-placeholder: Search Customers
   </div>
 
 
-  <a class="btn btn-warning btn-fab" href=""><i class="fas fa-plus"></i></a>
+  <!-- <a class="btn btn-warning btn-fab" href=""><i class="fas fa-plus"></i></a> -->

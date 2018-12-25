@@ -4,6 +4,9 @@
 - text: Company
   url: app/settings/company/
 
+- text: Custom Forms
+  url: app/settings/custom-forms/
+
 - text: Messages
   url: app/settings/messages/
 

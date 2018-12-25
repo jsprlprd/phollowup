@@ -44,10 +44,10 @@ heading-search: true
     </div>
     <div class="list-group list-group-flush">
       {% for employee in site.employees %}
-        <a href="{{ site.baseurl }}/app/employees/{{ employee.slug }}" class="list-group-item list-group-item-action {% if page.url contains employee.slug %} active {% endif %}">
+        <a href="{{ site.baseurl }}/app/employees/{{ employee.url }}" class="list-group-item list-group-item-action {% if page.url contains employee.url %} active {% endif %}">
           <div class="media">
             <div class="d-inline-flex mr-3">
-              <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.fname }}+{{ employee.lname }}&?background={{ employee.background-color }}&color=fff" alt="" width="48" height="48">
+              <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}&?background={{ employee.background-color }}&color=fff" alt="" width="48" height="48">
             </div>
             <div class="media-body align-self-center">
               <p class="text-lg mb-0"><b>{{ employee.full-name }}</b></p>
@@ -73,7 +73,7 @@ heading-search: true
         </div>
         <div class="media d-none d-xl-flex">
           <div class="d-inline-flex mr-3">
-            <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ page.fname }}+{{ page.lname }}&?background={{ employee.background-color }}&color=fff" alt="" width="96" height="96">
+            <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ page.first-name }}+{{ page.last-name }}&?background={{ employee.background-color }}&color=fff" alt="" width="96" height="96">
           </div>
           <div class="media-body align-self-center">
             <div class="row">
