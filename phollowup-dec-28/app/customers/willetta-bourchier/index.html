@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+
+
+
+
+
+
+
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#007BFE" />
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/img/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/img/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/img/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/img/favicons/mstile-310x310.png" />
+
+    <title>PhollowUp</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/img/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/favicons/apple-touch-icon-152x152.png" />
+
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-196x196.png" sizes="196x196" />
+
+    <!-- Lato - Google  Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Base stylesheet -->
+    <link rel="stylesheet" href="/assets/css/phollowup.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <!-- Layout Specific CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Plugins -->
+
+    <!-- Bootstrap DateTimePicker -->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap-datetime-picker/css/daterangepicker.css">
+
+    <link rel="stylesheet" href="/assets/plugins/selectize/css/selectize.css">
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+
+    <div class="navbar navbar-expand-lg navbar-dark fixed-top" id="left-panel">
+  <a class="navbar-brand p-3" href="">
+    <img class="" src="/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
+  </a>
+  <button class="navbar-toggler" id="mobile-slider" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="global-slider">    
+    <div class="p-3">
+      <a class="btn btn-warning" href="">New Appointment</a>
+    </div>
+    <ul class="nav navbar-nav  flex-column    ">
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/dashboard.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/calendar/"><i class="far fa-calendar"></i>Calendar</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link  active " href="/app/customers/"><i class="fas fa-address-book"></i>Customers</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/invoices/"><i class="fas fa-file-invoice"></i>Invoices</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/reports/"><i class="fas fa-chart-bar"></i>Reports</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/employees/"><i class="fas fa-users"></i>Employees</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/settings/advanced-settings.html"><i class="fas fa-cog"></i>Settings</a>
+        
+    </li>
+  
+</ul>
+    <ul class="navbar-nav flex-column mt-auto">
+      <li class="nav-item">
+        <a class="btn btn-outline-primary btn-lg btn-block" href="">Switch to Tablet Mode</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="/app/settings/subscription.html" style="color: #f78002; line-height: 24px; padding-top: 12px; padding-bottom: 12px;">Upgrade Now</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="" style="font-size: 18px; line-height: 24px; padding-top: 12px; padding-bottom: 12px;"><i class="far fa-bell"></i></a></li> -->
+      <li class="nav-item dropup">
+        <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
+          <div class="media">
+            <div class="mr-3">
+              <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+            </div>
+            <div class="media-body align-self-center">
+              Jasper Lepardo
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item media" href="">
+            <div class="media-left">
+              <img class="rounded-circle" src="/assets/img/avatar.png" width="48" height="48" alt="">
+            </div>
+            <div class="media-body media-middle">
+              Jasper Lepardo
+            </div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Link #1</a>
+          <a class="dropdown-item" href="#">Link #1</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="slider-overlay"></div>
+</div>
+
+<div id="main-panel">
+  
+  <main class="" id="main-content">
+    <div class="row no-gutters">
+  <div class="col-3 border-right d-none d-xl-block list-wrapper">
+    <div class="heading">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1 class="heading-title h3">Customers</h1>
+          </div>
+          <div class="col-auto">
+            <a class="btn btn-warning" href="/app/customers/add-new-customers.html">Add New Customers</a>
+          </div>
+        </div>
+        <div class="heading-search">
+          <div class="form-icon form-icon-lg">
+            <input class="form-control form-control-lg " id="search-customers" name="search-customers" type="search" value="" placeholder="Search Customers" />
+            <span class="form-control-icon"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-clickable table-hover" id="customer">
+        <thead>
+          <tr>
+            <th><a href="">Name</a></th>
+            <!-- <th><a href="">Rating</a></th> -->
+            <!-- <th><a href="">Contact</a></th> -->
+            <!-- <th><a href="">Email</a></th> -->
+            <!-- <th><a href="">Birthday</a></th> -->
+            <!-- <th></th> -->
+            <!-- <th>First Appointments</th>
+            <th>Last Appointments</th>
+            <th>Service</th>
+            <th>A/yr</th>
+            <th>$/yr</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr class="" href="/app/customers/adelind-hatherleigh/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Adelind+Hatherleigh&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Adelind Hatherleigh</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 822-502-1423
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                July 30, 1968
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/agustin-ellaway/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Agustin+Ellaway&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Agustin Ellaway</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 631-609-5421
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                September 20, 1950
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/angelico-iInkin/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Angelico+Inkin&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Angelico Inkin</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 628-458-6942
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                August 16, 1995
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/barr-pennock/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Barr+Pennock&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Barr Pennock</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 217-999-9706
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                June 06, 1981
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/bat-eustanch/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Bat+Eustanch&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Bat Eustanch</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 102-546-8621
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                January 24, 1997
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/blondelle-gotcher/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Blondelle+Gotcher&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Blondelle Gotcher</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 278-122-5199
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                February 18, 1985
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/casper-sayce/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Casper+Sayce&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Casper Sayce</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 163-790-4090
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                August 29, 1986
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/constantino-zuan/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Constantino+Zuan&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Constantino Zuan</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 674-718-2198
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                August 22, 1994
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/dalston-mundee/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Dalston+Mundee&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Dalston Mundee</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 145-690-5992
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                June 02, 1956
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/darcey-cobbold/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Darcey+Cobbold&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Darcey Cobbold</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 474-646-6293
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                June 13, 1976
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/dniren-nutt/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Dniren+Nutt&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Dniren Nutt</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 806-333-7930
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                November 05, 1979
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/elianora-headington/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Elianora+Headington&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Elianora Headington</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 707-862-4765
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                April 03, 1963
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/evan-nuckles/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Evan+Knuckles&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Evan Knuckles</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) (192) 3902924
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                September 31, 1987
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/graham-bettesworth/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Graham+Bettesworth&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Graham Bettesworth</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 190-403-5185
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                April 02, 1975
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/janie-oseman/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Janie+Oseman&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Janie Oseman</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 692-544-2794
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                February 12, 1974
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/luigi-purkins/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Luigi+Purkins&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Luigi Purkins</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 268-497-8402
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                September 08, 1992
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/mei-simeone/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Mei+Simeone&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Mei Simeone</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 787-974-5770
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                February 14, 1954
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/melvin-blackesland/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Melvin+Blackesland&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Melvin Blackesland</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 786-749-0813
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                March 09, 1999
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/nealson-de-beauchemp/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Nealson+De Beauchemp&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Nealson De Beauchemp</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 140-453-3621
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                December 12, 1964
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/randee-bogace/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Randee+Bogace&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Randee Bogace</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 726-787-7913
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                May 07, 1984
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/roman-jobes/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Roman+Jobes&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Roman Jobes</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 217-579-9452
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                October 17, 1977
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/saba-baseley/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Saba+Baseley&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Saba Baseley</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 517-978-9331
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                March 17, 1956
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/trix-labb/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Trix+Labb&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Trix Labb</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 116-187-9828
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                April 28, 2000
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class=" table-active " href="/app/customers/willetta-bourchier/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Willetta+Bourchier&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Willetta Bourchier</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) (349) 8563171
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                November 14, 1983
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/customers/yuri-skade/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Yuri+Skade&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Yuri Skade</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 775-640-1429
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                September 01, 1938
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+        </tbody>
+      </table>
+  
+    </div>
+      <!-- <a class="btn btn-warning btn-fab" href=""><i class="fas fa-plus"></i></a> -->
+  </div>
+
+  <div class="col">
+    <div class="heading">
+      <div class="container-fluid">
+        <div class="row no-gutters d-flex d-xl-none">
+          <div class="col-auto"><button class="btn btn-link btn-sm" type="button" onclick="history.back(-1)"><i class="fas fa-arrow-left"></i></button></div>
+          <div class="col text-center">
+            <h1 class="heading-title h4">Willetta Bourchier</h1>
+            <p class="heading-subtitle">67% punctuality (2/3)</p>
+          </div>
+          <div class="col-auto"><button class="btn btn-link btn-sm" type="button"><i class="fas fa-info-circle"></i></button></div>
+        </div>
+        <div class="media d-none d-xl-flex">
+          <div class="d-inline-flex mr-3">
+            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Willetta+Bourchier&?background=&color=fff" alt="" width="96" height="96">
+          </div>
+          <div class="media-body align-self-center">
+            <div class="row">
+              <div class="col align-self-center">
+                <h6 class="h4 mt-4"><b>Willetta Bourchier</b></h6>
+                <p>67% punctuality (2/3)</p>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list list-icon list-icon-default mb-0">
+                  <li><i class="list-item-icon fas fa-phone"></i><a href="">(349) 8563171</a></li>
+                  <li><i class="list-item-icon fas fa-envelope"></i><a href="">wbourchier2@biblegateway.com</a></li>
+                  <li><i class="list-item-icon fas fa-birthday-cake"></i><a href="">November 14, 1983</a></li>
+                </ul>
+              </div>
+            </div>
+            <a class="btn btn-light" href="/app/customers/edit-customer.html"><i class="fas fa-pen"></i> Edit</a>
+          </div>
+        </div>
+        <nav class="heading-navbar">
+          <ul class="nav nav-tabs     nav-tabs-responsive ">
+    
+    <li class="nav-item">
+      
+        <a class="nav-link active" href="#appointments-tab" data-toggle="tab"><i class=""></i>Appointments</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#custom-forms-tab" data-toggle="tab"><i class=""></i>Custom Forms</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#messages-tab" data-toggle="tab"><i class=""></i>Messages</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#satisfaction-tab" data-toggle="tab"><i class=""></i>Satisfaction</a>
+        
+    </li>
+  
+</ul>  
+        </nav>
+      </div>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane show active" id="appointments-tab">
+        <div class="container-fluid">
+          <div class="mb-4">
+            <ul class="nav nav-pills     nav-tabs-responsive ">
+    
+    <li class="nav-item">
+      
+        <a class="nav-link active" href="#all-bookings-tab" data-toggle="tab"><i class=""></i>All</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#pending-bookings-tab" data-toggle="tab"><i class=""></i>Pending</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#approved-bookings-tab" data-toggle="tab"><i class=""></i>Approved</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#rejected-bookings-tab" data-toggle="tab"><i class=""></i>Rejected</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#cancelled-bookings-tab" data-toggle="tab"><i class=""></i>Cancelled</a>
+        
+    </li>
+  
+</ul>
+          </div>
+          <ul class="list-group list-group-flush list-group-custom">
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                  <span class="badge badge-success">Confirmed</span>
+                </div>
+                <div class="col-sm-2 text-center order-3 align-self-center">
+                  <a class="btn btn-link" href="/app/invoices/3858.html">View Invoice</a>
+                </div>
+                <div class="col-sm-auto order-4 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                  <span class="badge badge-success">Confirmed</span>
+                </div>
+                <div class="col-sm-2 text-center order-3 align-self-center">
+                  <a class="btn btn-link" href="/app/invoices/3858.html">View Invoice</a>
+                </div>
+                <div class="col-sm-auto order-4 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                  <span class="badge badge-success">Confirmed</span>
+                </div>
+                <div class="col-sm-2 text-center order-3 align-self-center">
+                  <a class="btn btn-link" href="/app/invoices/3858.html">View Invoice</a>
+                </div>
+                <div class="col-sm-auto order-4 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                  <span class="badge badge-success">Confirmed</span>
+                </div>
+                <div class="col-sm-2 text-center order-3 align-self-center">
+                  <a class="btn btn-link" href="/app/invoices/3858.html">View Invoice</a>
+                </div>
+                <div class="col-sm-auto order-4 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>Friday, September 28, 2018 <span>at</span> 09:00 AM</b></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+                  <span class="badge badge-success">Confirmed</span>
+                </div>
+                <div class="col-sm-2 text-center order-3 align-self-center">
+                  <a class="btn btn-link" href="/app/invoices/3858.html">View Invoice</a>
+                </div>
+                <div class="col-sm-auto order-4 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="tab-pane" id="custom-forms-tab">
+        <div class="container-fluid">
+
+          <div class="card mb-4">
+            <div class="card-body">
+              <h6 class="card-title h5">Custom Form Title</h6>
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 1</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 1</p>
+
+      
+
+    </div>
+  </div>
+  
+
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 2</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 2</p>
+
+      
+
+    </div>
+  </div>
+  
+              
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 3</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 3</p>
+
+      
+
+    </div>
+  </div>
+  
+
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 4</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 4</p>
+
+      
+
+    </div>
+  </div>
+  
+
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 5</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 5</p>
+
+      
+
+    </div>
+  </div>
+  
+
+            </div>
+          </div>
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h6 class="card-title h5">Custom Form Title</h6>
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 1</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 1</p>
+
+      
+
+    </div>
+  </div>
+  
+
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 2</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 2</p>
+
+      
+
+    </div>
+  </div>
+  
+              
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 3</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 3</p>
+
+      
+
+    </div>
+  </div>
+  
+
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 4</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 4</p>
+
+      
+
+    </div>
+  </div>
+  
+
+
+              
+  <div class="form-group row">
+    
+  <label class="form-label col-lg-3" for="">Question 5</label>
+
+
+    <div class="col-lg-6">
+      
+  <p class="form-control-plaintext  ">Answer 5</p>
+
+      
+
+    </div>
+  </div>
+  
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="tab-pane" id="messages-tab">
+        <div class="sub-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-8 offset-2">
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <label class="form-control-switch">
+                      <input type="checkbox">
+                      <span class="form-control-switch-indicator"></span>
+                    </label>
+                  </div>
+                  <div class="media-body align-self-center">
+                    <h6 class="mb-0">Disabled</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          
+        </div>
+      </div>
+      <div class="tab-pane" id="satisfaction-tab">
+        <div class="container-fluid">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+</div>
+
+<div id="right-panel">
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/functions.js"></script>
+
+    <!-- Plugins -->
+    <script src="/assets/plugins/bootstrap-datetime-picker/js/daterangepicker.js"></script>
+
+    <script>
+      $(function() {
+        $("#new-appointment-datetimepicker, #reschedule-appointment-datetimepicker").daterangepicker({
+          "singleDatePicker": true,
+          "showDropdowns": true,
+          "alwaysShowCalendars": true,
+          "timePicker": true,
+          "timePickerIncrement": 15,
+          "linkedCalendars": false,
+          "showCustomRangeLabel": false,
+          "parentEl": "datepicker",
+          "opens": "left",
+          "drops": "down",
+          "locale": {
+            format: 'MMM DD, YYYY - hh:mm A'
+          }
+        });
+      });
+    </script>
+
+    <script src="/assets/plugins/selectize/js/standalone/selectize.js"></script>
+
+
+    <script>
+      $('#new-appointment-customer, #edit-appointment-customer').selectize({
+        create: true,
+        createOneBlur: true,
+        addPrecedence: true,
+        // render: {
+        //   option_create: function (data, escape) {
+        //     return '<div class="create">Add <strong>' + escape(data.input) + '</strong> as a customer</div>';
+        //   }
+        // },
+      });
+    </script>
+  </body>
+</html>

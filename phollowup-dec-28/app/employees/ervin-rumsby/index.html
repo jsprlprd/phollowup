@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+
+
+
+
+
+
+
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#007BFE" />
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/img/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/img/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/img/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/img/favicons/mstile-310x310.png" />
+
+    <title>PhollowUp</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/img/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/img/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/img/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/favicons/apple-touch-icon-152x152.png" />
+
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="/assets/img/favicons/favicon-196x196.png" sizes="196x196" />
+
+    <!-- Lato - Google  Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Base stylesheet -->
+    <link rel="stylesheet" href="/assets/css/phollowup.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <!-- Layout Specific CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- Plugins -->
+
+    <!-- Bootstrap DateTimePicker -->
+    <link rel="stylesheet" href="/assets/plugins/bootstrap-datetime-picker/css/daterangepicker.css">
+
+    <link rel="stylesheet" href="/assets/plugins/selectize/css/selectize.css">
+    <link rel="manifest" href="/manifest.json">
+  </head>
+  <body>
+
+    <div class="navbar navbar-expand-lg navbar-dark fixed-top" id="left-panel">
+  <a class="navbar-brand p-3" href="">
+    <img class="" src="/assets/img/LOGO_PhollowUp-New.png" alt="" width="" height="32">
+  </a>
+  <button class="navbar-toggler" id="mobile-slider" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="global-slider">    
+    <div class="p-3">
+      <a class="btn btn-warning" href="">New Appointment</a>
+    </div>
+    <ul class="nav navbar-nav  flex-column    ">
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/dashboard.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/calendar/"><i class="far fa-calendar"></i>Calendar</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/customers/"><i class="fas fa-address-book"></i>Customers</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/invoices/"><i class="fas fa-file-invoice"></i>Invoices</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/reports/"><i class="fas fa-chart-bar"></i>Reports</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link  active " href="/app/employees/"><i class="fas fa-users"></i>Employees</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="/app/settings/advanced-settings.html"><i class="fas fa-cog"></i>Settings</a>
+        
+    </li>
+  
+</ul>
+    <ul class="navbar-nav flex-column mt-auto">
+      <li class="nav-item">
+        <a class="btn btn-outline-primary btn-lg btn-block" href="">Switch to Tablet Mode</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="/app/settings/subscription.html" style="color: #f78002; line-height: 24px; padding-top: 12px; padding-bottom: 12px;">Upgrade Now</a>
+      </li> -->
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="" style="font-size: 18px; line-height: 24px; padding-top: 12px; padding-bottom: 12px;"><i class="far fa-bell"></i></a></li> -->
+      <li class="nav-item dropup">
+        <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
+          <div class="media">
+            <div class="mr-3">
+              <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+            </div>
+            <div class="media-body align-self-center">
+              Jasper Lepardo
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item media" href="">
+            <div class="media-left">
+              <img class="rounded-circle" src="/assets/img/avatar.png" width="48" height="48" alt="">
+            </div>
+            <div class="media-body media-middle">
+              Jasper Lepardo
+            </div>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Link #1</a>
+          <a class="dropdown-item" href="#">Link #1</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="slider-overlay"></div>
+</div>
+
+<div id="main-panel">
+  
+  <main class="" id="main-content">
+    <div class="row no-gutters">
+  <div class="col-3 border-right d-none d-xl-block list-wrapper">
+    <div class="heading">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1 class="heading-title h3">Employees</h1>
+          </div>
+          <div class="col-auto">
+            <a class="btn btn-warning" href="/app/employees/add-new-employees.html">Add New Employees</a>
+          </div>
+        </div>
+        <div class="heading-search">
+          <div class="form-icon form-icon-lg">
+            <input class="form-control form-control-lg " id="search-employee" name="search-employee" type="search" value="" placeholder="Search Employees" />
+            <span class="form-control-icon"><i class="fas fa-search"></i></span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-clickable table-hover" id="customer">
+        <thead>
+          <tr>
+            <th><a href="">Name</a></th>
+            <!-- <th><a href="">Rating</a></th> -->
+            <!-- <th><a href="">Contact</a></th> -->
+            <!-- <th><a href="">Email</a></th> -->
+            <!-- <th><a href="">Birthday</a></th> -->
+            <!-- <th></th> -->
+            <!-- <th>First Appointments</th>
+            <th>Last Appointments</th>
+            <th>Service</th>
+            <th>A/yr</th>
+            <th>$/yr</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr class="" href="/app/employees/abra-kuhnwald/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Abra+Kuhnwald&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Abra Kuhnwald</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/alonzo-northway/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Alonzo+Northway&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Alonzo Northway</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/ancell-oxton/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Ancell+Oxton&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Ancell Oxton</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/arabela-ort/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Arabela+Ort&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Arabela Ort</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/arnie-rickesies/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Arnie+Rickesies&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Arnie Rickesies</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/blondie-gorman/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Blondie+Gorman&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Blondie Gorman</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/carolann-narup/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Carolann+Narup&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Carolann Narup</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/dedie-yezafovich/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Dedie+Yezafovich&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Dedie Yezafovich</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/elnore-hatter/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Elnore+Hatter&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Elnore Hatter</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class=" table-active " href="/app/employees/ervin-rumsby/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Ervin+Rumsby&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Ervin Rumsby</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/griffie-sulley/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Griffie+Sulley&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Griffie Sulley</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/harmon-morican/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Harmon+Morican&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Harmon Morican</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/jasper-lepardo/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Jasper+Lepardo&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Japser Lepardo</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/jena-bench/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Jena+Bench&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Jena Bench</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/kathye-clawson/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Kathye+Clawson&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Kathye Clawson</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/katinka-grund/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Katinka+Grund&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Katinka Grund</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/kerri-rehme/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Kerri+Rehme&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Kerri Rehme</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/margit-cassley/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Margit+Cassley&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Margit Cassley</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/nanice-luther/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Nanice+Luther&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Nanice Luther</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/rebecka-dils/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Rebecka+Dils&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Rebecka Dils</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/rodger-reolfo/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Rodger+Reolfo&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Rodger Reolfo</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/shelba-janek/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Shelba+Janek&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Shelba Janek</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/tabby-olufsen/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Tabby+Olufsen&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Tabby Olufsen</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/tedmund-georgeon/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Tedmund+Georgeon&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Tedmund Georgeon</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+            <tr class="" href="/app/employees/timmie-norsworthy/">
+              <td>
+                <div class="media">
+                  <div class="d-inline-flex mr-3">
+                    <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Timmie+Norsworthy&?background=&color=fff" alt="" width="48" height="48">
+                  </div>
+                  <div class="media-body align-self-center">
+                    <p class="text-lg mb-0"><b>Timmie Norsworthy</b></p>
+                  </div>
+                </div>
+              </td>
+              <!-- <td>
+                <p class="mb-0">67% punctuality (2/3)</p>
+              </td>
+              <td>
+                (+63) 
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
+              </td> -->
+              <!-- <td>
+  
+              </td> -->
+              <!-- <td>
+                08/28/2018
+              </td>
+              <td>
+                08/28/2018
+              </td>
+              <td>
+                The Essenses Signature Massage 
+              </td>
+              <td>
+                0 
+              </td>
+              <td>
+                P 0.00
+              </td> -->
+            </tr>
+          
+        </tbody>
+      </table>
+  
+    </div>
+      <!-- <a class="btn btn-warning btn-fab" href=""><i class="fas fa-plus"></i></a> -->
+  </div>
+
+  <div class="col">
+    <div class="heading">
+      <div class="container-fluid">
+        <div class="row no-gutters d-flex d-xl-none">
+          <div class="col-auto"><button class="btn btn-link btn-sm" type="button" onclick="history.back(-1)"><i class="fas fa-arrow-left"></i></button></div>
+          <div class="col text-center">
+            <h1 class="heading-title h4">Ervin Rumsby</h1>
+            <p class="heading-subtitle">Programmer III</p>
+          </div>
+          <div class="col-auto"><button class="btn btn-link btn-sm" type="button"><i class="fas fa-info-circle"></i></button></div>
+        </div>
+        <div class="media d-none d-xl-flex">
+          <div class="d-inline-flex mr-3">
+            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Ervin+Rumsby&?background=&color=fff" alt="" width="96" height="96">
+          </div>
+          <div class="media-body align-self-center">
+            <div class="row">
+              <div class="col align-self-center">
+                <h6 class="h4 mt-4"><b>Ervin Rumsby</b></h6>
+                <p>Programmer III</p>
+              </div>
+              <div class="col align-self-center">
+                <ul class="list list-icon list-icon-default mb-0">
+                  <li><i class="list-item-icon fas fa-phone"></i><a href="">(953) 8485298</a></li>
+                  <li><i class="list-item-icon fas fa-envelope"></i><a href="">erumsby6@freewebs.com</a></li>
+                </ul>
+              </div>
+            </div>
+            <a class="btn btn-light" href=""><i class="fas fa-pen"></i> Edit</a>
+          </div>
+        </div>
+        <nav class="heading-navbar">
+          <ul class="nav nav-tabs     nav-tabs-responsive ">
+    
+    <li class="nav-item">
+      
+        <a class="nav-link active" href="#schedules-tab" data-toggle="tab"><i class=""></i>Schedules</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#services-and-branches-tab" data-toggle="tab"><i class=""></i>Services &amp; Branches</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#working-hours-tab" data-toggle="tab"><i class=""></i>Working Hours</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#leave-and-time-off-tab" data-toggle="tab"><i class=""></i>Leave &amp; Time-Off</a>
+        
+    </li>
+  
+</ul>  
+        </nav>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="tab-content">
+        <div class="tab-pane show active" id="schedules-tab">
+          <div class="mb-3">
+            <ul class="nav nav-pills     nav-tabs-responsive ">
+    
+    <li class="nav-item">
+      
+        <a class="nav-link active" href="#today-appointments-tab" data-toggle="tab"><i class=""></i>Today</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#tommorow-appointments-tab" data-toggle="tab"><i class=""></i>Tommorow</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#this-week-appointments-tab" data-toggle="tab"><i class=""></i>This Week</a>
+        
+    </li>
+  
+    <li class="nav-item">
+      
+        <a class="nav-link " href="#custom-date-appointments-tab" data-toggle="tab"><i class=""></i>Custom Date</a>
+        
+    </li>
+  
+</ul>
+          </div>
+          <ul class="list-group list-group-flush list-group-custom">
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col-sm-auto order-2 order-sm-1 text-sm-right align-self-center">
+                  <p class="mb-0"><b>02:00</b><br class="d-none d-sm-block"><small>PM</small></p>
+                </div>
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>John Doe</b> <span class="badge badge-warning">VIP</span></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b></p>
+                </div>
+                <div class="col-sm-auto order-3 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col-sm-auto order-2 order-sm-1 text-sm-right align-self-center">
+                  <p class="mb-0"><b>02:00</b><br class="d-none d-sm-block"><small>PM</small></p>
+                </div>
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>John Doe</b> <span class="badge badge-warning">VIP</span></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b></p>
+                </div>
+                <div class="col-sm-auto order-3 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item list-group-item-action">
+              <div class="row">
+                <div class="col-sm-auto order-2 order-sm-1 text-sm-right align-self-center">
+                  <p class="mb-0"><b>02:00</b><br class="d-none d-sm-block"><small>PM</small></p>
+                </div>
+                <div class="col order-1 order-sm-2">
+                  <p class="text-lg mb-0"><a href=""><b>John Doe</b> <span class="badge badge-warning">VIP</span></a></p>
+                  <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b></p>
+                </div>
+                <div class="col-sm-auto order-3 align-self-center">
+                  <button class="btn btn-light">No Show</button>
+                  <button class="btn btn-primary">Attended</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="tab-pane" id="services-and-branches-tab">
+          <div class="heading mt-0">
+            <h1 class="heading-title h4">Services</h1>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <p class="text-lg"><b>Massage Servies</b></p>
+              <ul class="pl-3">
+                <li>The Essenses Signature Massage</li>
+                <li>Pevonia Body Polish</li>
+                <li>Body Polish with Seasalt & Honey</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="working-hours-tab">
+          <div class="card">
+            <div class="card-body">
+              <div class="form-group row">
+                <label class="col-2 form-label" for="">Availability Days</label>
+                <div class="col-sm-10">
+                  <div data-toggle="buttons">
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option1" autocomplete="off" checked> Mon
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option2" autocomplete="off" checked> Tue
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Wed
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Thu
+                    </label>
+                    <label class="btn btn-light active">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off" checked> Fri
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off"> Sat
+                    </label>
+                    <label class="btn btn-light">
+                      <input type="checkbox" name="options" id="option3" autocomplete="off"> Sun
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Lunch Break</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="dashed">
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Monday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Tuesday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Wednesday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Thursday</label>
+                  <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Friday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Saturday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-2 form-label">Sunday</label>
+                <div class="col-md-5">
+                  <div class="row no-gutters">
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto align-self-center pl-3 pr-3">-</div>
+                    <div class="col">
+                      <div class="input-group">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Start">
+                        <div class="input-group-append">
+                          <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">AM</a>
+                            <a class="dropdown-item" href="#">PM</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="dashed">
+              <div class="offset-2">
+                <a class="btn btn-primary" href="">Update Working Hours</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+</div>
+
+<div id="right-panel">
+</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/functions.js"></script>
+
+    <!-- Plugins -->
+    <script src="/assets/plugins/bootstrap-datetime-picker/js/daterangepicker.js"></script>
+
+    <script>
+      $(function() {
+        $("#new-appointment-datetimepicker, #reschedule-appointment-datetimepicker").daterangepicker({
+          "singleDatePicker": true,
+          "showDropdowns": true,
+          "alwaysShowCalendars": true,
+          "timePicker": true,
+          "timePickerIncrement": 15,
+          "linkedCalendars": false,
+          "showCustomRangeLabel": false,
+          "parentEl": "datepicker",
+          "opens": "left",
+          "drops": "down",
+          "locale": {
+            format: 'MMM DD, YYYY - hh:mm A'
+          }
+        });
+      });
+    </script>
+
+    <script src="/assets/plugins/selectize/js/standalone/selectize.js"></script>
+
+
+    <script>
+      $('#new-appointment-customer, #edit-appointment-customer').selectize({
+        create: true,
+        createOneBlur: true,
+        addPrecedence: true,
+        // render: {
+        //   option_create: function (data, escape) {
+        //     return '<div class="create">Add <strong>' + escape(data.input) + '</strong> as a customer</div>';
+        //   }
+        // },
+      });
+    </script>
+  </body>
+</html>

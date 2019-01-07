@@ -9,21 +9,19 @@ heading-search-name:
 heading-search-placeholder:
 ---
 
+<div class="mb-3">
+  {% include components/molecules/nav-tabs.html
+    nav-type="nav-pills"
+    isLarge=""
+    isStacked=""
+    isJustified=""
+    isResponsive="nav-tabs-responsive"
+    list-value-name=site.data.navigation.booking-settings
+    hasIcon=""
+  %}
+</div>
+
 <div class="card">
-  <div class="card-header">
-    <div class="d-flex align-items-start align-items-center justify-content-between">
-      {% include components/molecules/nav-tabs.html
-        nav-type="nav-pills"
-        isLarge=""
-        isStacked=""
-        isJustified=""
-        isResponsive="nav-tabs-responsive"
-        list-value-name=site.data.navigation.booking-settings
-        hasIcon=""
-      %}
-      <a class="btn btn-primary" href="{{ site.baseurl }}/app/reports.html">Reports</a>
-    </div>
-  </div>
   <table class="table table-hover table-lg mb-0">
     <thead>
       <tr class="row m-0">
