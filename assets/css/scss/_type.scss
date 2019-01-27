@@ -162,6 +162,11 @@ mark,
       text-align: center;
       line-height: inherit;
     }
+
+  }
+
+  > .list-inline-divider {
+    padding-left: 0;
   }
 
   &.list-icon-default {

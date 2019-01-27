@@ -74,15 +74,26 @@ sub-heading-title: 3858
               </td>
               <td><p class="form-control-plaintext">₱ 200.00</p></td>
               <td>
-                <div class="form-inline">
-                  <button class="btn btn-link" type="button" onclick="increment(-1, 'counter')">
-                    <i class="fas fa-minus-circle"></i>
-                  </button>
-                  <input class="form-control" disabled id='counter' type="number" min="0" value='1'>
-                  <button class="btn btn-link" type="button" onclick="increment(1, 'counter')">
-                    <i class="fas fa-plus-circle"></i>
-                  </button>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-link" type="button" onclick="increment(-1, 'counter')">
+                      <i class="fas fa-minus-circle"></i>
+                    </button>
+                  </div>
+                  <input class="form-control" disabled id='counter' type="number" min="0" value='1' width="50">
+                  <div class="input-group-append">
+                    <button class="btn btn-link" type="button" onclick="increment(1, 'counter')">
+                      <i class="fas fa-plus-circle"></i>
+                    </button>
+                  </div>
                 </div>
+
+
+
+
+
+
               </td>
               <td>
                 {% include components/atoms/form/select.html 
@@ -125,7 +136,7 @@ sub-heading-title: 3858
                 <tbody>
                   <tr>
                     <td>Subtotal</td>
-                    <td class="text-right">₱ 400.00</td>
+                    <td class="text-right">₱ 200.00</td>
                   </tr>
                   <tr>
                     <td>Tax</td>
@@ -133,7 +144,7 @@ sub-heading-title: 3858
                   </tr>
                   <tr>
                     <td>Total</td>
-                    <td class="text-right">₱ 400.00</td>
+                    <td class="text-right">₱ 200.00</td>
                   </tr>
                 </tbody>
               </table>

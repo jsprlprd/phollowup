@@ -1,0 +1,98 @@
+---
+layout: booking
+---
+
+<main class="shadow bg-white " style="max-width: 1020px; margin: 0 auto;">
+  <div class="jumbotron jumbotron-fluid text-white text-center p-4 mb-0" style="background-color: #00254d;">
+    <img src="/assets/img/system-avatar.png" alt="">
+    <h1 class="text-white">JSPR Design</h1>
+    <ul class="list list-inline list-icon list-icon-inverse">
+      <li class="list-inline-item"><i class="list-item-icon fas fa-phone"></i><a href="">0917 116 1268</a></li>
+      <li class="list-inline-divider"></li>
+      <li class="list-inline-item"><i class="list-item-icon fas fa-envelope"></i><a href="">hello@jsprlprd.xyz</a></li>
+      <li class="list-inline-divider"></li>
+      <li class="list-inline-item"><i class="list-item-icon fas fa-globe"></i><a href="">https://www.jsprlprd.xyz</a></li>
+    </ul>
+  </div>
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <p class="lead">Welcome to JSPR Design</p>
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
+            </span>
+            <input class="form-control" type="text" placeholder="912 345 6789">
+          </div>
+        </div>
+
+        <hr class="dashed">
+
+        {% include components/organisms/forms/full-name.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel="none"
+          form-label-size=""
+          form-label-text="Full Name"
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/organisms/forms/birthday-select.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel="none"
+          form-label-class=""
+          form-label-size=""
+          form-label-text="Birthday (Optional)"
+          input-size=""
+          input-type=""
+          input-name="birthday"
+          input-value=""
+          input-placeholder=""
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        <!-- {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-size=""
+          form-label-text="Email Address"
+          input-size=""
+          input-type="email"
+          input-name="email-address"
+          input-value=""
+          input-placeholder="name@company.com"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %} -->
+        <div class="button-group text-center">
+          <a class="btn btn-warning btn-lg btn-wide btn-pills" href="{{ site.baseurl }}/app/dashboard.html">Register</a>
+          <br>
+          <a class="btn btn-link btn-lg btn-wide btn-pills" href="{{ site.baseurl }}/app/dashboard.html">Logoff</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer class="p-5 text-center bg-light border-top">
+    <div class="container-fluid">
+        Powered by Phollowup
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">© 2019 Phollowup Inc.</li>
+          <li class="list-inline-divider"></li>
+          <li class="list-inline-item"><a href="">Terms and Condition</a></li>
+        </ul>    
+    </div>
+  </footer>
+</main>

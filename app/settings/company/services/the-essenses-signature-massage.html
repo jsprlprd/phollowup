@@ -23,141 +23,150 @@ sub-heading-title: The Essenses Signature Massage
         %}
       </div>
       <div class="card-body">
-        <form action="">
-          <p class="lead">Basic Details</p>
-          {% include components/molecules/form-group/input.html 
-            form-layout=""
-            isInputLarge=""
-            isInputRequired=""
-            hasFormLabel=""
-            form-label-class=""
-            form-label-size=""
-            form-label-text="Service Name"
-            input-size="col-lg-6"
-            input-type="text"
-            input-name="service-name"
-            input-value=""
-            input-placeholder="Enter Service Name"
-            hasFormIcon="none"
-            form-icon-name=""
-            form-icon-placement=""
-            hasFormHelper="none"
-            form-helper-text=""
-          %}
-
-          {% include components/molecules/form-group/textarea.html 
-            form-layout=""
-            isInputLarge=""
-            isInputRequired=""
-            hasFormLabel=""
-            form-label-class=""
-            form-label-size=""
-            form-label-text="Description"
-            input-size=""
-            input-type=""
-            input-name="description"
-            input-value=""
-            input-placeholder="Enter Description"
-            hasFormIcon="none"
-            form-icon-name=""
-            form-icon-placement=""
-            hasFormHelper="none"
-            form-helper-text=""
-          %}
-
-          {% include components/molecules/checkbox-horizontal.html 
-            input-label-text="Show this Service in Online Booking?"
-            input-name="show-this-service-in-online-booking"
-            label-spacer-size="offset-lg-3"
-            input-size="col-lg-6"
-          %}
-
-          {% include components/molecules/checkbox-horizontal.html 
-            input-label-text="Show this Service Price in Online Booking?"
-            input-name="show-this-service-price-in-online-booking"
-            label-spacer-size="offset-lg-3"
-            input-size="col-lg-6"
-          %}
-
-          {% include components/molecules/form-group/input.html 
-            form-layout=""
-            isInputLarge=""
-            isInputRequired=""
-            hasFormLabel=""
-            form-label-class=""
-            form-label-size=""
-            form-label-text="Service Group"
-            input-size="col-lg-6"
-            input-type="text"
-            input-name="service-name"
-            input-value=""
-            input-placeholder="Select Service Group"
-            hasFormIcon="none"
-            form-icon-name=""
-            form-icon-placement=""
-            hasFormHelper="none"
-            form-helper-text=""
-          %}
-          <hr class="dashed">
-          <p class="lead">Variants</p>
-
-
-
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col">
-                {% include components/atoms/form/input.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel="true"
-                  form-label-class=""
-                  form-label-size=""
-                  form-label-text="Duration"
-                  input-size="col-lg-6"
-                  input-type="text"
-                  input-name="duration"
-                  input-value=""
-                  input-placeholder="Enter Duration"
-                  hasFormIcon="none"
-                  form-icon-name=""
-                  form-icon-placement=""
-                  hasFormHelper="none"
-                  form-helper-text=""
-                %}
-              </div>
-              <div class="col">
-                {% include components/atoms/form/input.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel="true"
-                  form-label-class=""
-                  form-label-size=""
-                  form-label-text="Price"
-                  input-size="col-lg-6"
-                  input-type="text"
-                  input-name="price"
-                  input-value=""
-                  input-placeholder="Enter Price"
-                  hasFormIcon="none"
-                  form-icon-name=""
-                  form-icon-placement=""
-                  hasFormHelper="none"
-                  form-helper-text=""
-                %}
+        <div class="tab-content">
+          <div class="tab-pane active show" id="service-settings-tab">
+            <p class="lead">Basic Details</p>
+            {% include components/molecules/form-group/input.html 
+              form-layout=""
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text="Service Name"
+              input-size="col-lg-6"
+              input-type="text"
+              input-name="service-name"
+              input-value=""
+              input-placeholder="Enter Service Name"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+            {% include components/molecules/form-group/textarea.html 
+              form-layout=""
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text="Description"
+              input-size=""
+              input-type=""
+              input-name="description"
+              input-value=""
+              input-placeholder="Enter Description"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+            {% include components/molecules/checkbox-horizontal.html 
+              input-label-text="Show this Service in Online Booking?"
+              input-name="show-this-service-in-online-booking"
+              label-spacer-size="offset-lg-3"
+              input-size="col-lg-6"
+            %}
+            {% include components/molecules/checkbox-horizontal.html 
+              input-label-text="Show this Service Price in Online Booking?"
+              input-name="show-this-service-price-in-online-booking"
+              label-spacer-size="offset-lg-3"
+              input-size="col-lg-6"
+            %}
+            {% include components/molecules/form-group/input.html 
+              form-layout=""
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text="Service Group"
+              input-size="col-lg-6"
+              input-type="text"
+              input-name="service-name"
+              input-value=""
+              input-placeholder="Select Service Group"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+            <hr class="dashed">
+            <p class="lead">Variants</p>
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  {% include components/atoms/form/input.html 
+                    form-layout=""
+                    isInputLarge=""
+                    isInputRequired=""
+                    hasFormLabel="true"
+                    form-label-class=""
+                    form-label-size=""
+                    form-label-text="Duration"
+                    input-size="col-lg-6"
+                    input-type="text"
+                    input-name="duration"
+                    input-value=""
+                    input-placeholder="Enter Duration"
+                    hasFormIcon="none"
+                    form-icon-name=""
+                    form-icon-placement=""
+                    hasFormHelper="none"
+                    form-helper-text=""
+                  %}
+                </div>
+                <div class="col">
+                  {% include components/atoms/form/input.html 
+                    form-layout=""
+                    isInputLarge=""
+                    isInputRequired=""
+                    hasFormLabel="true"
+                    form-label-class=""
+                    form-label-size=""
+                    form-label-text="Price"
+                    input-size="col-lg-6"
+                    input-type="text"
+                    input-name="price"
+                    input-value=""
+                    input-placeholder="Enter Price"
+                    hasFormIcon="none"
+                    form-icon-name=""
+                    form-icon-placement=""
+                    hasFormHelper="none"
+                    form-helper-text=""
+                  %}
+                </div>
               </div>
             </div>
+            <a class="btn btn-light" href="">Add Variant</a>
           </div>
-
-
-
-
-
-
-
-          <a class="btn btn-light" href="">Add Variant</a>
-        </form>
+          <div class="tab-pane" id="assign-employee-tab">
+            <p class="lead">Assign Employee</p>
+            <div class="btn-checkbox-group" data-toggle="buttons">
+              {% for employee in site.employees %}
+                <div class="form-check btn btn-checkbox btn-block">
+                  <input class="form-check-input" id="advanced-acne-therapy" type="checkbox" value="advanced-acne-therapy">
+                  <label class="form-check-label w-100" for="advanced-acne-therapy">
+                    <div class="media">
+                      <div class="d-inline-flex mr-3">
+                        <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}&?background={{ employee.background-color }}&color=fff" alt="" width="48" height="48">
+                      </div>
+                      <div class="media-body align-self-center">
+                        <p class="text-lg mb-0"><b>{{ employee.full-name }}</b></p>
+                        <p class="mb-0">{{ employee.position }}</p>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-footer d-flex align-items-start align-items-center justify-content-between">
         <a class="btn btn-link" href="">Delete this Service</a>

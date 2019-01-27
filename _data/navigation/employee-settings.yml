@@ -2,8 +2,8 @@
   url: schedules
   status: active
 
-- text: Services &amp; Branches
-  url: services-and-branches
+- text: Services
+  url: services
   status:
 
 - text: Working Hours

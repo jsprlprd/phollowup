@@ -100,10 +100,14 @@ body {
   margin-bottom: -24px;
 }
 
+@media (min-width: 992px) {
 
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
-
-
+}
 
 @media (min-width: 992px) {
   .modal {
@@ -131,10 +135,10 @@ body {
 }
 
 
-#main-panel header {
+/* #main-panel header {
   background-color: #FAFAFA;
   border-bottom: 1px solid #d8d8d8;
-}
+} */
 
 
 @media (min-width: 992px) {
@@ -536,7 +540,7 @@ body {
 }
 
 #counter {
-  width: 80px;
+  /* width: 80px; */
   text-align: center;
 }
 
@@ -573,3 +577,179 @@ body {
   z-index: 1;
 
 }
+
+
+@media not all and (min-resolution:.001dpcm) { 
+  input[list] {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion {
+  margin-bottom: 80px;
+}
+.accordion .card {
+  border-bottom: 1px solid #d8d8d8 !important;
+}
+
+.accordion .card-header {
+  background-color: transparent;
+  border-bottom: 0;
+  font-size: 20px;
+  padding-left: 60px;
+}
+
+.accordion .card-header a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 16px;
+  position: absolute;
+  left: -40px;
+  width: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #007bfe;
+}
+
+.accordion .card-header a[aria-expanded="true"]::before {
+  content: '\f146';
+}
+
+.accordion .card-header a[aria-expanded="false"]::before {
+  content: '\f0fe';
+}
+
+.accordion .card-header a {
+  color: inherit;
+  position: relative;
+  line-height: 26px;
+}
+
+.accordion .card-body {
+  padding-left: 60px;
+}
+
+
+
+
+
+#activity-list li {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#activity-list li:first-child {
+  border-top: 0;
+}
+
+.activity-list-icon {
+  font-size: 16px;
+  padding: 8px;
+  width: 40px;
+  text-align: center;
+  background-color: #0071ff;
+  border-radius: 9999px;
+  color: #fff;
+}
+
+
+.form-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.form-switch-left .form-switch-label {
+  padding-left: 56px;
+  left: 0;
+}
+
+.form-switch-right .form-switch-label {
+  padding-right: 56px;
+  right: 0;
+}
+
+.form-switch-input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.form-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.form-switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.form-switch-input:checked + .form-switch-slider {
+  background-color: #2196F3;
+}
+
+.form-switch-input + .form-switch-slider + .label-enabled-disabled::before {
+  content: "Disabled";
+}
+
+.form-switch-input:checked + .form-switch-slider + .label-enabled-disabled::before {
+  content: "Enabled";
+}
+
+.form-switch-input + .form-switch-slider + .label-enabled-on-off::before {
+  content: "Off";
+}
+
+.form-switch-input:checked + .form-switch-slider + .label-on-off::before {
+  content: "On";
+}
+
+.form-switch-input:checked + .form-switch-slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.form-switch-label {
+  line-height: 28px;
+  font-weight: 500;
+  position: absolute;
+}
+
+.form-switch-label-static {
+  white-space: nowrap;
+}
+

@@ -1,6 +1,6 @@
 ---
 layout: employees
-full-name: "Japser Lepardo"
+full-name: "Jasper Lepardo"
 first-name: "Jasper"
 last-name: "Lepardo"
 position: "Owner"

@@ -8,15 +8,13 @@ sub-heading-title:
 heading-navbar: true
 ---
 
-
-
 <div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Automated Messages</h1>
-    <p class="text-lg">These messages are automatically sent by our system without any input required on your end- saving our customers an average of 1.5 hours each day!</p>
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
+  <div class="col-lg-8 offset-lg-2">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h6 class="card-header-title h4">Automated Messages</h6>
+        <p class="card-header-subtitle">These messages are automatically sent by our system without any input required on your end- saving our customers an average of 1.5 hours each day!</p>
+      </div>
       <div class="list-group list-group-flush">
         <a class="list-group-item" href="{{ site.baseurl }}/app/settings/messages/automated-messages/confirmation.html">
           <div class="media">
@@ -105,18 +103,11 @@ heading-navbar: true
         </a>
       </div>
     </div>
-  </div>
-</div>
-
-<hr class="dashed">
-
-<div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Message Templates</h1>
-    <p class="text-lg">These messages can be personalized each time, but you can pre-fill a standard message here to save time.</p>
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h6 class="card-header-title h4">Message Templates</h6>
+        <p class="card-header-subtitle">These messages can be personalized each time, but you can pre-fill a standard message here to save time.</p>
+      </div>
       <div class="list-group list-group-flush">
         <a class="list-group-item" href="#">
           <div class="media">
@@ -205,23 +196,16 @@ heading-navbar: true
         </a>
       </div>
     </div>
-  </div>
-</div>
-
-<hr class="dashed">
-
-<div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Write a message and send it to all your customers</h1>
-    <p class="text-lg">Write your message in the box below and it will be sent to all your customers. It is possible to personalize each message by adding dynamic elements, such as the customer’s first name. Just click the “Add A Dynamic Element” button to see the available personalizations.</p>
-  </div>
-  <div class="col-lg-8">
     <div class="card">
       <div class="card-header">
-        <h6 class="card-title">Write your message here</h6>
+        <h6 class="card-header-title h4">Write a message and send it to all your customers</h6>
+        <p class="card-header-subtitle">Write your message in the box below and it will be sent to all your customers. It is possible to personalize each message by adding dynamic elements, such as the customer’s first name. Just click the “Add A Dynamic Element” button to see the available personalizations.</p>
       </div>
       <div class="card-body">
-        <textarea class="form-control"></textarea>
+        <div class="form-group">
+          <label for="">Write your message here</label>
+          <textarea class="form-control"></textarea>
+        </div>
       </div>
     </div>
   </div>

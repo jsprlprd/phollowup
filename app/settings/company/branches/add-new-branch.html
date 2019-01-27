@@ -184,10 +184,10 @@ sub-heading-title: Add New Branch
         
           </div>
           <div class="tab-pane" id="business-hours-tab">
-            <h1 class="card-title h4">Business Hours</h1>
+            <p class="lead">Business Hours</p>
             <div class="form-group row">
-              <label class="col-2 form-label" for="">Availability Days</label>
-              <div class="col-sm-10">
+              <label class="col-lg-3 form-label" for="">Availability Days</label>
+              <div class="col-sm-9">
                 <div data-toggle="buttons">
                   <label class="btn btn-light active">
                     <input type="checkbox" name="options" id="option1" autocomplete="off" checked> Mon
@@ -214,8 +214,8 @@ sub-heading-title: Add New Branch
               </div>
             </div>
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Lunch Break</label>
-              <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Lunch Break</label>
+              <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -250,8 +250,8 @@ sub-heading-title: Add New Branch
             <hr class="dashed">
 
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Monday</label>
-              <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Monday</label>
+              <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -284,8 +284,8 @@ sub-heading-title: Add New Branch
             </div>
 
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Tuesday</label>
-              <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Tuesday</label>
+              <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -318,8 +318,8 @@ sub-heading-title: Add New Branch
             </div>
 
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Wednesday</label>
-              <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Wednesday</label>
+              <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -352,8 +352,8 @@ sub-heading-title: Add New Branch
             </div>
 
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Thursday</label>
-               <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Thursday</label>
+                <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -386,8 +386,8 @@ sub-heading-title: Add New Branch
             </div>
 
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Friday</label>
-              <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Friday</label>
+              <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -420,8 +420,8 @@ sub-heading-title: Add New Branch
             </div>
 
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Saturday</label>
-              <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Saturday</label>
+              <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -454,8 +454,8 @@ sub-heading-title: Add New Branch
             </div>
 
             <div class="form-group row">
-              <label for="inputEmail3" class="col-2 form-label">Sunday</label>
-              <div class="col-md-5">
+              <label for="inputEmail3" class="col-lg-3 form-label">Sunday</label>
+              <div class="col-lg-7">
                 <div class="row no-gutters">
                   <div class="col">
                     <div class="input-group">
@@ -487,7 +487,93 @@ sub-heading-title: Add New Branch
               </div>
             </div>
           </div>
-          <div class="tab-pane" id="services-and-products-tab"></div>
+          <div class="tab-pane" id="services-and-products-tab">
+            <p class="lead">Select Service Offerings</p>
+            <div class="accordion" id="services">
+              <div class="card">
+                <div class="card-header" id="facial-heading">
+                  <a data-toggle="collapse" data-target="#facial-body" aria-expanded="true" aria-controls="facial-body">
+                    Facial
+                  </a>
+                </div>
+                <div id="facial-body" class="collapse show" aria-labelledby="facial-heading" data-parent="#services">
+                  <div class="card-body">
+                    <div class="btn-checkbox-group" data-toggle="buttons">
+                      <div class="form-check btn btn-checkbox btn-block">
+                        <input class="form-check-input" id="advanced-acne-therapy" type="checkbox" value="advanced-acne-therapy">
+                        <label class="form-check-label w-100" for="advanced-acne-therapy">
+                          <div class="media">
+                            <div class="media-body">
+                              <p class="text-lg mb-0"><b>Advanced Acne Therapy</b></p>
+                              <p class="text-muted mb-0">60 Minutes</p>
+                            </div>
+                            <div class="ml-3">
+                              ₱ 300
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-check btn btn-checkbox btn-block">
+                        <input class="form-check-input" id="advanced-acne-therapy" type="checkbox" value="advanced-acne-therapy">
+                        <label class="form-check-label w-100" for="advanced-acne-therapy">
+                          <div class="media">
+                            <div class="media-body">
+                              <p class="text-lg mb-0"><b>Anti Acne Treatment</b></p>
+                              <p class="text-muted mb-0">45 Minutes</p>
+                            </div>
+                            <div class="ml-3">
+                              ₱ 300
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-check btn btn-checkbox btn-block">
+                        <input class="form-check-input" id="advanced-acne-therapy" type="checkbox" value="advanced-acne-therapy">
+                        <label class="form-check-label w-100" for="advanced-acne-therapy">
+                          <div class="media">
+                            <div class="media-body">
+                              <p class="text-lg mb-0"><b>Calming Facial</b></p>
+                              <p class="text-muted mb-0">45 Minutes</p>
+                            </div>
+                            <div class="ml-3">
+                              ₱ 300
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="ipl-hair-removal-heading">
+                  <a data-toggle="collapse" data-target="#ipl-hair-removal-body" aria-expanded="false" aria-controls="ipl-hair-removal-body">
+                    IPL Hair Removal
+                  </a>
+                </div>
+                <div id="ipl-hair-removal-body" class="collapse" aria-labelledby="ipl-hair-removal-heading" data-parent="#services">
+                  <div class="card-body">
+                    <div class="btn-checkbox-group" data-toggle="buttons">
+                      <div class="form-check btn btn-checkbox btn-block">
+                        <input class="form-check-input" id="advanced-acne-therapy" type="checkbox" value="advanced-acne-therapy">
+                        <label class="form-check-label w-100" for="advanced-acne-therapy">
+                          <div class="media">
+                            <div class="media-body">
+                              <p class="text-lg mb-0"><b>Beard</b></p>
+                              <p class="text-muted mb-0"></p>
+                            </div>
+                            <div class="ml-3">
+                              ₱ 300
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="card-footer d-flex align-items-start align-items-center justify-content-between">

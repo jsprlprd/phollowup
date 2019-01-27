@@ -9,11 +9,11 @@ sub-heading-title:
 ---
 
 <div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">General Settings</h1>
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
+  <div class="col-lg-8 offset-lg-2">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h6 class="card-header-title h4">General Settings</h6>
+      </div>
       <div class="list-group list-group-flush">
         <div class="list-group-item">
           <div class="media">
@@ -22,10 +22,11 @@ sub-heading-title:
               <!-- <p class="mb-0">This option will directly confirm all the online reservations coming from your booking page, without giving you the chance to approve them first (not recommended).</p> -->
             </div>
             <div class="d-inline-flex ml-3">
-              <label class="form-control-switch">
-                <input type="checkbox" checked="">
-                <span class="form-control-switch-indicator"></span>
-              </label>
+            <label class="form-switch">
+              <input class="form-switch-input" type="checkbox">
+              <span class="form-switch-slider"></span>
+              <!-- <span class="form-switch-label"></span> -->
+            </label>
             </div>
           </div>
         </div>
@@ -35,9 +36,10 @@ sub-heading-title:
               <p class="text-lg mb-0"><b>Desktop/Mobile Notifications for New Appointments</b></p>
             </div>
             <div class="d-inline-flex ml-3">
-              <label class="form-control-switch">
-                <input type="checkbox" checked="">
-                <span class="form-control-switch-indicator"></span>
+              <label class="form-switch">
+                <input class="form-switch-input" type="checkbox">
+                <span class="form-switch-slider"></span>
+                <!-- <span class="form-switch-label"></span> -->
               </label>
             </div>
           </div>
@@ -48,9 +50,10 @@ sub-heading-title:
               <p class="text-lg mb-0"><b>Decimals Inside Self-Booking</b></p>
             </div>
             <div class="d-inline-flex ml-3">
-              <label class="form-control-switch">
-                <input type="checkbox" checked="">
-                <span class="form-control-switch-indicator"></span>
+              <label class="form-switch">
+                <input class="form-switch-input" type="checkbox">
+                <span class="form-switch-slider"></span>
+                <!-- <span class="form-switch-label"></span> -->
               </label>
             </div>
           </div>
@@ -62,9 +65,10 @@ sub-heading-title:
               <p class="mb-0">This option will disable characters limits of automated messages but using this functionality you should use your own phone.</p>
             </div>
             <div class="d-inline-flex ml-3">
-              <label class="form-control-switch">
-                <input type="checkbox" checked="">
-                <span class="form-control-switch-indicator"></span>
+              <label class="form-switch">
+                <input class="form-switch-input" type="checkbox">
+                <span class="form-switch-slider"></span>
+                <!-- <span class="form-switch-label"></span> -->
               </label>
             </div>
           </div>
@@ -88,17 +92,10 @@ sub-heading-title:
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<hr class="dashed">
-
-<div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Online Booking</h1>
-  </div>
-  <div class="col-lg-8">
     <div class="card mb-4">
+      <div class="card-header">
+        <h6 class="card-header-title h4">Online Booking</h6>
+      </div>
       <div class="list-group list-group-flush">
         <div class="list-group-item">
           <div class="media">
@@ -106,9 +103,10 @@ sub-heading-title:
               <p class="text-lg mb-0"><b>Allow Overlapping Bookings</b></p>
             </div>
             <div class="d-inline-flex ml-3">
-              <label class="form-control-switch">
-                <input type="checkbox" checked="">
-                <span class="form-control-switch-indicator"></span>
+              <label class="form-switch">
+                <input class="form-switch-input" type="checkbox">
+                <span class="form-switch-slider"></span>
+                <!-- <span class="form-switch-label"></span> -->
               </label>
             </div>
           </div>
@@ -119,9 +117,10 @@ sub-heading-title:
               <p class="text-lg mb-0"><b>Automatically Accept Online Reservations</b></p>
             </div>
             <div class="d-inline-flex ml-3">
-              <label class="form-control-switch">
-                <input type="checkbox" checked="">
-                <span class="form-control-switch-indicator"></span>
+              <label class="form-switch">
+                <input class="form-switch-input" type="checkbox">
+                <span class="form-switch-slider"></span>
+                <!-- <span class="form-switch-label"></span> -->
               </label>
             </div>
           </div>
@@ -129,7 +128,7 @@ sub-heading-title:
         <div class="list-group-item">
           <div class="media">
             <div class="media-body align-self-center">
-              <p class="text-lg"><b>Your Online Booking link is</b> <a href="">phlp.co/jsprdesign</a></p>
+              <p class="text-lg"><b>Your Online Booking link is</b> <a href="{{ site.baseurl }}/booking/">phlp.co/jsprdesign</a></p>
               <p>Add it on your Website and Social Media profiles to let your visitors book their own appointments online 24/7 without calling you! You can approve or reject their bookings here afterwards.</p>
               <p class="mb-0">Inside Automated Messages, where characters are limited, we will be using the short link <a href="">phlp.co/xS9D</a> (which leads to the same page as above).</p>
             </div>
@@ -177,7 +176,6 @@ sub-heading-title:
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>

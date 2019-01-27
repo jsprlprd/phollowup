@@ -2,6 +2,6 @@
   url: service-settings
   status: active
 
-- text: Employee
-  url: employee
+- text: Assign Employee
+  url: assign-employee
   status:

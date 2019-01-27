@@ -10,6 +10,10 @@
   icon: fas fa-address-book
   url: app/customers/
 
+- text: Messages
+  icon: fas fa-comments
+  url: app/messages
+
 - text: Invoices
   icon: fas fa-file-invoice
   url: app/invoices/

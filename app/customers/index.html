@@ -3,78 +3,56 @@ layout: app
 container-type:
 heading: true
 heading-title: Customers
-heading-button: <a class="btn btn-warning" href="add-new-customers.html">Add New Customers</a>
+heading-button: <a class="btn btn-warning" data-toggle="modal" data-target="#add-new-customer" href="#add-new-customer">Add New Customer</a>
 heading-search: true
 heading-search-name: search-customers
 heading-search-placeholder: Search Customers
 ---
 
-  <div class="table-responsive">
-    <table class="table table-clickable table-hover" id="customer">
-      <thead>
-        <tr>
-          <th><a href="">Name</a></th>
-          <th><a href="">Rating</a></th>
-          <th><a href="">Contact</a></th>
-          <th><a href="">Email</a></th>
-          <th><a href="">Birthday</a></th>
-          <!-- <th></th> -->
-          <!-- <th>First Appointments</th>
-          <th>Last Appointments</th>
-          <th>Service</th>
-          <th>A/yr</th>
-          <th>$/yr</th> -->
-        </tr>
-      </thead>
-      <tbody>
-        {% for customer in site.customers %}
-          <tr href="{{ customer.url }}">
-            <td>
-              <div class="media">
-                <div class="d-inline-flex mr-3">
-                  <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ customer.first-name }}+{{ customer.last-name }}&?background={{ customer.background-color }}&color=fff" alt="" width="48" height="48">
-                </div>
-                <div class="media-body align-self-center">
-                  <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
-                </div>
+<div class="table-responsive">
+  <table class="table table-clickable table-hover" id="customer">
+    <thead>
+      <tr>
+        <th><a href="">Name</a></th>
+        <th><a href="">Rating</a></th>
+        <th><a href="">Contact</a></th>
+        <th><a href="">Email</a></th>
+        <th><a href="">Birthday</a></th>
+        <!-- <th></th> -->
+        <!-- <th>First Appointments</th>
+        <th>Last Appointments</th>
+        <th>Service</th>
+        <th>A/yr</th>
+        <th>$/yr</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      {% for customer in site.customers %}
+        <tr href="{{ customer.url }}">
+          <td>
+            <div class="media">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ customer.first-name }}+{{ customer.last-name }}&?background={{ customer.background-color }}&color=fff" alt="" width="48" height="48">
               </div>
-            </td>
-            <td>
-              <p class="mb-0">67% punctuality (2/3)</p>
-            </td>
-            <td>
-              (+63) {{ customer.phone }}
-            </td>
-            <td>
-              {{ customer.email }}
-            </td>
-            <td>
-              {{ customer.birthday }}
-            </td>
-            <!-- <td>
-
-            </td> -->
-            <!-- <td>
-              08/28/2018
-            </td>
-            <td>
-              08/28/2018
-            </td>
-            <td>
-              The Essenses Signature Massage 
-            </td>
-            <td>
-              0 
-            </td>
-            <td>
-              P 0.00
-            </td> -->
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-
-  </div>
-
-
-  <!-- <a class="btn btn-warning btn-fab" href=""><i class="fas fa-plus"></i></a> -->
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <p class="mb-0">67% punctuality (2/3)</p>
+          </td>
+          <td>
+            (+63) {{ customer.phone }}
+          </td>
+          <td>
+            {{ customer.email }}
+          </td>
+          <td>
+            {{ customer.birthday }}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,190 @@
+---
+layout: app
+container-type: container
+heading: true
+heading-title: Settings
+heading-navbar:
+sub-heading: true
+sub-heading-title: Add New Product
+---
+
+<div class="row">
+  <div class="col-lg-8 offset-lg-2">
+    <div class="card">
+      <div class="card-body">
+        {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge="form-control-lg"
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class=""
+          form-label-size=""
+          form-label-text="Tax Group Name"
+          input-size="col-lg-6"
+          input-type="text"
+          input-name="tax-group-name"
+          input-value=""
+          input-placeholder="Enter Tax Group Name"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+      </div>
+      <div class="card-body" style="background-color: #f8f9fa;">
+        <div style="padding: 24px; background-color: #fff; margin-bottom: 12px; border-left: 4px solid #ddd; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;">
+          <div class="form-row">
+            <div class="col-6">
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Tax Name"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="tax-name"
+                input-value=""
+                input-placeholder="Enter Tax Name"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+            </div>
+            <div class="col-3">
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Tax Percentage"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="tax-percentage"
+                input-value=""
+                input-placeholder="Enter Tax Percentage"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+            </div>
+            <div class="col-3">
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Tax Number"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="tax-number"
+                input-value=""
+                input-placeholder="Enter Tax Number"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+            </div>            
+          </div>
+          <div class="d-flex align-items-start align-items-center justify-content-between">
+            <div class="badge badge-warning">Your first tax can't be compunded</div>
+            <a href="" class="btn btn-link text-danger"><i class="far fa-trash-alt"></i> Delete</a>
+          </div>
+        </div>
+        <div style="padding: 24px; background-color: #fff; margin-bottom: 12px; border-left: 4px solid #ddd; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;">
+          <div class="form-row">
+            <div class="col-6">
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Tax Name"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="tax-name"
+                input-value=""
+                input-placeholder="Enter Tax Name"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+            </div>
+            <div class="col-3">
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Tax Percentage"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="tax-percentage"
+                input-value=""
+                input-placeholder="Enter Tax Percentage"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+            </div>
+            <div class="col-3">
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Tax Number"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="tax-number"
+                input-value=""
+                input-placeholder="Enter Tax Number"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
+            </div>            
+          </div>
+          <div class="d-flex align-items-start align-items-center justify-content-between">
+            <label class="form-switch form-switch-left">
+              <input class="form-switch-input" type="checkbox">
+              <span class="form-switch-slider"></span>
+              <span class="form-switch-label form-switch-label-static">Compounded?</span>
+            </label>
+            <a href="" class="btn btn-link text-danger"><i class="far fa-trash-alt"></i> Delete</a>
+          </div>
+        </div>
+        <a class="btn btn-link text-dark" href=""><i class="fas fa-plus-circle"></i> Add another tax</a>
+      </div>
+      <div class="card-footer d-flex align-items-start align-items-center justify-content-between">
+        <a class="btn btn-link" href="">Delete this Payment Method</a>
+        <a class="btn btn-primary" href="">Save Changes</a>
+      </div>
+    </div>
+  </div>
+</div>

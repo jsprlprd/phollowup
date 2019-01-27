@@ -12,7 +12,7 @@ layout-styles: app
   </button>
   <div class="collapse navbar-collapse" id="global-slider">    
     <div class="p-3">
-      <a class="btn btn-warning" href="">New Appointment</a>
+      <a class="btn btn-warning" data-toggle="modal" data-target="#new-appointment" href="#new-appointment">New Appointment</a>
     </div>
     {% include components/molecules/nav-menu.html
       nav-type="navbar-nav"
@@ -24,7 +24,7 @@ layout-styles: app
     %}
     <ul class="navbar-nav flex-column mt-auto">
       <li class="nav-item">
-        <a class="btn btn-outline-primary btn-lg btn-block" href="">Switch to Tablet Mode</a>
+        <a class="btn btn-outline-primary btn-lg btn-block" href="{{ site.baseurl }}/app/tablet-mode.html">Switch to Tablet Mode</a>
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link" href="{{ site.baseurl }}/app/settings/subscription.html" style="color: #f78002; line-height: 24px; padding-top: 12px; padding-bottom: 12px;">Upgrade Now</a>
@@ -121,3 +121,12 @@ layout-styles: app
 
 <div id="right-panel">
 </div>
+
+{% include components/organisms/popover/appointment-details.html %}
+{% include components/organisms/modals/new-appointment.html %}
+
+{% include components/organisms/modals/add-new-customer.html %}
+{% include components/organisms/modals/edit-customer-profile.html %}
+
+{% include components/organisms/modals/add-new-employee.html %}
+{% include components/organisms/modals/edit-employee-profile.html %}

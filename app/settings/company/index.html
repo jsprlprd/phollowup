@@ -9,23 +9,16 @@ sub-heading-title:
 ---
 
 <div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Branches</h1>
-    <!-- <p>This is the list of Services your business offers, your appointment types. Feel free to duplicate them if they have different variations (examples: “Massage (60 min.)” and “Massage (90 min.)”. The “Price” field will be used when creating the default Invoice for your customer- you can always change it. All services entered here can be booked online by your customers through your Online Booking page.</p> -->
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
-
+  <div class="col-lg-8 offset-lg-2">
+    <div class="card mb-4">
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
-        <h6 class="card-header-title h5">Branches</h6>
-        <a class="btn btn-primary" href="{{ site.baseurl }}/app/settings/company/branches/add-new-branch.html">Add New Branches</a>
+        <h6 class="card-header-title h4">Branches</h6>
+        <!-- <a class="btn btn-link" href="{{ site.baseurl }}/app/settings/company/branches/add-new-branch.html"><i class="fas fa-plus"></i> Add New Branches</a> -->
       </div>
-
       <div class="list-group list-group-flush">
         <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/branches/vermont.html">
           <div class="media">
             <div class="media-body align-self-center">
-
               <div class="row">
                 <div class="col-6 align-self-center">
                   <p class="text-lg mb-0"><b>Vermont Branch</b></p>
@@ -38,8 +31,6 @@ sub-heading-title:
                   <p class="mb-0">48 Hours Open</p>
                 </div>
               </div>
-
-
             </div>
             <div class="d-inline-flex align-self-center ml-3">
               <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
@@ -58,22 +49,15 @@ sub-heading-title:
           </div>
         </a>
       </div>
+      <div class="card-footer">
+        <a href="{{ site.baseurl }}/app/settings/company/branches/"><b>Manage Branches</b></a>
+      </div>
     </div>
-  </div>
-</div>
-
-<hr class="dashed">
-
-<div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Services</h1>
-    <p class="text-lg">This is the list of Services your business offers, your appointment types. Feel free to duplicate them if they have different variations (examples: “Massage (60 min.)” and “Massage (90 min.)”. The “Price” field will be used when creating the default Invoice for your customer- you can always change it. All services entered here can be booked online by your customers through your Online Booking page.</p>
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
-
-      <div class="card-header d-flex align-items-start align-items-center justify-content-between">
-        <div class="form-inline">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h6 class="card-header-title h4">Services</h6>
+        <p class="card-header-subtitle">This is the list of Services your business offers, your appointment types. Feel free to duplicate them if they have different variations (examples: “Massage (60 min.)” and “Massage (90 min.)”. The “Price” field will be used when creating the default Invoice for your customer- you can always change it. All services entered here can be booked online by your customers through your Online Booking page.</p>
+        <!-- <div class="form-inline">
           <div class="form-icon">
             {% include components/atoms/form/input.html 
               isInputLarge=""
@@ -85,9 +69,8 @@ sub-heading-title:
             %}
             <span class="form-control-icon"><i class="fas fa-search"></i></span>
           </div>
-
         </div>
-        <a class="btn btn-primary" href="{{ site.baseurl }}/app/settings/company/services/add-new-services.html">Add New Service</a>
+        <a class="btn btn-link" href="{{ site.baseurl }}/app/settings/company/services/add-new-services.html"><i class="fas fa-plus"></i> Add New Service</a> -->
       </div>
       <div class="list-group list-group-flush">
         <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
@@ -190,45 +173,19 @@ sub-heading-title:
             </div>
           </div>
         </a>
+        <div class="list-group-item">
+          +5 more
+        </div>
       </div>
       <div class="card-footer">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <a href=""><b>Manage Services</b></a>
       </div>
     </div>
-  </div>
-</div>
-
-
-<hr class="dashed">
-
-<div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Products</h1>
-    <p class="text-lg">This is your list of Products for sale, to use inside customer Invoices. These items will not show inside your Online Booking page. You don’t need to re-create your list of Services here. Example of products: “Shampoo bottle”, “At-home whitening kit”, etc.</p>
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
-
-      <div class="card-header d-flex align-items-start align-items-center justify-content-between">
-        <div class="form-inline">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h6 class="card-header-title h4">Products</h6>
+        <p class="card-header-subtitle">This is your list of Products for sale, to use inside customer Invoices. These items will not show inside your Online Booking page. You don’t need to re-create your list of Services here. Example of products: “Shampoo bottle”, “At-home whitening kit”, etc.</p>
+        <!-- <div class="form-inline">
           <div class="form-icon">
             {% include components/atoms/form/input.html 
               isInputLarge=""
@@ -241,11 +198,10 @@ sub-heading-title:
             <span class="form-control-icon"><i class="fas fa-search"></i></span>
           </div>
         </div>
-        <a class="btn btn-primary" href="">Add New Product</a>
+        <a class="btn btn-link" href="{{ site.baseurl }}/app/settings/company/products/add-new-product.html"><i class="fas fa-plus"></i> Add New Product</a> -->
       </div>
-
       <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/products/lotion.html">
           <div class="media">
             <div class="media-body">
               <div class="row">
@@ -263,27 +219,19 @@ sub-heading-title:
           </div>
         </a>
       </div>
-    </div>
-  </div>
-</div>
-
-<hr class="dashed">
-
-<div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Taxes</h1>
-    <p class="text-lg">What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
-
-      <div class="card-header d-flex align-items-start align-items-center justify-content-between">
-        <h6 class="card-header-title h5">Taxes</h6>
-        <a class="btn btn-primary" href="">Add New Tax</a>
+      <div class="card-footer">
+        <a href=""><b>Manage Products</b></a>
       </div>
+    </div>
+    <div class="card mb-4">
 
+      <div class="card-header">
+        <h6 class="card-heading-title h4">Taxes</h6>
+        <p class="card-header-subtitle">What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
+        <!-- <a class="btn btn-link" href=""><i class="fas fa-plus"></i> Add New Tax</a> -->
+      </div>
       <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/taxes/value-added-tax.html">
           <div class="media">
             <div class="media-body">
               <div class="row">
@@ -305,7 +253,7 @@ sub-heading-title:
             </div>
           </div>
         </a>
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/taxes/value-added-tax.html">
           <div class="media">
             <div class="media-body">
               <div class="row">
@@ -326,27 +274,18 @@ sub-heading-title:
           </div>
         </a>
       </div>
-
-    </div>
-  </div>
-</div>
-
-<hr class="dashed">
-
-<div class="row">
-  <div class="col-lg-4">
-    <h1 class="h3">Payment Methods</h1>
-    <p class="text-lg">Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
-  </div>
-  <div class="col-lg-8">
-    <div class="card">
-      <div class="card-header d-flex align-items-start align-items-center justify-content-between">
-        <h6 class="card-header-title h5">Payment Method</h6>
-        <a class="btn btn-primary" href="">Add New Payment Method</a>
+      <div class="card-footer">
+        <a href=""><b>Manage Taxes</b></a>
       </div>
-      
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <p class="card-header-title h4">Payment Methods</p>
+        <p class="card-header-subtitle">Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
+        <!-- <a class="btn btn-link" href=""><i class="fas fa-plus"></i> Add New Payment Method</a> -->
+      </div>
       <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/payment-method/debit-and-credit-card.html">
           <div class="media">
             <div class="media-body">
               <p class="text-lg mb-0"><b>Debit/Credit Card</b></p>
@@ -356,7 +295,7 @@ sub-heading-title:
             </div>
           </div>
         </a>
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
+        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/payment-method/debit-and-credit-card.html">
           <div class="media">
             <div class="media-body">
               <p class="text-lg mb-0"><b>Cash</b></p>
@@ -367,7 +306,10 @@ sub-heading-title:
           </div>
         </a>
       </div>
-
+      <div class="card-footer">
+        <a href=""><b>Manage Payment Methods</b></a>
+      </div>
     </div>
   </div>
 </div>
+

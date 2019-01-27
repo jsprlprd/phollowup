@@ -12,49 +12,87 @@ sub-heading-title: Custom Form Title
   <div class="col-lg-8 offset-lg-2">
     <div class="card">
       <div class="card-body">
-        <div class="form-group">
+        {% include components/molecules/form-group/input.html 
+          form-layout=""
+          isInputLarge="form-control-lg"
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class=""
+          form-label-size=""
+          form-label-text="Custom Form Name"
+          input-size="col-lg-6"
+          input-type="text"
+          input-name="custom-form-name"
+          input-value=""
+          input-placeholder="Enter Custom Form Name"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+      </div>
+      <div class="card-body" style="background-color: #f8f9fa;">
+        <div style="padding: 24px; background-color: #fff; margin-bottom: 12px; border-left: 4px solid #ddd; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;">
           <div class="form-row">
             <div class="col-8">
-              <input class="form-control" id="" name="" type="text" value="" placeholder="Question">
+              {% include components/molecules/form-group/input.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Question #"
+                input-size="col-lg-6"
+                input-type="text"
+                input-name="question"
+                input-value=""
+                input-placeholder="Enter Question"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+              %}
             </div>
             <div class="col-4">
-              <select class="form-control" name="" id="">
-                <option value="">Text Field</option>
-                <option value="">Select Field</option>
-                <option value="">Check Box</option>
-                <option value="">Textarea</option>
-              </select>
+              {% include components/molecules/form-group/select.html 
+                form-layout=""
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text="Answer Type"
+                input-size=""
+                input-name="anwer-type"
+                input-value=""
+                input-placeholder="Select Answer Type"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.data.list-value.answer-type
+              %}
             </div>
           </div>
-          <hr class="dashed">
-          <ul class="list-inline ml-auto">
-            <li class="list-inline-item">
-              <a class="btn btn-link btn-sm" href="">
-                <i class="far fa-copy"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-link btn-sm" href="">
-                <i class="far fa-trash-alt"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <div class="media">
-                <div class="d-inline-flex mr-3">
-                  <label class="form-control-switch">
-                    <input type="checkbox">
-                    <span class="form-control-switch-indicator"></span>
-                  </label>
-                </div>
-                <div class="media-body align-self-center">
-                  <h6 class="mb-0">Disabled</h6>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <div class="d-flex align-items-start align-items-center justify-content-between">
+            <label class="form-switch form-switch-left">
+              <input class="form-switch-input" type="checkbox">
+              <span class="form-switch-slider"></span>
+              <span class="form-switch-label form-switch-label-static">Required?</span>
+            </label>
+            <a href="" class="btn btn-link text-danger"><i class="far fa-trash-alt"></i> Delete</a>
+          </div>
         </div>
+        <a class="btn btn-link text-dark" href=""><i class="fas fa-plus-circle"></i> Add another question</a>
+      </div>
+      <div class="card-footer d-flex align-items-start align-items-center justify-content-between">
+        <a class="btn btn-link" href="">Delete this Custom Form</a>
+        <a class="btn btn-primary" href="">Save Changes</a>
       </div>
     </div>
   </div>
 </div>
-  
