@@ -404,6 +404,7 @@ h6, .h6 {
 
 .text-sm {
   font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .display-1 {
@@ -483,18 +484,30 @@ mark,
 }
 
 .list-icon > li {
-  padding-left: 32px;
   position: relative;
 }
 .list-icon > li > .list-item-icon {
   position: absolute;
-  left: 0;
   width: 24px;
   text-align: center;
   line-height: inherit;
 }
 .list-icon > .list-inline-divider {
   padding-left: 0;
+}
+.list-icon.list-icon-left > li {
+  padding-left: 32px;
+  position: relative;
+}
+.list-icon.list-icon-left > li > .list-item-icon {
+  left: 0;
+}
+.list-icon.list-icon-right > li {
+  padding-right: 32px;
+  position: relative;
+}
+.list-icon.list-icon-right > li > .list-item-icon {
+  right: 0;
 }
 .list-icon.list-icon-default .list-item-icon {
   color: #727272;
@@ -2141,7 +2154,7 @@ select.form-control[size], select.form-control[multiple] {
 }
 
 textarea.form-control {
-  height: auto;
+  min-height: 75px;
 }
 
 .form-group {
@@ -4315,20 +4328,26 @@ input[type=button].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border-radius: 0.125rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 .card > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group:first-child .list-group-item:first-child {
-  border-top-left-radius: 0.125rem;
-  border-top-right-radius: 0.125rem;
+.card.card-rounded {
+  border-radius: 0.75rem;
 }
-.card > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 0.125rem;
-  border-bottom-left-radius: 0.125rem;
+.card.card-rounded > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.card.card-rounded > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+.card.card-bordered {
+  border: 0.0625rem solid rgba(0, 0, 0, 0.125);
+  box-shadow: none;
 }
 
 .card-body {
@@ -4337,11 +4356,11 @@ input[type=button].btn-block {
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .card-subtitle {
-  margin-top: -0.375rem;
+  margin-top: -0.625rem;
   margin-bottom: 0;
 }
 
@@ -4357,29 +4376,29 @@ input[type=button].btn-block {
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
 }
 .card-header:first-child {
-  border-radius: calc(0.125rem - 0.0625rem) calc(0.125rem - 0.0625rem) 0 0;
+  border-radius: calc(0.75rem - 0.0625rem) calc(0.75rem - 0.0625rem) 0 0;
 }
 .card-header + .list-group .list-group-item:first-child {
   border-top: 0;
 }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 0.0625rem solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.125rem - 0.0625rem) calc(0.125rem - 0.0625rem);
+  border-radius: 0 0 calc(0.75rem - 0.0625rem) calc(0.75rem - 0.0625rem);
 }
 
 .card-header-tabs {
   margin-right: -0.625rem;
-  margin-bottom: -0.75rem;
+  margin-bottom: -1.25rem;
   margin-left: -0.625rem;
   border-bottom: 0;
 }
@@ -4400,19 +4419,19 @@ input[type=button].btn-block {
 
 .card-img {
   width: 100%;
-  border-radius: calc(0.125rem - 0.0625rem);
+  border-radius: calc(0.75rem - 0.0625rem);
 }
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: calc(0.125rem - 0.0625rem);
-  border-top-right-radius: calc(0.125rem - 0.0625rem);
+  border-top-left-radius: calc(0.75rem - 0.0625rem);
+  border-top-right-radius: calc(0.75rem - 0.0625rem);
 }
 
 .card-img-bottom {
   width: 100%;
-  border-bottom-right-radius: calc(0.125rem - 0.0625rem);
-  border-bottom-left-radius: calc(0.125rem - 0.0625rem);
+  border-bottom-right-radius: calc(0.75rem - 0.0625rem);
+  border-bottom-left-radius: calc(0.75rem - 0.0625rem);
 }
 
 .card-deck {
@@ -4482,17 +4501,17 @@ input[type=button].btn-block {
     border-bottom-left-radius: 0;
   }
   .card-group > .card:only-child {
-    border-radius: 0.125rem;
+    border-radius: 0.75rem;
   }
   .card-group > .card:only-child .card-img-top,
 .card-group > .card:only-child .card-header {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
   }
   .card-group > .card:only-child .card-img-bottom,
 .card-group > .card:only-child .card-footer {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
   }
   .card-group > .card:not(:first-child):not(:last-child):not(:only-child) {
     border-radius: 0;
@@ -4506,7 +4525,7 @@ input[type=button].btn-block {
 }
 
 .card-columns .card {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 @media (min-width: 576px) {
   .card-columns {
@@ -4518,6 +4537,31 @@ input[type=button].btn-block {
   .card-columns .card {
     display: inline-block;
     width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .card-columns.card-columns-two {
+    column-count: 2;
+  }
+}
+@media (min-width: 576px) {
+  .card-columns.card-columns-three {
+    column-count: 3;
+  }
+}
+@media (min-width: 576px) {
+  .card-columns.card-columns-four {
+    column-count: 4;
+  }
+}
+@media (min-width: 576px) {
+  .card-columns.card-columns-five {
+    column-count: 5;
+  }
+}
+@media (min-width: 576px) {
+  .card-columns.card-columns-six {
+    column-count: 6;
   }
 }
 
@@ -4974,7 +5018,7 @@ input[type=button].btn-block {
 .list-group-item {
   position: relative;
   display: block;
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 1.5rem;
   margin-bottom: -0.0625rem;
   background-color: #fff;
   border: 0.0625rem solid rgba(0, 0, 0, 0.125);

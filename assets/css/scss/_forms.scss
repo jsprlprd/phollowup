@@ -177,7 +177,8 @@ select.form-control {
 }
 
 textarea.form-control {
-  height: auto;
+  // height: auto
+  min-height: 75px;
 }
 // stylelint-enable no-duplicate-selectors
 

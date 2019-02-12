@@ -9,15 +9,15 @@ heading-search-name: search-customers
 heading-search-placeholder: Search Customers
 ---
 
-<div class="table-responsive">
-  <table class="table table-clickable table-hover" id="customer">
+<div class="table-scroller" id="customer-table-wrapper">
+  <table class="table table-hover" id="customer">
     <thead>
       <tr>
-        <th><a href="">Name</a></th>
-        <th><a href="">Rating</a></th>
-        <th><a href="">Contact</a></th>
-        <th><a href="">Email</a></th>
-        <th><a href="">Birthday</a></th>
+        <th><a href="">Name<i class="fas fa-sort ml-1"></i></a></th>
+        <th><a href="">Rating<i class="fas fa-sort ml-1"></i></a></th>
+        <th><a href="">Contact<i class="fas fa-sort ml-1"></i></a></th>
+        <th><a href="">Email<i class="fas fa-sort ml-1"></i></a></th>
+        <th><a href="">Birthday<i class="fas fa-sort ml-1"></i></a></th>
         <!-- <th></th> -->
         <!-- <th>First Appointments</th>
         <th>Last Appointments</th>
@@ -28,19 +28,19 @@ heading-search-placeholder: Search Customers
     </thead>
     <tbody>
       {% for customer in site.customers %}
-        <tr href="{{ customer.url }}">
+        <tr>
           <td>
-            <div class="media">
+            <a class="media" href="{{ customer.url }}">
               <div class="d-inline-flex mr-3">
                 <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ customer.first-name }}+{{ customer.last-name }}&?background={{ customer.background-color }}&color=fff" alt="" width="48" height="48">
               </div>
               <div class="media-body align-self-center">
                 <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
               </div>
-            </div>
+            </a>
           </td>
           <td>
-            <p class="mb-0">67% punctuality (2/3)</p>
+            <p class="mb-0">67% no-show (2/3)</p>
           </td>
           <td>
             (+63) {{ customer.phone }}

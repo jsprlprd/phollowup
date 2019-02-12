@@ -1,0 +1,144 @@
+---
+layout: app
+heading: true
+heading-title: Welcome back, Jasper!
+container-type: container-fluid
+---
+
+<div class="row">
+  <div class="col-lg-8">
+
+    <div class="d-flex align-items-start align-items-center justify-content-between">
+      <p class="lead"><span class="text-sm">TODAY</span><br><b>28 September 2018</b></p>
+      <div>
+        <a class="btn btn-light btn-sm" href=""><i class="fa fa-angle-left"></i></a>
+        <a class="btn btn-light btn-sm" href=""><i class="fa fa-angle-right"></i></a>
+      </div>
+    </div>
+
+    <div class="list-group list-group-custom">
+      {% for customer in site.customers limit:5 %}
+        <a class="list-group-item list-group-item-action" href="{{ customer.url }}">
+          <div class="row">
+            <div class="col-sm-auto">
+              <p class="mb-0"><b>02:00</b> PM</p>
+              <span class="badge badge-success">Confirmed</span>
+            </div>
+            <div class="col">
+              <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
+              <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+            </div>
+            <div class="col-sm-auto align-self-center">
+              <button class="btn btn-link btn-link-custom btn-link-dark">No Show</button>
+              <button class="btn btn-link btn-link-custom">Attended</button>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+
+    <hr class="dashed">
+
+    <div class="d-flex justify-content-between">
+      <p class="lead"><b>Online Bookings</b></p>
+      <a href="{{ site.baseurl }}/app/bookings/">View History</a>
+    </div>
+
+    <div class="list-group list-group-custom">
+      {% for customer in site.customers limit:5 %}
+        <a class="list-group-item list-group-item-action" href="{{ customer.url }}">
+          <div class="row">
+            <div class="col-sm-auto">
+              <p class="mb-0"><b>02:00</b> PM</p>
+              <span class="badge badge-success">Confirmed</span>
+            </div>
+            <div class="col">
+              <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
+              <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
+            </div>
+            <div class="col-sm-auto align-self-center">
+              <button class="btn btn-link btn-link-custom btn-link-dark">Reject</button>
+              <button class="btn btn-link btn-link-custom btn-link-dark">Edit</button>
+              <button class="btn btn-link btn-link-custom">Approve</button>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card card-bordered card-rounded" style="height: 100%;">
+      <div class="card-header">
+        <h6 class="card-header-title h4">Activities</h6>
+      </div>
+      <ul class="list-group list-group-flush" id="activity-list">
+        <li class="list-group-item">
+          <div class="media">
+            <div class="mr-3">
+              <div class="activity-list-icon">
+                <i class="far fa-calendar-check"></i>
+              </div>
+            </div>
+            <div class="media-body">
+              <p>Jasper Lepardo created a new appointment for John Doe for a Graphic design on January 19, 2019 - 08:57 PM with Jasper Lepardo</p>
+              <p class="text-muted small mb-0">5 days ago</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="media">
+            <div class="mr-3">
+              <div class="activity-list-icon">
+                <i class="far fa-calendar-check"></i>
+              </div>
+            </div>
+            <div class="media-body">
+              <p>Jasper Lepardo created a new appointment for John Doe for a Graphic design on January 19, 2019 - 08:57 PM with Jasper Lepardo</p>
+              <p class="text-muted small mb-0">5 days ago</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="media">
+            <div class="mr-3">
+              <div class="activity-list-icon">
+                <i class="far fa-calendar-check"></i>
+              </div>
+            </div>
+            <div class="media-body">
+              <p>Jasper Lepardo created a new appointment for John Doe for a Graphic design on January 19, 2019 - 08:57 PM with Jasper Lepardo</p>
+              <p class="text-muted small mb-0">5 days ago</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="media">
+            <div class="mr-3">
+              <div class="activity-list-icon">
+                <i class="far fa-calendar-check"></i>
+              </div>
+            </div>
+            <div class="media-body">
+              <p>Jasper Lepardo created a new appointment for John Doe for a Graphic design on January 19, 2019 - 08:57 PM with Jasper Lepardo</p>
+              <p class="text-muted small mb-0">5 days ago</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="media">
+            <div class="mr-3">
+              <div class="activity-list-icon">
+                <i class="far fa-calendar-check"></i>
+              </div>
+            </div>
+            <div class="media-body">
+              <p>Jasper Lepardo created a new appointment for John Doe for a Graphic design on January 19, 2019 - 08:57 PM with Jasper Lepardo</p>
+              <p class="text-muted small mb-0">5 days ago</p>
+            </div>
+          </div>
+        </li>
+        </ul>
+    </div>
+  </div>
+
+</div>

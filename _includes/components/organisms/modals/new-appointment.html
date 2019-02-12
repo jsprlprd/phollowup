@@ -68,7 +68,8 @@
             border-left: 4px solid #ddd;
             box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
           ">
-          {% include components/molecules/form-group/select.html 
+
+          {% include components/molecules/form-group/datalist.html 
             form-layout=""
             isInputLarge=""
             isInputRequired=""
@@ -85,11 +86,12 @@
             form-icon-placement=""
             hasFormHelper="none"
             form-helper-text=""
-            list-value-name=site.data.list-value.service
+            list-value-name=site.services
           %}
+
           <div class="form-row">
             <div class="col-6">
-              {% include components/molecules/form-group/select.html 
+              {% include components/molecules/form-group/datalist.html 
                 form-layout=""
                 isInputLarge=""
                 isInputRequired=""
@@ -106,7 +108,7 @@
                 form-icon-placement=""
                 hasFormHelper="none"
                 form-helper-text=""
-                list-value-name=site.data.list-value.employee-name
+                list-value-name=site.employees
               %}
             </div>
             <div class="col-3">

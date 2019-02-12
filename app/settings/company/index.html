@@ -10,50 +10,32 @@ sub-heading-title:
 
 <div class="row">
   <div class="col-lg-8 offset-lg-2">
-    <div class="card mb-4">
+    <div class="card card-bordered card-rounded mb-4">
       <div class="card-header d-flex align-items-start align-items-center justify-content-between">
         <h6 class="card-header-title h4">Branches</h6>
         <!-- <a class="btn btn-link" href="{{ site.baseurl }}/app/settings/company/branches/add-new-branch.html"><i class="fas fa-plus"></i> Add New Branches</a> -->
       </div>
-      <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/branches/vermont.html">
-          <div class="media">
-            <div class="media-body align-self-center">
-              <div class="row">
-                <div class="col-6 align-self-center">
-                  <p class="text-lg mb-0"><b>Vermont Branch</b></p>
-                  <p class="mb-0">92277 Vermont Drive</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">28 Services</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">48 Hours Open</p>
-                </div>
+      <div class="list-group list-group-flush list-group-lg">
+        {% assign branches = site.branches | sort:"order" %}
+        {% for branch in branches limit:5 %}
+          <a class="list-group-item list-group-item-action" href="{{ branch.url }}">
+            <div class="row">
+              <div class="col">
+                <p class="text-lg mb-0"><b>{{ branch.name }}</b></p>
+                <!-- <p class="mb-0">92277 Vermont Drive</p> -->
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
               </div>
             </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
-        <a class="list-group-item list-group-item-action" href="">
-          <div class="media">
-            <div class="media-body align-self-center">
-              <p class="text-lg mb-0"><b>Golden Leaf Branch</b></p>
-              <p class="mb-0">098 Golden Leaf Point	</p>
-            </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
+          </a>
+        {% endfor %}
       </div>
       <div class="card-footer">
         <a href="{{ site.baseurl }}/app/settings/company/branches/"><b>Manage Branches</b></a>
       </div>
     </div>
-    <div class="card mb-4">
+    <div class="card card-bordered card-rounded mb-4">
       <div class="card-header">
         <h6 class="card-header-title h4">Services</h6>
         <p class="card-header-subtitle">This is the list of Services your business offers, your appointment types. Feel free to duplicate them if they have different variations (examples: “Massage (60 min.)” and “Massage (90 min.)”. The “Price” field will be used when creating the default Invoice for your customer- you can always change it. All services entered here can be booked online by your customers through your Online Booking page.</p>
@@ -72,116 +54,30 @@ sub-heading-title:
         </div>
         <a class="btn btn-link" href="{{ site.baseurl }}/app/settings/company/services/add-new-services.html"><i class="fas fa-plus"></i> Add New Service</a> -->
       </div>
-      <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/services/the-essenses-signature-massage.html">
-          <div class="media">
-            <div class="media-body">
-              <div class="row">
-                <div class="col-6 align-self-center">
-                  <p class="text-lg mb-0"><b>The Essenses Signature Massage</b></p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">60 to 120 Minutes</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">P 200 - 500</p>
-                </div>
+      <div class="list-group list-group-flush list-group-lg">
+        {% assign services = site.services | sort:"order" %}
+        {% for service in services limit:5  %}
+          <a class="list-group-item list-group-item-action" href="{{ service.url }}">
+            <div class="row">
+              <div class="col">
+                <p class="text-lg mb-0"><b>{{ service.name }}</b></p>
+                <!-- <p class="mb-0">92277 Vermont Drive</p> -->
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
               </div>
             </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
-        <a class="list-group-item list-group-item-action" href="">
-          <div class="media">
-            <div class="media-body">
-              <div class="row">
-                <div class="col-6 align-self-center">
-                  <p class="text-lg mb-0"><b>Pevonia Body Polish</b></p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">60 Mins</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">P 200</p>
-                </div>
-              </div>
-            </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
-        <a class="list-group-item list-group-item-action" href="">
-          <div class="media">
-            <div class="media-body align-self-center">
-              <div class="row">
-                <div class="col-6 align-self-center">
-                  <p class="text-lg mb-0"><b>Body Polish with Seasalt &amp; Honey</b></p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">60 Mins</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">P 200</p>
-                </div>
-              </div>
-            </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
-        <a class="list-group-item list-group-item-action" href="">
-          <div class="media">
-            <div class="media-body align-self-center">
-              <div class="row">
-                <div class="col-6 align-self-center">
-                  <p class="text-lg mb-0"><b>Mt. Mayon Hot Stone Therapy Massage</b></p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">60 Mins</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">P 200</p>
-                </div>
-              </div>
-            </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
-        <a class="list-group-item list-group-item-action" href="">
-          <div class="media">
-            <div class="media-body align-self-center">
-              <div class="row">
-                <div class="col-6 align-self-center">
-                    <p class="text-lg mb-0"><b>Foot Spa with Scrub</b></p>
-                  </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">60 Mins</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">P 200</p>
-                </div>
-              </div>
-            </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
+          </a>
+        {% endfor %}
         <div class="list-group-item">
           +5 more
         </div>
       </div>
       <div class="card-footer">
-        <a href=""><b>Manage Services</b></a>
+        <a href="{{ site.baseurl }}/app/settings/company/services/"><b>Manage Services</b></a>
       </div>
     </div>
-    <div class="card mb-4">
+    <div class="card card-bordered card-rounded mb-4">
       <div class="card-header">
         <h6 class="card-header-title h4">Products</h6>
         <p class="card-header-subtitle">This is your list of Products for sale, to use inside customer Invoices. These items will not show inside your Online Booking page. You don’t need to re-create your list of Services here. Example of products: “Shampoo bottle”, “At-home whitening kit”, etc.</p>
@@ -201,30 +97,26 @@ sub-heading-title:
         <a class="btn btn-link" href="{{ site.baseurl }}/app/settings/company/products/add-new-product.html"><i class="fas fa-plus"></i> Add New Product</a> -->
       </div>
       <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/products/lotion.html">
-          <div class="media">
-            <div class="media-body">
-              <div class="row">
-                <div class="col align-self-center">
-                  <p class="text-lg mb-0"><b>Lotion</b></p>
-                </div>
-                <div class="col align-self-center">
-                  <p class="mb-0">P 200</p>
-                </div>
+        {% assign products = site.products | sort:"order" %}
+        {% for product in products limit:5 %}
+          <a class="list-group-item list-group-item-action" href="{{ product.url }}">
+            <div class="row">
+              <div class="col">
+                <p class="text-lg mb-0"><b>{{ product.name }}</b></p>
+                <!-- <p class="mb-0">92277 Vermont Drive</p> -->
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
               </div>
             </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
+          </a>
+        {% endfor %}
       </div>
       <div class="card-footer">
         <a href=""><b>Manage Products</b></a>
       </div>
     </div>
-    <div class="card mb-4">
-
+    <div class="card card-bordered card-rounded mb-4">
       <div class="card-header">
         <h6 class="card-heading-title h4">Taxes</h6>
         <p class="card-header-subtitle">What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
@@ -278,36 +170,43 @@ sub-heading-title:
         <a href=""><b>Manage Taxes</b></a>
       </div>
     </div>
-    <div class="card">
+    <div class="card card-bordered card-rounded mb-4">
       <div class="card-header">
         <p class="card-header-title h4">Payment Methods</p>
         <p class="card-header-subtitle">Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
         <!-- <a class="btn btn-link" href=""><i class="fas fa-plus"></i> Add New Payment Method</a> -->
       </div>
       <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/payment-method/debit-and-credit-card.html">
-          <div class="media">
-            <div class="media-body">
-              <p class="text-lg mb-0"><b>Debit/Credit Card</b></p>
+        {% assign payment-methods = site.payment-methods | sort:"order" %}
+        {% for payment-method in payment-methods limit:5 %}
+          <a class="list-group-item list-group-item-action" href="{{ payment-method.url }}">
+            <div class="row">
+              <div class="col">
+                <p class="text-lg mb-0"><b>{{ payment-method.name }}</b></p>
+                <!-- <p class="mb-0">92277 Vermont Drive</p> -->
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
+              </div>
             </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/payment-method/debit-and-credit-card.html">
-          <div class="media">
-            <div class="media-body">
-              <p class="text-lg mb-0"><b>Cash</b></p>
-            </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
+          </a>
+        {% endfor %}
       </div>
       <div class="card-footer">
         <a href=""><b>Manage Payment Methods</b></a>
+      </div>
+    </div>
+    <div class="card card-bordered card-rounded">
+      <div class="card-header">
+        <h6 class="card-header-title h4">Billing Instructions</h6>
+        <p class="card-header-subtitle">You can write a message that will be visible by our customers on the top of your invoices. Tell them what they should know.</p>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <!-- <label for="">Write your message here</label> -->
+          <textarea class="form-control"></textarea>
+        </div>
+        <a class="btn btn-primary" href="">Save Changes</a>
       </div>
     </div>
   </div>

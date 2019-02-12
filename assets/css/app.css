@@ -84,15 +84,38 @@ body {
 }  
 
 
-
-
 .sub-heading {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #006fe6;
-  color: #FAFAFA;
-  font-size: 18px;
+  /* padding-top: 12px; */
+  /* padding-bottom: 12px; */
+  /* background-color: #006fe6; */
+  /* color: #FAFAFA; */
+  /* font-size: 18px; */
+  /* font-weight: 500; */
+}
+
+.sub-heading-title {
+  margin-bottom: 0;
   font-weight: 500;
+}
+
+.sub-heading-wrapper {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sub-heading-btn {
+  position: absolute;
+  left: 0;
+  top: 4px;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
 }
 
 .heading .sub-heading {
@@ -129,9 +152,13 @@ body {
 }
 
 .navbar-brand {
-  font-size: 32px;
-  font-weight: 500;
-  color: #4C4C4C !important;
+  padding: 16px 24px;
+  margin-right: 0;
+  width: 100%;
+}
+
+#global-slider {
+  padding: 12px;
 }
 
 
@@ -160,7 +187,6 @@ body {
     padding-top: 0;
     margin-left: 256px;
   }
-
 }
 
 #main-panel .container-fluid {
@@ -180,39 +206,58 @@ body {
 }
 
 
-.list-group-item {
-  padding: 1rem 1.5rem;
-}
-
-
+.input-group-prepend .btn-light,
 .input-group-append .btn-light {
   border-color: #BEBEBE;
 }
 
-
-
-.cardnavbar {
-  background-color: #f8f9fa;
-  /* margin-bottom: 24px; */
-  /* margin-left: -24px; */
-  /* margin-right: -24px; */
+#invoice-details th {
+  padding-top: 24px;
 }
 
-.cardnavbar .nav-tabs {
-  /* border-bottom: 0; */
-  /* margin-left: -16px; */
+#invoice-details th:first-child {
+  border-top-left-radius: 12px;
 }
 
-.cardnavbar .nav li a {
-  padding: 24px;
-  padding-top: 16px;
-  padding-bottom: 12px;
-  text-transform: uppercase;
+#invoice-details th:last-child {
+  border-top-right-radius: 12px;
+}
+
+#invoice-details th:first-child,
+#invoice-details td:first-child {
+  padding-left: 24px;
+}
+
+#invoice-details th:last-child,
+#invoice-details td:last-child {
+  border-top-right-radius: 12px;
+  padding-right: 24px;
+}
+
+#invoice-details tr:last-child td {
+  padding: 12px;
+}
+
+#assign-employee-list {
+  margin-bottom: 0;
+}
+
+#assign-employee-list .badge {
+  padding: 0;
+  padding-right: 16px;
+  border-radius: 9999px;
+  font-size: unset;
 }
 
 
+.form-control.form-control-plaintext {
+  border: 1px dashed #BEBEBE;
+  text-align: center;
+}
 
-
+.form-row + .form-row {
+  margin-top: 4px;
+}
 
 
 .btn-fab {
@@ -234,42 +279,20 @@ body {
   width: 20px;
 }
 
-.go-back {
-  border: 0;
-  background-color: transparent;
-  color: inherit;
-  padding: 0;
-}
-
 
 
 #left-panel {
   padding: 0;
-  /* position: fixed; */
-  /* top: 0; */
-  /* left: -256px; */
-  /* bottom: 0; */
-  /* padding: 8px; */
-  /* padding-top: 68px; */
-  /* width: 256px; */
   background-color: #00254d;
-
 }
 
 @media (min-width: 992px) {
   #left-panel {
-      /* left: 0; */
     width: 256px;
     bottom: 0;
     flex-direction: column;
     align-items: baseline;
   }
-}
-
-
-#left-panel .brand {
-  /* padding: 16px; */
-  /* display: inline-block; */
 }
 
 #left-panel .navbar-nav {
@@ -424,26 +447,6 @@ body {
 
 
 
-.list-wrapper {
-  /* position: absolute; */
-}
-
-.list-search {
-  padding: 0.75rem 1.5rem;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #d8d8d8;
-}
-
-.list-wrapper .list-group {
-  /* max-height: calc(100vh - 134px);
-  overflow: hidden;
-  overflow-y: auto; */
-}
-
-
-
-
-
 
 
 
@@ -552,6 +555,27 @@ body {
   padding-right: 24px;
 }
 
+#customer-table-wrapper,
+#employee-table-wrapper {
+  height: calc(100vh - 158px);
+}
+
+
+#customer-table-wrapper table th,
+#customer-table-wrapper table td,
+#employee-table-wrapper table th,
+#employee-table-wrapper table td {
+  text-align: center;
+}
+
+#customer-table-wrapper table th:first-child,
+#customer-table-wrapper table td:first-child,
+#employee-table-wrapper table th:first-child,
+#employee-table-wrapper table td:first-child {
+  text-align: unset;
+}
+
+
 #customer td {
   vertical-align: middle;
   white-space: nowrap;
@@ -645,14 +669,7 @@ body {
 
 
 
-#activity-list li {
-  padding-left: 0;
-  padding-right: 0;
-}
 
-#activity-list li:first-child {
-  border-top: 0;
-}
 
 .activity-list-icon {
   font-size: 16px;
@@ -667,7 +684,7 @@ body {
 
 .form-switch {
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 48px;
   height: 28px;
   padding-left: 0;
@@ -752,4 +769,3 @@ body {
 .form-switch-label-static {
   white-space: nowrap;
 }
-

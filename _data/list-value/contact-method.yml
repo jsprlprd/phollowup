@@ -1,0 +1,8 @@
+- text: SMS
+  value: sms
+
+- text: Email
+  value: email
+
+- text: WhatsApp
+  value: whatsapp

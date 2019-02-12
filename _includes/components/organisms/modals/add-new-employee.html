@@ -31,19 +31,25 @@
           </div>
         </div>
 
-        <!-- <div class="form-group row">
-          <label class="form-label col-lg-3" for="">Profile Photo</label>
-          <div class="col-lg-6">
-            <div class="media">
-              <div class="mr-3">
-                <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/default-avatar.png" alt="" width="48" height="48">
-              </div>
-              <div class="media-body align-self-center">
-                <div><b>Set your profile photo</b><br><a href="">Upload photo</a></div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        {% include components/molecules/form-group/select.html 
+          form-layout="horizontal"
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class="form-label"
+          form-label-size="col-lg-3"
+          form-label-text="Branch"
+          input-size="col-lg-6"
+          input-name="branch"
+          input-value=""
+          input-placeholder="Select Branch"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+          list-value-name=site.branches
+        %}
 
         {% include components/molecules/form-group/input.html 
           form-layout="horizontal"
@@ -65,14 +71,21 @@
           form-helper-text=""
         %}
 
+        <div class="form-group row">
+          <label class="form-label col-lg-3" for="">With Login?</label>
+          <div class="col-lg-6">
+            <label class="form-switch">
+              <input class="form-switch-input form-switch-right" type="checkbox">
+              <span class="form-switch-slider"></span>
+              <!-- <span class="form-switch-label"></span> -->
+            </label>
+          </div>
+        </div>
+
         <hr class="dashed">
         <div class="d-flex align-items-start align-items-center justify-content-between mb-3">
         <p class="lead">Login Details</p>
-          <label class="form-switch form-switch-right">
-            <input class="form-switch-input form-switch-right" type="checkbox">
-            <span class="form-switch-slider"></span>
-            <span class="form-switch-label form-switch-label-static">With Login?</span>
-          </label>
+
         </div>
         {% include components/molecules/form-group/input.html 
           form-layout="horizontal"
@@ -111,25 +124,6 @@
           form-icon-placement=""
           hasFormHelper="none"
           form-helper-text=""
-        %}
-        {% include components/molecules/form-group/select.html 
-          form-layout="horizontal"
-          isInputLarge=""
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class="form-label"
-          form-label-size="col-lg-3"
-          form-label-text="Role"
-          input-size="col-lg-6"
-          input-name="role"
-          input-value=""
-          input-placeholder="Select Role"
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-          list-value-name=site.data.list-value.employee-role
         %}
       </div>
       <div class="modal-footer">

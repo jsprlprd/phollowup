@@ -1,0 +1,11 @@
+- text: Week View
+  value: week-view
+
+- text: Month View
+  value: month-view
+
+- text: List View
+  value: list-view
+
+- text: Day View
+  value: day-view

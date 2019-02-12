@@ -2,8 +2,9 @@
 <datalist id="{{ include.input-name }}">
   <select class="form-control {{include.isInputLarge }} {{ include.isInputRequired }}" id="{{ include.input-name }}" name="{{ include.input-name }}">
     <option value="" selected="" disabled="">{{ include.input-placeholder }}</option>
-    {% for list in include.list-value-name %}
-      <option value="{{ list.value }}{{ list.full-name }}">{{ list.text }}{{ list.full-name }}</option>
+    {% assign lists = include.list-value-name | sort:"order" %}
+    {% for list in lists  %}
+      <option value="{{ list.value }}{{ list.full-name }}{{ list.name }}">{{ list.text }}{{ list.full-name }}{{ list.name }}</option>
     {% endfor %}
   </select>
 </datalist>

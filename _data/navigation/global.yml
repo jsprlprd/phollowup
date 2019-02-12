@@ -1,6 +1,6 @@
 - text: Dashboard
   icon: fas fa-tachometer-alt
-  url: app/dashboard.html
+  url: app/dashboard/
 
 - text: Calendar
   icon: far fa-calendar
@@ -12,7 +12,7 @@
 
 - text: Messages
   icon: fas fa-comments
-  url: app/messages
+  url: app/messages/
 
 - text: Invoices
   icon: fas fa-file-invoice

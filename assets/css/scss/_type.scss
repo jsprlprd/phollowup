@@ -37,6 +37,8 @@ h6, .h6 { font-size: $h6-font-size; }
 
 .text-sm {
   font-size: $font-size-xs;
+
+  font-weight: 400;
 }
 
 
@@ -152,21 +154,35 @@ mark,
 
 .list-icon {
   > li {
-    padding-left: 32px;
     position: relative;
 
     > .list-item-icon {
       position: absolute;
-      left: 0;
       width: 24px;
       text-align: center;
       line-height: inherit;
     }
-
   }
 
   > .list-inline-divider {
     padding-left: 0;
+  }
+
+  &.list-icon-left > li {
+    padding-left: 32px;
+    position: relative;
+    > .list-item-icon {
+      left: 0;
+    }    
+  }
+
+  &.list-icon-right > li {
+    padding-right: 32px;
+    position: relative;
+    > .list-item-icon {
+      right: 0;
+    }    
+
   }
 
   &.list-icon-default {

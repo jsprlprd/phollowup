@@ -1,6 +1,9 @@
 - text: Advanced Settings
   url: app/settings/advanced-settings.html
 
+- text: Booking
+  url: app/settings/booking.html
+
 - text: Company
   url: app/settings/company/
 
@@ -11,7 +14,7 @@
   url: app/settings/messages/
 
 - text: Satisfaction
-  url: app/settings/satisfaction.html
+  url: app/settings/satisfaction/
 
 - text: Subscription
   url: app/settings/subscription.html

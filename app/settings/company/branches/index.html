@@ -10,39 +10,26 @@ sub-heading-title: Branches
 
 <div class="row">
   <div class="col-lg-8 offset-lg-2">
-    <div class="card mb-4">
-      <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/company/branches/vermont.html">
-          <div class="media">
-            <div class="media-body align-self-center">
-              <div class="row">
-                <div class="col-6 align-self-center">
-                  <p class="text-lg mb-0"><b>Vermont Branch</b></p>
-                  <p class="mb-0">92277 Vermont Drive</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">28 Services</p>
-                </div>
-                <div class="col-3 align-self-center">
-                  <p class="mb-0">48 Hours Open</p>
-                </div>
+    <div class="card card-bordered card-rounded mb-4">
+      <div class="list-group list-group-flush list-group-lg">
+        {% assign branches = site.branches | sort:"order" %}
+        {% for branch in branches limit:5  %}
+          <a class="list-group-item list-group-item-action" href="{{ branch.url }}">
+            <div class="row">
+              <div class="col">
+                <p class="text-lg mb-0"><b>{{ branch.name }}</b></p>
+                <!-- <p class="mb-0">92277 Vermont Drive</p> -->
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
               </div>
             </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
-        </a>
-        <a class="list-group-item list-group-item-action" href="">
-          <div class="media">
-            <div class="media-body align-self-center">
-              <p class="text-lg mb-0"><b>Golden Leaf Branch</b></p>
-              <p class="mb-0">098 Golden Leaf Point	</p>
-            </div>
-            <div class="d-inline-flex align-self-center ml-3">
-              <i class="fas fa-chevron-right" style="font-size: 20px;"></i>
-            </div>
-          </div>
+          </a>
+        {% endfor %}
+      </div>
+      <div class="card-footer">
+        <a href="{{ site.baseurl }}/app/settings/company/branches/add-new-branch.html">
+          <i class="fas fa-plus"></i> <b>Add New Branch</b>
         </a>
       </div>
     </div>

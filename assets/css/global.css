@@ -105,16 +105,8 @@ body {
     /* margin-bottom: 8px; */
 }
 
-.list-inline-divider {
-    display: inline;
-    padding-left: 0;
-}
 
-.list-inline-divider::before {
-    content: "\2022";
-    width: 24px;
-    display: inline-block;
-}
+
 
 .login-form .button-group {
     margin-top: 40px;
@@ -210,13 +202,6 @@ body {
     font-weight: 500;
 }
 
-a.list-group-item {
-    color: inherit;
-}
-
-a.list-group-item:hover {
-    text-decoration: none;
-}
 
 .media-pills {
     background-color: #f1f2f3;
@@ -235,14 +220,6 @@ a.list-group-item:hover {
     padding-right: 16px;
 }
 
-.card-header-title {
-    margin: 0;
-}
-
-.card-header-subtitle {
-    margin-top: 8px;
-    margin-bottom: 0;
-}
 
 .popover-header {
     padding: 24px;
@@ -318,6 +295,119 @@ a.list-group-item:hover {
     line-height: 24px;
 }
 
+
+
+
+
+
+
+
+
+#appointments-section .card-body {
+    max-height: calc(100vh - 182px);
+}
+
+
+
+
+
+.card-header, .card-footer {
+    padding: 1.5rem;
+}
+
+.card-header {
+    padding-bottom: 0.75rem;
+    background-color: transparent;
+}
+
+
+.card-header-title {
+    margin: 0;
+}
+
+.card-header-subtitle {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #727272;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+
+
+
+.cardnavbar {
+  background-color: #f8f9fa;
+  /* margin-bottom: 24px; */
+  /* margin-left: -24px; */
+  /* margin-right: -24px; */
+}
+
+.cardnavbar .nav-tabs {
+  /* border-bottom: 0; */
+  /* margin-left: -16px; */
+}
+
+.cardnavbar .nav li a {
+  padding: 24px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+
+
+.list-group-lg .list-group-item {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.list-group-sm .list-group-item {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+
+.list-group-custom .list-group-item {
+  padding-left: 24px;
+}
+
+
+.list-group-custom .list-group-item {
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 0;
+}
+
+.list-group-custom .list-group-item:hover {
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15) !important;
+    transition: all .250s;
+    z-index: 1;
+}
+
+.list-group-custom .list-group-item + .list-group-item {
+    margin-top: 4px;
+}
+
+
+.list-group-custom {
+  position: relative;
+}
+
+.list-group-custom .list-group-item::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #ff8300;
+  bottom: 4px;
+  top: 4px;
+  left: 4px;
+  border-radius: 9999px;
+}
+
+
 .list-group-item:first-child {
     /* border-top: 0; */
 }
@@ -326,17 +416,93 @@ a.list-group-item:hover {
     border-bottom: 0;
 }
 
-#appointments-section .card-body {
-    max-height: calc(100vh - 182px);
+
+
+a.list-group-item {
+    color: inherit;
 }
 
-.card-header, .card-footer {
-    padding: 1.5rem;
+a.list-group-item:hover {
+    text-decoration: none;
 }
 
-.card-body {
-    padding: 1.5rem;
+
+.list-inline-divider {
+    display: inline;
+    padding-left: 0;
 }
+
+.list-inline-divider::before {
+    content: "\2022";
+    width: 24px;
+    display: inline-block;
+}
+
+
+
+
+.list-group-custom-divider {
+    /* padding: 8px 16px; */
+    /* background-color: #f1f2f3; */
+    /* border-radius: 8px; */
+    /* font-size: 12px; */
+    /* font-weight: 500; */
+    padding: 4px;
+    /* text-transform: uppercase; */
+    color: #727272;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    position: relative;
+    line-height: 20px;
+}
+
+
+
+
+
+
+.list-group-flush .list-group-item {
+    margin-left: 1.5rem;
+    padding-left: 0;
+    width: unset;
+  }
+  
+  .list-group-flush .list-group-item-action:hover {
+    margin-left: 0;
+    padding-left: 1.5rem;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+.list-wrapper {
+  /* position: absolute; */
+}
+
+.list-search {
+  padding: 0.75rem 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.list-wrapper .list-group {
+  /* max-height: calc(100vh - 134px);
+  overflow: hidden;
+  overflow-y: auto; */
+}
+
+
+
+
+
+
 
 
 
@@ -350,14 +516,14 @@ a.list-group-item:hover {
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
   min-width: 320px;
-  border-right: 1px solid #e4e4e4;
+  /* border-right: 1px solid #e4e4e4; */
 }
 
 .table-scroller table th:last-child,
 .table-scroller table td:last-child {
-  border-right: 0;
+  /* border-right: 0; */
 }
 
 
@@ -370,13 +536,13 @@ a.list-group-item:hover {
 .table-scroller table td:first-child {
   left: 0;
   z-index: 2;
-  min-width: 88px;
-  text-align: right;
-  border-right: 0;
+  /* min-width: 88px; */
+  /* text-align: right; */
+  /* border-right: 0; */
 }
 
 .table-scroller table tbody td {
-    border-right: 1px solid #e4e4e4;
+    /* border-right: 1px solid #e4e4e4; */
 }
 
 .table-scroller table tbody td:first-child {
@@ -384,10 +550,10 @@ a.list-group-item:hover {
   position: sticky;
   z-index: 1;
   left: 0;
-  text-align: right;
-  border-top: 0;
-  background-color: #eeeef4;
-  border-right: 0;
+  /* text-align: right; */
+  /* border-top: 0; */
+  /* background-color: #eeeef4; */
+  /* border-right: 0; */
 }
 
 .table-scroller table tbody tr:first-child td {
@@ -397,15 +563,12 @@ a.list-group-item:hover {
 .table-scroller {
     /* max-width: calc(100vw - 597px); */
     max-height: calc(100vh - 124px);
-    overflow: scroll;
+    overflow: auto;
     position: relative;
 }
 
 
 
-.card-header {
-    background-color: transparent;
-}
 
 .form-icon {
     position: relative;
@@ -473,20 +636,6 @@ a.list-group-item:hover {
 }
 
 
-.list-group-custom .list-group-item {
-    border: 0;
-    border-radius: 2px;
-}
-
-.list-group-custom .list-group-item:hover {
-    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.15) !important;
-    transition: all .250s;
-    z-index: 1;
-}
-
-.list-group-custom .list-group-item + .list-group-item {
-    margin-top: 4px;
-}
 
 
 .slider-overlay {
@@ -592,4 +741,15 @@ a.list-group-item:hover {
         display: inline-block;
         width: 100%
     }
+}
+
+
+.btn-link-dark,
+.btn-link-dark:hover {
+    color: #727272;
+}
+
+.btn-link-custom {
+    font-size: 12px;
+    text-transform: uppercase;
 }

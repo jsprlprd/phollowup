@@ -2,7 +2,7 @@
 layout: app
 container-type: container
 heading: true
-heading-title: Invoices
+heading-title: 
 sub-heading: true
 sub-heading-title: 3858
 ---
@@ -10,175 +10,32 @@ sub-heading-title: 3858
 <div class="row">
   <div class="col-lg-8 offset-lg-2">
     <h6 class="h4 mb-3">Customer Details</h6>
-    <div class="card mb-4">
+    <div class="card card-bordered card-rounded mb-4">
       <div class="card-body">
-        <div class="media">
+        <div class="media d-none d-xl-flex">
           <div class="d-inline-flex mr-3">
-            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Adelind+Hatherleigh" alt="" width="96" height="96">
+            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Jasper+Lepardo&?background={{ employee.background-color }}&color=fff" alt="" width="96" height="96">
           </div>
           <div class="media-body align-self-center">
             <div class="row">
               <div class="col align-self-center">
-                <h6 class="h4 mt-4"><b>Adelind Hatherleigh</b></h6>
+                <h6 class="h4 mt-4"><b>Jasper Lepardo</b> <a class="btn btn-link btn-link-custom btn-sm" data-toggle="modal" data-target="#edit-customer-profile" href="#edit-customer-profile"><i class="fas fa-pen"></i></a></h6>
                 <p>67% punctuality (2/3)</p>
               </div>
-              <div class="col align-self-center">
-                <ul class="list list-icon list-icon-default mb-0">
-                  <li><i class="list-item-icon fas fa-phone"></i><a href="">822-502-1423</a></li>
-                  <li><i class="list-item-icon fas fa-envelope"></i><a href="">ahatherleigh6@dot.gov</a></li>
-                  <li><i class="list-item-icon fas fa-birthday-cake"></i><a href="">July 30, 1968</a></li>
+              <div class="col align-self-center text-right">
+                <ul class="list list-icon list-icon-default list-icon-right mb-0">
+                  <li><i class="list-item-icon fas fa-phone"></i>0917 116 1268</li>
+                  <li><i class="list-item-icon fas fa-envelope"></i>jsprlprd@gmail.com</li>
+                  <li><i class="list-item-icon fas fa-birthday-cake"></i>May 12 1993</li>
                 </ul>
               </div>
             </div>
-            <a class="btn btn-light" href=""><i class="fas fa-pen"></i> Edit</a>
           </div>
         </div>
       </div>
     </div>
     <h6 class="h4 mb-3">Invoice Details</h6>
-    <div class="card mb-4">
-      <div class="card-body">
-        <table class="table table-lg mb-0">
-          <thead>
-            <tr>
-              <th>Item</th>
-              <th>Price</th>
-              <th>Qty</th>
-              <th>Tax</th>
-              <th>Subtotal</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                {% include components/atoms/form/select.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel=""
-                  form-label-class=""
-                  form-label-size=""
-                  form-label-text=""
-                  input-size=""
-                  input-name="service"
-                  input-value=""
-                  input-placeholder="Select Service"
-                  hasFormIcon="none"
-                  form-icon-name=""
-                  form-icon-placement=""
-                  hasFormHelper="none"
-                  form-helper-text=""
-                  list-value-name=site.data.list-value.service
-                %}
-              </td>
-              <td><p class="form-control-plaintext">₱ 200.00</p></td>
-              <td>
-
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <button class="btn btn-link" type="button" onclick="increment(-1, 'counter')">
-                      <i class="fas fa-minus-circle"></i>
-                    </button>
-                  </div>
-                  <input class="form-control" disabled id='counter' type="number" min="0" value='1' width="50">
-                  <div class="input-group-append">
-                    <button class="btn btn-link" type="button" onclick="increment(1, 'counter')">
-                      <i class="fas fa-plus-circle"></i>
-                    </button>
-                  </div>
-                </div>
-
-
-
-
-
-
-              </td>
-              <td>
-                {% include components/atoms/form/select.html 
-                  form-layout=""
-                  isInputLarge=""
-                  isInputRequired=""
-                  hasFormLabel=""
-                  form-label-class=""
-                  form-label-size=""
-                  form-label-text=""
-                  input-size=""
-                  input-name="tax-type"
-                  input-value=""
-                  input-placeholder="Select Tax Type"
-                  hasFormIcon="none"
-                  form-icon-name=""
-                  form-icon-placement=""
-                  hasFormHelper="none"
-                  form-helper-text=""
-                  list-value-name=site.data.list-value.tax-type
-                %}
-              </td>
-              <td><p class="form-control-plaintext">₱ 200.00</p></td>
-              <td><a class="btn btn-danger" href="">&times;</a></td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="6">     
-                <a class="btn btn-light" href="">Add New Item</a>
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-        <div class="row">
-          <div class="col-md-5 order-md-2">
-            <div class="well">
-              <p class="lead">Summary</p>
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <td>Subtotal</td>
-                    <td class="text-right">₱ 200.00</td>
-                  </tr>
-                  <tr>
-                    <td>Tax</td>
-                    <td class="text-right">₱ 0.00</td>
-                  </tr>
-                  <tr>
-                    <td>Total</td>
-                    <td class="text-right">₱ 200.00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-md-7 order-md-1">
-            <p class="lead">Payment Method</p>
-
-            {% include components/atoms/form/select.html 
-              form-layout=""
-              isInputLarge=""
-              isInputRequired=""
-              hasFormLabel=""
-              form-label-class=""
-              form-label-size=""
-              form-label-text=""
-              input-size=""
-              input-name="payment-method"
-              input-value=""
-              input-placeholder="Select Payment Method"
-              hasFormIcon="none"
-              form-icon-name=""
-              form-icon-placement=""
-              hasFormHelper="none"
-              form-helper-text=""
-              list-value-name=site.data.list-value.payment-method
-            %}
-            <hr class="dashed">
-            <a class="btn btn-light" href=""><i class="fas fa-file-download"></i> Download PDF</a>
-            <a class="btn btn-light" href=""><i class="fas fa-print"></i> Print Invoice</a>
-          </div>
-        </div>  
-      </div>
-    </div>
+    {% include components/organisms/invoice-details.html %}
     <div class="d-flex align-items-start align-items-center justify-content-between">
       <a class="btn btn-link btn-lg" href="">Cancel</a>
       <a class="btn btn-primary btn-lg" href="">Save Changes</a>

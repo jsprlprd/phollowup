@@ -49,3 +49,15 @@ collections:
   employees:
     output: true
     permalink: /app/employees/:path/
+  branches:
+    output: true
+    permalink: /app/settings/company/branches/:path/
+  services:
+    output: true
+    permalink: /app/settings/company/services/:path/
+  products:
+    output: true
+    permalink: /app/settings/company/products/:path/
+  payment-methods:
+    output: true
+    permalink: /app/settings/company/payment-methods/:path/

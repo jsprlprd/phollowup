@@ -9,69 +9,61 @@ heading-search-name: search-employees
 heading-search-placeholder: Search Employees
 ---
 
-<div class="table-responsive">
-    <table class="table table-clickable table-hover" id="customer">
-      <thead>
+<div class="table-scroller" id="employee-table-wrapper">
+  <table class="table table-hover" id="customer">
+    <thead>
+      <tr>
+        <th><a href="">Name<i class="fas fa-sort ml-1"></i></a></th>
+        <th><a href="">Branch<i class="fas fa-sort ml-1"></i></a></th>
+        <th><a href="">Services<i class="fas fa-sort ml-1"></i></a></th>
+        <th><a href="">Working Hours<i class="fas fa-sort ml-1"></i></a></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for employee in site.employees %}
         <tr>
-          <th><a href="">Name</a></th>
-          <th><a href="">Position</a></th>
-          <th><a href="">Contact</a></th>
-          <th><a href="">Email</a></th>
-          <!-- <th><a href="">Birthday</a></th> -->
-          <!-- <th></th> -->
-          <!-- <th>First Appointments</th>
-          <th>Last Appointments</th>
-          <th>Service</th>
-          <th>A/yr</th>
-          <th>$/yr</th> -->
-        </tr>
-      </thead>
-      <tbody>
-        {% for employee in site.employees %}
-          <tr href="{{ employee.url }}">
-            <td>
-              <div class="media">
-                <div class="d-inline-flex mr-3">
-                  <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}&?background={{ employee.background-color }}&color=fff" alt="" width="48" height="48">
-                </div>
-                <div class="media-body align-self-center">
-                  <p class="text-lg mb-0"><b>{{ employee.full-name }}</b></p>
-                </div>
+          <td>
+            <a class="media" href="{{ employee.url }}">
+              <div class="d-inline-flex mr-3">
+                <img class="rounded-circle" src="https://ui-avatars.com/api/?name={{ employee.first-name }}+{{ employee.last-name }}&?background={{ employee.background-color }}&color=fff" alt="" width="48" height="48">
               </div>
-            </td>
-            <td>
-              {{ employee.position }}
-            </td>
-            <td>
-              (+63) {{ employee.phone }}
-            </td>
-            <td>
-              {{ employee.email }}
-            </td>
-            <!-- <td>
+              <div class="media-body align-self-center">
+                <p class="text-lg mb-0"><b>{{ employee.full-name }}</b></p>
+              </div>
+            </a>
+          </td>
+          <td>
+            Vermont Branch
+          </td>
+          <td>
+            (+63) {{ employee.phone }}
+          </td>
+          <td>
+            {{ employee.email }}
+          </td>
+          <!-- <td>
 
-            </td> -->
-            <!-- <td>
-              08/28/2018
-            </td>
-            <td>
-              08/28/2018
-            </td>
-            <td>
-              The Essenses Signature Massage 
-            </td>
-            <td>
-              0 
-            </td>
-            <td>
-              P 0.00
-            </td> -->
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-
-  </div>
+          </td> -->
+          <!-- <td>
+            08/28/2018
+          </td>
+          <td>
+            08/28/2018
+          </td>
+          <td>
+            The Essenses Signature Massage 
+          </td>
+          <td>
+            0 
+          </td>
+          <td>
+            P 0.00
+          </td> -->
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
 
 

@@ -1,0 +1,37 @@
+---
+layout: app
+container-type: container
+heading: true
+heading-title: 
+heading-navbar:
+sub-heading: true
+sub-heading-title: Service
+---
+
+<div class="row">
+  <div class="col-lg-8 offset-lg-2">
+    <div class="card card-bordered card-rounded mb-4">
+      <div class="list-group list-group-flush list-group-lg">
+        {% assign services = site.services | sort:"order" %}
+        {% for service in services %}
+          <a class="list-group-item list-group-item-action" href="{{ service.url }}">
+            <div class="row">
+              <div class="col">
+                <p class="text-lg mb-0"><b>{{ service.name }}</b></p>
+                <!-- <p class="mb-0">92277 Vermont Drive</p> -->
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
+              </div>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+      <div class="card-footer">
+        <a href="{{ site.baseurl }}/app/settings/company/services/add-new-service.html">
+          <i class="fas fa-plus"></i> <b>Add New Service</b>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -57,7 +57,7 @@
           hasFormHelper="none"
           form-helper-text=""
         %}
-        <div class="form-group row">
+        <!-- <div class="form-group row">
           <label class="form-label col-lg-3" for="">Profile Photo</label>
           <div class="col-lg-6">
             <div class="media">
@@ -69,14 +69,14 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <hr class="dashed">
         <p class="lead">Contact Info</p>
         <div class="form-group row">
           <label class="form-label col-lg-3" for="">Phone</label>
           <div class="col-lg-6">
             <div class="input-group">
-              <span class="input-group-btn">
+              <span class="input-group-btn input-group-prepend">
                 <button class="btn btn-light" type="button">+63 <b class="caret"></b></button>
               </span>
               <input class="form-control" type="text" placeholder="912 345 6789">
@@ -110,91 +110,16 @@
           hasFormHelper="none"
           form-helper-text=""
         %}
-        <hr class="dashed">
-        <div class="d-flex align-items-start align-items-center justify-content-between mb-3">
-          <p class="lead mb-0">Notifications</p>
-          <label class="form-switch form-switch-right">
-            <input class="form-switch-input" type="checkbox">
-            <span class="form-switch-slider"></span>
-            <span class="form-switch-label"></span>
-          </label>
+        <div class="form-group row">
+          <label class="form-label col-lg-3" for="">Notifications</label>
+          <div class="col-lg-6 align-self-center">
+            <label class="form-switch form-switch-left">
+              <input class="form-switch-input" type="checkbox">
+              <span class="form-switch-slider"></span>
+              <span class="form-switch-label form-switch-label-static">Enable</span>
+            </label>
+          </div>
         </div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th></th>
-              <th>Phone</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Online Booking Confirmation</td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-              </td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>                
-              </td>
-            </tr>
-            <tr>
-              <td>Reminder</td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-              </td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>                
-              </td>
-            </tr>
-            <tr>
-              <td>After Appointment</td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-              </td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>                
-              </td>
-            </tr>
-            <tr>
-              <td>Long-Term Follow Up</td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-              </td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>                
-              </td>
-            </tr>
-            <tr>
-              <td>Online Booking Confirmation</td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-              </td>
-              <td>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>                
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
       <div class="modal-footer">
         <a class="btn btn-link" href="">Discard</a>
