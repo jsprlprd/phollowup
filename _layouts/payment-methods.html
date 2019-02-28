@@ -11,9 +11,9 @@ sub-heading-title: Vermont Branch
 
 <div class="heading fixed-top">
   <div class="sub-heading">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 offset-lg-2">
+        <div class="col-lg-6 offset-lg-3">
           <div class="sub-heading-wrapper">
             <button class="sub-heading-btn js-go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button>
             <h1 class="sub-heading-title h3">{{ page.name }}</h1>
@@ -24,9 +24,9 @@ sub-heading-title: Vermont Branch
   </div>
 </div>
 
-<main class="container" id="main-content">
+<main class="container-fluid" id="main-content">
   <div class="row">
-    <div class="col-lg-8 offset-lg-2">
+    <div class="col-lg-6 offset-lg-3">
       <div class="card card-bordered card-rounded mb-4">
         <div class="card-header">
           <h6 class="card-header-title h4">Payment Method Details</h6>
@@ -50,7 +50,39 @@ sub-heading-title: Vermont Branch
             </div>
           </a>
           <a class="list-group-item list-group-item-action" href="">
-            <div class="row">
+
+
+
+
+
+
+
+            {% include components/molecules/form-group/plaintext.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Description"
+              input-size="col-lg-6"
+              input-type="text"
+              input-name="legal-description"
+              input-value="I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.​"
+              input-placeholder=""
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
+
+
+
+
+
+            <!-- <div class="row">
               <div class="col">
                 <div class="row">
                   <div class="col-lg-4" style="line-height: 24px;">
@@ -64,7 +96,7 @@ sub-heading-title: Vermont Branch
               <div class="col-auto">
                 <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
               </div>
-            </div>
+            </div> -->
           </a>
         </div>
       </div>

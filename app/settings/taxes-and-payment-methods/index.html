@@ -1,0 +1,94 @@
+---
+layout: settings
+container-type: container-fluid
+heading: true
+heading-title: Settings
+heading-navbar: false
+sub-heading:
+sub-heading-title:
+heading-search: true
+heading-search-name: search-settings
+heading-search-placeholder: Search Settings
+---
+
+<div class="header">
+  <h6 class="header-title h4">Taxes</h6>
+  <p class="header-subtitle mb-0">What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
+</div>
+
+<div class="card card-bordered card-rounded mb-5">
+  <div class="list-group list-group-flush list-group-lg">
+    <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/value-added-tax.html">
+      <div class="media">
+        <div class="media-body">
+          <div class="row">
+            <div class="col-6 align-self-center">
+              <p class="text-lg mb-0"><b>Value Added Tax (VAT)</b></p>
+            </div>
+            <div class="col-3 align-self-center">
+              <p class="mb-0">12%</p>
+            </div>
+            <div class="col-3 align-self-center">
+              <p class="mb-0">
+                <span class="badge badge-warning">Default</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-inline-flex align-self-center ml-3">
+            <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
+        </div>
+      </div>
+    </a>
+    <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/value-added-tax.html">
+      <div class="media">
+        <div class="media-body">
+          <div class="row">
+            <div class="col-6 align-self-center">
+              <p class="text-lg mb-0"><b>No Tax</b></p>
+            </div>
+            <div class="col-3 align-self-center">
+              <p class="mb-0"></p>
+            </div>
+            <div class="col-3 align-self-center">
+              <p class="mb-0"></p>
+            </div>
+          </div>
+        </div>
+        <div class="d-inline-flex align-self-center ml-3">
+            <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
+        </div>
+      </div>
+    </a>
+    <a class="list-group-item" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/add-new-tax.html">
+      <i class="fas fa-plus mr-2"></i><b>Add New Tax</b>
+    </a>
+  </div>
+</div>
+
+<div class="header">
+  <h6 class="header-title h4">Payment Methods</h6>
+  <p class="header-subtitle mb-0">Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
+</div>
+
+<div class="card card-bordered card-rounded mb-4">
+  <div class="list-group list-group-flush list-group-lg">
+    {% assign payment-methods = site.payment-methods | sort:"order" %}
+    {% for payment-method in payment-methods limit:5 %}
+      <a class="list-group-item list-group-item-action" href="{{ payment-method.url }}">
+        <div class="row">
+          <div class="col">
+            <p class="text-lg mb-0"><b>{{ payment-method.name }}</b></p>
+            <!-- <p class="mb-0">92277 Vermont Drive</p> -->
+          </div>
+          <div class="col-auto">
+            <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+    <a class="list-group-item" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/add-new-payment-method.html">
+      <i class="fas fa-plus mr-2"></i><b>Add New Payment Method</b>
+    </a>
+  </div>
+</div>

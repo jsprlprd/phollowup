@@ -1,324 +1,317 @@
 ---
-layout: app
-container-type: container
+layout: settings
+container-type: container-fluid
 heading: true
 heading-title: Settings
-heading-navbar: true
+heading-navbar: false
 sub-heading:
 sub-heading-title:
+heading-search: true
+heading-search-name: search-settings
+heading-search-placeholder: Search Settings
 ---
 
-<div class="row">
-  <div class="col-lg-8 offset-lg-2">
-    <div class="card card-bordered card-rounded">
-      <div class="list-group list-group-flush list-group-lg">
-
-        <div class="list-group-item">
+<div class="header">
+  <h6 class="header-title h4">Advanced Settings</h6>
+</div>
+<div class="card card-bordered card-rounded">
+  <div class="list-group list-group-flush list-group-lg">
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Allow Overlapping Bookings</b></p>
-                  <p class="text-muted mb-0">This option allows you to manually book multiple customers at the same time, without prompting an error message. Useful if you practice double-booking inside your business (not recommended).</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Allow Overlapping Bookings</b></p>
+              <p class="text-muted mb-0">This option allows you to manually book multiple customers at the same time, without prompting an error message. Useful if you practice double-booking inside your business (not recommended).</p>
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Auto-Accept Online Reservations</b></p>
-                  <p class="text-muted mb-0">This option will directly confirm all the online reservations coming from your booking page, without giving you the chance to approve them first (not recommended).</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Auto-Accept Online Reservations</b></p>
+              <p class="text-muted mb-0">This option will directly confirm all the online reservations coming from your booking page, without giving you the chance to approve them first (not recommended).</p>
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Enable Invoicing Inside Phollowup</b><span class="badge badge-primary">Beta</span></p>
-                </div>
-                <!-- <div class="col-lg">
-                  <p class="mb-0">This option will directly confirm all the online reservations coming from your booking page, without giving you the chance to approve them first (not recommended).</p>
-                </div> -->
-              </div>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Enable Invoicing Inside Phollowup</b><span class="badge badge-primary">Beta</span></p>
             </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <!-- <div class="col-lg">
+              <p class="mb-0">This option will directly confirm all the online reservations coming from your booking page, without giving you the chance to approve them first (not recommended).</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>WhatsApp Reminder</b></p>
+              <p class="text-muted mb-0">This enables whatsapp in Phollowup</p>
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>WhatsApp Reminder</b></p>
-                  <p class="text-muted mb-0">This enables whatsapp in Phollowup</p>
-                </div>
-              </div>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Hide the Pop-Up for WhatsApp Messages</b></p>
             </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <!-- <div class="col-lg">
+              <p class="mb-0">This enables whatsapp in Phollowup</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Enable Desktop/Mobile Notifications for New Appointments</b></p>
+            </div>
+            <!-- <div class="col-lg">
+              <p class="mb-0">This enables whatsapp in Phollowup</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Hide Decimals Inside Self-Booking</b></p>
+            </div>
+            <!-- <div class="col-lg">
+              <p class="mb-0">This enables whatsapp in Phollowup</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Include Tax in the Displayed Price</b></p>
+              <!-- <p class="text-muted mb-0">This enables whatsapp in Phollowup</p> -->
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Hide the Pop-Up for WhatsApp Messages</b></p>
-                </div>
-                <!-- <div class="col-lg">
-                  <p class="mb-0">This enables whatsapp in Phollowup</p>
-                </div> -->
-              </div>
-            </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Display Character Limit</b></p>
+              <p class="text-muted mb-0">This option will disable characters limits of automated messages but using this functionality you should use your own phone.</p>
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Enable Desktop/Mobile Notifications for New Appointments</b></p>
-                </div>
-                <!-- <div class="col-lg">
-                  <p class="mb-0">This enables whatsapp in Phollowup</p>
-                </div> -->
-              </div>
-            </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Receive an Email Notification when there is a New Booking Request</b></p>
+              <p class="text-muted">This option for Receive an email notification when there is a new booking request</p>
+              <ul class="list list-icon list-icon-default list-icon-left mb-0">
+                <li>
+                  <i class="list-item-icon far fa-envelope"></i>
+                  jsprlprd@gmail.com
+                  <a class="text-sm" href=""><i class="fas fa-pencil-alt"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+        <div class="col-auto">
+          <label class="form-switch">
+            <input class="form-switch-input" type="checkbox">
+            <span class="form-switch-slider"></span>
+            <!-- <span class="form-switch-label"></span> -->
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Hide Decimals Inside Self-Booking</b></p>
-                </div>
-                <!-- <div class="col-lg">
-                  <p class="mb-0">This enables whatsapp in Phollowup</p>
-                </div> -->
-              </div>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Default Contact Method</b></p>
             </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <div class="col col-lg-3">
+              {% include components/atoms/form/select.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text=""
+                input-size=""
+                input-name=""
+                input-value=""
+                input-placeholder="Contact Method"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.data.list-value.contact-method
+              %}
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Include Tax in the Displayed Price</b></p>
-                  <!-- <p class="text-muted mb-0">This enables whatsapp in Phollowup</p> -->
-                </div>
-              </div>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Calendar View</b></p>
             </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
+            <div class="col col-lg-3">
+              {% include components/atoms/form/select.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text=""
+                input-size=""
+                input-name=""
+                input-value=""
+                input-placeholder="Calendar View"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.data.list-value.calendar-view
+              %}
             </div>
           </div>
         </div>
-
-        <div class="list-group-item">
+      </div>
+    </div>
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col">
           <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Display Character Limit</b></p>
-                  <p class="text-muted mb-0">This option will disable characters limits of automated messages but using this functionality you should use your own phone.</p>
-                </div>
-              </div>
+            <div class="col-lg">
+              <p class="text-lg mb-0"><b>Self Check-In Tablet</b></p>
             </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="list-group-item">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Receive an Email Notification when there is a New Booking Request</b></p>
-                  <p class="text-muted">This option for Receive an email notification when there is a new booking request</p>
-                  <ul class="list list-icon list-icon-default list-icon-left mb-0">
-                    <li>
-                      <i class="list-item-icon far fa-envelope"></i>
-                      jsprlprd@gmail.com
-                      <a class="text-sm" href=""><i class="fas fa-pencil-alt"></i></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-auto">
-              <label class="form-switch">
-                <input class="form-switch-input" type="checkbox">
-                <span class="form-switch-slider"></span>
-                <!-- <span class="form-switch-label"></span> -->
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="list-group-item">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Default Contact Method</b></p>
-                </div>
-                <div class="col col-lg-3">
-                  {% include components/atoms/form/select.html 
-                    form-layout="horizontal"
-                    isInputLarge=""
-                    isInputRequired=""
-                    hasFormLabel=""
-                    form-label-class=""
-                    form-label-size=""
-                    form-label-text=""
-                    input-size=""
-                    input-name=""
-                    input-value=""
-                    input-placeholder="Calendar View"
-                    hasFormIcon="none"
-                    form-icon-name=""
-                    form-icon-placement=""
-                    hasFormHelper="none"
-                    form-helper-text=""
-                    list-value-name=site.data.list-value.contact-method
-                  %}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="list-group-item">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Calendar View</b></p>
-                </div>
-                <div class="col col-lg-3">
-                  {% include components/atoms/form/select.html 
-                    form-layout="horizontal"
-                    isInputLarge=""
-                    isInputRequired=""
-                    hasFormLabel=""
-                    form-label-class=""
-                    form-label-size=""
-                    form-label-text=""
-                    input-size=""
-                    input-name=""
-                    input-value=""
-                    input-placeholder="Calendar View"
-                    hasFormIcon="none"
-                    form-icon-name=""
-                    form-icon-placement=""
-                    hasFormHelper="none"
-                    form-helper-text=""
-                    list-value-name=site.data.list-value.calendar-view
-                  %}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="list-group-item">
-          <div class="row">
-            <div class="col">
-              <div class="row">
-                <div class="col-lg">
-                  <p class="text-lg mb-0"><b>Self Check-In Tablet</b></p>
-                </div>
-                <div class="col col-lg-3">
-                  {% include components/atoms/form/select.html 
-                    form-layout="horizontal"
-                    isInputLarge=""
-                    isInputRequired=""
-                    hasFormLabel=""
-                    form-label-class=""
-                    form-label-size=""
-                    form-label-text=""
-                    input-size=""
-                    input-name=""
-                    input-value=""
-                    input-placeholder="Services"
-                    hasFormIcon="none"
-                    form-icon-name=""
-                    form-icon-placement=""
-                    hasFormHelper="none"
-                    form-helper-text=""
-                    list-value-name=site.services
-                  %}
-                </div>
-              </div>
+            <div class="col col-lg-3">
+              {% include components/atoms/form/select.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text=""
+                input-size=""
+                input-name=""
+                input-value=""
+                input-placeholder="Services"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.services
+              %}
             </div>
           </div>
         </div>

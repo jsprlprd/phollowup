@@ -1,17 +1,42 @@
 - text: Advanced Settings
   url: app/settings/advanced-settings.html
 
-- text: Booking
-  url: app/settings/booking.html
-
-- text: Company
-  url: app/settings/company/
+- text: Branches
+  url: app/settings/branches/
+  status:
 
 - text: Custom Forms
   url: app/settings/custom-forms/
 
+
 - text: Messages
   url: app/settings/messages/
+
+- text: Online Booking
+  url: app/settings/booking.html
+
+# - text: Company
+#   url: app/settings/company/
+
+
+
+
+
+
+- text: Taxes &amp; Payment Methods
+  url: app/settings/taxes-and-payment-methods/
+  status:
+
+
+- text: Services &amp; Products
+  url: app/settings/services-and-products/
+  status:
+
+# - text: Products
+#   url: app/settings/company/products/
+#   status:
+
+
 
 - text: Satisfaction
   url: app/settings/satisfaction/

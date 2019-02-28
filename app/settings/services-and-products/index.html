@@ -1,0 +1,61 @@
+---
+layout: settings
+container-type: container-fluid
+heading: true
+heading-title: Settings
+heading-navbar: false
+sub-heading:
+sub-heading-title:
+heading-search: true
+heading-search-name: search-settings
+heading-search-placeholder: Search Settings
+---
+
+<div class="header">
+  <h6 class="header-title h4">Services</h6>
+  <p class="header-subtitle">This is the list of Services your business offers, your appointment types. Feel free to duplicate them if they have different variations (examples: “Massage (60 min.)” and “Massage (90 min.)”. The “Price” field will be used when creating the default Invoice for your customer- you can always change it. All services entered here can be booked online by your customers through your Online Booking page.</p>
+</div>
+
+<div class="card card-bordered card-rounded mb-5">
+  <div class="list-group list-group-flush list-group-lg">
+    {% assign services = site.services | sort:"order" %}
+    {% for service in services limit:5 %}
+      <a class="list-group-item list-group-item-action" href="{{ service.url }}">
+        <div class="row">
+          <div class="col">
+            <p class="text-lg mb-0"><b>{{ service.name }}</b></p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+    <div class="list-group-item">
+      +5 More
+    </div>
+    <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/services-and-products/add-new-service.html">
+      <i class="fas fa-plus mr-2"></i><b>Add New Service</b>
+    </a>
+  </div>
+</div>
+
+<div class="header">
+  <h6 class="header-title h4">Products</h6>
+  <p class="header-subtitle">This is your list of Products for sale, to use inside customer Invoices. These items will not show inside your Online Booking page. You don’t need to re-create your list of Services here. Example of products: “Shampoo bottle”, “At-home whitening kit”, etc.</p>
+</div>
+
+<div class="card card-bordered card-rounded mb-4">
+  <div class="list-group list-group-flush list-group-lg">
+    {% assign products = site.products | sort:"order" %}
+    {% for product in products %}
+      <a class="list-group-item list-group-item-action" href="{{ product.url }}">
+        <div class="row">
+          <div class="col">
+            <p class="text-lg mb-0"><b>{{ product.name }}</b></p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+    <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/services-and-products/add-new-product.html">
+      <i class="fas fa-plus mr-2"></i><b>Add New Product</b>
+    </a>
+  </div>
+</div>

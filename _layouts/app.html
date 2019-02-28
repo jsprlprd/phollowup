@@ -11,26 +11,18 @@ layout-styles: app
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="global-slider">    
-    <!-- <div class="p-3">
-      <a class="btn btn-warning" data-toggle="modal" data-target="#new-appointment" href="#new-appointment">New Appointment</a>
-    </div> -->
     {% include components/molecules/nav-menu.html
       nav-type="navbar-nav"
       isLarge=""
       isStacked="flex-column"
       isJustified=""
       list-value-name=site.data.navigation.global
-      hasIcon="true"
+      hasIcon="false"
     %}
     <ul class="navbar-nav flex-column mt-auto">
       <li class="nav-item">
         <a class="btn btn-outline-primary btn-lg btn-block" href="{{ site.baseurl }}/app/tablet-mode.html">Switch to Tablet Mode</a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="{{ site.baseurl }}/app/settings/subscription.html" style="color: #f78002; line-height: 24px; padding-top: 12px; padding-bottom: 12px;">Upgrade Now</a>
-      </li> -->
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="" style="font-size: 18px; line-height: 24px; padding-top: 12px; padding-bottom: 12px;"><i class="far fa-bell"></i></a></li> -->
       <li class="nav-item dropup">
         <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
           <div class="media">
@@ -43,12 +35,14 @@ layout-styles: app
           </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item media" href="">
-            <div class="media-left">
-              <img class="rounded-circle" src="/assets/img/avatar.png" width="48" height="48" alt="">
-            </div>
-            <div class="media-body media-middle">
-              Jasper Lepardo
+          <a class="dropdown-item" href="">
+            <div class="media">
+              <div class="mr-3">
+                <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+              </div>
+              <div class="media-body align-self-center">
+                Jasper Lepardo
+              </div>
             </div>
           </a>
           <div class="dropdown-divider"></div>
@@ -66,28 +60,30 @@ layout-styles: app
     <div class="heading fixed-top">
       <div class="container-fluid">
         <div class="row">
-          <div class="col">
+          <div class="col-lg-3">
             <h1 class="heading-title h3">{{ layout.heading-title }}{{ page.heading-title }}</h1>
           </div>
-          <div class="col-auto">
+          <div class="col-lg-6">
+            {% if page.heading-search %}
+              <div class="heading-search">
+                <div class="form-icon form-icon-lg">
+                  {% include components/atoms/form/input.html 
+                    isInputLarge="form-control-lg"
+                    isInputRequired=""
+                    input-name="heading-search-name"
+                    input-type="search"
+                    input-value=""
+                    input-placeholder=page.heading-search-placeholder
+                  %}
+                  <span class="form-control-icon"><i class="fas fa-search"></i></span>
+                </div>
+              </div>
+            {% endif %}
+          </div>
+          <div class="col-lg-3 text-right">
             {{ page.heading-button }}
           </div>
         </div>
-        {% if page.heading-search %}
-          <div class="heading-search">
-            <div class="form-icon form-icon-lg">
-              {% include components/atoms/form/input.html 
-                isInputLarge="form-control-lg"
-                isInputRequired=""
-                input-name="heading-search-name"
-                input-type="search"
-                input-value=""
-                input-placeholder=page.heading-search-placeholder
-              %}
-              <span class="form-control-icon"><i class="fas fa-search"></i></span>
-            </div>
-          </div>
-        {% endif %}
         {% if page.heading-navbar %}
           <nav class="heading-navbar">
             {% include components/molecules/nav-menu.html
@@ -104,9 +100,9 @@ layout-styles: app
       </div>
       {% if page.sub-heading %}
         <div class="sub-heading">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-8 offset-lg-2">
+              <div class="col-lg-6 offset-lg-3">
                 <div class="sub-heading-wrapper">
                   <button class="sub-heading-btn js-go-back" type="button" onclick="history.back(-1)"> <i class="fas fa-arrow-left"></i></button>
                   <h1 class="sub-heading-title h3">{{ page.sub-heading-title }}</h1>
@@ -122,12 +118,9 @@ layout-styles: app
     {{ content }}
     {% else %}
     <main class="{{ page.container-type }}" id="main-content">
-        {{ content }}
+      {{ content }}
     </main>
   {% endif %}
-</div>
-
-<div id="right-panel">
 </div>
 
 {% include components/organisms/popover/appointment-details.html %}
@@ -138,3 +131,5 @@ layout-styles: app
 
 {% include components/organisms/modals/add-new-employee.html %}
 {% include components/organisms/modals/edit-employee-profile.html %}
+
+{% include components/organisms/modals/add-new-branch.html %}

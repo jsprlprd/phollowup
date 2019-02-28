@@ -1,0 +1,23 @@
+- text: Branches
+  url: app/settings/company/branches/
+  status: 
+
+- text: Services
+  url: app/settings/company/services/
+  status:
+
+- text: Products
+  url: app/settings/company/products/
+  status:
+
+- text: Taxes
+  url: app/settings/company/taxes/
+  status:
+
+- text: Payment Methods
+  url: app/settings/company/payment-methods/
+  status:
+
+- text: Billing Instructions
+  url: app/settings/company/billing-instructions/
+  status:

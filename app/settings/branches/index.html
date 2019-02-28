@@ -1,0 +1,33 @@
+---
+layout: settings
+container-type: container-fluid
+heading: true
+heading-title: Settings
+heading-navbar: false
+sub-heading:
+sub-heading-title:
+heading-search: true
+heading-search-name: search-settings
+heading-search-placeholder: Search Settings
+---
+
+<div class="header">
+  <h6 class="header-title h4">Branches</h6>
+</div>
+<div class="card card-bordered card-rounded">
+  <div class="list-group list-group-flush list-group-lg">
+    {% assign branches = site.branches | sort:"order" %}
+    {% for branch in branches %}
+      <a class="list-group-item list-group-item-action" href="{{ branch.url }}">
+        <div class="row">
+          <div class="col">
+            <p class="text-lg mb-0"><b>{{ branch.name }}</b></p>
+          </div>
+        </div>
+      </a>
+    {% endfor %}
+    <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/branches/add-new-branch.html">
+      <i class="fas fa-plus mr-2"></i><b>Add New Branch</b>
+    </a>
+  </div>
+</div>

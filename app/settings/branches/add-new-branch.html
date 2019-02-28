@@ -1,0 +1,303 @@
+---
+layout: settings
+container-type: container
+heading: true
+heading-title: 
+heading-navbar:
+sub-heading: true
+sub-heading-title: Add New Branch
+---
+
+<div class="card card-bordered card-rounded mb-4">
+  <div class="card-header">
+    <h6 class="card-header-title h4">Branch Details</h6>
+  </div>
+  <div class="list-group list-group-flush list-group-editable list-group-sm">
+    {% include components/molecules/list-group/input.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Legal Business Name"
+      input-size="col-lg"
+      input-type="text"
+      input-name="branch-legal-business-name"
+      input-value="JSPR Design Studio Inc."
+      input-placeholder="Enter Legal Business Name"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper=""
+      form-helper-text="This will appear on Customer Invoices"
+    %}
+    {% include components/molecules/list-group/input.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Branch Name"
+      input-size="col-lg"
+      input-type="text"
+      input-name="branch-name"
+      input-value="Vermont Branch"
+      input-placeholder="Enter Branch Name"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper=""
+      form-helper-text="This will appear on Online Booking and Automated Messages"
+    %}
+    {% include components/molecules/list-group/input.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Login URL"
+      input-size="col-lg"
+      input-type="text"
+      input-name="branch-login-url"
+      input-value="jspr-vermont.phollowup.com"
+      input-placeholder="company-name.phollowup.com"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+    %}
+    {% include components/molecules/list-group/input.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Time Zone"
+      input-size="col-lg"
+      input-type="text"
+      input-name="branch-timezone"
+      input-value="GMT+8"
+      input-placeholder="Select Time Zone"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+    %}
+    {% include components/molecules/list-group/select.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Currency"
+      input-size="col-lg"
+      input-type=""
+      input-name="branch-currency"
+      input-value="Philippine Peso (Php)"
+      input-placeholder="Select Currency"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+      list-value-name=site.data.list-value.currency
+    %}
+  </div>
+</div>
+<div class="card card-bordered card-rounded mb-4">
+  <div class="card-header">
+    <h6 class="card-header-title h4">Contact Details</h6>
+  </div>
+  <div class="list-group list-group-flush">
+    {% include components/molecules/list-group/input.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Phone"
+      input-size="col-lg"
+      input-type="text"
+      input-name="branch-phone"
+      input-value="0917 116 1268"
+      input-placeholder="Enter Phone"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+    %}
+    {% include components/molecules/list-group/input.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Email"
+      input-size="col-lg"
+      input-type="text"
+      input-name="branch-email"
+      input-value="jsprlprd@gmail.com"
+      input-placeholder="Enter Email"
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+    %}
+    {% include components/organisms/list-group/address.html 
+      form-layout="horizontal"
+      isInputLarge=""
+      isInputRequired=""
+      hasFormLabel=""
+      form-label-class="form-label"
+      form-label-size="col-lg-3"
+      form-label-text="Address"
+      input-size="col-lg"
+      input-type="text"
+      input-name="branch-address"
+      input-value="92277 Vermont Drive"
+      input-placeholder=""
+      hasFormIcon="none"
+      form-icon-name=""
+      form-icon-placement=""
+      hasFormHelper="none"
+      form-helper-text=""
+    %}
+  </div>
+</div>
+<div class="card card-bordered card-rounded mb-4">
+  <div class="card-header">
+    <h6 class="card-header-title h4">Business Hours</h6>
+  </div>
+  <div class="list-group list-group-flush">
+    <div class="list-group-item">
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-lg-3 form-label">Sunday</label>
+        <div class="col-lg">
+          <div class="form-row">
+            <div class="col">
+              {% include components/atoms/form/select.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text=""
+                input-size=""
+                input-name=""
+                input-value=""
+                input-placeholder="Start"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.data.list-value.time
+              %}
+            </div>
+            <div class="col">
+              {% include components/atoms/form/select.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text=""
+                input-size=""
+                input-name=""
+                input-value=""
+                input-placeholder="End"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.data.list-value.time
+              %}
+            </div>
+            <div class="col-auto" style="width: 100px;">
+              <a class="btn btn-link" href="" style="padding: 7px;"><i class="fas fa-times" style="width: 20px;line-height: 20px;"></i></a>
+              <a class="btn btn-link" href="" style="padding: 7px;"><i class="fas fa-plus" style="width: 20px;line-height: 20px;"></i></a>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              {% include components/atoms/form/select.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text=""
+                input-size=""
+                input-name=""
+                input-value=""
+                input-placeholder="Start"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.data.list-value.time
+              %}
+            </div>
+            <div class="col">
+              {% include components/atoms/form/select.html 
+                form-layout="horizontal"
+                isInputLarge=""
+                isInputRequired=""
+                hasFormLabel=""
+                form-label-class=""
+                form-label-size=""
+                form-label-text=""
+                input-size=""
+                input-name=""
+                input-value=""
+                input-placeholder="End"
+                hasFormIcon="none"
+                form-icon-name=""
+                form-icon-placement=""
+                hasFormHelper="none"
+                form-helper-text=""
+                list-value-name=site.data.list-value.time
+              %}
+            </div>
+            <div class="col-auto" style="width: 100px;">
+              <a class="btn btn-link" href="" style="padding: 7px;"><i class="fas fa-times" style="width: 20px;line-height: 20px;"></i></a>
+              <a class="btn btn-link" href="" style="padding: 7px;"><i class="fas fa-plus" style="width: 20px;line-height: 20px;"></i></a>
+            </div>
+          </div>
+          <!-- <a class="form-helper" href=""><i class="far fa-copy mr-1"></i>Copy Previous Day</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card card-bordered card-rounded border-danger">
+  <div class="list-group list-group-flush">
+    <div class="list-group-item">
+      <div class="row">
+        <div class="col-lg">
+          <p class="text-lg mb-0"><b>Delete this Branch</b></p>
+          <p class="mb-0">Once you delete a branch, there is no going back. Please be certain.</p>
+        </div>
+        <div class="col-auto align-self-center">
+          <a class="btn btn-light text-danger" href="">Delete this Branch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
