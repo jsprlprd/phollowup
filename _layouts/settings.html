@@ -5,17 +5,19 @@ page-layout: empty
 
 <div class="container-fluid">
   <div class="row">
-    <div id="settings-nav">
-      {% include components/molecules/nav-menu.html
-        nav-type="nav-pills"
-        isLarge=""
-        isStacked="flex-column"
-        isJustified=""
-        isResponsive="nav-tabs-responsive"
-        list-value-name=site.data.navigation.settings
-        hasIcon=""
-      %}
-    </div>
+    {% if page.settings-nav %}
+      <div id="settings-nav">
+        {% include components/molecules/nav-menu.html
+          nav-type="nav-pills"
+          isLarge=""
+          isStacked="flex-column"
+          isJustified=""
+          isResponsive="nav-tabs-responsive"
+          list-value-name=site.data.navigation.settings
+          hasIcon=""
+        %}
+      </div>
+    {% endif %}
     <div class="col-lg-6 offset-lg-3">
       {{ content }}
     </div>

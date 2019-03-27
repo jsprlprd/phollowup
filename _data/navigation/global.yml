@@ -18,9 +18,9 @@
   icon: fas fa-file-invoice
   url: app/invoices/
 
-- text: Satisfaction
+- text: Satisfactions
   icon: fas fa-hand-holding-heart
-  url: app/satisfactions /
+  url: app/satisfactions/
 
 - text: Reports
   icon: fas fa-chart-bar

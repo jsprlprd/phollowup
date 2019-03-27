@@ -1,0 +1,256 @@
+// Base class
+//
+// Kickstart any navigation component with a set of style resets. Works with
+// `<nav>`s or `<ul>`s.
+
+.nav-wizard {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-wizard-link {
+  position: relative;
+  display: block;
+
+  // font-size: 1rem;
+
+
+  padding: $nav-wizard-link-padding-y $nav-wizard-link-padding-x;
+
+  // line-height: 20px;
+  
+  font-weight: $nav-wizard-link-font-weight;
+  // font-size: $font-size-sm;
+  @include hover-focus {
+    text-decoration: none;
+  }
+
+  // Disabled state lightens text
+  &.disabled {
+    color: $nav-wizard-link-disabled-color;
+  }
+
+
+
+
+
+
+  &::before {
+
+    content: '';
+    display: block;
+    position: relative;
+
+  }
+
+  // &:first-child::before {
+  //   display: none;
+  // }
+
+  &.active {
+    .nav-wizard-indicator {
+      background-color: $primary;
+    }
+  }
+
+  &.success {
+    .nav-wizard-indicator {
+      background-color: $success;
+    }
+  }
+
+  &.pending {
+    .nav-wizard-indicator {
+      background-color: $warning;
+    }
+  }
+
+  &.failed {
+    .nav-wizard-indicator {
+      background-color: $danger;
+    }
+  }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+.nav-wizard-indicator {
+  position: absolute;
+  display: inline-block;
+  border-radius: 9999px;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+//
+// Tabs
+//
+
+.nav-wizard-tabs {
+
+  .nav-wizard-item:first-child {
+    .nav-wizard-link::before {
+      display: none;
+    }
+  }
+
+  .nav-wizard-link {
+    &::before {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      height: 4px;
+      left: -50%;
+      background-color: $gray-100;
+    }
+    &.active,
+    &.success,
+    &.pending,
+    &.failed {
+      &::before {
+        background-color: $warning;
+      }
+    }
+    &.success,
+    &.failed {
+      .nav-wizard-indicator {
+        color: $gray-100;
+        &::before {
+          font-family: "FontAwesome";
+          position: absolute;
+          left: 0px;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+    }
+    &.success .nav-wizard-indicator::before {
+      content: "\f00c";
+    }
+    &.failed .nav-wizard-indicator::before {
+      content: "\f00d";
+    }
+  }
+  .nav-wizard-indicator {
+    top: 0;
+    right: calc(50% - 12px);
+    width: 24px;
+    height: 24px;
+    border-width: 4px;
+    background-color: $gray-100;
+  }
+  .nav-wizard-link {
+    color: $nav-tabs-link-default-color;
+    padding-top: $nav-wizard-link-padding-y + 1.5rem;
+    @include hover-focus {
+      // border-color: $nav-tabs-link-hover-border-color;
+    }
+    &.disabled {
+      color: $nav-wizard-link-disabled-color;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+  .nav-wizard-link.active,
+  .nav-wizard-item.show .nav-wizard-link {
+    color: $nav-tabs-link-active-color;
+    border-color: $nav-tabs-link-active-border-color;
+  }
+
+}
+
+
+.nav-wizard-tabs-responsive {
+  flex-flow: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+
+  .nav-wizard-link {
+    white-space: nowrap;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// Pills
+//
+
+.nav-wizard-pills {
+  .nav-wizard-link {
+    @include border-radius($nav-pills-border-radius);
+  }
+
+  .nav-wizard-link.active,
+  .show > .nav-wizard-link {
+    color: $nav-pills-link-active-color;
+    background-color: $nav-pills-link-active-bg;
+  }
+}
+
+
+//
+// Justified variants
+//
+
+.nav-wizard-fill {
+  .nav-wizard-item {
+    flex: 1 1;
+    text-align: center;
+  }
+}
+
+.nav-wizard-justified {
+  .nav-wizard-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+
+// Tabbable tabs
+//
+// Hide tabbable panes to start, show them when `.active`
+
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}

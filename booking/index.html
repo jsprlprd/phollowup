@@ -2,158 +2,200 @@
 layout: booking
 ---
 
-<main class="shadow bg-white " style="max-width: 1020px; margin: 0 auto;">
-  <div class="jumbotron jumbotron-fluid text-white text-center p-4 mb-0" style="background-color: #00254d;">
-    <img src="/assets/img/system-avatar.png" alt="">
-    <h1 class="text-white">JSPR Design</h1>
-    <ul class="list list-inline list-icon list-icon-inverse">
-      <li class="list-inline-item"><i class="list-item-icon fas fa-phone"></i><a href="">0917 116 1268</a></li>
-      <li class="list-inline-divider"></li>
-      <li class="list-inline-item"><i class="list-item-icon fas fa-envelope"></i><a href="">hello@jsprlprd.xyz</a></li>
-      <li class="list-inline-divider"></li>
-      <li class="list-inline-item"><i class="list-item-icon fas fa-globe"></i><a href="">https://www.jsprlprd.xyz</a></li>
-    </ul>
-  </div>
-  <div class="container p-4">
-    <p class="lead"><b>Select a Service</b></p>
-    {% include components/organisms/services-accordion.html %}
-    <hr class="dashed">          
-    <p class="lead text-center"><b>September 28, 9:00 AM with Jasper Lepardo</b></p>
-    <div class="row">
-      <div class="col-lg-auto">
-        {% include components/organisms/calendar.html %}
+
+
+<div class="heading fixed-top">
+  <div class="container">
+    <div class="media">
+      <div class="mr-4">
+        <img src="/assets/img/system-avatar.png" alt="">
       </div>
-      <div class="col-lg">
-        {% include components/molecules/form-group/datalist.html 
-          form-layout=""
-          isInputLarge="form-group-lg"
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class=""
-          form-label-size=""
-          form-label-text="Select Staff (Optional)"
-          input-size=""
-          input-name="employee-name"
-          input-value=""
-          input-placeholder="Select Staff (Optional)"
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-          list-value-name=site.employees
-        %}
-        <div class="row">
-          <div class="col-md-4">
-            <p><b>Moring</b></p>
-            <a class="btn btn-light btn-lg" href="">09:00</a>
-            <a class="btn btn-light btn-lg" href="">10:00</a>
-            <a class="btn btn-light btn-lg" href="">11:00</a>
-            <a class="btn btn-light btn-lg" href="">12:00</a>
+      <div class="media-body align-self-center">
+        <h1 class="heading-title h2">JSPR Design</h1>
+        <ul class="heading-details list list-inline list-icon list-icon-left list-icon-inverse">
+          <li class="list-inline-item"><i class="list-item-icon fas fa-phone"></i><a href="">0917 116 1268</a></li>
+          <li class="list-inline-divider"></li>
+          <li class="list-inline-item"><i class="list-item-icon fas fa-envelope"></i><a href="">hello@jsprlprd.xyz</a></li>
+          <li class="list-inline-divider"></li>
+          <li class="list-inline-item"><i class="list-item-icon fas fa-globe"></i><a href="">https://www.jsprlprd.xyz</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="main-panel">
+  <main class="container-fluid" id="main-content">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <ul class="nav nav-wizard nav-wizard-tabs nav-wizard-default nav-wizard-fill nav-wizard-lg">
+          <li class="nav-wizard-item">
+            <a class="nav-wizard-link" data-toggle="tab" href="#services-tab"><div class="nav-wizard-indicator"></div>Services</a>
+          </li>
+          <li class="nav-wizard-item">
+            <a class="nav-wizard-link" data-toggle="tab" href="#date-and-time-tab"><div class="nav-wizard-indicator"></div>Date &amp; Time</a>
+          </li>
+          <li class="nav-wizard-item">
+            <a class="nav-wizard-link" data-toggle="tab" href="#your-details-tab"><div class="nav-wizard-indicator"></div>Your Details</a>
+          </li>
+          <li class="nav-wizard-item">
+            <a class="nav-wizard-link" data-toggle="tab" href="#confirmation-tab"><div class="nav-wizard-indicator"></div>Confirmation</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active show" id="services-tab">
+            <div class="header">
+              <h1 class="header-title text-center h2">Which service would you like?</h1>
+            </div>
+            <div class="accordion" id="services">
+              {% for services in site.data.list-value.services %}
+                <div class="card">
+                  <div class="card-header" id="{{ services.id	}}-heading">
+                    <a data-toggle="collapse" data-target="#{{ services.id }}-body" href="#{{ services.id }}-body" aria-expanded="false" aria-controls="{{ services.id }}-body">{{ services.category }}</a>
+                  </div>
+                  <div id="{{ services.id }}-body" class="collapse" aria-labelledby="{{ services.id }}-heading" data-parent="#services">
+                    <div class="card-body">
+                      <div class="btn-checkbox-group" data-toggle="buttons">
+                        {% for item in services.service-item %}
+                          <div class="form-check btn btn-checkbox btn-block">
+                            <input class="form-check-input" id="advanced-acne-therapy" type="checkbox" value="advanced-acne-therapy">
+                            <label class="form-check-label w-100" for="advanced-acne-therapy">
+                              <div class="row">
+                                <div class="col-lg">
+                                  <p class="mb-0"><b>{{ item.name }}</b></p>
+                                  <ul class="list list-inline text-muted mb-0">
+                                    <li class="list-inline-item">₱ 300/hr</li>
+                                    {% if item.description %}
+                                      <li class="list-inline-divider"></li>
+                                      <li class="list-inline-item">{{ item.description }}</li>
+                                    {% endif %}
+                                  </ul>
+                                </div>
+                                <div class="col-auto align-self-center">
+                                  {% for duration in item.duration %}
+                                    {{ duration.time }} mins
+                                  {% endfor %}
+                                </div>
+                              </div>
+                            </label>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
           </div>
-          <div class="col-md-4">
-            <p><b>Afternoon</b></p>
-            <a class="btn btn-light btn-lg" href="">01:00</a>
-            <a class="btn btn-light btn-lg" href="">02:00</a>
-            <a class="btn btn-light btn-lg" href="">03:00</a>
-            <a class="btn btn-light btn-lg" href="">04:00</a>
-            <a class="btn btn-light btn-lg" href="">05:00</a>
+          <div class="tab-pane" id="date-and-time-tab">
+            <div class="header">
+              <h1 class="header-title text-center h2">Which provider would you like?</h1>
+            </div>
+            {% include components/organisms/calendar.html %}
           </div>
-          <div class="col-md-4">
-            <p><b>Evening</b></p>
-            <a class="btn btn-light btn-lg" href="">06:00</a>
-            <a class="btn btn-light btn-lg" href="">07:00</a>
-            <a class="btn btn-light btn-lg" href="">08:00</a>
-            <a class="btn btn-light btn-lg" href="">09:00</a>
-            <a class="btn btn-light btn-lg" href="">10:00</a>
+          <div class="tab-pane" id="your-details-tab">
+            <div class="header">
+              <h1 class="header-title text-center h3">Your Details</h1>
+            </div>
+            {% include components/molecules/form-group/input.html 
+              form-layout=""
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text="Name"
+              input-size=""
+              input-name="customer-name"
+              input-type="text"
+              input-value=""
+              input-placeholder="John Doe"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.customers
+            %}
+            {% include components/molecules/form-group/input.html 
+              form-layout=""
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text="Email"
+              input-size=""
+              input-name="email"
+              input-type="text"
+              input-value=""
+              input-placeholder="name@company.com"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+              list-value-name=site.customers
+            %}
+            <fieldset class="form-group">
+              <label class="control-label" for="">Phone</label>
+              <input class="form-control" type="text" placeholder="(+63) 901 234 567">
+            </fieldset>
+            {% include components/molecules/form-group/textarea.html 
+              form-layout=""
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class=""
+              form-label-size=""
+              form-label-text="Please let us know if you have any special requests. Thank you."
+              input-size=""
+              input-type=""
+              input-name="notes"
+              input-value=""
+              input-placeholder="Please let us know if you have any special requests. Thank you."
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+
           </div>
         </div>
       </div>
     </div>
-    <hr class="dashed">
-    <p class="lead">Your Details</p>
-    <div class="row">
-      <div class="col-lg-6">
+  </main>
+</div>
 
-        {% include components/molecules/form-group/input.html 
-          form-layout=""
-          isInputLarge=""
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class=""
-          form-label-size=""
-          form-label-text="Name"
-          input-size=""
-          input-name="customer-name"
-          input-type="text"
-          input-value=""
-          input-placeholder="John Doe"
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-          list-value-name=site.customers
-        %}
+<div id="right-panel">
 
-        {% include components/molecules/form-group/input.html 
-          form-layout=""
-          isInputLarge=""
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class=""
-          form-label-size=""
-          form-label-text="Email"
-          input-size=""
-          input-name="email"
-          input-type="text"
-          input-value=""
-          input-placeholder="name@company.com"
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-          list-value-name=site.customers
-        %}
-        <fieldset class="form-group">
-          <label class="control-label" for="">Phone</label>
-          <input class="form-control" type="text" placeholder="(+63) 901 234 567">
-        </fieldset>
+
+    <div class="row w-100">
+        <div class="col">
+          <a class="btn btn-light btn-block btn-lg" href=""><i class="fas fa-long-arrow-alt-left mr-3"></i>Previous</a>
+        </div>
+        <div class="col">
+          <a class="btn btn-light btn-block btn-lg" href="">Next<i class="fas fa-long-arrow-alt-right ml-3"></i></a>
+        </div>
       </div>
-      <div class="col-lg-6">
-        {% include components/molecules/form-group/textarea.html 
-          form-layout=""
-          isInputLarge=""
-          isInputRequired=""
-          hasFormLabel=""
-          form-label-class=""
-          form-label-size=""
-          form-label-text="Please let us know if you have any special requests. Thank you."
-          input-size=""
-          input-type=""
-          input-name="notes"
-          input-value=""
-          input-placeholder="Please let us know if you have any special requests. Thank you."
-          hasFormIcon="none"
-          form-icon-name=""
-          form-icon-placement=""
-          hasFormHelper="none"
-          form-helper-text=""
-        %}
+      <div class="wrapper">
+        <div class="header">
+          <h1 class="header-title h5">Appointment Summary</h1>
+        </div>
+        <!-- <a class="btn btn-primary btn-lg btn-wide" href="">Book Now</a> -->
+
       </div>
-    </div>
-    <hr class="dashed">
-    <a class="btn btn-primary btn-lg btn-wide" href="">Book Now</a>
-  </div>
-  <footer class="p-5 text-center bg-light border-top">
-    <div class="container-fluid">
-        Powered by Phollowup
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item">© 2019 Phollowup Inc.</li>
-          <li class="list-inline-divider"></li>
-          <li class="list-inline-item"><a href="">Terms and Condition</a></li>
-        </ul>    
-    </div>
-  </footer>
-</main>
+      <footer>
+        <div class="container-fluid">
+            Powered by Phollowup
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">© 2019 Phollowup Ptd Ltd</li>
+            </ul>    
+        </div>
+      </footer>
+  
+
+
+</div>

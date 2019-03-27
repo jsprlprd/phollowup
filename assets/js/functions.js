@@ -114,7 +114,10 @@ $(document).ready(function() {
 
 
 
-
+// $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+//   e.target // newly activated tab
+//   e.relatedTarget // previous active tab
+// })
 
 
 
@@ -142,6 +145,8 @@ $(document).ready(function() {
   var heading_height = $(".heading.fixed-top").innerHeight(); //get width automaticly
 
   $('#main-panel').css('padding-top', heading_height);
+
+  // $('.js-table-scroller').css('max-height', 100vh - heading_height;
 
 });
 

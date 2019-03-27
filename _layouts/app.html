@@ -10,32 +10,22 @@ layout-styles: app
   <button class="navbar-toggler" id="mobile-slider" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="global-slider">    
-    {% include components/molecules/nav-menu.html
-      nav-type="navbar-nav"
-      isLarge=""
-      isStacked="flex-column"
-      isJustified=""
-      list-value-name=site.data.navigation.global
-      hasIcon="false"
-    %}
-    <ul class="navbar-nav flex-column mt-auto">
-      <li class="nav-item">
-        <a class="btn btn-outline-primary btn-lg btn-block" href="{{ site.baseurl }}/app/tablet-mode.html">Switch to Tablet Mode</a>
-      </li>
-      <li class="nav-item dropup">
-        <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
-          <div class="media">
-            <div class="mr-3">
-              <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
-            </div>
-            <div class="media-body align-self-center">
-              Jasper Lepardo
-            </div>
-          </div>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item" href="">
+  <div class="collapse navbar-collapse" id="global-slider">
+    <div class="navbar-wrapper">
+      {% include components/molecules/nav-menu.html
+        nav-type="navbar-nav"
+        isLarge=""
+        isStacked="flex-column"
+        isJustified=""
+        list-value-name=site.data.navigation.global
+        hasIcon="false"
+      %}
+      <ul class="navbar-nav flex-column mt-auto">
+        <li class="nav-item">
+          <a class="btn btn-outline-primary btn-lg btn-block" href="{{ site.baseurl }}/app/tablet-mode.html">Switch to Tablet Mode</a>
+        </li>
+        <li class="nav-item dropup">
+          <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
             <div class="media">
               <div class="mr-3">
                 <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
@@ -45,12 +35,13 @@ layout-styles: app
               </div>
             </div>
           </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Link #1</a>
-          <a class="dropdown-item" href="#">Link #1</a>
-        </div>
-      </li>
-    </ul>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#"><i class="fas fa-sync-alt mr-2"></i>Refresh Page</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
   <div class="slider-overlay"></div>
 </div>
@@ -60,10 +51,13 @@ layout-styles: app
     <div class="heading fixed-top">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col order-1 col-lg-3 order-lg-1">
             <h1 class="heading-title h3">{{ layout.heading-title }}{{ page.heading-title }}</h1>
           </div>
-          <div class="col-lg-6">
+          <div class="col order-2 col-lg-3 order-lg-3 text-right">
+            {{ page.heading-button }}
+          </div>
+          <div class="col-12 order-3 col-lg-6 order-lg-2">
             {% if page.heading-search %}
               <div class="heading-search">
                 <div class="form-icon form-icon-lg">
@@ -79,9 +73,6 @@ layout-styles: app
                 </div>
               </div>
             {% endif %}
-          </div>
-          <div class="col-lg-3 text-right">
-            {{ page.heading-button }}
           </div>
         </div>
         {% if page.heading-navbar %}

@@ -18,14 +18,14 @@ container-type: container-fluid
 
     <div class="list-group list-group-custom">
       {% for customer in site.customers limit:5 %}
-        <a class="list-group-item list-group-item-action" href="{{ customer.url }}">
+        <div class="list-group-item list-group-item-action">
           <div class="row">
             <div class="col-sm-auto">
               <p class="mb-0"><b>02:00</b> PM</p>
               <span class="badge badge-success">Confirmed</span>
             </div>
             <div class="col">
-              <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
+              <p class="text-lg mb-0"><b><a href="{{ customer.url }}">{{ customer.full-name }}</a></b></p>
               <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
             </div>
             <div class="col-sm-auto align-self-center">
@@ -33,7 +33,7 @@ container-type: container-fluid
               <button class="btn btn-link btn-link-custom">Attended</button>
             </div>
           </div>
-        </a>
+        </div>
       {% endfor %}
     </div>
 
@@ -46,23 +46,23 @@ container-type: container-fluid
 
     <div class="list-group list-group-custom">
       {% for customer in site.customers limit:5 %}
-        <a class="list-group-item list-group-item-action" href="{{ customer.url }}">
+        <div class="list-group-item list-group-item-action">
           <div class="row">
             <div class="col-sm-auto">
               <p class="mb-0"><b>02:00</b> PM</p>
               <span class="badge badge-success">Confirmed</span>
             </div>
             <div class="col">
-              <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
+              <p class="text-lg mb-0"><b><a href="{{ customer.url }}">{{ customer.full-name }}</a></b></p>
               <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
             </div>
             <div class="col-sm-auto align-self-center">
-              <button class="btn btn-link btn-link-custom btn-link-dark">Reject</button>
-              <button class="btn btn-link btn-link-custom btn-link-dark">Edit</button>
+              <button class="btn btn-link btn-link-custom btn-link-dark" data-toggle="modal" data-target="#new-appointment" href="#new-appointment">Reject</button>
+              <button class="btn btn-link btn-link-custom btn-link-dark" data-toggle="modal" data-target="#new-appointment" href="#new-appointment">Edit</button>
               <button class="btn btn-link btn-link-custom">Approve</button>
             </div>
           </div>
-        </a>
+        </div>
       {% endfor %}
     </div>
   </div>

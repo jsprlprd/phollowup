@@ -9,14 +9,22 @@ sub-heading-title:
 heading-search: true
 heading-search-name: search-settings
 heading-search-placeholder: Search Settings
+settings-nav: true
 ---
 
 <div class="header">
-  <h6 class="header-title h4">Taxes</h6>
-  <p class="header-subtitle mb-0">What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
+  <div class="row">
+    <div class="col">
+      <h6 class="header-title h4">Taxes</h6>
+      <p class="header-subtitle mb-0">What are the local taxes in your area? Just the standard GST/HST or more? Are certain citizens tax-exempt? You can create all the tax combinations you want here.</p>
+    </div>
+    <div class="col-auto">
+      <a class="btn btn-link btn-sm" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/add-new-tax.html"><i class="fas fa-plus mr-2"></i>Add New</a>
+    </div>
+  </div>
 </div>
 
-<div class="card card-bordered card-rounded mb-5">
+<div class="card card-bordered card-rounded mb-3">
   <div class="list-group list-group-flush list-group-lg">
     <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/value-added-tax.html">
       <div class="media">
@@ -36,7 +44,7 @@ heading-search-placeholder: Search Settings
           </div>
         </div>
         <div class="d-inline-flex align-self-center ml-3">
-            <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
+          <i class="fas fa-chevron-right" style="width: 24px; height: 24px; text-align: center; line-height: 24px; "></i>
         </div>
       </div>
     </a>
@@ -60,15 +68,19 @@ heading-search-placeholder: Search Settings
         </div>
       </div>
     </a>
-    <a class="list-group-item" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/add-new-tax.html">
-      <i class="fas fa-plus mr-2"></i><b>Add New Tax</b>
-    </a>
   </div>
 </div>
 
 <div class="header">
-  <h6 class="header-title h4">Payment Methods</h6>
-  <p class="header-subtitle mb-0">Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
+  <div class="row">
+    <div class="col">
+      <h6 class="header-title h4">Payment Methods</h6>
+      <p class="header-subtitle mb-0">Use this section to log all the payment methods you accept inside your store. It will be useful for your monthly reporting. Suggestions: Cash, Credit Card, Gift Cards, etc.</p>
+    </div>
+    <div class="col-auto">
+      <a class="btn btn-link btn-sm" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/add-new-payment-method.html"><i class="fas fa-plus mr-2"></i>Add New</a>
+    </div>
+  </div>
 </div>
 
 <div class="card card-bordered card-rounded mb-4">
@@ -87,8 +99,5 @@ heading-search-placeholder: Search Settings
         </div>
       </a>
     {% endfor %}
-    <a class="list-group-item" href="{{ site.baseurl }}/app/settings/taxes-and-payment-methods/add-new-payment-method.html">
-      <i class="fas fa-plus mr-2"></i><b>Add New Payment Method</b>
-    </a>
   </div>
 </div>

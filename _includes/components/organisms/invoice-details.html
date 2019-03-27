@@ -1,20 +1,20 @@
 <div class="card card-bordered card-rounded mb-4">
   <div class="table-responsive">
-    <table class="table table-lg mb-0" id="invoice-details">
+    <table class="card-table table table-lg">
       <thead>
         <tr>
-          <th>Item</th>
-          <th>Price</th>
-          <th>Qty</th>
-          <th>Tax</th>
-          <th>Subtotal</th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Item</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Price</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Qty</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Tax</a></th>
+          <th><a href=""><i class="fas fa-sort mr-1"></i>Subtotal</a></th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>
-            {% include components/atoms/form/select.html 
+            {% include components/atoms/form/datalist.html 
               form-layout=""
               isInputLarge="form-control-sm"
               isInputRequired=""
@@ -31,7 +31,7 @@
               form-icon-placement=""
               hasFormHelper="none"
               form-helper-text=""
-              list-value-name=site.data.list-value.service
+              list-value-name=site.services
             %}
           </td>
           <td>

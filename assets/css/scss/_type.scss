@@ -164,25 +164,30 @@ mark,
     }
   }
 
-  > .list-inline-divider {
-    padding-left: 0;
+  &.list-icon-left {
+    > li {
+      padding-left: 32px;
+      position: relative;
+      > .list-item-icon {
+        left: 0;
+      }    
+    }
+    > .list-inline-divider {
+      padding-left: 0;
+    }
   }
 
-  &.list-icon-left > li {
-    padding-left: 32px;
-    position: relative;
-    > .list-item-icon {
-      left: 0;
-    }    
-  }
-
-  &.list-icon-right > li {
-    padding-right: 32px;
-    position: relative;
-    > .list-item-icon {
-      right: 0;
-    }    
-
+  &.list-icon-right {
+    > li {
+      padding-right: 32px;
+      position: relative;
+      > .list-item-icon {
+        right: 0;
+      }    
+    }  
+    > .list-inline-divider {
+      padding-right: 0;
+    }
   }
 
   &.list-icon-default {

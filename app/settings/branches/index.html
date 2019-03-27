@@ -9,11 +9,20 @@ sub-heading-title:
 heading-search: true
 heading-search-name: search-settings
 heading-search-placeholder: Search Settings
+settings-nav: true
 ---
 
 <div class="header">
-  <h6 class="header-title h4">Branches</h6>
+  <div class="row">
+    <div class="col">
+      <h6 class="header-title h4">Branches</h6>
+    </div>
+    <div class="col-auto">
+      <a class="btn btn-link btn-sm" href="{{ site.baseurl }}/app/settings/branches/add-new-branch.html"><i class="fas fa-plus mr-2"></i>Add New</a>
+    </div>
+  </div>
 </div>
+
 <div class="card card-bordered card-rounded">
   <div class="list-group list-group-flush list-group-lg">
     {% assign branches = site.branches | sort:"order" %}
@@ -26,8 +35,5 @@ heading-search-placeholder: Search Settings
         </div>
       </a>
     {% endfor %}
-    <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/branches/add-new-branch.html">
-      <i class="fas fa-plus mr-2"></i><b>Add New Branch</b>
-    </a>
   </div>
 </div>

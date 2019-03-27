@@ -4,7 +4,7 @@
     <option value="" selected="" disabled="">{{ include.input-placeholder }}</option>
     {% assign lists = include.list-value-name | sort:"order" %}
     {% for list in lists  %}
-      <option value="{{ list.value }}{{ list.full-name }}{{ list.name }}">{{ list.text }}{{ list.full-name }}{{ list.name }}</option>
+      <option value="{{ list.text }}{{ list.full-name }}{{ list.name }}">{{ list.value }}{{ list.full-name }}{{ list.name }}</option>
     {% endfor %}
   </select>
 </datalist>

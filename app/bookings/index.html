@@ -5,7 +5,7 @@ heading: true
 heading-title: Bookings
 ---
 
-<div class="card">
+<div class="card card-bordered card-rounded">
   <div class="card-header">
     {% include components/molecules/nav-tabs.html
       nav-type="nav-pills"
@@ -24,12 +24,12 @@ heading-title: Bookings
         <th>
           <input type="checkbox" name="" id="">
         </th>
-        <th>Booked On</th>
-        <th>Name</th>
-        <th>Appointment Details</th>
-        <th>Service</th>
-        <th>Status</th>
-        <th>Action</th>
+        <th><a href=""><i class="fas fa-sort mr-1"></i>Booked On</a></th>
+        <th><a href=""><i class="fas fa-sort mr-1"></i>Name</a></th>
+        <th><a href=""><i class="fas fa-sort mr-1"></i>Appointment Details</a></th>
+        <th><a href=""><i class="fas fa-sort mr-1"></i>Service</a></th>
+        <th><a href=""><i class="fas fa-sort mr-1"></i>Status</a></th>
+        <th><a href=""><i class="fas fa-sort mr-1"></i>Action</a></th>
       </tr>
     </thead>
     <tbody>
@@ -41,7 +41,7 @@ heading-title: Bookings
           01/01/2018
         </td>
         <td>
-          <p class="mb-0"><b>John Doe</b></p>
+          <p class="mb-0"><a href=""><b>John Doe</b></a></p>
           <p class="mb-0">0912 345 6789</p>
         </td>
         <td>
@@ -49,7 +49,7 @@ heading-title: Bookings
           <p class="mb-0">12:00 - 01:00</p>
         </td>
         <td>
-          <p class="mb-0"><a href=""><b>The Essenses Signature Massage</b></a></p>
+          <p class="mb-0"><b>The Essenses Signature Massage</b></p>
           <ul class="list list-inline text-muted mb-0">
             <li class="list-inline-item">Jasper Lepardo</li>
             <li class="list-inline-item list-inline-divider"></li>

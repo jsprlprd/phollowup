@@ -1,0 +1,359 @@
+- category: BB Glow
+  id: bb-glow
+  service-item:
+  - name: BB Glow
+    description: 1 session 12,000.00 3 sessions 25,000.00
+    price:
+    duration:
+    - time: 60
+- category: Facial
+  id: facial
+  service-item:
+  - name: Advance Acne Therapy
+    description: IPL + Photodynamic Therapy
+    price:
+    duration:
+    - time: 60
+  - name: Anti Acne Treatment
+    description: with Glycolic Acid + TCA
+    price:
+    duration:
+    - time: 45
+  - name: Calming Facial
+    description: Anti-Inflammatory, Anti-oxidant, Removes Toxins
+    price:
+    duration:
+    - time: 45
+  - name: Cleopatra Signature Facial
+    description: 
+    price:
+    duration:
+    - time: 90
+  - name: Collage Facial
+    description: Anti aging, moisturizes, hydrating
+    price:
+    duration:
+    - time: 45
+  - name: Hydra Facial w/ Wet Diamond Peel and Vitamin Infusion
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Lumiere Signature Basic Facial
+    description:
+    price:
+    duration:
+    - time: 45
+  - name: Oxygenated Mineral Facial
+    description: Anti aging, fights acne, tightens pores
+    price:
+    duration:
+    - time: 60
+  - name: Powerpeel
+    description: Dry Diamond Peel
+    price:
+    duration:
+    - time: 45
+  - name: Whitening Facial
+    description: Smoothes skin, moisturizes & whitens
+    price:
+    duration:
+    - time: 45
+- category: Fotona Hair Removal
+  id: fotona-hair-removal
+  service-item:
+  - name: Back
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Permanent Hair Removal Under Arm
+    description: Fotona hair removal under arm - 2,499.00
+    price:
+    duration:
+    - time: 60
+- category: Hiko Threads Nose Lift
+  id: hiko-threads-nose-lift
+  service-item:
+  - name: Hiko Threads Nose Lift
+    description:
+    price:
+    duration:
+    - time: 60
+- category: IPL Hair Removal
+  id: ipl-hair-removal
+  service-item:
+  - name: Beard
+    description:
+    price:
+    duration:
+    - time: 45
+  - name: Bikini
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Boyzillian
+    description:
+    price:
+    duration:
+    - time: 90
+  - name: Brazillian
+    description:
+    price:
+    duration:
+    - time: 90
+  - name: Chest
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Underarm
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Upperlip/Chin
+    description:
+    price:
+    duration:
+    - time: 30
+  - name: Upper/Lower Arms
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Upper & Lower Legs
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Whole Arms
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: Whole Legs
+    description:
+    price:
+    duration:
+    - time: 60
+- category: Laser
+  id: laser
+  service-item:
+  - name: Advanced Anti-Aging Treatment
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Advanced Skin Brightening Treatment with Microchanneling
+    description: with vitamin C serum
+    price:
+    duration:
+    - time: 60
+  - name: CO2 Laser Acne Scar and Stretch Marks Removal
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Doublo (High Intensity Focused Ultrasound)
+    description: for non surgical face lift and contouring
+    price:
+    duration:
+    - time: 60
+  - name: Fotona 4D
+    description: face lifting laser
+    price:
+    duration:
+    - time: 60
+  - name: Genesis
+    description: (gentle tightening and lifting laser procedure with zero downtime)
+    price:
+    duration:
+    - time: 60
+  - name: Microneedling with Radio Frequency
+    description: for acne scar and stretch marks removal
+    price:
+    duration:
+    - time: 60
+  - name: Microneedling with RF and PRP for Face Lifting
+    description:
+    price:
+    duration:
+    - time: 60
+  - name: ND Yag pigment and discoloration removal
+    description: Nd Yag laser
+    price:
+    duration:
+    - time: 60
+  - name: Skin Resurfacing
+    description: Thulium Laser
+    price:
+    duration:
+    - time: 60
+  - name: Vascular Lesion Treatment
+    description: Face and Leg Veins
+    price:
+    duration:
+    - time: 60
+- category: Medical Services
+  id: medical-services
+  service-item:
+  - name: Facial Augmentation or Reduction
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Filler Rhinoplasty
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Fractional Microneedling (6 sesions)
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Korean Lift by Maja Reyes M D
+    description: 
+    price:
+    duration:
+    - time: 120
+  - name: Laser Varicose Vein Tx
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Lumiere Aptosthread Ultra V lift
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Lumiere Eyebag Removal Copyright
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: MesoEye Lightening Treatment
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: MesoHair / Human Stem Cell Therapy
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Sclerotherapy
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: Therapeuticc Stemcell (10 sessions)
+    description: 
+    price:
+    duration:
+    - time: 60
+- category: Peels
+  id: peels
+  service-item:
+  - name: Arms
+    description: 
+    price:
+    duration:
+    - time: 30
+  - name: Back
+    description: 
+    price:
+    duration:
+    - time: 45
+  - name: Buttocks
+    description: 
+    price:
+    duration:
+    - time: 45
+  - name: Face
+    description: 
+    price:
+    duration:
+    - time: 30
+  - name: Knees
+    description: 
+    price:
+    duration:
+    - time: 30
+  - name: Legs
+    description: 
+    price:
+    duration:
+    - time: 30
+  - name: Underarm
+    description: 
+    price:
+    duration:
+    - time: 30
+  - name: Whole Body
+    description: 
+    price:
+    duration:
+    - time: 120
+- category: Prp meso
+  id: prp-meso
+  service-item:
+  - name: hair per session
+    description: 
+    price:
+    duration:
+    - time: 60
+  - name: skin rejuv
+    description: 
+    price:
+    duration:
+    - time: 60
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # RF with Endermology - 2500  60  
+  # RF with Endermology - Arms  60  
+  # RF with Endermology - Back  60  
+  # RF with Endermology - Face  30  
+  # RF with Endermology - Legs  60  
+  # RF with Endermology - Tummy  60  
+
+
+  # Semi Permanent Tattoo - 6D Eyebrow Embroidery  60  
+  # Semi Permanent Tattoo - Eyebrow Shading  60  
+  # Semi Permanent Tattoo - Lip Tint  60  
+
+
+  # Skin Whitening - Placenta Injection (10 Sessions)  60  
+  # Skin Whitening - Radiance Drip  30  
+  # Skin Whitening - White Glutathione Injectable (10 Sessions)  60  
+  # Skin Whitening - White with Vitamin C (10 Sessions)  60  
+
+
+  # Slimming - per area/mandabular contour  60  
+  # Slimming - per area / Mesolipo  60  
+  # Slimming - Slim Down Injection (10 sessions)  60  
+
+
+  # Spa - Body Scrub  30  
+  # Spa - Deep Tissue Massage  75  
+  # Spa - Elemental Energizing Massage  75  
+  # Spa - Elite Combination Therapy  120  
+  # Spa - Full Body Massage  75  
+  # Spa - Organic Foot Massage  60  
+  # Spa - Whitening Body Wrap  30  
+
+
+  # Warts Removal  60

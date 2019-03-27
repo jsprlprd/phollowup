@@ -9,10 +9,18 @@ sub-heading-title:
 heading-search: true
 heading-search-name: search-settings
 heading-search-placeholder: Search Settings
+settings-nav: true
 ---
 
 <div class="header">
-  <h6 class="header-title h4">Custom Forms</h6>
+  <div class="row">
+    <div class="col">
+      <h6 class="header-title h4">Custom Forms</h6>
+    </div>
+    <div class="col-auto">
+      <a class="btn btn-link btn-sm" href="{{ site.baseurl }}/app/settings/custom-forms/add-new-custom-form.html"><i class="fas fa-plus mr-2"></i>Add New</a>
+    </div>
+  </div>
 </div>
 
 <div class="card card-bordered card-rounded">
@@ -23,9 +31,6 @@ heading-search-placeholder: Search Settings
           <p class="text-lg mb-0"><b>Custom Form Title</b></p>
         </div>
       </div>
-    </a>
-    <a class="list-group-item list-group-item-action" href="{{ site.baseurl }}/app/settings/custom-forms/new-custom-form.html">
-      <i class="fas fa-plus mr-2"></i><b>Add New Custom Form</b>
     </a>
   </div>
 </div>

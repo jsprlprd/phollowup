@@ -63,14 +63,14 @@ heading-title: Employees
       </div>
       <div class="list-group list-group-custom">
         {% for customer in site.customers limit:5 %}
-          <a class="list-group-item list-group-item-action" href="{{ customer.url }}">
+          <div class="list-group-item list-group-item-action">
             <div class="row">
               <div class="col-sm-auto">
                 <p class="mb-0"><b>02:00</b> PM</p>
                 <span class="badge badge-success">Confirmed</span>
               </div>
               <div class="col">
-                <p class="text-lg mb-0"><b>{{ customer.full-name }}</b></p>
+                <p class="text-lg mb-0"><b><a href="{{ customer.url }}">{{ customer.full-name }}</a></b></p>
                 <p class="text-muted mb-0"><b>The Essenses Signature Massage</b> for <b>60 Mins</b> with <b>Jasper Lepardo</b></p>
               </div>
               <div class="col-sm-auto align-self-center">
@@ -78,7 +78,7 @@ heading-title: Employees
                 <button class="btn btn-link btn-link-custom">Attended</button>
               </div>
             </div>
-          </a>
+          </div>
         {% endfor %}
       </div>
       <hr class="dashed">
