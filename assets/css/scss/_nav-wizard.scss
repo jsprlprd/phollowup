@@ -14,16 +14,8 @@
 .nav-wizard-link {
   position: relative;
   display: block;
-
-  // font-size: 1rem;
-
-
   padding: $nav-wizard-link-padding-y $nav-wizard-link-padding-x;
-
-  // line-height: 20px;
-  
   font-weight: $nav-wizard-link-font-weight;
-  // font-size: $font-size-sm;
   @include hover-focus {
     text-decoration: none;
   }
@@ -33,22 +25,12 @@
     color: $nav-wizard-link-disabled-color;
   }
 
-
-
-
-
-
   &::before {
-
     content: '';
     display: block;
     position: relative;
 
   }
-
-  // &:first-child::before {
-  //   display: none;
-  // }
 
   &.active {
     .nav-wizard-indicator {
@@ -73,12 +55,6 @@
       background-color: $danger;
     }
   }
-
-
-
-
-
-
 
 }
 
@@ -119,7 +95,7 @@
       width: 100%;
       height: 4px;
       left: -50%;
-      background-color: $gray-100;
+      background-color: $gray-200;
     }
     &.active,
     &.success,
@@ -158,7 +134,7 @@
     width: 24px;
     height: 24px;
     border-width: 4px;
-    background-color: $gray-100;
+    background-color: $gray-200;
   }
   .nav-wizard-link {
     color: $nav-tabs-link-default-color;

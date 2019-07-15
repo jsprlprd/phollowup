@@ -661,14 +661,14 @@ left: 0;
   border-radius: 4px;
   vertical-align: middle;
   font-size: 16px;
-  background-color: #f8f9fa;
+  background-color: #EAEDF4;
   text-align: center;
   border: 0;
   position: relative;
 }
 
 .calendar-item:not(.calendar-item-current) {
-  background-color: #f0f2f4;
+  background-color: #F1F2F7;
   color: #d8d8d8;
 }
 
@@ -684,7 +684,7 @@ left: 0;
 }
 
 .has-availability {
-  border: 2px solid #d8d8d8;
+  border: 2px solid #DFE1EA;
   background-color: transparent;
 }
 
